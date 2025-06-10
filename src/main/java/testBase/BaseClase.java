@@ -9,9 +9,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
+
+
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -20,6 +24,7 @@ public class BaseClase {
 	public WebDriver driver;
 	public Logger logger;
 	public Properties p;
+	public WebDriverWait wait;
 
 	@BeforeClass
 	@Parameters({ "browser" })
@@ -50,6 +55,8 @@ public class BaseClase {
 
 		driver.get(p.getProperty("qaURL"));
 		driver.manage().window().maximize();
+		
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 	}
 

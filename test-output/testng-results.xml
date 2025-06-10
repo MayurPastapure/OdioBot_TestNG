@@ -2,27 +2,27 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-10T14:49:01 IST" name="Suite" finished-at="2025-06-10T14:49:19 IST" duration-ms="18638">
+  <suite started-at="2025-06-10T16:34:36 IST" name="Suite" finished-at="2025-06-10T16:34:52 IST" duration-ms="16009">
     <groups>
     </groups>
-    <test started-at="2025-06-10T14:49:01 IST" name="Test" finished-at="2025-06-10T14:49:19 IST" duration-ms="18638">
+    <test started-at="2025-06-10T16:34:36 IST" name="Test" finished-at="2025-06-10T16:34:52 IST" duration-ms="16009">
       <class name="testCases.LoginTest">
-        <test-method is-config="true" signature="browserLounching(java.lang.String)[pri:0, instance:testCases.LoginTest@51e69659]" started-at="2025-06-10T14:49:01 IST" name="browserLounching" finished-at="2025-06-10T14:49:18 IST" duration-ms="17296" status="PASS">
+        <test-method is-config="true" signature="browserLounching(java.lang.String)[pri:0, instance:testCases.LoginTest@6221a451]" started-at="2025-06-10T16:34:36 IST" name="browserLounching" finished-at="2025-06-10T16:34:49 IST" duration-ms="12162" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLounching -->
-        <test-method signature="verifyCorrectLogin()[pri:0, instance:testCases.LoginTest@51e69659]" started-at="2025-06-10T14:49:18 IST" name="verifyCorrectLogin" finished-at="2025-06-10T14:49:19 IST" duration-ms="898" status="PASS">
+        <test-method signature="verifyCorrectLogin()[pri:0, instance:testCases.LoginTest@6221a451]" started-at="2025-06-10T16:34:49 IST" name="verifyCorrectLogin" finished-at="2025-06-10T16:34:51 IST" duration-ms="2358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCorrectLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTest@51e69659]" started-at="2025-06-10T14:49:19 IST" name="tearDown" finished-at="2025-06-10T14:49:19 IST" duration-ms="371" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTest@6221a451]" started-at="2025-06-10T16:34:51 IST" name="tearDown" finished-at="2025-06-10T16:34:52 IST" duration-ms="1439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
