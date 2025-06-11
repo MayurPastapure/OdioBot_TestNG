@@ -1,3 +1,7 @@
 14:49:18.556 [main] INFO  testCases.LoginTest - *** Starting test case verityCorrectLogin ***
+<<<<<<< HEAD
 18:24:25.498 [main] INFO  testCases.LoginTest - *** Starting test case verityCorrectLogin ***
 16:27:08.412 [main] INFO  testCases.LoginTest - *** Starting test case verityCorrectLogin ***
+=======
+15:43:11.464 [main] INFO  testCases.LoginTest - *** Starting test case verityCorrectLogin ***
+>>>>>>> f70a29d3803beadce36eac214b2ff5acd91a82b8
