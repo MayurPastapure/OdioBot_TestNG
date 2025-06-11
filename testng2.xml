@@ -4,6 +4,6 @@
   <test thread-count="5" name="Login">
     <classes>
       <class name="OdioBot_LoginTC.LoginTest"/>
-    </classes>
+    </classes> 
   </test> <!-- Login -->
 </suite> <!-- LoginTC -->
