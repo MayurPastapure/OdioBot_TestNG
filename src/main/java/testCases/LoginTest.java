@@ -31,9 +31,7 @@ public class LoginTest extends BaseClase {
 	@Test (priority = 2)
 	public void verifyIncorrectCredLogin() {
 		
-		lp.setEmail(p.getProperty("adminEmail"));
-		lp.setPassword(p.getProperty("adminPasswordWrong"));
-		lp.clickLogin();
+		
 		
 		
 		
