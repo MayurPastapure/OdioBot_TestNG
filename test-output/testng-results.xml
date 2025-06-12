@@ -2,48 +2,48 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-12T11:23:53 IST" name="Suite" finished-at="2025-06-12T11:24:12 IST" duration-ms="18369">
+  <suite started-at="2025-06-12T11:37:57 IST" name="Suite" finished-at="2025-06-12T11:38:18 IST" duration-ms="20880">
     <groups>
     </groups>
-    <test started-at="2025-06-12T11:23:53 IST" name="Test" finished-at="2025-06-12T11:24:12 IST" duration-ms="18369">
+    <test started-at="2025-06-12T11:37:57 IST" name="Test" finished-at="2025-06-12T11:38:18 IST" duration-ms="20880">
       <class name="testCases.LoginTest">
-        <test-method is-config="true" signature="browserLounching()[pri:0, instance:testCases.LoginTest@6221a451]" started-at="2025-06-12T11:23:53 IST" name="browserLounching" finished-at="2025-06-12T11:24:05 IST" duration-ms="11950" status="PASS">
+        <test-method is-config="true" signature="browserLounching()[pri:0, instance:testCases.LoginTest@6221a451]" started-at="2025-06-12T11:37:58 IST" name="browserLounching" finished-at="2025-06-12T11:38:12 IST" duration-ms="14000" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLounching -->
-        <test-method is-config="true" signature="setupPageObjects()[pri:0, instance:testCases.LoginTest@6221a451]" started-at="2025-06-12T11:24:05 IST" name="setupPageObjects" finished-at="2025-06-12T11:24:05 IST" duration-ms="43" status="PASS">
+        <test-method is-config="true" signature="setupPageObjects()[pri:0, instance:testCases.LoginTest@6221a451]" started-at="2025-06-12T11:38:12 IST" name="setupPageObjects" finished-at="2025-06-12T11:38:12 IST" duration-ms="38" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPageObjects -->
-        <test-method signature="verifyIncorrectCredLogin()[pri:1, instance:testCases.LoginTest@6221a451]" started-at="2025-06-12T11:24:05 IST" name="verifyIncorrectCredLogin" finished-at="2025-06-12T11:24:08 IST" duration-ms="2171" status="PASS">
+        <test-method signature="verifyIncorrectCredLogin()[pri:1, instance:testCases.LoginTest@6221a451]" started-at="2025-06-12T11:38:12 IST" name="verifyIncorrectCredLogin" finished-at="2025-06-12T11:38:14 IST" duration-ms="2598" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyIncorrectCredLogin -->
-        <test-method is-config="true" signature="setupPageObjects()[pri:0, instance:testCases.LoginTest@6221a451]" started-at="2025-06-12T11:24:08 IST" name="setupPageObjects" finished-at="2025-06-12T11:24:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupPageObjects()[pri:0, instance:testCases.LoginTest@6221a451]" started-at="2025-06-12T11:38:14 IST" name="setupPageObjects" finished-at="2025-06-12T11:38:14 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPageObjects -->
-        <test-method signature="verifyBlankEmailLogin()[pri:2, instance:testCases.LoginTest@6221a451]" started-at="2025-06-12T11:24:08 IST" name="verifyBlankEmailLogin" finished-at="2025-06-12T11:24:08 IST" duration-ms="523" status="PASS">
+        <test-method signature="verifyBlankEmailLogin()[pri:2, instance:testCases.LoginTest@6221a451]" started-at="2025-06-12T11:38:14 IST" name="verifyBlankEmailLogin" finished-at="2025-06-12T11:38:15 IST" duration-ms="520" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBlankEmailLogin -->
-        <test-method is-config="true" signature="setupPageObjects()[pri:0, instance:testCases.LoginTest@6221a451]" started-at="2025-06-12T11:24:08 IST" name="setupPageObjects" finished-at="2025-06-12T11:24:08 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="setupPageObjects()[pri:0, instance:testCases.LoginTest@6221a451]" started-at="2025-06-12T11:38:15 IST" name="setupPageObjects" finished-at="2025-06-12T11:38:15 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPageObjects -->
-        <test-method signature="verifyBlankPasswordLogin()[pri:3, instance:testCases.LoginTest@6221a451]" started-at="2025-06-12T11:24:08 IST" name="verifyBlankPasswordLogin" finished-at="2025-06-12T11:24:09 IST" duration-ms="1188" status="PASS">
+        <test-method signature="verifyBlankPasswordLogin()[pri:3, instance:testCases.LoginTest@6221a451]" started-at="2025-06-12T11:38:15 IST" name="verifyBlankPasswordLogin" finished-at="2025-06-12T11:38:16 IST" duration-ms="1195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBlankPasswordLogin -->
-        <test-method is-config="true" signature="setupPageObjects()[pri:0, instance:testCases.LoginTest@6221a451]" started-at="2025-06-12T11:24:09 IST" name="setupPageObjects" finished-at="2025-06-12T11:24:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupPageObjects()[pri:0, instance:testCases.LoginTest@6221a451]" started-at="2025-06-12T11:38:16 IST" name="setupPageObjects" finished-at="2025-06-12T11:38:16 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPageObjects -->
-        <test-method signature="verifyCorrectCredLogin()[pri:4, instance:testCases.LoginTest@6221a451]" started-at="2025-06-12T11:24:09 IST" name="verifyCorrectCredLogin" finished-at="2025-06-12T11:24:11 IST" duration-ms="2104" status="PASS">
+        <test-method signature="verifyCorrectCredLogin()[pri:4, instance:testCases.LoginTest@6221a451]" started-at="2025-06-12T11:38:16 IST" name="verifyCorrectCredLogin" finished-at="2025-06-12T11:38:18 IST" duration-ms="2112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCorrectCredLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTest@6221a451]" started-at="2025-06-12T11:24:11 IST" name="tearDown" finished-at="2025-06-12T11:24:12 IST" duration-ms="310" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTest@6221a451]" started-at="2025-06-12T11:38:18 IST" name="tearDown" finished-at="2025-06-12T11:38:18 IST" duration-ms="313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
