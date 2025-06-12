@@ -12,25 +12,25 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 
-public class BaseClase {
+public class BaseClass {
 
-	public WebDriver driver;
-	public Logger logger;
-	public Properties p;
-	public WebDriverWait wait;
+	public static WebDriver driver;
+	public static WebDriverWait wait;
+	public static Properties p;
+	public static Logger logger;
 
-	@BeforeClass
+	@BeforeSuite
 	public void browserLounching() throws IOException {
 		FileReader file = new FileReader("./src//main//resources//config.properties");
 		p = new Properties();
 		p.load(file);
-		
-		String browser = p.getProperty("browser");
 
-		logger = LogManager.getLogger(this.getClass());
+		logger = LogManager.getLogger(BaseClass.class);
+
+		String browser = p.getProperty("browser");
 
 		switch (browser.toLowerCase()) {
 		case "chrome":
@@ -52,13 +52,15 @@ public class BaseClase {
 
 		driver.get(p.getProperty("qaURL"));
 		driver.manage().window().maximize();
-		
+
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 	}
 
-	@AfterClass
+	@AfterSuite
 	public void tearDown() {
-		driver.quit();
+		if (driver != null) {
+			driver.quit();
+		}
 	}
 }

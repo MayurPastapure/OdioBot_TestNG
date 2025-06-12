@@ -3,15 +3,14 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.LoginTest">
+      <class name="testCases.WorkflowTest">
         <methods>
-          <include name="setupPageObjects"/>
-          <include name="browserLounching"/>
-          <include name="verifyCorrectCredLogin"/>
-          <include name="verifyBlankPasswordLogin"/>
           <include name="tearDown"/>
+          <include name="verifyMyWorkflows"/>
+          <include name="browserLounching"/>
+          <include name="setupWorkflowObjects"/>
         </methods>
-      </class> <!-- testCases.LoginTest -->
+      </class> <!-- testCases.WorkflowTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

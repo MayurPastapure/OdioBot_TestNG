@@ -11,10 +11,10 @@ public class LoginPage extends BasePage {
 	}
 
 	@FindBy(xpath = "//input[@name ='email']")
-	WebElement txtEmail;
+	WebElement inpEmail;
 
 	@FindBy(xpath = "//input[@name ='password']")
-	WebElement txtPassword;
+	WebElement inpPassword;
 
 	@FindBy(xpath = "//button[@type ='submit']")
 	WebElement btnLogin;
@@ -31,13 +31,13 @@ public class LoginPage extends BasePage {
 	
 	
 	public void setEmail(String email) {
-		txtEmail.clear();
-		txtEmail.sendKeys(email);
+		inpEmail.clear();
+		inpEmail.sendKeys(email);
 	}
 
 	public void setPassword(String password) {
-		txtPassword.clear();
-		txtPassword.sendKeys(password);
+		inpPassword.clear();
+		inpPassword.sendKeys(password);
 	}
 
 	public void clickLogin() {
@@ -45,8 +45,8 @@ public class LoginPage extends BasePage {
 	}
 
 	public void clearField() {
-		txtEmail.clear();
-		txtPassword.clear();
+		inpEmail.clear();
+		inpPassword.clear();
 	
 	}
 	public void refreshPage() {

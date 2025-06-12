@@ -4,7 +4,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
   <groupId>OdioBot_TestNG</groupId>
   <artifactId>OdioBot_TestNG</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
   <dependencies>
 	
 	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -80,16 +79,5 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
 </dependency>
 
 
-  	<dependency>
-  		<groupId>CollectXpress</groupId>
-  		<artifactId>CollectXpress</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>OdioBDD</groupId>
-  		<artifactId>OdioBDD</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
   </dependencies>
-  
 </project>

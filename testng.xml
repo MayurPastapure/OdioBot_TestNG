@@ -6,6 +6,8 @@
 	
     <classes>
       <class name="testCases.LoginTest"/>
+      <class name="testCases.HomeTest"/>
+      <class name="testCases.WorkflowTest"/>
       
     </classes>
   </test> <!-- Test -->
