@@ -51,20 +51,22 @@ public class LoginPage extends BaseLibrary{
 		  act.moveToElement(move).build().perform();
 		
 	}
-	public void getwfclick()
+	public void getwfclick() throws InterruptedException
 	{
 		wfclick.click();
+		Thread.sleep(5000);
 		
 	}
-	
-//	public void getaddwfbtn()
-//	{
-//		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
-//		
-//		WebElement myWorkflow = driver.findElement(By.xpath("//*[text()='My Workflows']"));
-//		 wait.until(ExpectedConditions.visibilityOf(myWorkflow)).click();
+
+	public void getaddwfbtn()
+	{
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		
+		WebElement myWorkflow = driver.findElement(By.xpath("//*[text()='My Workflows']"));
+		 wait.until(ExpectedConditions.visibilityOf(myWorkflow)).click();
 //		 WebElement BtnAddWorkFlow = driver.findElement(By.xpath("//*[text()='+ Add Workflow']"));
 //		 WebElement element = wait.until(ExpectedConditions.elementToBeClickable(BtnAddWorkFlow));
 //		element.click();
-//	}
+//	
+	}	 
 }

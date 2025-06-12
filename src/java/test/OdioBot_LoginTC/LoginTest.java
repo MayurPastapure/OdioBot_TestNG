@@ -33,13 +33,14 @@ public class LoginTest extends BaseLibrary {
 		Thread.sleep(3000);
 	}
 	@Test(priority = 4)
-	public void wfclick()
+	public void wfclick() throws InterruptedException
 	{
 		obj1.getwfclick();
+		Thread.sleep(5000);
 	}
-//	@Test(priority = 5)
-//	public void addwfbtn()
-//	{
-//		obj1.getaddwfbtn();
-//	}
+	@Test(priority = 5)
+	public void addwfbtn()
+	{
+		obj1.getaddwfbtn();
+	}
 }

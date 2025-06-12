@@ -1,49 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2025-06-11T16:26:57 IST" name="Suite" finished-at="2025-06-11T16:27:09 IST" duration-ms="12043">
+  <suite started-at="2025-06-11T21:41:20 IST" name="LoginTC" finished-at="2025-06-11T21:41:54 IST" duration-ms="33843">
     <groups>
     </groups>
-    <test started-at="2025-06-11T16:26:57 IST" name="Test" finished-at="2025-06-11T16:27:09 IST" duration-ms="12043">
-      <class name="testCases.LoginTest">
-        <test-method is-config="true" signature="browserLounching(java.lang.String)[pri:0, instance:testCases.LoginTest@49438269]" started-at="2025-06-11T16:26:57 IST" name="browserLounching" finished-at="2025-06-11T16:27:08 IST" duration-ms="11268" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-06-11T21:41:20 IST" name="Login" finished-at="2025-06-11T21:41:54 IST" duration-ms="33843">
+      <class name="OdioBot_LoginTC.LoginTest">
+        <test-method is-config="true" signature="getLaunchUrl()[pri:0, instance:OdioBot_LoginTC.LoginTest@40005471]" started-at="2025-06-11T21:41:20 IST" name="getLaunchUrl" finished-at="2025-06-11T21:41:41 IST" duration-ms="21178" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserLounching -->
-        <test-method signature="verifyCorrectLogin()[pri:0, instance:testCases.LoginTest@49438269]" started-at="2025-06-11T16:27:08 IST" name="verifyCorrectLogin" finished-at="2025-06-11T16:27:08 IST" duration-ms="489" status="PASS">
+        </test-method> <!-- getLaunchUrl -->
+        <test-method signature="getTitle_odio()[pri:1, instance:OdioBot_LoginTC.LoginTest@40005471]" started-at="2025-06-11T21:41:41 IST" name="getTitle_odio" finished-at="2025-06-11T21:41:41 IST" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCorrectLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTest@49438269]" started-at="2025-06-11T16:27:08 IST" name="tearDown" finished-at="2025-06-11T16:27:09 IST" duration-ms="245" status="PASS">
-=======
-  <suite started-at="2025-06-11T16:26:45 IST" name="Suite" finished-at="2025-06-11T16:27:05 IST" duration-ms="19805">
-    <groups>
-    </groups>
-    <test started-at="2025-06-11T16:26:45 IST" name="Test" finished-at="2025-06-11T16:27:05 IST" duration-ms="19805">
-      <class name="testCases.LoginTest">
-        <test-method is-config="true" signature="browserLounching()[pri:0, instance:testCases.LoginTest@2e3967ea]" started-at="2025-06-11T16:26:45 IST" name="browserLounching" finished-at="2025-06-11T16:27:01 IST" duration-ms="16403" status="PASS">
+        </test-method> <!-- getTitle_odio -->
+        <test-method signature="getuserpass_odio()[pri:2, instance:OdioBot_LoginTC.LoginTest@40005471]" started-at="2025-06-11T21:41:41 IST" name="getuserpass_odio" finished-at="2025-06-11T21:41:50 IST" duration-ms="8914" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserLounching -->
-        <test-method signature="verifyCorrectLogin()[pri:0, instance:testCases.LoginTest@2e3967ea]" started-at="2025-06-11T16:27:01 IST" name="verifyCorrectLogin" finished-at="2025-06-11T16:27:04 IST" duration-ms="2590" status="PASS">
+        </test-method> <!-- getuserpass_odio -->
+        <test-method signature="gethoversidebar()[pri:3, instance:OdioBot_LoginTC.LoginTest@40005471]" started-at="2025-06-11T21:41:50 IST" name="gethoversidebar" finished-at="2025-06-11T21:41:54 IST" duration-ms="3267" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCorrectLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTest@2e3967ea]" started-at="2025-06-11T16:27:04 IST" name="tearDown" finished-at="2025-06-11T16:27:05 IST" duration-ms="753" status="PASS">
->>>>>>> f70a29d3803beadce36eac214b2ff5acd91a82b8
+        </test-method> <!-- gethoversidebar -->
+        <test-method signature="wfclick()[pri:4, instance:OdioBot_LoginTC.LoginTest@40005471]" started-at="2025-06-11T21:41:54 IST" name="wfclick" finished-at="2025-06-11T21:41:54 IST" duration-ms="342" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- wfclick -->
+      </class> <!-- OdioBot_LoginTC.LoginTest -->
+    </test> <!-- Login -->
+  </suite> <!-- LoginTC -->
 </testng-results>
