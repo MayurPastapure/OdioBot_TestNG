@@ -1,10 +1,8 @@
 package testCases;
 
-import static org.testng.Assert.ARRAY_MISMATCH_TEMPLATE;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import pageObjects.LoginPage;
@@ -12,13 +10,58 @@ import testBase.BaseClase;
 
 public class LoginTest extends BaseClase {
 
-	LoginPage lp = new LoginPage(driver);
+	LoginPage lp;
 
-	@Test (priority = 1)
+	@BeforeMethod
+	public void setupPageObjects() {
+		lp = new LoginPage(driver);
+	}
+
+	@Test(priority = 1)
+	public void verifyIncorrectCredLogin() {
+		logger.info("*** Starting test case verityInCorrectCredLogin ***");
+
+		lp.setEmail(p.getProperty("adminEmail"));
+		lp.setPassword(p.getProperty("adminPasswordWrong"));
+		lp.clickLogin();
+
+		String actLoginErrorMsg = lp.getErrorMessage();
+		Assert.assertEquals(actLoginErrorMsg, p.getProperty("ExpLoginErrorMsg"));
+
+	}
+
+	@Test(priority = 2)
+	public void verifyBlankEmailLogin() {
+		logger.info("*** Starting test case verityBlankEmailLogin ***");
+
+		lp.setEmail("");
+		lp.setPassword(p.getProperty("adminPassword"));
+		lp.clickLogin();
+
+		String actEmailReqMsg = lp.getEmailReqMsg();
+		Assert.assertEquals(actEmailReqMsg, p.getProperty("EmailReq"));
+
+	}
+
+	@Test(priority = 3)
+	public void verifyBlankPasswordLogin() {
+		logger.info("*** Starting test case verityBlankPasswordLogin ***");
+
+		lp.refreshPage();
+		lp.setEmail(p.getProperty("adminEmail"));
+		lp.setPassword("");
+		lp.clickLogin();
+
+		String actPasswordReqMsg = lp.getPasswordReqMsg();
+		Assert.assertEquals(actPasswordReqMsg, p.getProperty("PasswordReq"));
+
+	}
+
+	@Test(priority = 4)
 	public void verifyCorrectCredLogin() {
-		logger.info("*** Starting test case verityCorrectLogin ***");
+		logger.info("*** Starting test case verityCorrectCredLogin ***");
 
-		lp.clearField();
+		lp.refreshPage();
 		lp.setEmail(p.getProperty("adminEmail"));
 		lp.setPassword(p.getProperty("adminPassword"));
 		lp.clickLogin();
@@ -26,15 +69,6 @@ public class LoginTest extends BaseClase {
 		wait.until(ExpectedConditions.urlToBe(p.getProperty("dashboardUrl")));
 		Assert.assertEquals(driver.getCurrentUrl(), p.getProperty("dashboardUrl"), "Login failed: url mismatch.");
 
-	}
-	
-	@Test (priority = 2)
-	public void verifyIncorrectCredLogin() {
-		
-		
-		
-		
-		
 	}
 
 }

@@ -5,8 +5,10 @@
     <classes>
       <class name="testCases.LoginTest">
         <methods>
-          <include name="verifyCorrectLogin"/>
+          <include name="setupPageObjects"/>
           <include name="browserLounching"/>
+          <include name="verifyCorrectCredLogin"/>
+          <include name="verifyBlankPasswordLogin"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- testCases.LoginTest -->
