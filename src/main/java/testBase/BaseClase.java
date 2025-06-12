@@ -23,7 +23,6 @@ public class BaseClase {
 	public WebDriverWait wait;
 
 	@BeforeClass
-	
 	public void browserLounching() throws IOException {
 		FileReader file = new FileReader("./src//main//resources//config.properties");
 		p = new Properties();
