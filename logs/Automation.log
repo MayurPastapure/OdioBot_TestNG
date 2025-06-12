@@ -1,0 +1,8 @@
+15:08:46.038 [main] INFO  testCases.LoginTest - *** Starting test case verityInCorrectCredLogin ***
+15:08:49.507 [main] INFO  testCases.LoginTest - *** Starting test case verityBlankEmailLogin ***
+15:08:50.147 [main] INFO  testCases.LoginTest - *** Starting test case verityBlankPasswordLogin ***
+15:08:51.431 [main] INFO  testCases.LoginTest - *** Starting test case verityCorrectCredLogin ***
+15:28:19.315 [main] INFO  testCases.LoginTest - *** Starting test case verify InCorrectCredLogin ***
+15:28:22.146 [main] INFO  testCases.LoginTest - *** Starting test case verify BlankEmailLogin ***
+15:28:22.697 [main] INFO  testCases.LoginTest - *** Starting test case verify BlankPasswordLogin ***
+15:28:23.860 [main] INFO  testCases.LoginTest - *** Starting test case verify CorrectCredLogin ***
