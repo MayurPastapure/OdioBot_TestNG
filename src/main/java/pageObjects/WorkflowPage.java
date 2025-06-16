@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 
 public class WorkflowPage extends BasePage {
 
@@ -22,29 +23,105 @@ public class WorkflowPage extends BasePage {
 
 	@FindBy(xpath = "//*[text()='+ Add Workflow']")
 	WebElement btnAddWorkflow;
-	
+
 	@FindBy(xpath = "(//*[@placeholder='Enter a valid name'])[1]")
 	WebElement inpChatbotName;
-	
+
+	@FindBy(xpath = "(//*[@formcontrolname='organization_department_id'])[1]")
+	WebElement drpDepartments;
+
 	@FindBy(xpath = "(//*[@formcontrolname='product_id'])[1]")
 	WebElement drpProductType;
-	
-	
 
-	public void openMyWorkflowPage() {
+	@FindBy(xpath = "(//*[@formcontrolname='start_at'])[1]")
+	WebElement calStartAt;
+
+	@FindBy(xpath = "(//*[@formcontrolname='end_at'])[1]")
+	WebElement calEndAt;
+
+	@FindBy(xpath = "(//*[@id='submit'])[1]")
+	WebElement btnSubmit;
+
+	@FindBy(xpath = "//*[@class='toast-message ng-star-inserted']")
+	WebElement msgToastWorkflowCreate;
+
+	@FindBy(xpath = "//*[text()='Please Enter Chatbot Name']")
+	WebElement msgNullChatBotName;
+
+	@FindBy(xpath = "//*[text()='Please Select Department Id']")
+	WebElement msgNullDeptId;
+
+	@FindBy(xpath = "(//*[text()='Please Select Product type Id'])[1]")
+	WebElement msgNullProductType;
+
+	@FindBy(xpath = "(//*[@class='icon_cmn close_box ripplelink'])[1]")
+	WebElement btnCloseWorkflow;
+
+	@FindBy(xpath = "//*[@title='Home']")
+	WebElement btnWorkflowHome;
+
+	public void openMyWorkflowPage() throws InterruptedException {
 		odioIcon.click();
+		Thread.sleep(6000);
 		txtWorkflow.click();
 		driver.switchTo().frame(0);
 		wait.until(ExpectedConditions.visibilityOf(txtWorkflowTitle));
 	}
-	
+
 	public void openAddWorkflow() {
 		wait.until(ExpectedConditions.elementToBeClickable(btnAddWorkflow)).click();
 	}
-	
+
 	public void setChatbotName(String ChatbotName) {
 		wait.until(ExpectedConditions.visibilityOf(inpChatbotName)).sendKeys(ChatbotName);
-		
+	}
+
+	public void selectDepartment(String Departments) {
+		wait.until(ExpectedConditions.visibilityOf(drpDepartments));
+		Select sel = new Select(drpDepartments);
+		sel.selectByVisibleText(Departments);
+	}
+
+	public void selectProductType(String ProductType) {
+		wait.until(ExpectedConditions.visibilityOf(drpDepartments));
+		Select sel = new Select(drpProductType);
+		sel.selectByVisibleText(ProductType);
+	}
+
+	public void setStartAt(String StartAt) {
+		wait.until(ExpectedConditions.visibilityOf(calStartAt)).sendKeys(StartAt);
+	}
+
+	public void setEndAt(String EndAt) {
+		wait.until(ExpectedConditions.visibilityOf(calEndAt)).sendKeys(EndAt);
+	}
+
+	public void clickSubmit() {
+		wait.until(ExpectedConditions.visibilityOf(btnSubmit)).click();
+	}
+
+	public String getWorkflowToastMessage() {
+		return (wait.until(ExpectedConditions.visibilityOf(msgToastWorkflowCreate)).getText());
+	}
+
+	public String getChatbotErrorMsg() {
+		return (msgNullChatBotName.getText());
+	}
+
+	public String getDepartmentIdErrorMsg() {
+		return (msgNullDeptId.getText());
+	}
+
+	public String getProductTypeErrorMsg() {
+		return (msgNullProductType.getText());
+	}
+
+	public void clickCloseWorkflow() {
+		wait.until(ExpectedConditions.visibilityOf(btnCloseWorkflow)).click();
+	}
+
+	public void clickWorkflowHome() {
+		wait.until(ExpectedConditions.elementToBeClickable(btnWorkflowHome)).click();
 	}
 
 }

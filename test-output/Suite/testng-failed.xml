@@ -6,7 +6,7 @@
       <class name="testCases.WorkflowTest">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyMyWorkflows"/>
+          <include name="verifyDuplicateWorkflowCreation"/>
           <include name="browserLounching"/>
           <include name="setupWorkflowObjects"/>
         </methods>
