@@ -459,3 +459,67 @@
 17:53:46.029 [main] INFO  testBase.BaseClass - *** Verify test case NullProductType ***
 17:53:58.108 [main] INFO  testBase.BaseClass - *** Verify test case newWorkflowCreation ***
 17:54:21.783 [main] INFO  testBase.BaseClass - *** Verify test case DuplicateWorkflowCreation ***
+22:10:33.855 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+22:10:36.709 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+22:10:37.378 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+22:10:39.027 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+22:10:41.706 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+22:10:42.103 [main] INFO  testBase.BaseClass - *** Verifying test case verifyMyWorkflowPage navigation ***
+22:12:19.616 [main] INFO  testBase.BaseClass - *** Verify test case ResumeWorkflowWithoutNode ***
+23:06:59.845 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+23:07:02.364 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+23:07:03.151 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+23:07:04.701 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+23:07:07.377 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+23:07:07.972 [main] INFO  testBase.BaseClass - *** Verifying test case verifyMyWorkflowPage navigation ***
+23:07:48.863 [main] INFO  testBase.BaseClass - *** Verify test case ResumeWorkflowWithoutNode ***
+23:29:27.805 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+23:29:30.220 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+23:29:30.960 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+23:29:32.563 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+23:29:35.231 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+23:29:35.457 [main] INFO  testBase.BaseClass - *** Verifying test case verifyMyWorkflowPage navigation ***
+23:30:55.309 [main] INFO  testBase.BaseClass - *** Verify test case ResumeWorkflowWithoutNode ***
+23:46:21.161 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+23:46:23.505 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+23:46:24.296 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+23:46:25.871 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+23:46:28.408 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+23:46:28.645 [main] INFO  testBase.BaseClass - *** Verifying test case verifyMyWorkflowPage navigation ***
+23:47:26.110 [main] INFO  testBase.BaseClass - *** Verify test case ResumeWorkflowWithoutNode ***
+00:03:23.647 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+00:03:26.245 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+00:03:27.054 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+00:03:28.519 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+00:03:31.218 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+00:03:32.132 [main] INFO  testBase.BaseClass - *** Verifying test case verifyMyWorkflowPage navigation ***
+00:04:00.175 [main] INFO  testBase.BaseClass - *** Verify test case NullChatBotName ***
+00:04:01.701 [main] INFO  testBase.BaseClass - *** Verify test case NullDepartmentId ***
+00:04:03.499 [main] INFO  testBase.BaseClass - *** Verify test case NullProductType ***
+00:04:15.704 [main] INFO  testBase.BaseClass - *** Verify test case newWorkflowCreation ***
+00:04:39.177 [main] INFO  testBase.BaseClass - *** Verify test case DuplicateWorkflowCreation ***
+00:04:40.637 [main] INFO  testBase.BaseClass - *** Verify test case ResumeWorkflowWithoutNode ***
+00:07:38.698 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+00:07:41.540 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+00:07:42.208 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+00:07:43.797 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+00:07:46.256 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+00:07:47.087 [main] INFO  testBase.BaseClass - *** Verifying test case verifyMyWorkflowPage navigation ***
+00:08:25.695 [main] INFO  testBase.BaseClass - *** Verify test case NullChatBotName ***
+00:08:27.257 [main] INFO  testBase.BaseClass - *** Verify test case NullDepartmentId ***
+00:08:28.708 [main] INFO  testBase.BaseClass - *** Verify test case NullProductType ***
+00:08:40.976 [main] INFO  testBase.BaseClass - *** Verify test case newWorkflowCreation ***
+00:09:05.620 [main] INFO  testBase.BaseClass - *** Verify test case DuplicateWorkflowCreation ***
+00:09:29.202 [main] INFO  testBase.BaseClass - *** Verify test case ResumeWorkflowWithoutNode ***
+00:12:14.689 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+00:12:17.375 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+00:12:18.056 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+00:12:19.729 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+00:12:22.219 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+00:12:22.597 [main] INFO  testBase.BaseClass - *** Verifying test case verifyMyWorkflowPage navigation ***
+00:13:08.217 [main] INFO  testBase.BaseClass - *** Verify test case NullChatBotName ***
+00:13:09.669 [main] INFO  testBase.BaseClass - *** Verify test case NullDepartmentId ***
+00:13:11.394 [main] INFO  testBase.BaseClass - *** Verify test case NullProductType ***
+00:13:23.802 [main] INFO  testBase.BaseClass - *** Verify test case newWorkflowCreation ***
+00:13:48.280 [main] INFO  testBase.BaseClass - *** Verify test case DuplicateWorkflowCreation ***
+00:14:12.083 [main] INFO  testBase.BaseClass - *** Verify test case ResumeWorkflowWithoutNode ***

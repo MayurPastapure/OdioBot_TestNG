@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods,   11 passed</span>
+                    <span class="method-stats">12 methods,   12 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -155,6 +155,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.WorkflowTest" class="method navigator-link" hash-for-method="verifyNullProductType">verifyNullProductType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.WorkflowTest" class="method navigator-link" hash-for-method="verifyResumeWorkflowWithoutNode">verifyResumeWorkflowWithoutNode</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -268,6 +273,13 @@
                   <span class="method-name">verifyNullProductType</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResumeWorkflowWithoutNode">
+                  </a> <!-- verifyResumeWorkflowWithoutNode -->
+                  <span class="method-name">verifyResumeWorkflowWithoutNode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
@@ -280,6 +292,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utilities.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testCases.LoginTest&quot;/&gt;
@@ -324,51 +339,55 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(11);
+data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyNewWorkflowCreation')
+data.setCell(0, 1, 'verifyMyWorkflowsPage')
 data.setCell(0, 2, 'testCases.WorkflowTest')
-data.setCell(0, 3, 23671);
+data.setCell(0, 3, 45586);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyDuplicateWorkflowCreation')
+data.setCell(1, 1, 'verifyNewWorkflowCreation')
 data.setCell(1, 2, 'testCases.WorkflowTest')
-data.setCell(1, 3, 23291);
+data.setCell(1, 3, 24477);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyMyWorkflowsPage')
+data.setCell(2, 1, 'verifyDuplicateWorkflowCreation')
 data.setCell(2, 2, 'testCases.WorkflowTest')
-data.setCell(2, 3, 15908);
+data.setCell(2, 3, 23800);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyNullProductType')
 data.setCell(3, 2, 'testCases.WorkflowTest')
-data.setCell(3, 3, 12072);
+data.setCell(3, 3, 12395);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyCorrectCredLogin')
+data.setCell(4, 1, 'verifyIncorrectCredLogin')
 data.setCell(4, 2, 'testCases.LoginTest')
-data.setCell(4, 3, 2113);
+data.setCell(4, 3, 2694);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyIncorrectCredLogin')
+data.setCell(5, 1, 'verifyCorrectCredLogin')
 data.setCell(5, 2, 'testCases.LoginTest')
-data.setCell(5, 3, 2054);
+data.setCell(5, 3, 2438);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verifyNullDepartmentId')
 data.setCell(6, 2, 'testCases.WorkflowTest')
-data.setCell(6, 3, 1260);
+data.setCell(6, 3, 1721);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyNullChatBotName')
-data.setCell(7, 2, 'testCases.WorkflowTest')
-data.setCell(7, 3, 1235);
+data.setCell(7, 1, 'verifyBlankPasswordLogin')
+data.setCell(7, 2, 'testCases.LoginTest')
+data.setCell(7, 3, 1663);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyBlankPasswordLogin')
-data.setCell(8, 2, 'testCases.LoginTest')
-data.setCell(8, 3, 1169);
+data.setCell(8, 1, 'verifyNullChatBotName')
+data.setCell(8, 2, 'testCases.WorkflowTest')
+data.setCell(8, 3, 1459);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyBlankEmailLogin')
-data.setCell(9, 2, 'testCases.LoginTest')
-data.setCell(9, 3, 574);
+data.setCell(9, 1, 'verifyResumeWorkflowWithoutNode')
+data.setCell(9, 2, 'testCases.WorkflowTest')
+data.setCell(9, 3, 1324);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyHomeCardsVisibility')
-data.setCell(10, 2, 'testCases.HomeTest')
-data.setCell(10, 3, 237);
+data.setCell(10, 1, 'verifyBlankEmailLogin')
+data.setCell(10, 2, 'testCases.LoginTest')
+data.setCell(10, 3, 664);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyHomeCardsVisibility')
+data.setCell(11, 2, 'testCases.HomeTest')
+data.setCell(11, 3, 375);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -388,14 +407,12 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">testCases.WorkflowTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
                 <span class="ignored-method-name">browserLounching</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -403,8 +420,6 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">testCases.HomeTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
                 <span class="ignored-method-name">browserLounching</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -424,105 +439,106 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setupLoginPageObjects</span>
-                <span class="method-start">12489 ms</span>
+                <span class="method-start">16225 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyIncorrectCredLogin</span>
-                <span class="method-start">12519 ms</span>
+                <span class="method-start">16288 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupLoginPageObjects</span>
-                <span class="method-start">14580 ms</span>
+                <span class="method-start">18991 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyBlankEmailLogin</span>
-                <span class="method-start">14581 ms</span>
+                <span class="method-start">18992 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupLoginPageObjects</span>
-                <span class="method-start">15156 ms</span>
+                <span class="method-start">19659 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyBlankPasswordLogin</span>
-                <span class="method-start">15159 ms</span>
+                <span class="method-start">19661 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupLoginPageObjects</span>
-                <span class="method-start">16330 ms</span>
+                <span class="method-start">21340 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyCorrectCredLogin</span>
-                <span class="method-start">16331 ms</span>
+                <span class="method-start">21342 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.HomeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setupHomePageObjects</span>
-                <span class="method-start">18447 ms</span>
+                <span class="method-start">23792 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyHomeCardsVisibility</span>
-                <span class="method-start">18461 ms</span>
+                <span class="method-start">23830 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.WorkflowTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setupWorkflowObjects</span>
-                <span class="method-start">18704 ms</span>
+                <span class="method-start">24209 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyMyWorkflowsPage</span>
-                <span class="method-start">18708 ms</span>
+                <span class="method-start">24214 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupWorkflowObjects</span>
-                <span class="method-start">34617 ms</span>
+                <span class="method-start">69821 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyNullChatBotName</span>
-                <span class="method-start">34619 ms</span>
+                <span class="method-start">69825 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupWorkflowObjects</span>
-                <span class="method-start">35861 ms</span>
+                <span class="method-start">71286 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyNullDepartmentId</span>
-                <span class="method-start">35862 ms</span>
+                <span class="method-start">71287 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupWorkflowObjects</span>
-                <span class="method-start">37126 ms</span>
+                <span class="method-start">73010 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyNullProductType</span>
-                <span class="method-start">37128 ms</span>
+                <span class="method-start">73012 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupWorkflowObjects</span>
-                <span class="method-start">49204 ms</span>
+                <span class="method-start">85410 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyNewWorkflowCreation</span>
-                <span class="method-start">49207 ms</span>
+                <span class="method-start">85411 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupWorkflowObjects</span>
-                <span class="method-start">72881 ms</span>
+                <span class="method-start">109892 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyDuplicateWorkflowCreation</span>
-                <span class="method-start">72883 ms</span>
+                <span class="method-start">109897 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.LoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-suite after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">96215 ms</span>
-              </div> <!-- configuration-suite after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupWorkflowObjects</span>
+                <span class="method-start">133699 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyResumeWorkflowWithoutNode</span>
+                <span class="method-start">133701 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

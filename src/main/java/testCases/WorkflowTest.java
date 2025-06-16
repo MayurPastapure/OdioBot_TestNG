@@ -3,11 +3,14 @@ package testCases;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import pageObjects.WorkflowPage;
 import testBase.BaseClass;
+import utilities.TestListener;
 
+@Listeners(TestListener.class)
 public class WorkflowTest extends BaseClass {
 
 	WorkflowPage wp;
@@ -87,6 +90,16 @@ public class WorkflowTest extends BaseClass {
 		wp.clickSubmit();
 		String actUniqueNameMsg = wp.getWorkflowToastMessage();
 		Assert.assertEquals(actUniqueNameMsg, p.getProperty("expUniqueNameMsg"));
+		wp.clickCloseWorkflow();
+	}
+
+	@Test(priority = 7)
+	public void verifyResumeWorkflowWithoutNode() {
+		logger.info("*** Verify test case ResumeWorkflowWithoutNode ***");
+		wp.clickResumeWorkflowByName(p.getProperty("workflowName"));
+		String actResumeWorkflowErrorMsg = wp.getWorkflowToastMessage();
+		Assert.assertEquals(actResumeWorkflowErrorMsg, p.getProperty("expResumeWorkflowError"));
+
 	}
 
 }

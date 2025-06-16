@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,7 +12,8 @@ public class WorkflowPage extends BasePage {
 	public WorkflowPage(WebDriver driver) {
 		super(driver);
 	}
-
+ 
+	
 	@FindBy(xpath = "//*[@class='MuiStack-root css-1ialerq']")
 	WebElement odioIcon;
 
@@ -62,7 +64,7 @@ public class WorkflowPage extends BasePage {
 
 	public void openMyWorkflowPage() throws InterruptedException {
 		odioIcon.click();
-		Thread.sleep(6000);
+		Thread.sleep(5000);
 		txtWorkflow.click();
 		driver.switchTo().frame(0);
 		wait.until(ExpectedConditions.visibilityOf(txtWorkflowTitle));
@@ -123,5 +125,26 @@ public class WorkflowPage extends BasePage {
 	public void clickWorkflowHome() {
 		wait.until(ExpectedConditions.elementToBeClickable(btnWorkflowHome)).click();
 	}
+	
+	public void clickResumeWorkflowByName(String workflowName) {
+	    String dynamicXpath = "//li//span[text()='" + workflowName + "']//ancestor::li//i[@title='Resume this workflow']";
+	    WebElement btnResumeWorkflow = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(dynamicXpath)));
+	    wait.until(ExpectedConditions.elementToBeClickable(btnResumeWorkflow)).click();
+	}
+	
+	public void clickEditWorkflowByName(String workflowName) {
+	    String dynamicXpath = "//li//span[text()='" + workflowName + "']//ancestor::li//i[@title='Edit this workflow']";
+	    WebElement btnEditWorkflow = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(dynamicXpath)));
+	    wait.until(ExpectedConditions.elementToBeClickable(btnEditWorkflow)).click();
+	}
+	
+	public void clickDeleteWorkflowByName(String workflowName) {
+	    String dynamicXpath = "//li//span[text()='" + workflowName + "']//ancestor::li//i[@title='Delete this workflow']";
+	    WebElement btnDeleteWorkflow = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(dynamicXpath)));
+//	    JavascriptExecutor js = (JavascriptExecutor)driver;
+//	    js.executeScript("arguments[0].scrollIntoView(true);", btnDeleteWorkflow);
+	    wait.until(ExpectedConditions.elementToBeClickable(btnDeleteWorkflow)).click();
+	}
+	
 
 }

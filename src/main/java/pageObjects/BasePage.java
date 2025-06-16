@@ -19,6 +19,7 @@ public class BasePage {
 		PageFactory.initElements(driver, this);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		p = new Properties();
+	
 	}
 
 }

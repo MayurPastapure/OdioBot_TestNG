@@ -2,11 +2,14 @@ package testCases;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import pageObjects.HomePage;
 import testBase.BaseClass;
+import utilities.TestListener;
 
+@Listeners(TestListener.class)
 public class HomeTest extends BaseClass {
 
 	HomePage hp;
