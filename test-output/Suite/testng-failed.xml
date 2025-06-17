@@ -8,8 +8,8 @@
     <classes>
       <class name="testCases.WorkflowTest">
         <methods>
-          <include name="verifyResumeWorkflowWithoutNode"/>
           <include name="browserLounching"/>
+          <include name="verifyDeleteWorkflowByName"/>
           <include name="setupWorkflowObjects"/>
         </methods>
       </class> <!-- testCases.WorkflowTest -->

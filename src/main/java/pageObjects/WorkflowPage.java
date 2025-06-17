@@ -1,6 +1,7 @@
 package pageObjects;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,8 +13,7 @@ public class WorkflowPage extends BasePage {
 	public WorkflowPage(WebDriver driver) {
 		super(driver);
 	}
- 
-	
+
 	@FindBy(xpath = "//*[@class='MuiStack-root css-1ialerq']")
 	WebElement odioIcon;
 
@@ -29,6 +29,9 @@ public class WorkflowPage extends BasePage {
 	@FindBy(xpath = "(//*[@placeholder='Enter a valid name'])[1]")
 	WebElement inpChatbotName;
 
+	@FindBy(xpath = "(//*[@placeholder='Enter a valid name'])[2]")
+	WebElement inpChatbotNameEdit;
+
 	@FindBy(xpath = "(//*[@formcontrolname='organization_department_id'])[1]")
 	WebElement drpDepartments;
 
@@ -43,6 +46,9 @@ public class WorkflowPage extends BasePage {
 
 	@FindBy(xpath = "(//*[@id='submit'])[1]")
 	WebElement btnSubmit;
+
+	@FindBy(xpath = "(//*[@id='submit'])[2]")
+	WebElement btnSubmitEdit;
 
 	@FindBy(xpath = "//*[@class='toast-message ng-star-inserted']")
 	WebElement msgToastWorkflowCreate;
@@ -62,6 +68,9 @@ public class WorkflowPage extends BasePage {
 	@FindBy(xpath = "//*[@title='Home']")
 	WebElement btnWorkflowHome;
 
+	@FindBy(xpath = "//button[text()='Yes']")
+	WebElement btnYesDeleteConfirm;
+
 	public void openMyWorkflowPage() throws InterruptedException {
 		odioIcon.click();
 		Thread.sleep(5000);
@@ -74,8 +83,21 @@ public class WorkflowPage extends BasePage {
 		wait.until(ExpectedConditions.elementToBeClickable(btnAddWorkflow)).click();
 	}
 
-	public void setChatbotName(String ChatbotName) {
-		wait.until(ExpectedConditions.visibilityOf(inpChatbotName)).sendKeys(ChatbotName);
+	public void setChatbotName(String chatbotName) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpChatbotName));
+		element.clear();
+		element.sendKeys(chatbotName);
+	}
+
+	public void setChatbotNameEdit(String chatbotName) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpChatbotNameEdit));
+		element.click();
+		element.clear();
+		if (!element.getAttribute("value").isEmpty()) {
+			element.sendKeys(Keys.CONTROL + "a");
+			element.sendKeys(Keys.DELETE);
+		}
+		element.sendKeys(chatbotName);
 	}
 
 	public void selectDepartment(String Departments) {
@@ -99,7 +121,11 @@ public class WorkflowPage extends BasePage {
 	}
 
 	public void clickSubmit() {
-		wait.until(ExpectedConditions.visibilityOf(btnSubmit)).click();
+		wait.until(ExpectedConditions.elementToBeClickable(btnSubmit)).click();
+	}
+
+	public void clickSubmitEdit() {
+		wait.until(ExpectedConditions.elementToBeClickable(btnSubmitEdit)).click();
 	}
 
 	public String getWorkflowToastMessage() {
@@ -119,32 +145,35 @@ public class WorkflowPage extends BasePage {
 	}
 
 	public void clickCloseWorkflow() {
-		wait.until(ExpectedConditions.visibilityOf(btnCloseWorkflow)).click();
+		wait.until(ExpectedConditions.elementToBeClickable(btnCloseWorkflow)).click();
 	}
 
 	public void clickWorkflowHome() {
 		wait.until(ExpectedConditions.elementToBeClickable(btnWorkflowHome)).click();
 	}
-	
+
 	public void clickResumeWorkflowByName(String workflowName) {
-	    String dynamicXpath = "//li//span[text()='" + workflowName + "']//ancestor::li//i[@title='Resume this workflow']";
-	    WebElement btnResumeWorkflow = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(dynamicXpath)));
-	    wait.until(ExpectedConditions.elementToBeClickable(btnResumeWorkflow)).click();
+		String dynamicXpath = "//li//span[text()='" + workflowName
+				+ "']//ancestor::li//i[@title='Resume this workflow']";
+		WebElement btnResumeWorkflow = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(dynamicXpath)));
+		wait.until(ExpectedConditions.elementToBeClickable(btnResumeWorkflow)).click();
 	}
-	
+
 	public void clickEditWorkflowByName(String workflowName) {
-	    String dynamicXpath = "//li//span[text()='" + workflowName + "']//ancestor::li//i[@title='Edit this workflow']";
-	    WebElement btnEditWorkflow = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(dynamicXpath)));
-	    wait.until(ExpectedConditions.elementToBeClickable(btnEditWorkflow)).click();
+		String dynamicXpath = "//li//span[@*='" + workflowName + "']//ancestor::li//i[@title='Edit this workflow']";
+		WebElement btnEditWorkflow = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(dynamicXpath)));
+		wait.until(ExpectedConditions.elementToBeClickable(btnEditWorkflow)).click();
+		wait.until(ExpectedConditions.visibilityOf(inpChatbotNameEdit));
 	}
-	
+
 	public void clickDeleteWorkflowByName(String workflowName) {
-	    String dynamicXpath = "//li//span[text()='" + workflowName + "']//ancestor::li//i[@title='Delete this workflow']";
-	    WebElement btnDeleteWorkflow = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(dynamicXpath)));
-//	    JavascriptExecutor js = (JavascriptExecutor)driver;
-//	    js.executeScript("arguments[0].scrollIntoView(true);", btnDeleteWorkflow);
-	    wait.until(ExpectedConditions.elementToBeClickable(btnDeleteWorkflow)).click();
+		String dynamicXpath = "//li//span[@*='" + workflowName + "']//ancestor::li//i[@title='Delete this workflow']";
+		WebElement btnDeleteWorkflow = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(dynamicXpath)));
+		wait.until(ExpectedConditions.elementToBeClickable(btnDeleteWorkflow)).click();
 	}
-	
+
+	public void clickYesDeleteConfirm() {
+		wait.until(ExpectedConditions.elementToBeClickable(btnYesDeleteConfirm)).click();
+	}
 
 }

@@ -11,13 +11,11 @@ public class TestListener implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		// Get the driver from BaseClass
+
 		WebDriver driver = BaseClass.driver;
 
-		// Get the test method name
 		String testName = result.getMethod().getMethodName();
 
-		// Capture screenshot
 		ScreenshotUtil.captureScreenshot(driver, testName);
 	}
 

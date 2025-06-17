@@ -99,7 +99,25 @@ public class WorkflowTest extends BaseClass {
 		wp.clickResumeWorkflowByName(p.getProperty("workflowName"));
 		String actResumeWorkflowErrorMsg = wp.getWorkflowToastMessage();
 		Assert.assertEquals(actResumeWorkflowErrorMsg, p.getProperty("expResumeWorkflowError"));
+	}
 
+	@Test(priority = 8)
+	public void verifyEditWorkflowOnlyName() {
+		logger.info("*** Verify test case EditWorkflowOnlyName ***");
+		wp.clickEditWorkflowByName(p.getProperty("workflowName"));
+		wp.setChatbotNameEdit(p.getProperty("updateWorkflowName"));
+		wp.clickSubmitEdit();
+		String actEditWorkflowMsg = wp.getWorkflowToastMessage();
+		Assert.assertEquals(actEditWorkflowMsg, p.getProperty("expEditWorkflowMsg"));
+	}
+
+	@Test(priority = 9)
+	public void verifyDeleteWorkflowByName() {
+		logger.info("*** Verify test case DeleteWorkflowByName ***");
+		wp.clickDeleteWorkflowByName(p.getProperty("updateWorkflowName"));
+		wp.clickYesDeleteConfirm();
+		String actDeleteWorkflowMsg = wp.getWorkflowToastMessage();
+		Assert.assertEquals(actDeleteWorkflowMsg, p.getProperty("expDeleteWorkflowMsg"));
 	}
 
 }
