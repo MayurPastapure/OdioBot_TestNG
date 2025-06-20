@@ -3,14 +3,11 @@ package testCases;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import pageObjects.WorkflowPage;
 import testBase.BaseClass;
-import utilities.TestListener;
 
-@Listeners(TestListener.class)
 public class WorkflowTest extends BaseClass {
 
 	WorkflowPage wp;
@@ -22,7 +19,7 @@ public class WorkflowTest extends BaseClass {
 
 	@Test(priority = 1)
 	public void verifyMyWorkflowsPage() throws InterruptedException {
-		logger.info("*** Verifying test case verifyMyWorkflowPage navigation ***");
+		logger.info("*** Verifying test case: verifyMyWorkflowPage navigation ***");
 		wp.openMyWorkflowPage();
 		wait.until(ExpectedConditions.urlToBe(p.getProperty("workflowUrl")));
 		Assert.assertEquals(driver.getCurrentUrl(), p.getProperty("workflowUrl"),
@@ -31,7 +28,7 @@ public class WorkflowTest extends BaseClass {
 
 	@Test(priority = 2)
 	public void verifyNullChatBotName() {
-		logger.info("*** Verify test case NullChatBotName ***");
+		logger.info("*** Verify test case: NullChatBotName ***");
 		wp.openAddWorkflow();
 
 		wp.clickSubmit();
@@ -42,7 +39,7 @@ public class WorkflowTest extends BaseClass {
 
 	@Test(priority = 3)
 	public void verifyNullDepartmentId() {
-		logger.info("*** Verify test case NullDepartmentId ***");
+		logger.info("*** Verify test case: NullDepartmentId ***");
 		wp.openAddWorkflow();
 		wp.setChatbotName(p.getProperty("ChatbotName"));
 		wp.clickSubmit();
@@ -53,7 +50,7 @@ public class WorkflowTest extends BaseClass {
 
 	@Test(priority = 4)
 	public void verifyNullProductType() {
-		logger.info("*** Verify test case NullProductType ***");
+		logger.info("*** Verify test case: NullProductType ***");
 		wp.openAddWorkflow();
 		wp.setChatbotName(p.getProperty("ChatbotName"));
 		wp.selectDepartment(p.getProperty("Departments"));
@@ -65,7 +62,7 @@ public class WorkflowTest extends BaseClass {
 
 	@Test(priority = 5)
 	public void verifyNewWorkflowCreation() {
-		logger.info("*** Verify test case newWorkflowCreation ***");
+		logger.info("*** Verify test case: newWorkflowCreation ***");
 		wp.openAddWorkflow();
 		wp.setChatbotName(p.getProperty("ChatbotName"));
 		wp.selectDepartment(p.getProperty("Departments"));
@@ -80,7 +77,7 @@ public class WorkflowTest extends BaseClass {
 
 	@Test(priority = 6)
 	public void verifyDuplicateWorkflowCreation() {
-		logger.info("*** Verify test case DuplicateWorkflowCreation ***");
+		logger.info("*** Verify test case: DuplicateWorkflowCreation ***");
 		wp.openAddWorkflow();
 		wp.setChatbotName(p.getProperty("ChatbotName"));
 		wp.selectDepartment(p.getProperty("Departments"));
@@ -95,7 +92,7 @@ public class WorkflowTest extends BaseClass {
 
 	@Test(priority = 7)
 	public void verifyResumeWorkflowWithoutNode() {
-		logger.info("*** Verify test case ResumeWorkflowWithoutNode ***");
+		logger.info("*** Verify test case: ResumeWorkflowWithoutNode ***");
 		wp.clickResumeWorkflowByName(p.getProperty("workflowName"));
 		String actResumeWorkflowErrorMsg = wp.getWorkflowToastMessage();
 		Assert.assertEquals(actResumeWorkflowErrorMsg, p.getProperty("expResumeWorkflowError"));
@@ -103,7 +100,7 @@ public class WorkflowTest extends BaseClass {
 
 	@Test(priority = 8)
 	public void verifyEditWorkflowOnlyName() {
-		logger.info("*** Verify test case EditWorkflowOnlyName ***");
+		logger.info("*** Verify test case: EditWorkflowOnlyName ***");
 		wp.clickEditWorkflowByName(p.getProperty("workflowName"));
 		wp.setChatbotNameEdit(p.getProperty("updateWorkflowName"));
 		wp.clickSubmitEdit();
@@ -113,7 +110,7 @@ public class WorkflowTest extends BaseClass {
 
 	@Test(priority = 9)
 	public void verifyDeleteWorkflowByName() {
-		logger.info("*** Verify test case DeleteWorkflowByName ***");
+		logger.info("*** Verify test case: DeleteWorkflowByName ***");
 		wp.clickDeleteWorkflowByName(p.getProperty("updateWorkflowName"));
 		wp.clickYesDeleteConfirm();
 		String actDeleteWorkflowMsg = wp.getWorkflowToastMessage();

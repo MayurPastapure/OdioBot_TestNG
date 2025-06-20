@@ -6,13 +6,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.WorkflowTest">
+      <class name="testCases.DepartmentsTest">
         <methods>
+          <include name="verifyNullDepartmentName"/>
+          <include name="setupDepartmentsObjectd"/>
+          <include name="verifyPageIsDepartmentsPage"/>
           <include name="browserLounching"/>
-          <include name="verifyDeleteWorkflowByName"/>
-          <include name="setupWorkflowObjects"/>
+          <include name="verifyNullDepartmentDescription"/>
         </methods>
-      </class> <!-- testCases.WorkflowTest -->
+      </class> <!-- testCases.DepartmentsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -3,14 +3,11 @@ package testCases;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import pageObjects.LoginPage;
 import testBase.BaseClass;
-import utilities.TestListener;
 
-@Listeners(TestListener.class)
 public class LoginTest extends BaseClass {
 
 	LoginPage lp;
