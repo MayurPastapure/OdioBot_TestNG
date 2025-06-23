@@ -14,6 +14,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.asserts.SoftAssert;
 
 public class BaseClass {
 
@@ -21,6 +22,7 @@ public class BaseClass {
 	public static WebDriverWait wait;
 	public static Properties p;
 	public static Logger logger;
+	public static SoftAssert softAssert;
 
 	@BeforeSuite
 	public void browserLounching() throws IOException {
@@ -47,13 +49,14 @@ public class BaseClass {
 			return;
 		}
 
-		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		driver.get(p.getProperty("qaURL"));
 		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
 
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		softAssert = new SoftAssert();
 
 	}
 

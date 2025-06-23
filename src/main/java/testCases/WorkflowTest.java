@@ -75,7 +75,7 @@ public class WorkflowTest extends BaseClass {
 		wp.clickWorkflowHome();
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 6, dependsOnMethods = "verifyNewWorkflowCreation")
 	public void verifyDuplicateWorkflowCreation() {
 		logger.info("*** Verify test case: DuplicateWorkflowCreation ***");
 		wp.openAddWorkflow();

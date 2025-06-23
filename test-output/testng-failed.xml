@@ -6,15 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.DepartmentsTest">
+      <class name="testCases.AgentsTest">
         <methods>
-          <include name="verifyNullDepartmentName"/>
-          <include name="setupDepartmentsObjectd"/>
-          <include name="verifyPageIsDepartmentsPage"/>
+          <include name="setupAgentsObjects"/>
           <include name="browserLounching"/>
-          <include name="verifyNullDepartmentDescription"/>
+          <include name="verifyDuplicateAgentCreationWithSameEmail"/>
         </methods>
-      </class> <!-- testCases.DepartmentsTest -->
+      </class> <!-- testCases.AgentsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -23,8 +23,8 @@ public class DepartmentsTest extends BaseClass {
 	public void verifyPageIsDepartmentsPage() {
 		logger.info("*** Verifying test case: verifyPageIsDepartmentsPage ***");
 		dp.openDepartmentsPage();
-		wait.until(ExpectedConditions.titleContains(p.getProperty("DepartmentsTitle")));
-		Assert.assertEquals(driver.getTitle(), p.getProperty("DepartmentsTitle"));
+		wait.until(ExpectedConditions.titleContains(p.getProperty("DepartmentsPageTitle")));
+		Assert.assertEquals(driver.getTitle(), p.getProperty("DepartmentsPageTitle"));
 	}
 
 	@Test(priority = 2)
@@ -33,8 +33,9 @@ public class DepartmentsTest extends BaseClass {
 		dp.openNewDepartment();
 		dp.clickCreateDepartment();
 		String actErrorMsg = dp.getNullDepartmentNameErrorMsg();
-		Assert.assertEquals(actErrorMsg, p.getProperty("expNullDepartmentName"), "Error message does not match!");
+		softAssert.assertEquals(actErrorMsg, p.getProperty("expNullDepartmentName"), "Error message does not match!");
 		lp.refreshPage();
+		softAssert.assertAll();
 	}
 
 	@Test(priority = 3)
@@ -44,8 +45,9 @@ public class DepartmentsTest extends BaseClass {
 		dp.setDepartmentName(p.getProperty("DepartmentName"));
 		dp.clickCreateDepartment();
 		String actErrorMsg = dp.getNullDepartmentDescriptionErrorMsg();
-		Assert.assertEquals(actErrorMsg, p.getProperty("expNullDepartmentDescription"), "Error message does not match!");
+		softAssert.assertEquals(actErrorMsg, p.getProperty("expNullDepartmentDescription"), "Error message does not match!");
 		lp.refreshPage();
+		softAssert.assertAll();
 	}
 
 }

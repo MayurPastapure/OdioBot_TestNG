@@ -58,11 +58,11 @@ public class DepartmentsPage extends BasePage {
 	}
 
 	public String getNullDepartmentNameErrorMsg() {
-		return (msgNullDepartmentName.getText());
+		return msgNullDepartmentName.getText().trim();
 	}
 
 	public String getNullDepartmentDescriptionErrorMsg() {
-		return (msgNullDepartmentDescription.getText());
+		return msgNullDepartmentDescription.getText().trim();
 	}
 
 }
