@@ -3,6 +3,7 @@ package pageObjects;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -64,6 +65,12 @@ public class AgentsPage extends BasePage {
 
 	@FindBy(xpath = "//*[@role='alert']")
 	WebElement tostAlertMsg;
+
+	@FindBy(xpath = "//p[@class='MuiTablePagination-displayedRows css-1qbj7le']")
+	WebElement txtAgentCountOnPagi;
+
+	@FindBy(xpath = "//button[@title='Go to next page']")
+	WebElement btnNextPageButton;
 
 	public void openAgentsPage() {
 		txtAgents.click();
@@ -146,8 +153,8 @@ public class AgentsPage extends BasePage {
 	public boolean searchByUserName(String SearchableUserName) {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpSearchUser));
 		element.sendKeys(SearchableUserName);
-		List<WebElement> rows = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(
-				By.xpath("//table[contains(@class,'MuiTable-root')]/tbody/tr")));
+		List<WebElement> rows = wait.until(ExpectedConditions
+				.presenceOfAllElementsLocatedBy(By.xpath("//table[contains(@class,'MuiTable-root')]/tbody/tr")));
 		for (WebElement row : rows) {
 			if (row.getText().toLowerCase().contains(SearchableUserName.toLowerCase())) {
 				return true;
@@ -155,6 +162,37 @@ public class AgentsPage extends BasePage {
 
 		}
 		return false;
+	}
+
+	public int getTotalAgentCountFromPagination() throws InterruptedException {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", txtAgentCountOnPagi);
+		WebElement element = wait.until(ExpectedConditions.visibilityOf(txtAgentCountOnPagi));
+		Thread.sleep(1000);
+		String text = element.getText();
+		String count = text.split("of")[1].trim();
+		int totalCount = Integer.parseInt(count);
+		return totalCount;
+	}
+
+	public int getTotalAgentCountFromList() throws InterruptedException {
+		int totalRows = 0;
+
+		while (true) {
+			List<WebElement> rows = wait.until(
+					ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//tbody/tr[td[not(@colspan)]]")));
+
+			totalRows = totalRows + rows.size();
+
+			String classAttr = btnNextPageButton.getAttribute("class");
+			if (!btnNextPageButton.isEnabled() || classAttr.contains("Mui-disabled")) {
+				break;
+			}
+			btnNextPageButton.click();
+			Thread.sleep(1000);
+			wait.until(ExpectedConditions.stalenessOf(rows.get(0)));
+		}
+		return totalRows;
 	}
 
 }

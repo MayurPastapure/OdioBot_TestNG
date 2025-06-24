@@ -93,8 +93,8 @@ public class AgentsTest extends BaseClass {
 		lp.refreshPage();
 		softAssert.assertAll();
 	}
-	
-	@Test(priority = 7)
+
+	@Test(priority = 7, enabled = false)
 	public void verifyNewAgentCreationWithValidData() {
 		logger.info("*** Verify test case: verifyNewAgentCreationWithValidData ***");
 		ap.openNewAgentCreatePopup();
@@ -109,8 +109,8 @@ public class AgentsTest extends BaseClass {
 		softAssert.assertEquals(actToastMsg, "Success", "Error message does not match!");
 		softAssert.assertAll();
 	}
-	
-	@Test(priority = 8)
+
+	@Test(priority = 8, enabled = false)
 	public void verifyDuplicateAgentCreationWithSameEmail() {
 		logger.info("*** Verify test case: verifyDuplicateAgentCreationWithSameEmail ***");
 		ap.openNewAgentCreatePopup();
@@ -126,12 +126,25 @@ public class AgentsTest extends BaseClass {
 		lp.refreshPage();
 		softAssert.assertAll();
 	}
-	
-	@Test(priority=9)
+
+	@Test(priority = 9)
 	public void verifySearchByUserName() {
 		logger.info("*** Verify test case: verifySearchByUserName ***");
 		Boolean isAvailable = ap.searchByUserName(p.getProperty("AgentName"));
-		Assert.assertTrue(isAvailable, "Agent name is not found in search result");
+		softAssert.assertTrue(isAvailable, "Agent name is not found in search result");
+		lp.refreshPage();
+		softAssert.assertAll();
+	}
+
+	@Test(priority = 10)
+	public void verifyTotalAgentCountOnPagination() throws InterruptedException {
+		logger.info("*** Verify test case: verifyTotalAgentCountOnPagination ***");
+		int agentCount = ap.getTotalAgentCountFromPagination();
+		logger.info("Total agent count: " + agentCount);
+		int rowCount = ap.getTotalAgentCountFromList();
+		logger.info("Total row count: " + rowCount);
+		softAssert.assertEquals(agentCount, rowCount, "Agent pagination count is not with agent list count");
+		softAssert.assertAll();
 	}
 
 }

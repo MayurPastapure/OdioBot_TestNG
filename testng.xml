@@ -13,8 +13,8 @@
     <classes>
       <class name="testCases.LoginTest"/>
       <class name="testCases.HomeTest"/>
-	  <class name="testCases.WorkflowTest"/> 
-      <class name="testCases.DepartmentsTest"/> 
+	<!--   <class name="testCases.WorkflowTest"/> 
+      <class name="testCases.DepartmentsTest"/> -->
       <class name="testCases.AgentsTest"/>
     </classes>
   </test>

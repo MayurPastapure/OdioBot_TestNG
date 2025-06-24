@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods, 1 failed,   12 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.AgentsTest" class="method navigator-link" hash-for-method="verifyDuplicateAgentCreationWithSameEmail">verifyDuplicateAgentCreationWithSameEmail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">13 methods,   13 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -176,6 +162,11 @@
                         <a href="#" panel-name="suite-Suite" title="testCases.AgentsTest" class="method navigator-link" hash-for-method="verifySearchByUserName">verifySearchByUserName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.AgentsTest" class="method navigator-link" hash-for-method="verifyTotalAgentCountOnPagination">verifyTotalAgentCountOnPagination</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -188,27 +179,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testCases.AgentsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyDuplicateAgentCreationWithSameEmail">
-                  </a> <!-- verifyDuplicateAgentCreationWithSameEmail -->
-                  <span class="method-name">verifyDuplicateAgentCreationWithSameEmail</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	Error message does not match! expected [Email already used] but found [Failed to add agent!]
-	at testCases.AgentsTest.verifyDuplicateAgentCreationWithSameEmail(AgentsTest.java:127)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -277,6 +247,13 @@
                   <a name="verifySearchByUserName">
                   </a> <!-- verifySearchByUserName -->
                   <span class="method-name">verifySearchByUserName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTotalAgentCountOnPagination">
+                  </a> <!-- verifyTotalAgentCountOnPagination -->
+                  <span class="method-name">verifyTotalAgentCountOnPagination</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -376,62 +353,62 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(13);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyDuplicateAgentCreationWithSameEmail')
+data.setCell(0, 1, 'verifyNullConfirmPassword')
 data.setCell(0, 2, 'testCases.AgentsTest')
-data.setCell(0, 3, 14911);
+data.setCell(0, 3, 2789);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyNullConfirmPassword')
+data.setCell(1, 1, 'verifyNullAgentName')
 data.setCell(1, 2, 'testCases.AgentsTest')
-data.setCell(1, 3, 3146);
+data.setCell(1, 3, 2557);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyNullPassword')
+data.setCell(2, 1, 'verifyTotalAgentCountOnPagination')
 data.setCell(2, 2, 'testCases.AgentsTest')
-data.setCell(2, 3, 2834);
+data.setCell(2, 3, 2495);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyIncorrectCredLogin')
+data.setCell(3, 1, 'verifyCorrectCredLogin')
 data.setCell(3, 2, 'testCases.LoginTest')
-data.setCell(3, 3, 2831);
+data.setCell(3, 3, 2274);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyCorrectCredLogin')
+data.setCell(4, 1, 'verifyIncorrectCredLogin')
 data.setCell(4, 2, 'testCases.LoginTest')
-data.setCell(4, 3, 2564);
+data.setCell(4, 3, 2198);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verifyNullAgentMobileNumber')
 data.setCell(5, 2, 'testCases.AgentsTest')
-data.setCell(5, 3, 2563);
+data.setCell(5, 3, 2161);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyNullAgentEmail')
+data.setCell(6, 1, 'verifyNullPassword')
 data.setCell(6, 2, 'testCases.AgentsTest')
-data.setCell(6, 3, 1881);
+data.setCell(6, 3, 2158);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyBlankPasswordLogin')
-data.setCell(7, 2, 'testCases.LoginTest')
-data.setCell(7, 3, 1701);
+data.setCell(7, 1, 'verifyNullAgentEmail')
+data.setCell(7, 2, 'testCases.AgentsTest')
+data.setCell(7, 3, 1608);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyNullAgentName')
-data.setCell(8, 2, 'testCases.AgentsTest')
-data.setCell(8, 3, 1384);
+data.setCell(8, 1, 'verifyBlankPasswordLogin')
+data.setCell(8, 2, 'testCases.LoginTest')
+data.setCell(8, 3, 1250);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyBlankEmailLogin')
-data.setCell(9, 2, 'testCases.LoginTest')
-data.setCell(9, 3, 904);
+data.setCell(9, 1, 'verifyHomeCardsVisibility')
+data.setCell(9, 2, 'testCases.HomeTest')
+data.setCell(9, 3, 1112);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyHomeCardsVisibility')
-data.setCell(10, 2, 'testCases.HomeTest')
-data.setCell(10, 3, 527);
+data.setCell(10, 1, 'verifySearchByUserName')
+data.setCell(10, 2, 'testCases.AgentsTest')
+data.setCell(10, 3, 1043);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifySearchByUserName')
-data.setCell(11, 2, 'testCases.AgentsTest')
-data.setCell(11, 3, 472);
+data.setCell(11, 1, 'verifyBlankEmailLogin')
+data.setCell(11, 2, 'testCases.LoginTest')
+data.setCell(11, 3, 802);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'verifyPageIsAgentsPage')
 data.setCell(12, 2, 'testCases.AgentsTest')
-data.setCell(12, 3, 442);
+data.setCell(12, 3, 519);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 36 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -446,7 +423,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -455,6 +432,8 @@ return data;
                 <span class="ignored-method-name">browserLounching</span>
                 <br/>
                 <span class="ignored-method-name">verifyNewAgentCreationWithValidData</span>
+                <br/>
+                <span class="ignored-method-name">verifyDuplicateAgentCreationWithSameEmail</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -480,115 +459,113 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setupLoginPageObjects</span>
-                <span class="method-start">15414 ms</span>
+                <span class="method-start">12848 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyIncorrectCredLogin</span>
-                <span class="method-start">15465 ms</span>
+                <span class="method-start">12882 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupLoginPageObjects</span>
-                <span class="method-start">18305 ms</span>
+                <span class="method-start">15085 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyBlankEmailLogin</span>
-                <span class="method-start">18306 ms</span>
+                <span class="method-start">15085 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupLoginPageObjects</span>
-                <span class="method-start">19214 ms</span>
+                <span class="method-start">15895 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyBlankPasswordLogin</span>
-                <span class="method-start">19217 ms</span>
+                <span class="method-start">15898 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupLoginPageObjects</span>
-                <span class="method-start">20924 ms</span>
+                <span class="method-start">17149 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyCorrectCredLogin</span>
-                <span class="method-start">20926 ms</span>
+                <span class="method-start">17150 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.HomeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setupHomePageObjects</span>
-                <span class="method-start">23503 ms</span>
+                <span class="method-start">19435 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyHomeCardsVisibility</span>
-                <span class="method-start">23545 ms</span>
+                <span class="method-start">19455 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.AgentsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setupAgentsObjects</span>
-                <span class="method-start">24075 ms</span>
+                <span class="method-start">20570 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyPageIsAgentsPage</span>
-                <span class="method-start">24084 ms</span>
+                <span class="method-start">20577 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupAgentsObjects</span>
-                <span class="method-start">24529 ms</span>
+                <span class="method-start">21102 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyNullAgentName</span>
-                <span class="method-start">24532 ms</span>
+                <span class="method-start">21106 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupAgentsObjects</span>
-                <span class="method-start">25921 ms</span>
+                <span class="method-start">23665 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyNullAgentEmail</span>
-                <span class="method-start">25922 ms</span>
+                <span class="method-start">23667 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupAgentsObjects</span>
-                <span class="method-start">27809 ms</span>
+                <span class="method-start">25279 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyNullAgentMobileNumber</span>
-                <span class="method-start">27815 ms</span>
+                <span class="method-start">25284 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupAgentsObjects</span>
-                <span class="method-start">30382 ms</span>
+                <span class="method-start">27458 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyNullPassword</span>
-                <span class="method-start">30383 ms</span>
+                <span class="method-start">27466 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupAgentsObjects</span>
-                <span class="method-start">33219 ms</span>
+                <span class="method-start">29629 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyNullConfirmPassword</span>
-                <span class="method-start">33221 ms</span>
+                <span class="method-start">29630 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupAgentsObjects</span>
-                <span class="method-start">36370 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyDuplicateAgentCreationWithSameEmail</span>
-                <span class="method-start">36373 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setupAgentsObjects</span>
-                <span class="method-start">51699 ms</span>
+                <span class="method-start">32421 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearchByUserName</span>
-                <span class="method-start">51704 ms</span>
+                <span class="method-start">32422 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupAgentsObjects</span>
+                <span class="method-start">33473 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTotalAgentCountOnPagination</span>
+                <span class="method-start">33476 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

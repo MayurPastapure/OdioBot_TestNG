@@ -1282,3 +1282,522 @@
 20:55:53.486 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
 20:55:56.635 [main] INFO  testBase.BaseClass - *** Verify test case: verifyDuplicateAgentCreationWithSameEmail ***
 20:56:11.965 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+12:19:59.463 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+12:20:02.360 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+12:20:03.043 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+12:20:04.328 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+12:20:06.482 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+12:20:06.743 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyMyWorkflowPage navigation ***
+12:20:21.123 [main] INFO  testBase.BaseClass - *** Verify test case: NullChatBotName ***
+12:20:22.242 [main] INFO  testBase.BaseClass - *** Verify test case: NullDepartmentId ***
+12:20:23.626 [main] INFO  testBase.BaseClass - *** Verify test case: NullProductType ***
+12:20:35.200 [main] INFO  testBase.BaseClass - *** Verify test case: newWorkflowCreation ***
+12:20:58.484 [main] INFO  testBase.BaseClass - *** Verify test case: ResumeWorkflowWithoutNode ***
+12:20:59.815 [main] INFO  testBase.BaseClass - *** Verify test case: EditWorkflowOnlyName ***
+12:21:01.148 [main] INFO  testBase.BaseClass - *** Verify test case: DeleteWorkflowByName ***
+12:21:11.463 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsDepartmentsPage ***
+12:21:21.653 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartmentName ***
+12:21:41.961 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartmentDescription ***
+12:21:52.861 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+12:21:52.878 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+12:21:52.896 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+12:21:52.919 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+12:21:52.935 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+12:21:52.948 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+12:21:52.959 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNewAgentCreationWithValidData ***
+12:21:52.974 [main] INFO  testBase.BaseClass - *** Verify test case: verifyDuplicateAgentCreationWithSameEmail ***
+12:21:52.989 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+12:21:53.006 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+12:22:20.173 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+12:22:22.891 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+12:22:23.609 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+12:22:25.107 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+12:22:27.629 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+12:22:28.414 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+12:22:51.739 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+12:22:51.763 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+12:22:51.783 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+12:22:51.815 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+12:22:51.848 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+12:22:51.902 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNewAgentCreationWithValidData ***
+12:22:51.937 [main] INFO  testBase.BaseClass - *** Verify test case: verifyDuplicateAgentCreationWithSameEmail ***
+12:22:51.963 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+12:22:51.980 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+12:23:08.385 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+12:23:10.935 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+12:23:11.646 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+12:23:13.128 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+12:23:15.543 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+12:23:15.933 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+12:23:16.840 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+12:23:18.805 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+12:23:20.791 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+12:23:23.340 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+12:23:26.110 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+12:23:29.196 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNewAgentCreationWithValidData ***
+12:23:43.910 [main] INFO  testBase.BaseClass - *** Verify test case: verifyDuplicateAgentCreationWithSameEmail ***
+12:23:45.606 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+12:23:46.212 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+12:23:46.280 [main] INFO  testBase.BaseClass - Total agent count: 7
+12:26:58.092 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+12:27:00.531 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+12:27:01.328 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+12:27:03.017 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+12:27:05.416 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+12:27:06.379 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+12:27:06.855 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+12:27:08.744 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+12:27:10.914 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+12:27:13.372 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+12:27:16.214 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+12:27:19.512 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNewAgentCreationWithValidData ***
+12:27:34.265 [main] INFO  testBase.BaseClass - *** Verify test case: verifyDuplicateAgentCreationWithSameEmail ***
+12:27:35.810 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+12:27:37.254 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+12:27:37.345 [main] INFO  testBase.BaseClass - Total agent count: 7
+14:13:41.668 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+14:13:44.319 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+14:13:45.091 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+14:13:46.768 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+14:13:49.254 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+14:13:49.755 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+14:13:50.229 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+14:13:51.950 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+14:13:54.042 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+14:13:56.622 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+14:13:59.539 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+14:14:02.600 [main] INFO  testBase.BaseClass - *** Verify test case: verifyDuplicateAgentCreationWithSameEmail ***
+14:14:17.799 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+14:14:19.404 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+14:14:19.473 [main] INFO  testBase.BaseClass - Total agent count: 8
+14:14:20.545 [main] INFO  testBase.BaseClass - Total row count: 13
+14:27:34.783 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+14:27:37.489 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+14:27:38.248 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+14:27:39.796 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+14:27:42.366 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+14:27:42.655 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+14:27:43.720 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+14:27:45.279 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+14:27:47.091 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+14:27:49.340 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+14:27:51.953 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+14:27:54.996 [main] INFO  testBase.BaseClass - *** Verify test case: verifyDuplicateAgentCreationWithSameEmail ***
+14:28:10.153 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+14:28:11.590 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+14:28:11.684 [main] INFO  testBase.BaseClass - Total agent count: 8
+14:28:13.347 [main] INFO  testBase.BaseClass - Total row count: 13
+14:36:51.743 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+14:36:54.207 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+14:36:54.835 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+14:36:56.389 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+14:36:59.091 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+14:37:00.026 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+14:37:00.474 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+14:37:02.236 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+14:37:04.281 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+14:37:06.568 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+14:37:09.550 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+14:37:12.472 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+14:37:13.509 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+14:37:13.580 [main] INFO  testBase.BaseClass - Total agent count: 0
+14:37:13.732 [main] INFO  testBase.BaseClass - Total row count: 5
+14:38:57.381 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+14:38:59.997 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+14:39:00.671 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+14:39:02.132 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+14:39:04.769 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+14:39:05.049 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+14:39:05.523 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+14:39:07.205 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+14:39:09.086 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+14:39:11.447 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+14:39:14.101 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+14:39:16.981 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+14:39:18.006 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+14:39:18.082 [main] INFO  testBase.BaseClass - Total agent count: 0
+14:39:18.260 [main] INFO  testBase.BaseClass - Total row count: 5
+14:42:07.150 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+14:42:09.812 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+14:42:10.670 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+14:42:12.339 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+14:42:14.887 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+14:42:15.333 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+14:42:15.978 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+14:42:17.500 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+14:42:19.418 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+14:42:21.841 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+14:42:24.586 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+14:42:27.595 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+14:42:28.252 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+14:42:28.315 [main] INFO  testBase.BaseClass - Total agent count: 8
+14:45:18.094 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+14:45:21.814 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+14:45:22.454 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+14:45:24.031 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+14:45:26.474 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+14:45:26.941 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+14:45:27.664 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+14:45:29.605 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+14:45:31.405 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+14:45:33.687 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+14:45:36.288 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+14:45:39.100 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+14:45:40.179 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+14:45:40.252 [main] INFO  testBase.BaseClass - Total agent count: 0
+14:45:40.308 [main] INFO  testBase.BaseClass - Total row count: 5
+14:46:57.761 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+14:47:00.152 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+14:47:00.964 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+14:47:02.464 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+14:47:05.072 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+14:47:05.386 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+14:47:06.833 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+14:47:09.017 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+14:47:10.801 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+14:47:13.245 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+14:47:15.843 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+14:47:18.899 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+14:47:18.969 [main] INFO  testBase.BaseClass - Total agent count: 0
+14:47:19.038 [main] INFO  testBase.BaseClass - Total row count: 5
+14:51:30.241 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+14:51:40.531 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+14:51:40.555 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+14:51:40.582 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+14:51:40.615 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+14:51:40.651 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+14:51:40.688 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+14:51:40.711 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+14:51:40.742 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+14:51:40.771 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+14:51:40.806 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+14:51:40.863 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+15:05:34.838 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+15:05:37.307 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+15:05:38.110 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+15:05:39.811 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+15:05:42.306 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+15:05:42.720 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+15:05:44.210 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+15:05:46.618 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+15:05:48.671 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+15:05:50.748 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+15:05:53.021 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+15:05:55.438 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+15:05:55.538 [main] INFO  testBase.BaseClass - Total agent count: 0
+15:05:55.619 [main] INFO  testBase.BaseClass - Total row count: 10
+15:15:06.374 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+15:15:08.728 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+15:15:09.268 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+15:15:10.663 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+15:15:13.353 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+15:15:13.681 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+15:15:14.467 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+15:15:16.214 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+15:15:17.808 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+15:15:19.737 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+15:15:21.939 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+15:15:24.405 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+15:15:24.509 [main] INFO  testBase.BaseClass - Total agent count: 0
+15:15:24.595 [main] INFO  testBase.BaseClass - Total row count: 10
+15:17:47.185 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+15:17:50.124 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+15:17:50.897 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+15:17:52.177 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+15:17:54.352 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+15:17:54.672 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+15:17:55.518 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+15:17:57.946 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+15:17:59.844 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+15:18:01.938 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+15:18:04.147 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+15:18:06.651 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+15:18:06.753 [main] INFO  testBase.BaseClass - Total agent count: 0
+15:18:06.856 [main] INFO  testBase.BaseClass - Total row count: 10
+15:23:25.863 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+15:23:28.080 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+15:23:28.616 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+15:23:30.022 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+15:23:32.679 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+15:23:33.620 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+15:23:34.034 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+15:23:35.729 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+15:23:37.807 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+15:23:39.767 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+15:23:41.985 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+15:23:44.509 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+15:23:44.592 [main] INFO  testBase.BaseClass - Total agent count: 0
+15:23:44.680 [main] INFO  testBase.BaseClass - Total row count: 10
+15:25:46.603 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+15:25:49.107 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+15:25:49.640 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+15:25:50.966 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+15:25:53.425 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+15:25:53.670 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+15:25:54.229 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+15:25:56.146 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+15:25:57.689 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+15:25:59.619 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+15:26:01.806 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+15:26:04.201 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+15:26:04.294 [main] INFO  testBase.BaseClass - Total agent count: 0
+15:26:04.383 [main] INFO  testBase.BaseClass - Total row count: 10
+15:29:07.749 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+15:29:09.969 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+15:29:10.634 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+15:29:11.850 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+15:29:14.033 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+15:29:14.307 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+15:29:14.915 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+15:29:17.353 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+15:29:19.260 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+15:29:21.146 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+15:29:23.351 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+15:29:25.906 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+15:29:26.014 [main] INFO  testBase.BaseClass - Total agent count: 0
+15:29:26.098 [main] INFO  testBase.BaseClass - Total row count: 10
+15:30:36.653 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+15:30:38.927 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+15:30:39.437 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+15:30:40.624 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+15:30:42.807 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+15:30:43.111 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+15:30:43.623 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+15:30:45.477 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+15:30:47.104 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+15:30:49.179 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+15:30:51.411 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+15:30:53.774 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+15:30:55.914 [main] INFO  testBase.BaseClass - Total agent count: 8
+15:30:55.998 [main] INFO  testBase.BaseClass - Total row count: 8
+15:32:57.961 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+15:33:00.100 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+15:33:00.640 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+15:33:01.887 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+15:33:04.235 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+15:33:04.925 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+15:33:05.542 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+15:33:07.240 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+15:33:08.803 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+15:33:10.736 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+15:33:12.904 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+15:33:15.357 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+15:33:15.420 [main] INFO  testBase.BaseClass - Total agent count: 0
+15:33:15.517 [main] INFO  testBase.BaseClass - Total row count: 10
+15:34:43.808 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+15:34:46.037 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+15:34:46.557 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+15:34:47.807 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+15:34:49.980 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+15:34:50.273 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+15:34:50.911 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+15:34:52.931 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+15:34:54.504 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+15:34:56.513 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+15:34:58.798 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+15:35:01.400 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+15:35:03.551 [main] INFO  testBase.BaseClass - Total agent count: 8
+15:35:03.616 [main] INFO  testBase.BaseClass - Total row count: 8
+15:41:37.151 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+15:41:39.399 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+15:41:39.917 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+15:41:41.139 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+15:41:43.295 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+15:41:43.500 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+15:41:44.037 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+15:41:45.645 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+15:41:47.314 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+15:41:49.270 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+15:41:51.443 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+15:41:53.852 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+15:41:53.951 [main] INFO  testBase.BaseClass - Total agent count: 0
+15:41:54.039 [main] INFO  testBase.BaseClass - Total row count: 10
+15:50:04.063 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+15:50:06.289 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+15:50:06.812 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+15:50:08.055 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+15:50:10.275 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+15:50:10.549 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+15:50:11.135 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+15:50:12.798 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+15:50:14.387 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+15:50:16.350 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+15:50:18.534 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+15:50:21.008 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+15:51:02.999 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+15:51:05.396 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+15:51:06.398 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+15:51:07.677 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+15:51:09.853 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+15:51:10.475 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+15:51:11.368 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+15:51:13.679 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+15:51:15.350 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+15:51:17.317 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+15:51:19.486 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+15:51:21.924 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+15:56:18.462 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+15:56:20.749 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+15:56:21.476 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+15:56:22.963 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+15:56:25.173 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+15:56:25.396 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+15:56:26.032 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+15:56:28.334 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+15:56:30.219 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+15:56:32.324 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+15:56:34.556 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+15:56:37.118 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+15:56:37.219 [main] INFO  testBase.BaseClass - Total agent count: 0
+15:56:37.324 [main] INFO  testBase.BaseClass - Total row count: 10
+17:11:10.654 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+17:11:13.338 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+17:11:14.201 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+17:11:16.026 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+17:11:18.805 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+17:11:20.674 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+17:11:21.485 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+17:11:23.663 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+17:11:26.181 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+17:11:29.362 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+17:11:33.001 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+17:11:37.792 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+17:11:39.995 [main] INFO  testBase.BaseClass - Total agent count: 8
+17:11:40.086 [main] INFO  testBase.BaseClass - Total row count: 8
+17:16:51.965 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+17:16:55.073 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+17:16:55.802 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+17:16:57.213 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+17:16:59.711 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+17:16:59.903 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+17:17:00.433 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+17:17:02.105 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+17:17:04.002 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+17:17:06.402 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+17:17:09.119 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+17:17:12.080 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+17:17:14.268 [main] INFO  testBase.BaseClass - Total agent count: 8
+17:17:14.429 [main] INFO  testBase.BaseClass - Total row count: 8
+17:22:00.501 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+17:22:02.982 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+17:22:03.648 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+17:22:05.250 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+17:22:07.925 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+17:22:08.133 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+17:22:08.664 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+17:22:10.289 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+17:22:12.161 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+17:22:14.525 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+17:22:17.209 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+17:22:20.738 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+17:22:22.846 [main] INFO  testBase.BaseClass - Total agent count: 11
+17:22:23.884 [main] INFO  testBase.BaseClass - Total row count: 21
+17:25:11.504 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+17:25:13.963 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+17:25:14.511 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+17:25:15.712 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+17:25:17.900 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+17:25:18.320 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+17:25:18.743 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+17:25:20.623 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+17:25:22.155 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+17:25:24.044 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+17:25:26.197 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+17:25:28.719 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+17:25:30.810 [main] INFO  testBase.BaseClass - Total agent count: 11
+17:25:32.121 [main] INFO  testBase.BaseClass - Total row count: 11
+17:29:13.101 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+17:29:15.470 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+17:29:15.980 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+17:29:17.231 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+17:29:19.425 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+17:29:19.699 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+17:29:20.146 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+17:29:21.631 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+17:29:23.278 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+17:29:25.198 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+17:29:27.431 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+17:29:29.852 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+17:29:29.941 [main] INFO  testBase.BaseClass - Total agent count: 0
+17:29:30.026 [main] INFO  testBase.BaseClass - Total row count: 10
+17:30:50.533 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+17:30:52.782 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+17:30:53.403 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+17:30:54.627 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+17:30:56.764 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+17:30:57.037 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+17:31:12.462 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+17:31:12.497 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+17:31:12.517 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+17:31:12.537 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+17:31:12.564 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+17:31:12.590 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+17:31:30.533 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+17:31:32.734 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+17:31:33.312 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+17:31:34.623 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+17:31:36.862 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+17:31:37.195 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+17:31:37.760 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+17:31:39.973 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+17:31:42.163 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+17:31:44.084 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+17:31:46.252 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+17:31:48.677 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+17:31:49.772 [main] INFO  testBase.BaseClass - Total agent count: 10
+17:31:49.837 [main] INFO  testBase.BaseClass - Total row count: 10
+17:35:07.290 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+17:35:09.548 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+17:35:10.176 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+17:35:11.596 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+17:35:13.774 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+17:35:14.397 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+17:35:15.066 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+17:35:17.746 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+17:35:19.747 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+17:35:21.695 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+17:35:23.945 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+17:35:26.731 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+17:35:27.826 [main] INFO  testBase.BaseClass - Total agent count: 10
+17:35:27.893 [main] INFO  testBase.BaseClass - Total row count: 10
+17:38:33.574 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+17:38:35.769 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+17:38:36.625 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+17:38:37.861 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+17:38:40.174 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+17:38:41.457 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+17:38:53.751 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+17:38:53.792 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+17:38:53.831 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+17:38:54.011 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+17:38:54.066 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+17:38:54.105 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+17:39:08.611 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+17:39:10.818 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+17:39:11.461 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+17:39:12.804 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+17:39:15.130 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+17:39:15.512 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+17:39:16.458 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+17:39:18.340 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+17:39:20.292 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+17:39:22.222 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+17:39:24.503 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+17:39:27.020 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+17:39:28.170 [main] INFO  testBase.BaseClass - Total agent count: 11
+17:39:29.597 [main] INFO  testBase.BaseClass - Total row count: 11
+17:40:39.133 [main] INFO  testBase.BaseClass - *** Verifying test case verityInCorrectCredLogin ***
+17:40:41.322 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankEmailLogin ***
+17:40:42.134 [main] INFO  testBase.BaseClass - *** Verifying test case verityBlankPasswordLogin ***
+17:40:43.387 [main] INFO  testBase.BaseClass - *** Verifying test case verityCorrectCredLogin ***
+17:40:45.698 [main] INFO  testBase.BaseClass - *** Verifying that all 3 home cards are visible ***
+17:40:46.813 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsAgentsPage ***
+17:40:47.343 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullAgentName ***
+17:40:49.905 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentEmail ***
+17:40:51.523 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullAgentMobileNumber ***
+17:40:53.703 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullPassword ***
+17:40:55.867 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConfirmPassword ***
+17:40:58.659 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+17:40:59.713 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalAgentCountOnPagination ***
+17:41:00.838 [main] INFO  testBase.BaseClass - Total agent count: 11
+17:41:02.205 [main] INFO  testBase.BaseClass - Total row count: 11

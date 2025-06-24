@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 23 20:55:35 IST 2025</td>
+<td>Started on:</td><td>Tue Jun 24 17:40:39 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>36 seconds (36827 ms)</td>
+<tr><td>Total time:</td><td>23 seconds (23168 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,57 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testCases.AgentsTest.verifyDuplicateAgentCreationWithSameEmail()'><b>verifyDuplicateAgentCreationWithSameEmail</b><br>Test class: testCases.AgentsTest</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Error message does not match! expected [Email already used] but found [Failed to add agent!]
-	at testCases.AgentsTest.verifyDuplicateAgentCreationWithSameEmail(AgentsTest.java:127)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1690796457", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1690796457'><pre>java.lang.AssertionError: The following asserts failed:
-	Error message does not match! expected [Email already used] but found [Failed to add agent!]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at testCases.AgentsTest.verifyDuplicateAgentCreationWithSameEmail(AgentsTest.java:127)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>14</td>
-<td>testCases.AgentsTest@771a660</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -129,62 +78,67 @@ function toggleAllBoxes() {
 <td title='testCases.LoginTest.verifyBlankPasswordLogin()'><b>verifyBlankPasswordLogin</b><br>Test class: testCases.LoginTest</td>
 <td></td>
 <td>1</td>
-<td>testCases.LoginTest@b9b00e0</td></tr>
+<td>testCases.LoginTest@506ae4d4</td></tr>
+<tr>
+<td title='testCases.AgentsTest.verifyNullAgentName()'><b>verifyNullAgentName</b><br>Test class: testCases.AgentsTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.AgentsTest@2d52216b</td></tr>
+<tr>
+<td title='testCases.AgentsTest.verifyTotalAgentCountOnPagination()'><b>verifyTotalAgentCountOnPagination</b><br>Test class: testCases.AgentsTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.AgentsTest@2d52216b</td></tr>
 <tr>
 <td title='testCases.AgentsTest.verifyPageIsAgentsPage()'><b>verifyPageIsAgentsPage</b><br>Test class: testCases.AgentsTest</td>
 <td></td>
 <td>0</td>
-<td>testCases.AgentsTest@771a660</td></tr>
-<tr>
-<td title='testCases.AgentsTest.verifyNullPassword()'><b>verifyNullPassword</b><br>Test class: testCases.AgentsTest</td>
-<td></td>
-<td>2</td>
-<td>testCases.AgentsTest@771a660</td></tr>
-<tr>
-<td title='testCases.AgentsTest.verifyNullAgentName()'><b>verifyNullAgentName</b><br>Test class: testCases.AgentsTest</td>
-<td></td>
-<td>1</td>
-<td>testCases.AgentsTest@771a660</td></tr>
-<tr>
-<td title='testCases.AgentsTest.verifyNullAgentEmail()'><b>verifyNullAgentEmail</b><br>Test class: testCases.AgentsTest</td>
-<td></td>
-<td>1</td>
-<td>testCases.AgentsTest@771a660</td></tr>
-<tr>
-<td title='testCases.HomeTest.verifyHomeCardsVisibility()'><b>verifyHomeCardsVisibility</b><br>Test class: testCases.HomeTest</td>
-<td></td>
-<td>0</td>
-<td>testCases.HomeTest@783a467b</td></tr>
-<tr>
-<td title='testCases.LoginTest.verifyBlankEmailLogin()'><b>verifyBlankEmailLogin</b><br>Test class: testCases.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>testCases.LoginTest@b9b00e0</td></tr>
-<tr>
-<td title='testCases.AgentsTest.verifySearchByUserName()'><b>verifySearchByUserName</b><br>Test class: testCases.AgentsTest</td>
-<td></td>
-<td>0</td>
-<td>testCases.AgentsTest@771a660</td></tr>
-<tr>
-<td title='testCases.LoginTest.verifyIncorrectCredLogin()'><b>verifyIncorrectCredLogin</b><br>Test class: testCases.LoginTest</td>
-<td></td>
-<td>2</td>
-<td>testCases.LoginTest@b9b00e0</td></tr>
-<tr>
-<td title='testCases.LoginTest.verifyCorrectCredLogin()'><b>verifyCorrectCredLogin</b><br>Test class: testCases.LoginTest</td>
-<td></td>
-<td>2</td>
-<td>testCases.LoginTest@b9b00e0</td></tr>
-<tr>
-<td title='testCases.AgentsTest.verifyNullConfirmPassword()'><b>verifyNullConfirmPassword</b><br>Test class: testCases.AgentsTest</td>
-<td></td>
-<td>3</td>
-<td>testCases.AgentsTest@771a660</td></tr>
+<td>testCases.AgentsTest@2d52216b</td></tr>
 <tr>
 <td title='testCases.AgentsTest.verifyNullAgentMobileNumber()'><b>verifyNullAgentMobileNumber</b><br>Test class: testCases.AgentsTest</td>
 <td></td>
 <td>2</td>
-<td>testCases.AgentsTest@771a660</td></tr>
+<td>testCases.AgentsTest@2d52216b</td></tr>
+<tr>
+<td title='testCases.AgentsTest.verifySearchByUserName()'><b>verifySearchByUserName</b><br>Test class: testCases.AgentsTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.AgentsTest@2d52216b</td></tr>
+<tr>
+<td title='testCases.HomeTest.verifyHomeCardsVisibility()'><b>verifyHomeCardsVisibility</b><br>Test class: testCases.HomeTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.HomeTest@272113c4</td></tr>
+<tr>
+<td title='testCases.LoginTest.verifyBlankEmailLogin()'><b>verifyBlankEmailLogin</b><br>Test class: testCases.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginTest@506ae4d4</td></tr>
+<tr>
+<td title='testCases.LoginTest.verifyIncorrectCredLogin()'><b>verifyIncorrectCredLogin</b><br>Test class: testCases.LoginTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.LoginTest@506ae4d4</td></tr>
+<tr>
+<td title='testCases.LoginTest.verifyCorrectCredLogin()'><b>verifyCorrectCredLogin</b><br>Test class: testCases.LoginTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.LoginTest@506ae4d4</td></tr>
+<tr>
+<td title='testCases.AgentsTest.verifyNullPassword()'><b>verifyNullPassword</b><br>Test class: testCases.AgentsTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.AgentsTest@2d52216b</td></tr>
+<tr>
+<td title='testCases.AgentsTest.verifyNullAgentEmail()'><b>verifyNullAgentEmail</b><br>Test class: testCases.AgentsTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.AgentsTest@2d52216b</td></tr>
+<tr>
+<td title='testCases.AgentsTest.verifyNullConfirmPassword()'><b>verifyNullConfirmPassword</b><br>Test class: testCases.AgentsTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.AgentsTest@2d52216b</td></tr>
 </table><p>
 </body>
 </html>
