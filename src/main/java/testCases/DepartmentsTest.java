@@ -49,5 +49,14 @@ public class DepartmentsTest extends BaseClass {
 		lp.refreshPage();
 		softAssert.assertAll();
 	}
+	
+	@Test(priority = 4)
+	public void verifySearchByDepartmentName() {
+		logger.info("*** Verify test case: verifySearchByDepartmentName ***");
+		Boolean isAvailable = dp.searchByDepartmentName(p.getProperty("DepartmentName"));
+		softAssert.assertTrue(isAvailable, "Department name is not found in search result");
+		lp.refreshPage();
+		softAssert.assertAll();
+	}
 
 }

@@ -71,6 +71,20 @@ public class AgentsPage extends BasePage {
 
 	@FindBy(xpath = "//button[@title='Go to next page']")
 	WebElement btnNextPageButton;
+	
+	@FindBy(xpath = "//li[text()='Delete']")
+	WebElement btnDelete;
+	
+	@FindBy(xpath = "//li[text()='Edit']")
+	WebElement btnEdit;
+	
+	@FindBy(xpath = "//button[text()='Yes']")
+	WebElement btnYesDelete;
+	
+	@FindBy(xpath = "//button[text()='No']")
+	WebElement btnNoDelete;
+	
+	
 
 	public void openAgentsPage() {
 		txtAgents.click();
@@ -168,7 +182,7 @@ public class AgentsPage extends BasePage {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", txtAgentCountOnPagi);
 		WebElement element = wait.until(ExpectedConditions.visibilityOf(txtAgentCountOnPagi));
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		String text = element.getText();
 		String count = text.split("of")[1].trim();
 		int totalCount = Integer.parseInt(count);
@@ -189,10 +203,37 @@ public class AgentsPage extends BasePage {
 				break;
 			}
 			btnNextPageButton.click();
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			wait.until(ExpectedConditions.stalenessOf(rows.get(0)));
 		}
 		return totalRows;
+	}
+	
+	public void clickActionOfSpecificAgent(String AgentName) {
+		String dynamicXpath = "//tr//td[text()='"+ AgentName +"']//parent::tr//button[@type='button']";
+		WebElement btnAction = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(dynamicXpath)));
+		btnAction.click();
+	}
+	
+	public void clickDeleteAction() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnDelete));
+		element.click();
+	}
+	
+	public void clickEditAction() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnEdit));
+		element.click();
+		wait.until(ExpectedConditions.elementToBeClickable(inpAgnetName));
+	}
+	
+	public void clickYesDeleteOnConfirm() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnYesDelete));
+		element.click();
+	}
+	
+	public void clickNoDeleteOnConfirm() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnNoDelete));
+		element.click();
 	}
 
 }

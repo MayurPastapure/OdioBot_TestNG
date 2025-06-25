@@ -1,5 +1,8 @@
 package pageObjects;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -31,6 +34,9 @@ public class DepartmentsPage extends BasePage {
 
 	@FindBy(xpath = "//*[text()='Department Description is required']")
 	WebElement msgNullDepartmentDescription;
+	
+	@FindBy(xpath = "//input[@placeholder='Search']")
+	WebElement inpSearchDept;
 
 	public void openDepartmentsPage() {
 		txtDepartments.click();
@@ -63,6 +69,20 @@ public class DepartmentsPage extends BasePage {
 
 	public String getNullDepartmentDescriptionErrorMsg() {
 		return msgNullDepartmentDescription.getText().trim();
+	}
+	
+	public boolean searchByDepartmentName(String SearchableDeptName) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpSearchDept));
+		element.sendKeys(SearchableDeptName);
+		List<WebElement> rows = wait.until(ExpectedConditions
+				.presenceOfAllElementsLocatedBy(By.xpath("//table[contains(@class,'MuiTable-root')]/tbody/tr")));
+		for (WebElement row : rows) {
+			if (row.getText().toLowerCase().contains(SearchableDeptName.toLowerCase())) {
+				return true;
+			}
+
+		}
+		return false;
 	}
 
 }

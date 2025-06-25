@@ -8,15 +8,12 @@
     <classes>
       <class name="testCases.AgentsTest">
         <methods>
-          <include name="verifyNullConfirmPassword"/>
+          <include name="verifyEditAgentbyUpdatingName"/>
           <include name="setupAgentsObjects"/>
-          <include name="verifyNullPassword"/>
           <include name="browserLounching"/>
-          <include name="verifyNullAgentMobileNumber"/>
-          <include name="verifyNullAgentName"/>
-          <include name="verifyPageIsAgentsPage"/>
+          <include name="verifySearchByUserName"/>
+          <include name="verifyDeleteSpecificAgent"/>
           <include name="verifyTotalAgentCountOnPagination"/>
-          <include name="verifyNullAgentEmail"/>
         </methods>
       </class> <!-- testCases.AgentsTest -->
     </classes>

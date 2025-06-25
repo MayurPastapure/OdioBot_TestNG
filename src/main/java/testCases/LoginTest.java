@@ -19,7 +19,7 @@ public class LoginTest extends BaseClass {
 
 	@Test(priority = 1)
 	public void verifyIncorrectCredLogin() {
-		logger.info("*** Verifying test case verityInCorrectCredLogin ***");
+		logger.info("*** Verifying test case: verityInCorrectCredLogin ***");
 
 		lp.setEmail(p.getProperty("adminEmail"));
 		lp.setPassword(p.getProperty("adminPasswordWrong"));
@@ -32,7 +32,7 @@ public class LoginTest extends BaseClass {
 
 	@Test(priority = 2)
 	public void verifyBlankEmailLogin() {
-		logger.info("*** Verifying test case verityBlankEmailLogin ***");
+		logger.info("*** Verifying test case: verityBlankEmailLogin ***");
 
 		lp.setEmail("");
 		lp.setPassword(p.getProperty("adminPassword"));
@@ -45,7 +45,7 @@ public class LoginTest extends BaseClass {
 
 	@Test(priority = 3)
 	public void verifyBlankPasswordLogin() {
-		logger.info("*** Verifying test case verityBlankPasswordLogin ***");
+		logger.info("*** Verifying test case: verityBlankPasswordLogin ***");
 
 		lp.refreshPage();
 		lp.setEmail(p.getProperty("adminEmail"));
@@ -59,7 +59,7 @@ public class LoginTest extends BaseClass {
 
 	@Test(priority = 4)
 	public void verifyCorrectCredLogin() {
-		logger.info("*** Verifying test case verityCorrectCredLogin ***");
+		logger.info("*** Verifying test case: verityCorrectCredLogin ***");
 
 		lp.refreshPage();
 		lp.setEmail(p.getProperty("adminEmail"));

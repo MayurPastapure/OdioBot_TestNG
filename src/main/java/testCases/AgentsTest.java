@@ -144,7 +144,28 @@ public class AgentsTest extends BaseClass {
 		int rowCount = ap.getTotalAgentCountFromList();
 		logger.info("Total row count: " + rowCount);
 		softAssert.assertEquals(agentCount, rowCount, "Agent pagination count is not with agent list count");
+		lp.refreshPage();
 		softAssert.assertAll();
+	}
+	
+	@Test(priority = 11)
+	public void verifyEditAgentbyUpdatingName() {
+		logger.info("*** Verify test case: verifyEditAgentbyUpdatingName ***");
+		ap.searchByUserName(p.getProperty("AgentName"));
+		ap.clickActionOfSpecificAgent(p.getProperty("AgentName"));
+		ap.clickEditAction();
+		ap.clickCreateAgentButton();
+		lp.refreshPage();
+	}
+	
+	@Test(priority = 12)
+	public void verifyDeleteSpecificAgent() {
+		logger.info("*** Verify test case: verifyDeleteSpecificAgent ***");
+		ap.searchByUserName(p.getProperty("AgentName"));
+		ap.clickActionOfSpecificAgent(p.getProperty("AgentName"));
+		ap.clickDeleteAction();
+		ap.clickNoDeleteOnConfirm();
+		lp.refreshPage();
 	}
 
 }
