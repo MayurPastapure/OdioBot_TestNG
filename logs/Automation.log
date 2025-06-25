@@ -1931,3 +1931,14 @@
 14:05:29.623 [main] INFO  testBase.BaseClass - Total row count: 12
 14:05:30.395 [main] INFO  testBase.BaseClass - *** Verify test case: verifyEditAgentbyUpdatingName ***
 14:05:32.493 [main] INFO  testBase.BaseClass - *** Verify test case: verifyDeleteSpecificAgent ***
+15:33:53.442 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+15:33:56.458 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+15:33:57.079 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+15:33:58.681 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+15:34:01.330 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+15:36:42.259 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+15:36:45.059 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+15:36:45.725 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+15:36:47.348 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+15:36:49.922 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+15:36:50.548 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRMPage ***

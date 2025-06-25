@@ -19,9 +19,7 @@ public class HomeTest extends BaseClass {
 	@Test(priority = 1)
 	public void verifyHomeCardsVisibility() {
 		logger.info("*** Verifying test case: verifyHomeCardsVisibility ***");
-
 		boolean areVisible = hp.areAllCardsVisible();
-
 		Assert.assertTrue(areVisible, "All 3 cards are not visible on the home page.");
 	}
 

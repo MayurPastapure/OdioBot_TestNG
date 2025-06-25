@@ -18,6 +18,12 @@ public class HomePage extends BasePage {
 
 	@FindBy(xpath = "//*[@class='home-head']")
 	WebElement headTitle;
+	
+	@FindBy(xpath = "//*[@data-testid='MoreVertIcon']")
+	WebElement iconMoreVertIcon;
+	
+	@FindBy(xpath = "//li[text()='Logout']")
+	WebElement btnLogout;
 
 	public boolean areAllCardsVisible() {
 		wait.until(ExpectedConditions.visibilityOfAllElements(headTitle));
@@ -31,6 +37,18 @@ public class HomePage extends BasePage {
 			}
 		}
 		return true;
+	}
+	
+	public void openMoreOption() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(iconMoreVertIcon));
+		element.click();
+		wait.until(ExpectedConditions.visibilityOf(btnLogout));
+	}
+	
+	public void clickLogout() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnLogout));
+		element.click();
+		wait.until(ExpectedConditions.urlToBe(p.getProperty("loginUrl")));
 	}
 
 }

@@ -72,7 +72,7 @@ public class WorkflowPage extends BasePage {
 	WebElement btnYesDeleteConfirm;
 
 	public void openMyWorkflowPage() throws InterruptedException {
-		odioIcon.click();
+		//odioIcon.click();
 		Thread.sleep(5000);
 		txtWorkflow.click();
 		driver.switchTo().frame(0);

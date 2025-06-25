@@ -60,10 +60,10 @@ public class BaseClass {
 
 	}
 
-	@AfterSuite
-	public void tearDown() {
-		if (driver != null) {
-			driver.quit();
-		}
-	}
+//	@AfterSuite
+//	public void tearDown() {
+//		if (driver != null) {
+//			driver.quit();
+//		}
+//	}
 }
