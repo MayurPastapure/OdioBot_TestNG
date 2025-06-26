@@ -13,9 +13,7 @@ public class TestListener implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 
 		WebDriver driver = BaseClass.driver;
-
 		String testName = result.getMethod().getMethodName();
-
 		ScreenshotUtil.captureScreenshot(driver, testName);
 	}
 

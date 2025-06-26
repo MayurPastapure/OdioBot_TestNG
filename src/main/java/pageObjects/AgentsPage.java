@@ -45,11 +45,14 @@ public class AgentsPage extends BasePage {
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement btnCreateAgent;
 
-	@FindBy(xpath = "//input[@placeholder='Search user...']")
+	@FindBy(xpath = "//input[@placeholder='Search user by Name']")
 	WebElement inpSearchUser;
 
-	@FindBy(xpath = "//p[text()='Agent Name is required']")
+	@FindBy(xpath = "//p[text()='Agent Name must contain only letters and spaces']")
 	WebElement msgNullAgentName;
+	
+	@FindBy(xpath = "//p[text()='Department Name is required']")
+	WebElement msgNullDepartmentName;
 
 	@FindBy(xpath = "//p[text()='Email is required']")
 	WebElement msgNullAgentEmail;
@@ -139,6 +142,10 @@ public class AgentsPage extends BasePage {
 
 	public String getNullAgentNameMsg() {
 		return msgNullAgentName.getText().trim();
+	}
+	
+	public String getNullDepartmentNameMsg() {
+		return msgNullDepartmentName.getText().trim();
 	}
 
 	public String getNullAgentEmailMsg() {

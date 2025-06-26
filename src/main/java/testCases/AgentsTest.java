@@ -38,12 +38,25 @@ public class AgentsTest extends BaseClass {
 		lp.refreshPage();
 		softAssert.assertAll();
 	}
-
+	
 	@Test(priority = 3)
+	public void verifyNullDepartmentName() {
+		logger.info("*** Verify test case: verifyNullDepartmentName ***");
+		ap.openNewAgentCreatePopup();
+		ap.setAgentName(p.getProperty("AgentName"));
+		ap.clickCreateAgentButton();
+		String actErrorMsg = ap.getNullDepartmentNameMsg();
+		softAssert.assertEquals(actErrorMsg, p.getProperty("expNullDepartmentName"), "Error message does not match!");
+		lp.refreshPage();
+		softAssert.assertAll();
+	}
+
+	@Test(priority = 4)
 	public void verifyNullAgentEmail() {
 		logger.info("*** Verify test case: verifyNullAgentEmail ***");
 		ap.openNewAgentCreatePopup();
 		ap.setAgentName(p.getProperty("AgentName"));
+		ap.selectDepartmentName(p.getProperty("DepartmentName"));
 		ap.clickCreateAgentButton();
 		String actErrorMsg = ap.getNullAgentEmailMsg();
 		softAssert.assertEquals(actErrorMsg, p.getProperty("expNullAgentEmailMsg"), "Error message does not match!");
@@ -51,11 +64,12 @@ public class AgentsTest extends BaseClass {
 		softAssert.assertAll();
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 5)
 	public void verifyNullAgentMobileNumber() {
 		logger.info("*** Verify test case: verifyNullAgentMobileNumber ***");
 		ap.openNewAgentCreatePopup();
 		ap.setAgentName(p.getProperty("AgentName"));
+		ap.selectDepartmentName(p.getProperty("DepartmentName"));
 		ap.setAgentEmail(p.getProperty("AgentEmail"));
 		ap.clickCreateAgentButton();
 		String actErrorMsg = ap.getNullAgentMobileNoMsg();
@@ -64,11 +78,12 @@ public class AgentsTest extends BaseClass {
 		softAssert.assertAll();
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 6)
 	public void verifyNullPassword() {
 		logger.info("*** Verify test case: verifyNullPassword ***");
 		ap.openNewAgentCreatePopup();
 		ap.setAgentName(p.getProperty("AgentName"));
+		ap.selectDepartmentName(p.getProperty("DepartmentName"));
 		ap.setAgentEmail(p.getProperty("AgentEmail"));
 		ap.setAgentMobileNo(p.getProperty("AgentMobileNo"));
 		ap.clickCreateAgentButton();
@@ -78,11 +93,12 @@ public class AgentsTest extends BaseClass {
 		softAssert.assertAll();
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 7)
 	public void verifyNullConfirmPassword() {
 		logger.info("*** Verify test case: verifyNullConfirmPassword ***");
 		ap.openNewAgentCreatePopup();
 		ap.setAgentName(p.getProperty("AgentName"));
+		ap.selectDepartmentName(p.getProperty("DepartmentName"));
 		ap.setAgentEmail(p.getProperty("AgentEmail"));
 		ap.setAgentMobileNo(p.getProperty("AgentMobileNo"));
 		ap.setPassword(p.getProperty("Password"));
@@ -94,7 +110,7 @@ public class AgentsTest extends BaseClass {
 		softAssert.assertAll();
 	}
 
-	@Test(priority = 7, enabled = false)
+	@Test(priority = 8, enabled = false)
 	public void verifyNewAgentCreationWithValidData() {
 		logger.info("*** Verify test case: verifyNewAgentCreationWithValidData ***");
 		ap.openNewAgentCreatePopup();
@@ -110,7 +126,7 @@ public class AgentsTest extends BaseClass {
 		softAssert.assertAll();
 	}
 
-	@Test(priority = 8, enabled = false)
+	@Test(priority = 9, enabled = false)
 	public void verifyDuplicateAgentCreationWithSameEmail() {
 		logger.info("*** Verify test case: verifyDuplicateAgentCreationWithSameEmail ***");
 		ap.openNewAgentCreatePopup();
@@ -127,7 +143,7 @@ public class AgentsTest extends BaseClass {
 		softAssert.assertAll();
 	}
 
-	@Test(priority = 9)
+	@Test(priority = 10)
 	public void verifySearchByUserName() {
 		logger.info("*** Verify test case: verifySearchByUserName ***");
 		Boolean isAvailable = ap.searchByUserName(p.getProperty("AgentName"));
@@ -136,7 +152,7 @@ public class AgentsTest extends BaseClass {
 		softAssert.assertAll();
 	}
 
-	@Test(priority = 10)
+	@Test(priority = 11)
 	public void verifyTotalAgentCountOnPagination() throws InterruptedException {
 		logger.info("*** Verify test case: verifyTotalAgentCountOnPagination ***");
 		int agentCount = ap.getTotalAgentCountFromPagination();
@@ -148,7 +164,7 @@ public class AgentsTest extends BaseClass {
 		softAssert.assertAll();
 	}
 	
-	@Test(priority = 11)
+	@Test(priority = 12) //Incomplete test case
 	public void verifyEditAgentbyUpdatingName() {
 		logger.info("*** Verify test case: verifyEditAgentbyUpdatingName ***");
 		ap.searchByUserName(p.getProperty("AgentName"));
@@ -158,7 +174,7 @@ public class AgentsTest extends BaseClass {
 		lp.refreshPage();
 	}
 	
-	@Test(priority = 12)
+	@Test(priority = 13) //Incomplete test case
 	public void verifyDeleteSpecificAgent() {
 		logger.info("*** Verify test case: verifyDeleteSpecificAgent ***");
 		ap.searchByUserName(p.getProperty("AgentName"));

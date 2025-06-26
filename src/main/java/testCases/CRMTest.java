@@ -28,7 +28,15 @@ public class CRMTest extends BaseClass {
 	}
 	
 	@Test(priority = 2)
-	public void verifyNullUserName() {
-		
+	public void verifyDownloadSampleCSV() throws InterruptedException {
+		logger.info("*** Verifying test case: verifyDownloadSampleCSV ***" );
+		crm.clickUploadCSV_BulkUsers();
+		crm.clickDownloadSampleCSV();
+		String actToast = crm.getToastMessage();
+		softAssert.assertEquals(actToast, p.getProperty("expDownloadStratMsg"), "Toast message does not match!");
+		Thread.sleep(4000);
+		boolean exist = crm.isFileExist(p.getProperty("csvFileName"));
+		softAssert.assertTrue(exist, "File does not exist");
+		softAssert.assertAll();
 	}
 }

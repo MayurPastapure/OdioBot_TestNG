@@ -35,7 +35,7 @@ public class DepartmentsPage extends BasePage {
 	@FindBy(xpath = "//*[text()='Department Description is required']")
 	WebElement msgNullDepartmentDescription;
 	
-	@FindBy(xpath = "//input[@placeholder='Search']")
+	@FindBy(xpath = "//input[@placeholder='Search Department by Name']")
 	WebElement inpSearchDept;
 
 	public void openDepartmentsPage() {

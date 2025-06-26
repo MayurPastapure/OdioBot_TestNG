@@ -6,16 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.AgentsTest">
+      <class name="testCases.CRMTest">
         <methods>
-          <include name="verifyEditAgentbyUpdatingName"/>
-          <include name="setupAgentsObjects"/>
+          <include name="verifyDownloadSampleCSV"/>
+          <include name="setupCRMObjects"/>
           <include name="browserLounching"/>
-          <include name="verifySearchByUserName"/>
-          <include name="verifyDeleteSpecificAgent"/>
-          <include name="verifyTotalAgentCountOnPagination"/>
         </methods>
-      </class> <!-- testCases.AgentsTest -->
+      </class> <!-- testCases.CRMTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

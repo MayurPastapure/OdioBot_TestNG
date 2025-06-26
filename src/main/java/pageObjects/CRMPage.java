@@ -1,5 +1,9 @@
 package pageObjects;
 
+import java.io.File;
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -33,13 +37,13 @@ public class CRMPage extends BasePage {
 	WebElement drpSelectDepartment;
 
 	@FindBy(xpath = "//ul[@role='listbox']//li")
-	WebElement drpSelectDepartmentOption;
+	List<WebElement> drpSelectDepartmentOptions;
 
 	@FindBy(xpath = "//label[text()='Select Group']")
 	WebElement drpSelectGroup;
 
 	@FindBy(xpath = "//ul[@role='listbox']//li")
-	WebElement drpSelectGroupOption;
+	List<WebElement> drpSelectGroupOptions;
 
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement btnCreateUser;
@@ -61,15 +65,134 @@ public class CRMPage extends BasePage {
 
 	@FindBy(xpath = "//span[text()='Upload Bulk Users']")
 	WebElement btnUploadBulkUser;
-	
+
 	@FindBy(xpath = "//h6[text()='Filter']")
 	WebElement btnFilter;
-	
+
+	@FindBy(xpath = "//div[@class='SnackbarItem-message']")
+	WebElement toastMessage;
+
+	@FindBy(xpath = "//input[@placeholder='Search Name...']")
+	WebElement inpSearch;
 
 	public void openCRMPage() {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(txtCRM));
 		element.click();
 		wait.until(ExpectedConditions.visibilityOf(btnAddUsers));
+	}
+
+	public void clickUploadCSV_BulkUsers() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnUploadCSV));
+		element.click();
+		wait.until(ExpectedConditions.visibilityOf(btnUploadBulkUser));
+	}
+
+	public void clickUploadBulkUser() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnUploadBulkUser));
+		element.click();
+	}
+
+	public void clickDownloadSampleCSV() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnDownloadSampleCSV));
+		element.click();
+		wait.until(ExpectedConditions.visibilityOf(toastMessage));
+	}
+	
+	public boolean isFileExist(String fileName) {
+		File file = new File(System.getProperty("user.dir") + "\\downloadFiles\\" + fileName + ".csv");
+		Boolean exist = file.exists();
+		return exist;
+	}
+
+	public boolean searchByName(String searchingName) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpSearch));
+		element.sendKeys(searchingName);
+		List<WebElement> rows = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(
+				By.xpath("//table[contains(@class,'MuiTable-root')]/tbody/tr[td[not(@colspan)]]")));
+		for (WebElement row : rows) {
+			if (row.getText().toLowerCase().contains(searchingName.toLowerCase())) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public String getToastMessage() {
+		WebElement element = wait.until(ExpectedConditions.visibilityOf(toastMessage));
+		String text = element.getText().trim();
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class='toast-message']")));
+		return text;
+	}
+
+	public void clickOnAddUser() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnAddUsers));
+		element.click();
+		wait.until(ExpectedConditions.elementToBeClickable(inpUserName));
+	}
+
+	public void setUserName(String userName) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpUserName));
+		element.sendKeys(userName);
+	}
+
+	public void setMobileNumber(String mobileNumber) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpUserMobile));
+		element.sendKeys(mobileNumber);
+	}
+
+	public void setHandle(String handle) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpUserHandle));
+		element.sendKeys(handle);
+	}
+
+	public void setEmail(String email) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpUserEmail));
+		element.sendKeys(email);
+	}
+
+	public void selectDepartment(String departmentName) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(drpSelectDepartment));
+		element.click();
+		List<WebElement> depts = wait.until(ExpectedConditions.visibilityOfAllElements(drpSelectDepartmentOptions));
+		for (WebElement dept : depts) {
+			if (dept.getText().equalsIgnoreCase(departmentName)) {
+				dept.click();
+				break;
+			}
+		}
+	}
+
+	public void selectGroup(String groupName) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(drpSelectGroup));
+		element.click();
+		List<WebElement> groups = wait.until(ExpectedConditions.visibilityOfAllElements(drpSelectGroupOptions));
+		for (WebElement group : groups) {
+			if (group.getText().equalsIgnoreCase(groupName)) {
+				group.click();
+				break;
+			}
+		}
+	}
+
+	public void clickOnAddInfo() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnAddInfo));
+		element.click();
+		wait.until(ExpectedConditions.elementToBeClickable(inpKey));
+	}
+
+	public void setKey(String keyName) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpKey));
+		element.sendKeys(keyName);
+	}
+
+	public void setDescription(String description) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpDescription));
+		element.sendKeys(description);
+	}
+
+	public void clickCreateUser() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnCreateUser));
+		element.click();
 	}
 
 }
