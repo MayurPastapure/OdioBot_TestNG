@@ -33,13 +33,13 @@ public class CRMPage extends BasePage {
 	@FindBy(xpath = "//input[@name='userEmail']")
 	WebElement inpUserEmail;
 
-	@FindBy(xpath = "//label[text()='Select Department']")
+	@FindBy(xpath = "(//*[@id= 'demo-simple-select'])[1]")
 	WebElement drpSelectDepartment;
 
 	@FindBy(xpath = "//ul[@role='listbox']//li")
 	List<WebElement> drpSelectDepartmentOptions;
 
-	@FindBy(xpath = "//label[text()='Select Group']")
+	@FindBy(xpath = "(//*[@id= 'demo-simple-select'])[2]")
 	WebElement drpSelectGroup;
 
 	@FindBy(xpath = "//ul[@role='listbox']//li")
@@ -75,6 +75,9 @@ public class CRMPage extends BasePage {
 	@FindBy(xpath = "//input[@placeholder='Search Name...']")
 	WebElement inpSearch;
 
+	@FindBy(xpath = "//p[contains(@class, 'MuiFormHelperText-root')]")
+	List<WebElement> nullMessages;
+
 	public void openCRMPage() {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(txtCRM));
 		element.click();
@@ -87,9 +90,11 @@ public class CRMPage extends BasePage {
 		wait.until(ExpectedConditions.visibilityOf(btnUploadBulkUser));
 	}
 
-	public void clickUploadBulkUser() {
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnUploadBulkUser));
-		element.click();
+	public void clickAndUploadBulkUserFile(String filePath, String fileName) {
+		wait.until(ExpectedConditions.elementToBeClickable(btnUploadBulkUser));
+		WebElement fileInput = wait
+				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@type='file']")));
+		fileInput.sendKeys(filePath + fileName);
 	}
 
 	public void clickDownloadSampleCSV() {
@@ -97,7 +102,7 @@ public class CRMPage extends BasePage {
 		element.click();
 		wait.until(ExpectedConditions.visibilityOf(toastMessage));
 	}
-	
+
 	public boolean isFileExist(String fileName) {
 		File file = new File(System.getProperty("user.dir") + "\\downloadFiles\\" + fileName + ".csv");
 		Boolean exist = file.exists();
@@ -119,7 +124,7 @@ public class CRMPage extends BasePage {
 
 	public String getToastMessage() {
 		WebElement element = wait.until(ExpectedConditions.visibilityOf(toastMessage));
-		String text = element.getText().trim();
+		String text = element.getText().trim().replaceAll("\\n", " ");
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class='toast-message']")));
 		return text;
 	}
@@ -172,6 +177,7 @@ public class CRMPage extends BasePage {
 				break;
 			}
 		}
+		driver.findElement(By.xpath("//*[@id= 'menu-channel']")).click();
 	}
 
 	public void clickOnAddInfo() {
@@ -193,6 +199,15 @@ public class CRMPage extends BasePage {
 	public void clickCreateUser() {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnCreateUser));
 		element.click();
+	}
+
+	public String getNullErrorMsgs(String expNullMsg) {
+		for (WebElement nullMsg : nullMessages) {
+			if (nullMsg.getText().equals(expNullMsg)) {
+				return nullMsg.getText();
+			}
+		}
+		return null;
 	}
 
 }

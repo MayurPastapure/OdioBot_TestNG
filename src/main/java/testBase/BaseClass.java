@@ -14,6 +14,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.asserts.SoftAssert;
 
@@ -30,14 +31,14 @@ public class BaseClass {
 		FileReader file = new FileReader("./src//main//resources//config.properties");
 		p = new Properties();
 		p.load(file);
-		
+
 		String downloadFilePath = System.getProperty("user.dir") + "\\downloadFiles";
-		
+
 		HashMap<String, Object> chromePrefs = new HashMap<>();
 		chromePrefs.put("profile.default_content_settings.popups", 0);
 		chromePrefs.put("download.prompt_for_download", false);
 		chromePrefs.put("download.default_directory", downloadFilePath);
-		
+
 		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("prefs", chromePrefs);
 
@@ -71,10 +72,10 @@ public class BaseClass {
 
 	}
 
-//	@AfterSuite
-//	public void tearDown() {
-//		if (driver != null) {
-//			driver.quit();
-//		}
-//	}
+	@AfterSuite
+	public void tearDown() {
+		if (driver != null) {
+			driver.quit();
+		}
+	}
 }

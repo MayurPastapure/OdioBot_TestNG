@@ -38,7 +38,7 @@ public class AgentsTest extends BaseClass {
 		lp.refreshPage();
 		softAssert.assertAll();
 	}
-	
+
 	@Test(priority = 3)
 	public void verifyNullDepartmentName() {
 		logger.info("*** Verify test case: verifyNullDepartmentName ***");
@@ -144,8 +144,8 @@ public class AgentsTest extends BaseClass {
 	}
 
 	@Test(priority = 10)
-	public void verifySearchByUserName() {
-		logger.info("*** Verify test case: verifySearchByUserName ***");
+	public void verifySearchByAgentName() {
+		logger.info("*** Verify test case: verifySearchByAgentName ***");
 		Boolean isAvailable = ap.searchByUserName(p.getProperty("AgentName"));
 		softAssert.assertTrue(isAvailable, "Agent name is not found in search result");
 		lp.refreshPage();
@@ -163,8 +163,8 @@ public class AgentsTest extends BaseClass {
 		lp.refreshPage();
 		softAssert.assertAll();
 	}
-	
-	@Test(priority = 12) //Incomplete test case
+
+	@Test(priority = 12) // Incomplete test case
 	public void verifyEditAgentbyUpdatingName() {
 		logger.info("*** Verify test case: verifyEditAgentbyUpdatingName ***");
 		ap.searchByUserName(p.getProperty("AgentName"));
@@ -173,8 +173,8 @@ public class AgentsTest extends BaseClass {
 		ap.clickCreateAgentButton();
 		lp.refreshPage();
 	}
-	
-	@Test(priority = 13) //Incomplete test case
+
+	@Test(priority = 13) // Incomplete test case
 	public void verifyDeleteSpecificAgent() {
 		logger.info("*** Verify test case: verifyDeleteSpecificAgent ***");
 		ap.searchByUserName(p.getProperty("AgentName"));

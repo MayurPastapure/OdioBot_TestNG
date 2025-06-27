@@ -45,12 +45,12 @@ public class AgentsPage extends BasePage {
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement btnCreateAgent;
 
-	@FindBy(xpath = "//input[@placeholder='Search user by Name']")
+	@FindBy(xpath = "//input[@placeholder='Search Agent by Name']")
 	WebElement inpSearchUser;
 
 	@FindBy(xpath = "//p[text()='Agent Name must contain only letters and spaces']")
 	WebElement msgNullAgentName;
-	
+
 	@FindBy(xpath = "//p[text()='Department Name is required']")
 	WebElement msgNullDepartmentName;
 
@@ -74,20 +74,18 @@ public class AgentsPage extends BasePage {
 
 	@FindBy(xpath = "//button[@title='Go to next page']")
 	WebElement btnNextPageButton;
-	
+
 	@FindBy(xpath = "//li[text()='Delete']")
 	WebElement btnDelete;
-	
+
 	@FindBy(xpath = "//li[text()='Edit']")
 	WebElement btnEdit;
-	
+
 	@FindBy(xpath = "//button[text()='Yes']")
 	WebElement btnYesDelete;
-	
+
 	@FindBy(xpath = "//button[text()='No']")
 	WebElement btnNoDelete;
-	
-	
 
 	public void openAgentsPage() {
 		txtAgents.click();
@@ -143,7 +141,7 @@ public class AgentsPage extends BasePage {
 	public String getNullAgentNameMsg() {
 		return msgNullAgentName.getText().trim();
 	}
-	
+
 	public String getNullDepartmentNameMsg() {
 		return msgNullDepartmentName.getText().trim();
 	}
@@ -215,29 +213,28 @@ public class AgentsPage extends BasePage {
 		}
 		return totalRows;
 	}
-	
+
 	public void clickActionOfSpecificAgent(String AgentName) {
-		String dynamicXpath = "//tr//td[text()='"+ AgentName +"']//parent::tr//button[@type='button']";
+		String dynamicXpath = "//tr//td[text()='" + AgentName + "']//parent::tr//button[@type='button']";
 		WebElement btnAction = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(dynamicXpath)));
 		btnAction.click();
 	}
-	
+
 	public void clickDeleteAction() {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnDelete));
 		element.click();
 	}
-	
+
 	public void clickEditAction() {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnEdit));
 		element.click();
-		wait.until(ExpectedConditions.elementToBeClickable(inpAgnetName));
 	}
-	
+
 	public void clickYesDeleteOnConfirm() {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnYesDelete));
 		element.click();
 	}
-	
+
 	public void clickNoDeleteOnConfirm() {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnNoDelete));
 		element.click();

@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.LoginTest">
+      <class name="testCases.CRMTest">
         <methods>
-          <include name="verifyIncorrectCredLogin"/>
+          <include name="verifyUploadBulkUserFile"/>
+          <include name="verifyPageIsCRMPage"/>
+          <include name="setupCRMObjects"/>
           <include name="browserLounching"/>
-          <include name="verifyCorrectCredLogin"/>
-          <include name="tearDown"/>
         </methods>
-      </class> <!-- testCases.LoginTest -->
+      </class> <!-- testCases.CRMTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

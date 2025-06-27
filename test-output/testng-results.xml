@@ -1,76 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="9" passed="7" failed="0" skipped="0">
+<testng-results ignored="3" total="10" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-26T18:02:01 IST" name="Suite" finished-at="2025-06-26T18:02:25 IST" duration-ms="23900">
+  <suite started-at="2025-06-27T19:00:20 IST" name="Suite" finished-at="2025-06-27T19:00:41 IST" duration-ms="20881">
     <groups>
     </groups>
-    <test started-at="2025-06-26T18:02:01 IST" name="Test" finished-at="2025-06-26T18:02:25 IST" duration-ms="23900">
+    <test started-at="2025-06-27T19:00:20 IST" name="Test" finished-at="2025-06-27T19:00:41 IST" duration-ms="20881">
       <class name="testCases.LoginTest">
-        <test-method is-config="true" signature="browserLounching()[pri:0, instance:testCases.LoginTest@428640fa]" started-at="2025-06-26T18:01:49 IST" name="browserLounching" finished-at="2025-06-26T18:02:01 IST" duration-ms="12137" status="PASS">
+        <test-method is-config="true" signature="browserLounching()[pri:0, instance:testCases.LoginTest@29215f06]" started-at="2025-06-27T19:00:05 IST" name="browserLounching" finished-at="2025-06-27T19:00:20 IST" duration-ms="15135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLounching -->
-        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@428640fa]" started-at="2025-06-26T18:02:01 IST" name="setupLoginPageObjects" finished-at="2025-06-26T18:02:01 IST" duration-ms="25" status="PASS">
+        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@29215f06]" started-at="2025-06-27T19:00:20 IST" name="setupLoginPageObjects" finished-at="2025-06-27T19:00:20 IST" duration-ms="43" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLoginPageObjects -->
-        <test-method signature="verifyIncorrectCredLogin()[pri:1, instance:testCases.LoginTest@428640fa]" started-at="2025-06-26T18:02:01 IST" name="verifyIncorrectCredLogin" finished-at="2025-06-26T18:02:04 IST" duration-ms="2273" status="PASS">
+        <test-method signature="verifyIncorrectCredLogin()[pri:1, instance:testCases.LoginTest@29215f06]" started-at="2025-06-27T19:00:20 IST" name="verifyIncorrectCredLogin" finished-at="2025-06-27T19:00:22 IST" duration-ms="2423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyIncorrectCredLogin -->
-        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@428640fa]" started-at="2025-06-26T18:02:04 IST" name="setupLoginPageObjects" finished-at="2025-06-26T18:02:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@29215f06]" started-at="2025-06-27T19:00:22 IST" name="setupLoginPageObjects" finished-at="2025-06-27T19:00:22 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLoginPageObjects -->
-        <test-method signature="verifyBlankEmailLogin()[pri:2, instance:testCases.LoginTest@428640fa]" started-at="2025-06-26T18:02:04 IST" name="verifyBlankEmailLogin" finished-at="2025-06-26T18:02:04 IST" duration-ms="616" status="PASS">
+        <test-method signature="verifyBlankEmailLogin()[pri:2, instance:testCases.LoginTest@29215f06]" started-at="2025-06-27T19:00:22 IST" name="verifyBlankEmailLogin" finished-at="2025-06-27T19:00:23 IST" duration-ms="762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBlankEmailLogin -->
-        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@428640fa]" started-at="2025-06-26T18:02:04 IST" name="setupLoginPageObjects" finished-at="2025-06-26T18:02:04 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@29215f06]" started-at="2025-06-27T19:00:23 IST" name="setupLoginPageObjects" finished-at="2025-06-27T19:00:23 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLoginPageObjects -->
-        <test-method signature="verifyBlankPasswordLogin()[pri:3, instance:testCases.LoginTest@428640fa]" started-at="2025-06-26T18:02:04 IST" name="verifyBlankPasswordLogin" finished-at="2025-06-26T18:02:06 IST" duration-ms="1323" status="PASS">
+        <test-method signature="verifyBlankPasswordLogin()[pri:3, instance:testCases.LoginTest@29215f06]" started-at="2025-06-27T19:00:23 IST" name="verifyBlankPasswordLogin" finished-at="2025-06-27T19:00:24 IST" duration-ms="1393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBlankPasswordLogin -->
-        <test-method signature="verifyCorrectCredLogin()[pri:4, instance:testCases.LoginTest@428640fa]" started-at="2025-06-26T18:02:06 IST" name="verifyCorrectCredLogin" finished-at="2025-06-26T18:02:08 IST" duration-ms="2120" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCorrectCredLogin -->
-        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@428640fa]" started-at="2025-06-26T18:02:06 IST" name="setupLoginPageObjects" finished-at="2025-06-26T18:02:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@29215f06]" started-at="2025-06-27T19:00:24 IST" name="setupLoginPageObjects" finished-at="2025-06-27T19:00:24 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLoginPageObjects -->
+        <test-method signature="verifyCorrectCredLogin()[pri:4, instance:testCases.LoginTest@29215f06]" started-at="2025-06-27T19:00:24 IST" name="verifyCorrectCredLogin" finished-at="2025-06-27T19:00:27 IST" duration-ms="2504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCorrectCredLogin -->
       </class> <!-- testCases.LoginTest -->
       <class name="testCases.HomeTest">
-        <test-method is-config="true" signature="setupHomePageObjects()[pri:0, instance:testCases.HomeTest@b9b00e0]" started-at="2025-06-26T18:02:08 IST" name="setupHomePageObjects" finished-at="2025-06-26T18:02:08 IST" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="setupHomePageObjects()[pri:0, instance:testCases.HomeTest@72e5a8e]" started-at="2025-06-27T19:00:27 IST" name="setupHomePageObjects" finished-at="2025-06-27T19:00:27 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupHomePageObjects -->
-        <test-method signature="verifyHomeCardsVisibility()[pri:1, instance:testCases.HomeTest@b9b00e0]" started-at="2025-06-26T18:02:08 IST" name="verifyHomeCardsVisibility" finished-at="2025-06-26T18:02:08 IST" duration-ms="273" status="PASS">
+        <test-method signature="verifyHomeCardsVisibility()[pri:1, instance:testCases.HomeTest@72e5a8e]" started-at="2025-06-27T19:00:27 IST" name="verifyHomeCardsVisibility" finished-at="2025-06-27T19:00:27 IST" duration-ms="303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomeCardsVisibility -->
       </class> <!-- testCases.HomeTest -->
       <class name="testCases.CRMTest">
-        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRMTest@506ae4d4]" started-at="2025-06-26T18:02:08 IST" name="setupCRMObjects" finished-at="2025-06-26T18:02:08 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRMTest@52b1beb6]" started-at="2025-06-27T19:00:27 IST" name="setupCRMObjects" finished-at="2025-06-27T19:00:27 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupCRMObjects -->
-        <test-method signature="verifyPageIsCRMPage()[pri:1, instance:testCases.CRMTest@506ae4d4]" started-at="2025-06-26T18:02:08 IST" name="verifyPageIsCRMPage" finished-at="2025-06-26T18:02:09 IST" duration-ms="1318" status="PASS">
+        <test-method signature="verifyPageIsCRMPage()[pri:1, instance:testCases.CRMTest@52b1beb6]" started-at="2025-06-27T19:00:27 IST" name="verifyPageIsCRMPage" finished-at="2025-06-27T19:00:29 IST" duration-ms="1290" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageIsCRMPage -->
-        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRMTest@506ae4d4]" started-at="2025-06-26T18:02:09 IST" name="setupCRMObjects" finished-at="2025-06-26T18:02:09 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRMTest@52b1beb6]" started-at="2025-06-27T19:00:29 IST" name="setupCRMObjects" finished-at="2025-06-27T19:00:29 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupCRMObjects -->
-        <test-method signature="verifyDownloadSampleCSV()[pri:2, instance:testCases.CRMTest@506ae4d4]" started-at="2025-06-26T18:02:09 IST" name="verifyDownloadSampleCSV" finished-at="2025-06-26T18:02:25 IST" duration-ms="15858" status="PASS">
+        <test-method signature="verifyUploadBulkUserFile()[pri:3, instance:testCases.CRMTest@52b1beb6]" started-at="2025-06-27T19:00:29 IST" name="verifyUploadBulkUserFile" finished-at="2025-06-27T19:00:40 IST" duration-ms="11695" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+File upload message does not match! expected [Create success!] but found [Customer handle : Mayur should be unique provided at : 1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+File upload message does not match! expected [Create success!] but found [Customer handle : Mayur should be unique provided at : 1]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at testCases.CRMTest.verifyUploadBulkUserFile(CRMTest.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDownloadSampleCSV -->
+        </test-method> <!-- verifyUploadBulkUserFile -->
       </class> <!-- testCases.CRMTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
