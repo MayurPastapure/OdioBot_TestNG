@@ -19,7 +19,7 @@ public class CRMPage extends BasePage {
 	WebElement txtCRM;
 
 	@FindBy(xpath = "//button[text()='Add ']")
-	WebElement btnAddUsers;
+	WebElement btnAddUsers_Groups;
 
 	@FindBy(xpath = "//input[@name='userName']")
 	WebElement inpUserName;
@@ -46,7 +46,7 @@ public class CRMPage extends BasePage {
 	List<WebElement> drpSelectGroupOptions;
 
 	@FindBy(xpath = "//button[@type='submit']")
-	WebElement btnCreateUser;
+	WebElement btnCreateUser_Group;
 
 	@FindBy(xpath = "//button[text()='+ Add Info']")
 	WebElement btnAddInfo;
@@ -78,10 +78,25 @@ public class CRMPage extends BasePage {
 	@FindBy(xpath = "//p[contains(@class, 'MuiFormHelperText-root')]")
 	List<WebElement> nullMessages;
 
+	@FindBy(xpath = "//button[text()='users']")
+	WebElement txtUsersTab;
+
+	@FindBy(xpath = "//button[text()='groups']")
+	WebElement txtGroupsTab;
+
+	@FindBy(xpath = "//button[text()='segments']")
+	WebElement txtSegmentsTab;
+
+	@FindBy(xpath = "//input[@name='groupName']")
+	WebElement inpGroupName;
+
+	@FindBy(xpath = "//input[@name='websiteName']")
+	WebElement inpWebsite;
+
 	public void openCRMPage() {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(txtCRM));
 		element.click();
-		wait.until(ExpectedConditions.visibilityOf(btnAddUsers));
+		wait.until(ExpectedConditions.visibilityOf(btnAddUsers_Groups));
 	}
 
 	public void clickUploadCSV_BulkUsers() {
@@ -112,7 +127,8 @@ public class CRMPage extends BasePage {
 	public boolean searchByName(String searchingName) {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpSearch));
 		element.sendKeys(searchingName);
-		List<WebElement> rows = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(
+		List<WebElement> rows = 
+				wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(
 				By.xpath("//table[contains(@class,'MuiTable-root')]/tbody/tr[td[not(@colspan)]]")));
 		for (WebElement row : rows) {
 			if (row.getText().toLowerCase().contains(searchingName.toLowerCase())) {
@@ -129,10 +145,10 @@ public class CRMPage extends BasePage {
 		return text;
 	}
 
-	public void clickOnAddUser() {
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnAddUsers));
+	public void clickOnAddUsers_AddGroups() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnAddUsers_Groups));
 		element.click();
-		wait.until(ExpectedConditions.elementToBeClickable(inpUserName));
+		wait.until(ExpectedConditions.elementToBeClickable(btnCreateUser_Group));
 	}
 
 	public void setUserName(String userName) {
@@ -196,8 +212,8 @@ public class CRMPage extends BasePage {
 		element.sendKeys(description);
 	}
 
-	public void clickCreateUser() {
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnCreateUser));
+	public void clickCreateUser_Group() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnCreateUser_Group));
 		element.click();
 	}
 
@@ -208,6 +224,23 @@ public class CRMPage extends BasePage {
 			}
 		}
 		return null;
+	}
+
+	public void openGroupTab() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(txtGroupsTab));
+		element.click();
+		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(
+				By.xpath("//table[contains(@class,'MuiTable-root')]/tbody/tr[td[not(@colspan)]]")));
+	}
+
+	public void setGroupName(String groupName) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpGroupName));
+		element.sendKeys(groupName);
+	}
+
+	public void setWebsiteName(String websiteName) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpWebsite));
+		element.sendKeys(websiteName);
 	}
 
 }

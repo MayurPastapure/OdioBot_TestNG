@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>12/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 27 19:00:20 IST 2025</td>
+<td>Started on:</td><td>Mon Jun 30 17:11:02 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>20 seconds (20881 ms)</td>
+<tr><td>Total time:</td><td>27 seconds (27244 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,17 +75,56 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.CRMTest.verifyUploadBulkUserFile()'><b>verifyUploadBulkUserFile</b><br>Test class: testCases.CRMTest</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	File upload message does not match! expected [Create success!] but found [Customer handle : Mayur should be unique provided at : 1]
-	at testCases.CRMTest.verifyUploadBulkUserFile(CRMTest.java:57)
+<td title='testCases.CRMTest.verifySearchByGroupName()'><b>verifySearchByGroupName</b><br>Test class: testCases.CRMTest</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d8979347fb273ec2fd3acba99ca07dd3, getElementText {id=f.5EF0D2FEDFEF214DF6787EF73F2947A6.d.9F20741C03497C9D43ED13DC4E9B90F8.e.736}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Mayur\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52088}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52088/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d8979347fb273ec2fd3acba99ca07dd3)] -&gt; xpath: //table[contains(@class,&apos;MuiTable-root&apos;)]/tbody/tr[td[not(@colspan)]]]
+Session ID: d8979347fb273ec2fd3acba99ca07dd3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at pageObjects.CRMPage.searchByName(CRMPage.java:135)
+	at testCases.CRMTest.verifySearchByGroupName(CRMTest.java:169)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1730595945", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1730595945'><pre>java.lang.AssertionError: The following asserts failed:
-	File upload message does not match! expected [Create success!] but found [Customer handle : Mayur should be unique provided at : 1]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at testCases.CRMTest.verifyUploadBulkUserFile(CRMTest.java:57)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace409007038", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace409007038'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d8979347fb273ec2fd3acba99ca07dd3, getElementText {id=f.5EF0D2FEDFEF214DF6787EF73F2947A6.d.9F20741C03497C9D43ED13DC4E9B90F8.e.736}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Mayur\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52088}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52088/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d8979347fb273ec2fd3acba99ca07dd3)] -&gt; xpath: //table[contains(@class,&apos;MuiTable-root&apos;)]/tbody/tr[td[not(@colspan)]]]
+Session ID: d8979347fb273ec2fd3acba99ca07dd3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at pageObjects.CRMPage.searchByName(CRMPage.java:135)
+	at testCases.CRMTest.verifySearchByGroupName(CRMTest.java:169)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -115,8 +154,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>11</td>
-<td>testCases.CRMTest@52b1beb6</td></tr>
+<td>1</td>
+<td>testCases.CRMTest@3f6f6701</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -126,35 +165,65 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.LoginTest.verifyCorrectCredLogin()'><b>verifyCorrectCredLogin</b><br>Test class: testCases.LoginTest</td>
+<td title='testCases.CRMTest.verifyNullHandle()'><b>verifyNullHandle</b><br>Test class: testCases.CRMTest</td>
 <td></td>
 <td>2</td>
-<td>testCases.LoginTest@29215f06</td></tr>
+<td>testCases.CRMTest@3f6f6701</td></tr>
+<tr>
+<td title='testCases.CRMTest.verifyNullDepartment()'><b>verifyNullDepartment</b><br>Test class: testCases.CRMTest</td>
+<td></td>
+<td>3</td>
+<td>testCases.CRMTest@3f6f6701</td></tr>
 <tr>
 <td title='testCases.LoginTest.verifyBlankEmailLogin()'><b>verifyBlankEmailLogin</b><br>Test class: testCases.LoginTest</td>
 <td></td>
 <td>0</td>
-<td>testCases.LoginTest@29215f06</td></tr>
+<td>testCases.LoginTest@72e5a8e</td></tr>
+<tr>
+<td title='testCases.CRMTest.verifyNullEmail()'><b>verifyNullEmail</b><br>Test class: testCases.CRMTest</td>
+<td></td>
+<td>3</td>
+<td>testCases.CRMTest@3f6f6701</td></tr>
 <tr>
 <td title='testCases.LoginTest.verifyIncorrectCredLogin()'><b>verifyIncorrectCredLogin</b><br>Test class: testCases.LoginTest</td>
 <td></td>
+<td>3</td>
+<td>testCases.LoginTest@72e5a8e</td></tr>
+<tr>
+<td title='testCases.LoginTest.verifyCorrectCredLogin()'><b>verifyCorrectCredLogin</b><br>Test class: testCases.LoginTest</td>
+<td></td>
 <td>2</td>
-<td>testCases.LoginTest@29215f06</td></tr>
+<td>testCases.LoginTest@72e5a8e</td></tr>
+<tr>
+<td title='testCases.CRMTest.verifyNullMobileNumber()'><b>verifyNullMobileNumber</b><br>Test class: testCases.CRMTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.CRMTest@3f6f6701</td></tr>
 <tr>
 <td title='testCases.HomeTest.verifyHomeCardsVisibility()'><b>verifyHomeCardsVisibility</b><br>Test class: testCases.HomeTest</td>
 <td></td>
 <td>0</td>
-<td>testCases.HomeTest@72e5a8e</td></tr>
-<tr>
-<td title='testCases.CRMTest.verifyPageIsCRMPage()'><b>verifyPageIsCRMPage</b><br>Test class: testCases.CRMTest</td>
-<td></td>
-<td>1</td>
-<td>testCases.CRMTest@52b1beb6</td></tr>
+<td>testCases.HomeTest@771a660</td></tr>
 <tr>
 <td title='testCases.LoginTest.verifyBlankPasswordLogin()'><b>verifyBlankPasswordLogin</b><br>Test class: testCases.LoginTest</td>
 <td></td>
 <td>1</td>
-<td>testCases.LoginTest@29215f06</td></tr>
+<td>testCases.LoginTest@72e5a8e</td></tr>
+<tr>
+<td title='testCases.CRMTest.verifyPageIsCRM_UsersPage()'><b>verifyPageIsCRM_UsersPage</b><br>Test class: testCases.CRMTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.CRMTest@3f6f6701</td></tr>
+<tr>
+<td title='testCases.CRMTest.verifyNullUserName()'><b>verifyNullUserName</b><br>Test class: testCases.CRMTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.CRMTest@3f6f6701</td></tr>
+<tr>
+<td title='testCases.CRMTest.verifyNullGroupName()'><b>verifyNullGroupName</b><br>Test class: testCases.CRMTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.CRMTest@3f6f6701</td></tr>
 </table><p>
 </body>
 </html>

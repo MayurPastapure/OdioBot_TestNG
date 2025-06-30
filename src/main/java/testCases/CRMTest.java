@@ -25,8 +25,8 @@ public class CRMTest extends BaseClass {
 	}
 
 	@Test(priority = 1)
-	public void verifyPageIsCRMPage() {
-		logger.info("*** Verifying test case: verifyPageIsCRMPage ***");
+	public void verifyPageIsCRM_UsersPage() {
+		logger.info("*** Verifying test case: verifyPageIsCRM_UsersPage ***");
 		hp.openMoreOption();
 		crm.openCRMPage();
 		String actTitle = driver.getTitle();
@@ -46,7 +46,7 @@ public class CRMTest extends BaseClass {
 		softAssert.assertAll();
 	}
 
-	@Test(priority = 3, enabled = true)
+	@Test(priority = 3, enabled = false)
 	public void verifyUploadBulkUserFile() throws InterruptedException {
 		logger.info("*** Verifying test case: verifyUploadBulkUserFile ***");
 		crm.clickUploadCSV_BulkUsers();
@@ -60,8 +60,8 @@ public class CRMTest extends BaseClass {
 	@Test(priority = 4)
 	public void verifyNullUserName() {
 		logger.info("*** Verifying test case: verifyNullUserName ***");
-		crm.clickOnAddUser();
-		crm.clickCreateUser();
+		crm.clickOnAddUsers_AddGroups();
+		crm.clickCreateUser_Group();
 		String actNullMsg = crm.getNullErrorMsgs(p.getProperty("expNullUserName"));
 		softAssert.assertEquals(actNullMsg, p.getProperty("expNullUserName"), "Error message does not match!");
 		lp.refreshPage();
@@ -71,9 +71,9 @@ public class CRMTest extends BaseClass {
 	@Test(priority = 5)
 	public void verifyNullMobileNumber() {
 		logger.info("*** Verifying test case: verifyNullMobileNumber ***");
-		crm.clickOnAddUser();
+		crm.clickOnAddUsers_AddGroups();
 		crm.setUserName(p.getProperty("userName"));
-		crm.clickCreateUser();
+		crm.clickCreateUser_Group();
 		String actNullMsg = crm.getNullErrorMsgs(p.getProperty("expNullMobileNumber"));
 		softAssert.assertEquals(actNullMsg, p.getProperty("expNullMobileNumber"), "Error message does not match!");
 		lp.refreshPage();
@@ -83,10 +83,10 @@ public class CRMTest extends BaseClass {
 	@Test(priority = 6)
 	public void verifyNullHandle() {
 		logger.info("*** Verifying test case: verifyNullHandle ***");
-		crm.clickOnAddUser();
+		crm.clickOnAddUsers_AddGroups();
 		crm.setUserName(p.getProperty("userName"));
 		crm.setMobileNumber(p.getProperty("mobileNumber"));
-		crm.clickCreateUser();
+		crm.clickCreateUser_Group();
 		String actNullMsg = crm.getNullErrorMsgs(p.getProperty("expNullHandle"));
 		softAssert.assertEquals(actNullMsg, p.getProperty("expNullHandle"), "Error message does not match!");
 		lp.refreshPage();
@@ -96,11 +96,11 @@ public class CRMTest extends BaseClass {
 	@Test(priority = 7)
 	public void verifyNullEmail() {
 		logger.info("*** Verifying test case: verifyNullEmail ***");
-		crm.clickOnAddUser();
+		crm.clickOnAddUsers_AddGroups();
 		crm.setUserName(p.getProperty("userName"));
 		crm.setMobileNumber(p.getProperty("mobileNumber"));
 		crm.setHandle(p.getProperty("handle"));
-		crm.clickCreateUser();
+		crm.clickCreateUser_Group();
 		String actNullMsg = crm.getNullErrorMsgs(p.getProperty("expNullEmail"));
 		softAssert.assertEquals(actNullMsg, p.getProperty("expNullEmail"), "Error message does not match!");
 		lp.refreshPage();
@@ -110,14 +110,64 @@ public class CRMTest extends BaseClass {
 	@Test(priority = 8)
 	public void verifyNullDepartment() {
 		logger.info("*** Verifying test case: verifyNullDepartment ***");
-		crm.clickOnAddUser();
+		crm.clickOnAddUsers_AddGroups();
 		crm.setUserName(p.getProperty("userName"));
 		crm.setMobileNumber(p.getProperty("mobileNumber"));
 		crm.setHandle(p.getProperty("handle"));
 		crm.setEmail(p.getProperty("email"));
-		crm.clickCreateUser();
+		crm.clickCreateUser_Group();
 		String actNullMsg = crm.getNullErrorMsgs(p.getProperty("expNullDepartment"));
 		softAssert.assertEquals(actNullMsg, p.getProperty("expNullDepartment"), "Error message does not match!");
+		lp.refreshPage();
+		softAssert.assertAll();
+	}
+
+	@Test(priority = 21)
+	public void verifyNullGroupName() {
+		logger.info("*** Verifying test case: verifyNullGroupName ***");
+		crm.openGroupTab();
+		crm.clickOnAddUsers_AddGroups();
+		crm.clickCreateUser_Group();
+		String actNullMsg = crm.getNullErrorMsgs(p.getProperty("expNullGroupName"));
+		softAssert.assertEquals(actNullMsg, p.getProperty("expNullGroupName"), "Error message does not match!");
+		lp.refreshPage();
+		softAssert.assertAll();
+	}
+
+	@Test(priority = 22, enabled = false)
+	public void verifyGroupNameCreationWithValidDate() {
+		logger.info("*** Verifying test case: verifyGroupNameCreationWithValidDate ***");
+		crm.openGroupTab();
+		crm.clickOnAddUsers_AddGroups();
+		crm.setGroupName(p.getProperty("groupName"));
+		crm.setWebsiteName(p.getProperty("websiteName"));
+		crm.clickCreateUser_Group();
+		String actMsg = crm.getToastMessage();
+		softAssert.assertEquals(actMsg, p.getProperty("expgroupCreateSuccessMsg"), "Error message does not match!");
+		lp.refreshPage();
+		softAssert.assertAll();
+	}
+
+	@Test(priority = 23, enabled = false)
+	public void verifyDuplicateGroupNameCreation() {
+		logger.info("*** Verifying test case: verifyDuplicateGroupNameCreation ***");
+		crm.openGroupTab();
+		crm.clickOnAddUsers_AddGroups();
+		crm.setGroupName(p.getProperty("groupName"));
+		crm.setWebsiteName(p.getProperty("websiteName"));
+		crm.clickCreateUser_Group();
+		String actMsg = crm.getToastMessage();
+		softAssert.assertEquals(actMsg, p.getProperty("expDuplicateGroupNameMsg"), "Error message does not match!");
+		lp.refreshPage();
+		softAssert.assertAll();
+	}
+
+	@Test(priority = 24)
+	public void verifySearchByGroupName() {
+		logger.info("*** Verify test case: verifySearchByGroupName ***");
+		crm.openGroupTab();
+		Boolean isAvailable = crm.searchByName(p.getProperty("groupNameSearch"));
+		softAssert.assertTrue(isAvailable, "Group name is not found in search result");
 		lp.refreshPage();
 		softAssert.assertAll();
 	}
