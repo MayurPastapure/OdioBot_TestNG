@@ -8,7 +8,7 @@
     <classes>
       <class name="testCases.CRMTest">
         <methods>
-          <include name="verifySearchByGroupName"/>
+          <include name="verifySearchByUserName"/>
           <include name="setupCRMObjects"/>
           <include name="browserLounching"/>
         </methods>

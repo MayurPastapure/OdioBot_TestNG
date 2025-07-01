@@ -2796,3 +2796,272 @@
 17:11:23.007 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
 17:11:26.336 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
 17:11:28.293 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+08:42:15.397 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+08:42:18.045 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+08:42:18.778 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+08:42:20.040 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+08:42:21.096 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+08:42:23.925 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+08:42:24.583 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+08:42:26.712 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+08:42:27.289 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+08:42:28.178 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+08:42:30.149 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+08:42:32.108 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+08:42:33.441 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+08:42:33.462 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+08:42:36.943 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+08:42:37.046 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+08:42:40.898 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+08:42:41.416 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+08:42:45.493 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+08:42:45.835 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+08:42:49.626 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+08:42:51.028 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+08:42:54.153 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+08:42:59.071 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+08:43:09.053 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+08:43:19.668 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+08:43:24.502 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+08:43:28.726 [main] INFO  testBase.BaseClass - Total user count: 26
+08:43:33.398 [main] INFO  testBase.BaseClass - Total row count: 26
+08:43:37.152 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+08:43:38.115 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+08:43:38.776 [main] INFO  testBase.BaseClass - *** Verify test case: verifyEditUserbyUpdatingName ***
+08:43:41.719 [main] INFO  testBase.BaseClass - Total user count: 26
+08:43:43.881 [main] INFO  testBase.BaseClass - *** Verify test case: verifyDeleteSpecificUser ***
+08:43:46.536 [main] INFO  testBase.BaseClass - Total row count: 26
+08:43:47.733 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+08:43:48.144 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+08:43:51.560 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+08:43:51.710 [main] INFO  testBase.BaseClass - *** Verify test case: verifyEditUserbyUpdatingName ***
+08:43:54.467 [main] INFO  testBase.BaseClass - *** Verify test case: verifyDeleteSpecificUser ***
+08:43:56.909 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+08:43:59.631 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+08:50:34.731 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+08:50:38.034 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+08:50:38.742 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+08:50:40.421 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+08:50:42.836 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+08:50:43.459 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+08:50:45.173 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+08:50:46.902 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+08:50:49.719 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+08:50:52.344 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+08:50:55.573 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+08:50:58.889 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+08:51:15.369 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+08:51:30.820 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+08:51:33.035 [main] INFO  testBase.BaseClass - Total user count: 26
+08:51:37.910 [main] INFO  testBase.BaseClass - Total row count: 26
+08:51:39.405 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+08:51:40.535 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+08:51:42.197 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+08:55:37.516 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+08:55:40.255 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+08:55:40.963 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+08:55:42.564 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+08:55:45.130 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+08:56:05.507 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+08:56:07.105 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+08:56:08.980 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+08:56:11.388 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+08:56:14.005 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+08:56:16.775 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+08:56:20.462 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+08:56:36.731 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+08:56:52.180 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+08:56:54.443 [main] INFO  testBase.BaseClass - Total user count: 26
+08:56:59.431 [main] INFO  testBase.BaseClass - Total row count: 26
+08:57:00.208 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+08:57:03.462 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+08:57:05.398 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+09:03:47.638 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+09:03:49.886 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+09:03:50.465 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+09:03:51.978 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+09:03:56.179 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+09:04:12.165 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+09:04:18.464 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+09:04:21.340 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+09:04:24.562 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+09:04:26.774 [main] INFO  testBase.BaseClass - Total group count: 14
+09:04:29.446 [main] INFO  testBase.BaseClass - Total row count: 12
+09:17:57.857 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+09:18:00.455 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+09:18:01.208 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+09:18:02.846 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+09:18:06.128 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+09:18:07.146 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+09:18:12.800 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+09:18:14.832 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+09:18:17.956 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+09:18:20.326 [main] INFO  testBase.BaseClass - Total group count: 14
+09:24:54.304 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+09:24:57.845 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+09:24:58.555 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+09:25:00.493 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+09:25:03.035 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+09:25:04.408 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+09:25:08.586 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+09:25:10.518 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+09:25:13.751 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+09:25:16.188 [main] INFO  testBase.BaseClass - Total group count: 14
+09:29:45.183 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+09:29:48.124 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+09:29:48.908 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+09:29:50.493 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+09:29:52.998 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+09:29:53.520 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+09:29:55.187 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+09:29:57.072 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+09:30:00.759 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+09:30:03.266 [main] INFO  testBase.BaseClass - Total group count: 26
+09:30:05.752 [main] INFO  testBase.BaseClass - Total row count: 14
+09:34:34.854 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+09:34:37.676 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+09:34:38.250 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+09:34:39.846 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+09:34:42.480 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+09:34:42.870 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+09:34:44.805 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+09:34:46.433 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+09:34:50.761 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+09:34:53.276 [main] INFO  testBase.BaseClass - Total group count: 14
+09:34:58.139 [main] INFO  testBase.BaseClass - Total row count: 24
+09:39:27.911 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+09:39:31.249 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+09:39:32.054 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+09:39:34.052 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+09:39:36.661 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+09:39:40.229 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+09:39:50.839 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+09:39:54.524 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+09:39:57.690 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+09:40:00.184 [main] INFO  testBase.BaseClass - Total group count: 14
+09:42:11.288 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+09:42:15.013 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+09:42:15.742 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+09:42:17.459 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+09:42:20.569 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+09:42:21.298 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+09:42:24.559 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+09:42:27.275 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+09:42:30.347 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+09:42:32.759 [main] INFO  testBase.BaseClass - Total group count: 14
+09:47:04.243 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+09:47:07.476 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+09:47:08.258 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+09:47:09.815 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+09:47:12.270 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+09:47:13.130 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+09:47:15.307 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+09:47:17.381 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+09:47:19.924 [main] INFO  testBase.BaseClass - Total group count: 14
+09:47:22.234 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+11:32:25.089 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+11:32:28.864 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+11:32:29.497 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+11:32:31.093 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+11:32:33.459 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+11:32:33.928 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+11:32:35.378 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+11:32:37.244 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+11:32:39.860 [main] INFO  testBase.BaseClass - Total group count: 14
+11:32:42.133 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+11:33:28.348 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+11:33:31.198 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+11:33:31.783 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+11:33:33.341 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+11:33:35.719 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+11:33:36.071 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+11:33:37.883 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+11:33:39.741 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+11:33:42.275 [main] INFO  testBase.BaseClass - Total group count: 14
+11:33:44.424 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+11:35:15.514 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+11:35:18.155 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+11:35:18.903 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+11:35:20.481 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+11:35:23.044 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+11:35:23.422 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+11:35:25.383 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+11:35:27.763 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+11:35:30.345 [main] INFO  testBase.BaseClass - Total group count: 14
+11:36:38.647 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+11:36:41.340 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+11:36:42.043 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+11:36:43.740 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+11:36:46.292 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+11:36:46.617 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+11:36:47.959 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+11:36:49.680 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+11:36:52.198 [main] INFO  testBase.BaseClass - Total group count: 26
+11:36:54.860 [main] INFO  testBase.BaseClass - Total row count: 14
+11:37:48.200 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+11:37:50.806 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+11:37:51.575 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+11:37:53.054 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+11:37:55.480 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+11:37:55.864 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+11:37:57.399 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+11:37:59.591 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+11:38:02.440 [main] INFO  testBase.BaseClass - Total group count: 14
+11:38:05.006 [main] INFO  testBase.BaseClass - Total row count: 14
+11:38:46.511 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+11:38:49.211 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+11:38:49.895 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+11:38:51.386 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+11:38:53.971 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+11:38:54.628 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+11:38:56.354 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+11:38:58.201 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+11:39:00.686 [main] INFO  testBase.BaseClass - Total group count: 14
+11:39:03.159 [main] INFO  testBase.BaseClass - Total row count: 14
+11:39:46.722 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+11:39:49.522 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+11:39:50.317 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+11:39:51.939 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+11:39:54.497 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+11:39:55.002 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+11:39:56.684 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+11:39:58.812 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+11:40:01.756 [main] INFO  testBase.BaseClass - Total group count: 14
+11:40:04.480 [main] INFO  testBase.BaseClass - Total row count: 14
+11:40:05.077 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+13:16:57.485 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+13:17:01.782 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+13:17:02.458 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+13:17:04.190 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+13:17:08.657 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+13:17:24.850 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+13:17:29.221 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+13:17:31.453 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+13:17:33.622 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+13:17:37.962 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+13:17:41.636 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+13:17:45.938 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+13:18:06.964 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+13:18:26.744 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+13:18:29.145 [main] INFO  testBase.BaseClass - Total user count: 26
+13:18:34.098 [main] INFO  testBase.BaseClass - Total row count: 30
+13:18:35.939 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+13:18:39.863 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterByName_IsEquals ***
+14:15:13.698 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+14:15:16.965 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+14:15:17.672 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+14:15:19.333 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+14:15:21.889 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+14:15:22.238 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+14:15:24.418 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+14:15:33.980 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+14:15:51.472 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+14:15:54.069 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+14:15:57.654 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+14:16:00.824 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+14:16:25.672 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+14:16:59.202 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+14:17:01.505 [main] INFO  testBase.BaseClass - Total user count: 26
+14:17:06.544 [main] INFO  testBase.BaseClass - Total row count: 26
+14:17:07.207 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+14:17:09.992 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterByName ***

@@ -69,6 +69,24 @@ public class CRMPage extends BasePage {
 	@FindBy(xpath = "//h6[text()='Filter']")
 	WebElement btnFilter;
 
+	@FindBy(xpath = "//div[contains(@class ,'MuiPaper-root')]//li")
+	List<WebElement> drpFilterOptions;
+
+	@FindBy(xpath = "//div[text()='Is equals']")
+	WebElement drpFilterCondition;
+
+	@FindBy(xpath = "//ul[@role='listbox']//li")
+	List<WebElement> drpFilterConditionOptions;
+
+	@FindBy(xpath = "//input[@placeholder='Value']")
+	WebElement inpFilterConditionValue;
+
+	@FindBy(xpath = "//input[@placeholder='Value']")
+	WebElement btnAddCondition;
+
+	@FindBy(xpath = "//button[@type='submit']")
+	WebElement btnApplyFilter;
+
 	@FindBy(xpath = "//div[@class='SnackbarItem-message']")
 	WebElement toastMessage;
 
@@ -124,12 +142,12 @@ public class CRMPage extends BasePage {
 		return exist;
 	}
 
-	public boolean searchByName(String searchingName) {
+	public boolean searchByName(String searchingName) throws InterruptedException {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpSearch));
 		element.sendKeys(searchingName);
-		List<WebElement> rows = 
-				wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(
+		List<WebElement> rows = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(
 				By.xpath("//table[contains(@class,'MuiTable-root')]/tbody/tr[td[not(@colspan)]]")));
+		Thread.sleep(2000);
 		for (WebElement row : rows) {
 			if (row.getText().toLowerCase().contains(searchingName.toLowerCase())) {
 				return true;
@@ -241,6 +259,41 @@ public class CRMPage extends BasePage {
 	public void setWebsiteName(String websiteName) {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpWebsite));
 		element.sendKeys(websiteName);
+	}
+
+	public void selectFilterOption(String filterOption) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnFilter));
+		element.click();
+		List<WebElement> options = wait.until(ExpectedConditions.visibilityOfAllElements(drpFilterOptions));
+		for (WebElement option : options) {
+			if (option.getText().trim().equalsIgnoreCase(filterOption)) {
+				option.click();
+				break;
+			}
+		}
+	}
+
+	public void selectFilterCondition(String conditionOption) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(drpFilterCondition));
+		element.click();
+		List<WebElement> conditionOpts = wait
+				.until(ExpectedConditions.visibilityOfAllElements(drpFilterConditionOptions));
+		for (WebElement conditionOpt : conditionOpts) {
+			if (conditionOpt.getText().trim().equalsIgnoreCase(conditionOption)) {
+				conditionOpt.click();
+				break;
+			}
+		}
+	}
+
+	public void setConditionValue(String conditionValue) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpFilterConditionValue));
+		element.sendKeys(conditionValue);
+	}
+
+	public void clickApplyFiler() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnApplyFilter));
+		element.click();
 	}
 
 }

@@ -122,6 +122,110 @@ public class CRMTest extends BaseClass {
 		softAssert.assertAll();
 	}
 
+	@Test(priority = 9, enabled = false)
+	public void verifyNewUserCreationWithValidData() {
+		logger.info("*** Verifying test case: verifyNewUserCreationWithValidData ***");
+		crm.clickOnAddUsers_AddGroups();
+		crm.setUserName(p.getProperty("userName"));
+		crm.setMobileNumber(p.getProperty("mobileNumber"));
+		crm.setHandle(p.getProperty("handle"));
+		crm.setEmail(p.getProperty("email"));
+		crm.selectDepartment(p.getProperty("department"));
+		crm.selectGroup(p.getProperty("group"));
+		crm.clickOnAddInfo();
+		crm.setKey(p.getProperty("key"));
+		crm.setDescription(p.getProperty("description"));
+		crm.clickCreateUser_Group();
+		String actToastMsg = crm.getToastMessage();
+		softAssert.assertEquals(actToastMsg, p.getProperty("expUserCreateSuccessMsg"), "Toast message does not match!");
+		softAssert.assertAll();
+	}
+
+	@Test(priority = 10)
+	public void verifyNewUserCreationWithDuplicateHandle() {
+		logger.info("*** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***");
+		crm.clickOnAddUsers_AddGroups();
+		crm.setUserName(p.getProperty("userName"));
+		crm.setMobileNumber(p.getProperty("mobileNumber"));
+		crm.setHandle(p.getProperty("handle"));
+		crm.setEmail(p.getProperty("email"));
+		crm.selectDepartment(p.getProperty("department"));
+		crm.selectGroup(p.getProperty("group"));
+		crm.clickCreateUser_Group();
+		String actToastMsg = crm.getToastMessage();
+		softAssert.assertEquals(actToastMsg, p.getProperty("expHandleExistMsg"), "Toast message does not match!");
+		lp.refreshPage();
+		softAssert.assertAll();
+	}
+
+	@Test(priority = 11)
+	public void verifyNewUserCreationWithDuplicateEmail() {
+		logger.info("*** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***");
+		crm.clickOnAddUsers_AddGroups();
+		crm.setUserName(p.getProperty("userName"));
+		crm.setMobileNumber(p.getProperty("mobileNumber"));
+		crm.setHandle(p.getProperty("handleNew"));
+		crm.setEmail(p.getProperty("email"));
+		crm.selectDepartment(p.getProperty("department"));
+		crm.selectGroup(p.getProperty("group"));
+		crm.clickCreateUser_Group();
+		String actToastMsg = crm.getToastMessage();
+		softAssert.assertEquals(actToastMsg, p.getProperty("expEmailExistMsg"), "Toast message does not match!");
+		lp.refreshPage();
+		softAssert.assertAll();
+	}
+
+	@Test(priority = 12)
+	public void verifyTotalUserCountOnPagination() throws InterruptedException {
+		logger.info("*** Verify test case: verifyTotalUserCountOnPagination ***");
+		int userCount = ap.getTotalAgentCountFromPagination();
+		logger.info("Total user count: " + userCount);
+		int rowCount = ap.getTotalAgentCountFromList();
+		logger.info("Total row count: " + rowCount);
+		softAssert.assertEquals(userCount, rowCount, "User pagination count is not with agent list count");
+		lp.refreshPage();
+		softAssert.assertAll();
+	}
+
+	@Test(priority = 13)
+	public void verifySearchByUserName() throws InterruptedException {
+		logger.info("*** Verify test case: verifySearchByUserName ***");
+		Boolean isAvailable = crm.searchByName(p.getProperty("userNameSearch"));
+		softAssert.assertTrue(isAvailable, "User name is not found in search result");
+		lp.refreshPage();
+		softAssert.assertAll();
+	}
+
+	@Test(priority = 14, enabled = false) // Incomplete test case ###
+	public void verifyEditUserbyUpdatingName() throws InterruptedException {
+		logger.info("*** Verify test case: verifyEditUserbyUpdatingName ***");
+		crm.searchByName(p.getProperty("userNameSearch"));
+		ap.clickActionOfSpecificAgent(p.getProperty("userNameSearch"));
+		ap.clickEditAction();
+		crm.clickCreateUser_Group();
+		lp.refreshPage();
+	}
+
+	@Test(priority = 15, enabled = false) // Incomplete test case ###
+	public void verifyDeleteSpecificUser() throws InterruptedException {
+		logger.info("*** Verify test case: verifyDeleteSpecificUser ***");
+		crm.searchByName(p.getProperty("userNameSearch"));
+		ap.clickActionOfSpecificAgent(p.getProperty("userNameSearch"));
+		ap.clickDeleteAction();
+		ap.clickNoDeleteOnConfirm();
+		lp.refreshPage();
+	}
+
+	@Test(priority = 16) // In Complete test case ###
+	public void verifyFilterByName() {
+		logger.info("*** Verify test case: verifyFilterByName ***");
+		crm.selectFilterOption(p.getProperty("filterOption"));
+		crm.selectFilterCondition(p.getProperty("conditionOption"));
+		crm.setConditionValue(p.getProperty("conditionValue"));
+		crm.clickApplyFiler();
+
+	}
+
 	@Test(priority = 21)
 	public void verifyNullGroupName() {
 		logger.info("*** Verifying test case: verifyNullGroupName ***");
@@ -148,7 +252,7 @@ public class CRMTest extends BaseClass {
 		softAssert.assertAll();
 	}
 
-	@Test(priority = 23, enabled = false)
+	@Test(priority = 23, enabled = false) // Incomplete test case ###
 	public void verifyDuplicateGroupNameCreation() {
 		logger.info("*** Verifying test case: verifyDuplicateGroupNameCreation ***");
 		crm.openGroupTab();
@@ -163,7 +267,20 @@ public class CRMTest extends BaseClass {
 	}
 
 	@Test(priority = 24)
-	public void verifySearchByGroupName() {
+	public void verifyTotalGroupCountOnPagination() throws InterruptedException {
+		logger.info("*** Verify test case: verifyTotalUserCountOnPagination ***");
+		crm.openGroupTab();
+		int userCount = ap.getTotalAgentCountFromPagination();
+		logger.info("Total group count: " + userCount);
+		int rowCount = ap.getTotalAgentCountFromList();
+		logger.info("Total row count: " + rowCount);
+		softAssert.assertEquals(userCount, rowCount, "Group pagination count is not with group list count");
+		lp.refreshPage();
+		softAssert.assertAll();
+	}
+
+	@Test(priority = 25)
+	public void verifySearchByGroupName() throws InterruptedException {
 		logger.info("*** Verify test case: verifySearchByGroupName ***");
 		crm.openGroupTab();
 		Boolean isAvailable = crm.searchByName(p.getProperty("groupNameSearch"));
