@@ -10,7 +10,7 @@ import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import testBase.BaseClass;
 
-public class CRMTest extends BaseClass {
+public class CRM_UsersTest extends BaseClass {
 	CRMPage crm;
 	HomePage hp;
 	LoginPage lp;
@@ -30,7 +30,7 @@ public class CRMTest extends BaseClass {
 		hp.openMoreOption();
 		crm.openCRMPage();
 		String actTitle = driver.getTitle();
-		Assert.assertEquals(actTitle, p.getProperty("CRMPageTitle"), "Page title does not match!");
+		Assert.assertEquals(actTitle, p.getProperty("CRMPageTitle"), "CRM_user page title does not match!");
 	}
 
 	@Test(priority = 2, enabled = false)
@@ -39,7 +39,8 @@ public class CRMTest extends BaseClass {
 		crm.clickUploadCSV_BulkUsers();
 		crm.clickDownloadSampleCSV();
 		String actToast = crm.getToastMessage();
-		softAssert.assertEquals(actToast, p.getProperty("expDownloadStratMsg"), "Toast message does not match!");
+		softAssert.assertEquals(actToast, p.getProperty("expDownloadStratMsg"),
+				"Download sample cvs toast message does not match!");
 		Thread.sleep(4000);
 		boolean exist = crm.isFileExist(p.getProperty("csvFileName"));
 		softAssert.assertTrue(exist, "File does not exist");
@@ -63,7 +64,8 @@ public class CRMTest extends BaseClass {
 		crm.clickOnAddUsers_AddGroups();
 		crm.clickCreateUser_Group();
 		String actNullMsg = crm.getNullErrorMsgs(p.getProperty("expNullUserName"));
-		softAssert.assertEquals(actNullMsg, p.getProperty("expNullUserName"), "Error message does not match!");
+		softAssert.assertEquals(actNullMsg, p.getProperty("expNullUserName"),
+				"Null user name error message does not match!");
 		lp.refreshPage();
 		softAssert.assertAll();
 	}
@@ -75,7 +77,8 @@ public class CRMTest extends BaseClass {
 		crm.setUserName(p.getProperty("userName"));
 		crm.clickCreateUser_Group();
 		String actNullMsg = crm.getNullErrorMsgs(p.getProperty("expNullMobileNumber"));
-		softAssert.assertEquals(actNullMsg, p.getProperty("expNullMobileNumber"), "Error message does not match!");
+		softAssert.assertEquals(actNullMsg, p.getProperty("expNullMobileNumber"),
+				"Null mobile error message does not match!");
 		lp.refreshPage();
 		softAssert.assertAll();
 	}
@@ -88,7 +91,8 @@ public class CRMTest extends BaseClass {
 		crm.setMobileNumber(p.getProperty("mobileNumber"));
 		crm.clickCreateUser_Group();
 		String actNullMsg = crm.getNullErrorMsgs(p.getProperty("expNullHandle"));
-		softAssert.assertEquals(actNullMsg, p.getProperty("expNullHandle"), "Error message does not match!");
+		softAssert.assertEquals(actNullMsg, p.getProperty("expNullHandle"),
+				"Null handle error message does not match!");
 		lp.refreshPage();
 		softAssert.assertAll();
 	}
@@ -102,7 +106,7 @@ public class CRMTest extends BaseClass {
 		crm.setHandle(p.getProperty("handle"));
 		crm.clickCreateUser_Group();
 		String actNullMsg = crm.getNullErrorMsgs(p.getProperty("expNullEmail"));
-		softAssert.assertEquals(actNullMsg, p.getProperty("expNullEmail"), "Error message does not match!");
+		softAssert.assertEquals(actNullMsg, p.getProperty("expNullEmail"), "Null email error message does not match!");
 		lp.refreshPage();
 		softAssert.assertAll();
 	}
@@ -117,7 +121,8 @@ public class CRMTest extends BaseClass {
 		crm.setEmail(p.getProperty("email"));
 		crm.clickCreateUser_Group();
 		String actNullMsg = crm.getNullErrorMsgs(p.getProperty("expNullDepartment"));
-		softAssert.assertEquals(actNullMsg, p.getProperty("expNullDepartment"), "Error message does not match!");
+		softAssert.assertEquals(actNullMsg, p.getProperty("expNullDepartment"),
+				"Null department error message does not match!");
 		lp.refreshPage();
 		softAssert.assertAll();
 	}
@@ -137,7 +142,8 @@ public class CRMTest extends BaseClass {
 		crm.setDescription(p.getProperty("description"));
 		crm.clickCreateUser_Group();
 		String actToastMsg = crm.getToastMessage();
-		softAssert.assertEquals(actToastMsg, p.getProperty("expUserCreateSuccessMsg"), "Toast message does not match!");
+		softAssert.assertEquals(actToastMsg, p.getProperty("expUserCreateSuccessMsg"),
+				"User creation toast message does not match!");
 		softAssert.assertAll();
 	}
 
@@ -153,7 +159,8 @@ public class CRMTest extends BaseClass {
 		crm.selectGroup(p.getProperty("group"));
 		crm.clickCreateUser_Group();
 		String actToastMsg = crm.getToastMessage();
-		softAssert.assertEquals(actToastMsg, p.getProperty("expHandleExistMsg"), "Toast message does not match!");
+		softAssert.assertEquals(actToastMsg, p.getProperty("expHandleExistMsg"),
+				"Duplicate handle toast message does not match!");
 		lp.refreshPage();
 		softAssert.assertAll();
 	}
@@ -170,7 +177,8 @@ public class CRMTest extends BaseClass {
 		crm.selectGroup(p.getProperty("group"));
 		crm.clickCreateUser_Group();
 		String actToastMsg = crm.getToastMessage();
-		softAssert.assertEquals(actToastMsg, p.getProperty("expEmailExistMsg"), "Toast message does not match!");
+		softAssert.assertEquals(actToastMsg, p.getProperty("expEmailExistMsg"),
+				"Duplicate email toast message does not match!");
 		lp.refreshPage();
 		softAssert.assertAll();
 	}
@@ -216,75 +224,100 @@ public class CRMTest extends BaseClass {
 		lp.refreshPage();
 	}
 
-	@Test(priority = 16) // In Complete test case ###
-	public void verifyFilterByName() {
-		logger.info("*** Verify test case: verifyFilterByName ***");
-		crm.selectFilterOption(p.getProperty("filterOption"));
-		crm.selectFilterCondition(p.getProperty("conditionOption"));
+	@Test(priority = 16)
+	public void verifyNullConditionValueInFilter() throws InterruptedException {
+		logger.info("*** Verify test case: verifyNullConditionValueInFilter ***");
+		crm.selectFilterOption(p.getProperty("filterOption_Name"));
+		crm.clickApplyFiler();
+		String actMsg = crm.getNullErrorMsgs(p.getProperty("expNullConditionValueMsg"));
+		softAssert.assertEquals(actMsg, p.getProperty("expNullConditionValueMsg"),
+				"Null condition value error message does not match!");
+		lp.refreshPage();
+		softAssert.assertAll();
+	}
+
+	@Test(priority = 17)
+	public void verifyFilterBy_Name_Contains() throws InterruptedException {
+		logger.info("*** Verify test case: verifyFilterBy_Name_Contains ***");
+		crm.selectFilterOption(p.getProperty("filterOption_Name"));
+		crm.selectFilterCondition(p.getProperty("condition_Contains"));
 		crm.setConditionValue(p.getProperty("conditionValue"));
 		crm.clickApplyFiler();
+		int filterCount = ap.getTotalAgentCountFromPagination();
+		logger.info("Total user filter by Name_Contains: " + p.getProperty("conditionValue") + ":= " + filterCount);
+		softAssert.assertTrue(filterCount >= 1, "Data is not available as per filter name contains");
+		lp.refreshPage();
+		softAssert.assertAll();
+	}
 
+	@Test(priority = 18)
+	public void verifyFilterBy_Name_DoesNotContains() throws InterruptedException {
+		logger.info("*** Verify test case: verifyFilterBy_Name_DoesNotContains ***");
+		crm.selectFilterOption(p.getProperty("filterOption_Name"));
+		crm.selectFilterCondition(p.getProperty("condition_DoesNotContain"));
+		crm.setConditionValue(p.getProperty("conditionValue"));
+		crm.clickApplyFiler();
+		int filterCount = ap.getTotalAgentCountFromPagination();
+		logger.info(
+				"Total user filter by Name_DoesNotContain: " + p.getProperty("conditionValue") + ":= " + filterCount);
+		softAssert.assertTrue(filterCount >= 1, "Data is not available as per filter name does not contains");
+		lp.refreshPage();
+		softAssert.assertAll();
+	}
+
+	@Test(priority = 19)
+	public void verifyFilterBy_Email_IsEqual() throws InterruptedException {
+		logger.info("*** Verify test case: verifyFilterBy_Email_IsEqual ***");
+		crm.selectFilterOption(p.getProperty("filterOption_Email"));
+		crm.selectFilterCondition(p.getProperty("condition_IsEquals"));
+		crm.setConditionValue(p.getProperty("condValue_Email"));
+		crm.clickApplyFiler();
+		int filterCount = ap.getTotalAgentCountFromPagination();
+		logger.info("Total user filter by Email_IsEqual: " + p.getProperty("condValue_Email") + ":= " + filterCount);
+		softAssert.assertTrue(filterCount >= 1, "Data is not available as per filter email is equals");
+		lp.refreshPage();
+		softAssert.assertAll();
+	}
+
+	@Test(priority = 20)
+	public void verifyFilterBy_Email_IsNotEqual() throws InterruptedException {
+		logger.info("*** Verify test case: verifyFilterBy_Email_IsNotEqual ***");
+		crm.selectFilterOption(p.getProperty("filterOption_Email"));
+		crm.selectFilterCondition(p.getProperty("condition_IsNotEquals"));
+		crm.setConditionValue(p.getProperty("condValue_Email"));
+		crm.clickApplyFiler();
+		int filterCount = ap.getTotalAgentCountFromPagination();
+		logger.info("Total user filter by Email_IsNotEqual: " + p.getProperty("condValue_Email") + ":= " + filterCount);
+		softAssert.assertTrue(filterCount >= 1, "Data is not available as per filter email is not equals");
+		lp.refreshPage();
+		softAssert.assertAll();
 	}
 
 	@Test(priority = 21)
-	public void verifyNullGroupName() {
-		logger.info("*** Verifying test case: verifyNullGroupName ***");
-		crm.openGroupTab();
-		crm.clickOnAddUsers_AddGroups();
-		crm.clickCreateUser_Group();
-		String actNullMsg = crm.getNullErrorMsgs(p.getProperty("expNullGroupName"));
-		softAssert.assertEquals(actNullMsg, p.getProperty("expNullGroupName"), "Error message does not match!");
+	public void verifyFilterBy_Mobile_EndsWith() throws InterruptedException {
+		logger.info("*** Verify test case: verifyFilterBy_Mobile_EndsWith ***");
+		crm.selectFilterOption(p.getProperty("filterOption_Mobile"));
+		crm.selectFilterCondition(p.getProperty("condition_EndsWith"));
+		crm.setConditionValue(p.getProperty("condValue_MobileEnd"));
+		crm.clickApplyFiler();
+		int filterCount = ap.getTotalAgentCountFromPagination();
+		logger.info(
+				"Total user filter by Mobile_EndsWith: " + p.getProperty("condValue_MobileEnd") + ":= " + filterCount);
 		lp.refreshPage();
-		softAssert.assertAll();
+		Assert.assertTrue(filterCount >= 1, "Data is not available as per filter mobile number ends with");
 	}
 
-	@Test(priority = 22, enabled = false)
-	public void verifyGroupNameCreationWithValidDate() {
-		logger.info("*** Verifying test case: verifyGroupNameCreationWithValidDate ***");
-		crm.openGroupTab();
-		crm.clickOnAddUsers_AddGroups();
-		crm.setGroupName(p.getProperty("groupName"));
-		crm.setWebsiteName(p.getProperty("websiteName"));
-		crm.clickCreateUser_Group();
-		String actMsg = crm.getToastMessage();
-		softAssert.assertEquals(actMsg, p.getProperty("expgroupCreateSuccessMsg"), "Error message does not match!");
-		lp.refreshPage();
-		softAssert.assertAll();
-	}
-
-	@Test(priority = 23, enabled = false) // Incomplete test case ###
-	public void verifyDuplicateGroupNameCreation() {
-		logger.info("*** Verifying test case: verifyDuplicateGroupNameCreation ***");
-		crm.openGroupTab();
-		crm.clickOnAddUsers_AddGroups();
-		crm.setGroupName(p.getProperty("groupName"));
-		crm.setWebsiteName(p.getProperty("websiteName"));
-		crm.clickCreateUser_Group();
-		String actMsg = crm.getToastMessage();
-		softAssert.assertEquals(actMsg, p.getProperty("expDuplicateGroupNameMsg"), "Error message does not match!");
-		lp.refreshPage();
-		softAssert.assertAll();
-	}
-
-	@Test(priority = 24)
-	public void verifyTotalGroupCountOnPagination() throws InterruptedException {
-		logger.info("*** Verify test case: verifyTotalUserCountOnPagination ***");
-		crm.openGroupTab();
-		int userCount = ap.getTotalAgentCountFromPagination();
-		logger.info("Total group count: " + userCount);
-		int rowCount = ap.getTotalAgentCountFromList();
-		logger.info("Total row count: " + rowCount);
-		softAssert.assertEquals(userCount, rowCount, "Group pagination count is not with group list count");
-		lp.refreshPage();
-		softAssert.assertAll();
-	}
-
-	@Test(priority = 25)
-	public void verifySearchByGroupName() throws InterruptedException {
-		logger.info("*** Verify test case: verifySearchByGroupName ***");
-		crm.openGroupTab();
-		Boolean isAvailable = crm.searchByName(p.getProperty("groupNameSearch"));
-		softAssert.assertTrue(isAvailable, "Group name is not found in search result");
+	@Test(priority = 22, enabled = false) // Filter by mobile starts with is not work from BE
+	public void verifyFilterBy_Mobile_StartsWith() throws InterruptedException  {
+		logger.info("*** Verify test case: verifyFilterBy_Mobile_StartsWith ***");
+		crm.selectFilterOption(p.getProperty("filterOption_Mobile"));
+		crm.selectFilterCondition(p.getProperty("condition_StartsWith"));
+		crm.setConditionValue(p.getProperty("condValue_MobileStart"));
+		crm.clickApplyFiler();
+		int filterCount = ap.getTotalAgentCountFromPagination();
+		logger.info("Total user filter by Mobile_StartsWith: " + p.getProperty("condValue_MobileStart") + ":= "
+				+ filterCount);
+		softAssert.assertTrue(filterCount >= 1, "Data is not available as per filter mobile number starts with");
 		lp.refreshPage();
 		softAssert.assertAll();
 	}

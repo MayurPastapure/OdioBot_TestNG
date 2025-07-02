@@ -294,6 +294,7 @@ public class CRMPage extends BasePage {
 	public void clickApplyFiler() {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnApplyFilter));
 		element.click();
+		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//tbody/tr[td[not(@colspan)]]")));
 	}
 
 }

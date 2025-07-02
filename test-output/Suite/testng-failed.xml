@@ -6,13 +6,22 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.CRMTest">
+      <class name="testCases.CRM_GroupsTest">
         <methods>
-          <include name="verifySearchByUserName"/>
+          <include name="verifyNullGroupName"/>
+          <include name="verifyTotalGroupCountOnPagination"/>
+          <include name="browserLounching"/>
+          <include name="setupCRMObjects"/>
+          <include name="verifySearchByGroupName"/>
+        </methods>
+      </class> <!-- testCases.CRM_GroupsTest -->
+      <class name="testCases.CRM_UsersTest">
+        <methods>
           <include name="setupCRMObjects"/>
           <include name="browserLounching"/>
+          <include name="verifyFilterBy_Mobile_StartsWith"/>
         </methods>
-      </class> <!-- testCases.CRMTest -->
+      </class> <!-- testCases.CRM_UsersTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

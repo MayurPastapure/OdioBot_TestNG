@@ -3065,3 +3065,529 @@
 14:17:06.544 [main] INFO  testBase.BaseClass - Total row count: 26
 14:17:07.207 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
 14:17:09.992 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterByName ***
+10:46:10.644 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+10:46:12.841 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+10:46:13.538 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+10:46:14.819 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+10:46:16.896 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+10:46:17.148 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+10:46:18.553 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+10:46:20.735 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+10:46:22.988 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+10:46:24.982 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+10:46:27.226 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+10:46:29.885 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+10:46:44.769 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+10:46:59.609 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+10:47:02.055 [main] INFO  testBase.BaseClass - Total user count: 26
+10:47:06.592 [main] INFO  testBase.BaseClass - Total row count: 26
+10:47:07.295 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+10:47:18.084 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterByName ***
+10:47:19.993 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+10:47:21.374 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+10:47:23.865 [main] INFO  testBase.BaseClass - Total group count: 14
+10:47:26.173 [main] INFO  testBase.BaseClass - Total row count: 14
+10:47:26.881 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+10:54:41.106 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+10:54:43.352 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+10:54:43.846 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+10:54:45.034 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+10:54:47.109 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+10:54:47.366 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+10:54:48.576 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+10:54:50.085 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+10:54:52.008 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+10:54:54.081 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+10:54:56.365 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+10:54:59.046 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+10:55:13.875 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+10:55:29.986 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+10:55:32.418 [main] INFO  testBase.BaseClass - Total user count: 26
+10:55:36.950 [main] INFO  testBase.BaseClass - Total row count: 26
+10:55:37.637 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+10:55:40.822 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterByName ***
+11:15:11.499 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+11:15:14.095 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+11:15:14.910 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+11:15:16.293 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+11:15:18.681 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+11:15:18.915 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+11:15:20.257 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+11:15:22.160 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+11:15:23.974 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+11:15:25.907 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+11:15:28.115 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+11:15:30.715 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+11:15:46.022 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+11:16:02.235 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+11:16:04.809 [main] INFO  testBase.BaseClass - Total user count: 26
+11:16:09.365 [main] INFO  testBase.BaseClass - Total row count: 26
+11:16:09.968 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+11:16:13.279 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterByName ***
+11:17:48.755 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+11:17:50.963 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+11:17:51.484 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+11:17:52.806 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+11:17:55.258 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+11:17:55.573 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+11:17:56.868 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+11:17:58.199 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+11:17:59.906 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+11:18:01.822 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+11:18:04.105 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+11:18:06.575 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+11:18:21.307 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+11:18:37.824 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+11:18:40.587 [main] INFO  testBase.BaseClass - Total user count: 26
+11:18:45.147 [main] INFO  testBase.BaseClass - Total row count: 26
+11:18:45.742 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+11:18:48.872 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterByName ***
+11:21:38.529 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+11:21:40.747 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+11:21:41.320 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+11:21:42.586 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+11:21:44.698 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+11:21:44.907 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+11:21:46.619 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+11:21:48.575 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+11:21:50.468 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+11:21:52.447 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+11:21:54.780 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+11:21:57.485 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+11:22:12.544 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+11:22:29.184 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+11:22:31.979 [main] INFO  testBase.BaseClass - Total user count: 26
+11:22:36.532 [main] INFO  testBase.BaseClass - Total row count: 26
+11:22:37.118 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+11:22:40.346 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterByName ***
+11:44:14.882 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+11:44:17.197 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+11:44:17.729 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+11:44:19.197 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+11:44:21.287 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+11:44:21.501 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+11:44:22.818 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+11:44:24.315 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+11:44:26.267 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+11:44:28.390 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+11:44:30.817 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+11:44:33.754 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+11:44:48.781 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+11:45:04.773 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+11:45:07.406 [main] INFO  testBase.BaseClass - Total user count: 26
+11:45:11.953 [main] INFO  testBase.BaseClass - Total row count: 26
+11:45:12.565 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+11:45:15.903 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterByName ***
+11:47:30.788 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+11:47:33.123 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+11:47:33.669 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+11:47:34.865 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+11:47:37.249 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+11:47:37.590 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+11:47:39.340 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+11:47:40.820 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+11:47:42.587 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+11:47:44.530 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+11:47:46.831 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+11:47:49.356 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+11:48:04.057 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+11:48:21.453 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+11:48:24.082 [main] INFO  testBase.BaseClass - Total user count: 26
+11:48:28.675 [main] INFO  testBase.BaseClass - Total row count: 26
+11:48:29.290 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+11:48:32.468 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterByName ***
+11:48:42.741 [main] INFO  testBase.BaseClass - Total user filter count: 20
+11:53:08.569 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+11:53:10.962 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+11:53:11.673 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+11:53:12.945 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+11:53:15.426 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+11:53:15.711 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+11:53:16.967 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+11:53:18.278 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+11:53:19.882 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+11:53:21.688 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+11:53:23.758 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+11:53:26.241 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+11:53:41.296 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+11:53:57.418 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+11:54:00.075 [main] INFO  testBase.BaseClass - Total user count: 26
+11:54:04.637 [main] INFO  testBase.BaseClass - Total row count: 26
+11:54:05.195 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+11:54:08.328 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterByName ***
+11:54:13.041 [main] INFO  testBase.BaseClass - Total user filter count: 5
+12:26:21.914 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+12:26:24.751 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+12:26:25.433 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+12:26:27.007 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+12:26:29.406 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+12:26:29.668 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+12:26:31.086 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+12:26:32.516 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+12:26:34.513 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+12:26:36.947 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+12:26:39.688 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+12:26:42.753 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+12:26:58.241 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+12:27:15.322 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+12:27:17.971 [main] INFO  testBase.BaseClass - Total user count: 26
+12:27:22.690 [main] INFO  testBase.BaseClass - Total row count: 26
+12:27:23.388 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+12:27:26.725 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_Contains ***
+12:27:32.180 [main] INFO  testBase.BaseClass - Total user filter by Name_Contains: 5
+12:27:32.968 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_DoesNotContains ***
+12:27:42.804 [main] INFO  testBase.BaseClass - Total user filter by Name_DoesNotContain: 21
+13:04:09.139 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+13:04:11.772 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+13:04:12.503 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+13:04:13.920 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+13:04:16.359 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+13:04:16.603 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+13:04:18.268 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+13:04:20.059 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+13:04:22.061 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+13:04:24.469 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+13:04:27.254 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+13:04:30.582 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+13:04:46.658 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+13:05:01.996 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+13:05:04.250 [main] INFO  testBase.BaseClass - Total user count: 26
+13:05:08.992 [main] INFO  testBase.BaseClass - Total row count: 26
+13:05:09.599 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+13:05:12.789 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_Contains ***
+13:05:16.525 [main] INFO  testBase.BaseClass - Total user filter by Name_Contains: mayur:=10
+13:05:17.120 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_DoesNotContains ***
+13:05:25.321 [main] INFO  testBase.BaseClass - Total user filter by Name_DoesNotContain: mayur:=21
+14:08:51.626 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+14:08:54.146 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+14:08:54.855 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+14:08:56.303 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+14:08:58.701 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+14:08:58.882 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+14:09:00.687 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+14:09:02.734 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+14:09:04.648 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+14:09:06.985 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+14:09:09.747 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+14:09:12.977 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+14:09:15.221 [main] INFO  testBase.BaseClass - Total user count: 26
+14:09:20.197 [main] INFO  testBase.BaseClass - Total row count: 26
+14:09:20.689 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+14:09:23.866 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_Contains ***
+14:09:27.647 [main] INFO  testBase.BaseClass - Total user filter by Name_Contains: mayur:= 5
+14:09:28.238 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_DoesNotContains ***
+14:09:36.478 [main] INFO  testBase.BaseClass - Total user filter by Name_DoesNotContain: mayur:= 21
+14:09:37.108 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsEqual ***
+14:09:40.970 [main] INFO  testBase.BaseClass - Total user filter by Email_IsEqual: mayur@gmail.com:= 1
+14:09:41.566 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsNotEqual ***
+14:09:49.994 [main] INFO  testBase.BaseClass - Total user filter by Email_IsNotEqual: mayur@gmail.com:= 21
+16:03:02.681 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+16:03:05.312 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+16:03:06.011 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+16:03:07.435 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+16:03:09.800 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+16:03:10.188 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+16:03:11.360 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+16:03:12.868 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+16:03:14.983 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+16:03:17.328 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+16:03:20.111 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+16:03:23.273 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+16:03:25.493 [main] INFO  testBase.BaseClass - Total user count: 27
+16:03:30.192 [main] INFO  testBase.BaseClass - Total row count: 27
+16:03:30.725 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+16:03:34.249 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_Contains ***
+16:03:38.217 [main] INFO  testBase.BaseClass - Total user filter by Name_Contains: mayur:= 5
+16:03:38.804 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_DoesNotContains ***
+16:03:47.205 [main] INFO  testBase.BaseClass - Total user filter by Name_DoesNotContain: mayur:= 22
+16:03:47.827 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsEqual ***
+16:03:51.587 [main] INFO  testBase.BaseClass - Total user filter by Email_IsEqual: mayur@gmail.com:= 1
+16:03:52.184 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsNotEqual ***
+16:04:00.837 [main] INFO  testBase.BaseClass - Total user filter by Email_IsNotEqual: mayur@gmail.com:= 22
+16:04:01.512 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Mobile_StartsWith ***
+16:04:15.372 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Mobile_EndsWith ***
+16:12:08.663 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+16:12:10.948 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+16:12:11.701 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+16:12:13.157 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+16:12:15.737 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+16:12:16.066 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+16:12:17.777 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+16:12:19.554 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+16:12:21.576 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+16:12:23.848 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+16:12:26.887 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+16:12:30.155 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+16:12:32.437 [main] INFO  testBase.BaseClass - Total user count: 27
+16:12:37.201 [main] INFO  testBase.BaseClass - Total row count: 27
+16:12:37.954 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+16:12:41.118 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_Contains ***
+16:12:47.059 [main] INFO  testBase.BaseClass - Total user filter by Name_Contains: mayur:= 5
+16:12:47.690 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_DoesNotContains ***
+16:12:53.374 [main] INFO  testBase.BaseClass - Total user filter by Name_DoesNotContain: mayur:= 22
+16:12:53.928 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsEqual ***
+16:12:59.384 [main] INFO  testBase.BaseClass - Total user filter by Email_IsEqual: mayur@gmail.com:= 1
+16:12:59.989 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsNotEqual ***
+16:13:05.837 [main] INFO  testBase.BaseClass - Total user filter by Email_IsNotEqual: mayur@gmail.com:= 22
+16:13:06.459 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Mobile_StartsWith ***
+16:13:12.150 [main] INFO  testBase.BaseClass - Total user filter by Mobile_StartsWith: 93:= 0
+16:13:13.006 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Mobile_EndsWith ***
+16:13:18.519 [main] INFO  testBase.BaseClass - Total user filter by Mobile_EndsWith: 44:= 2
+16:16:25.194 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+16:16:27.645 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+16:16:28.261 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+16:16:29.644 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+16:16:32.121 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+16:16:32.418 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+16:16:36.162 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+16:16:37.828 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+16:16:40.209 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+16:16:42.731 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+16:16:45.429 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+16:16:48.717 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+16:16:50.982 [main] INFO  testBase.BaseClass - Total user count: 27
+16:16:55.887 [main] INFO  testBase.BaseClass - Total row count: 27
+16:16:56.501 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+16:16:59.662 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_Contains ***
+16:17:05.609 [main] INFO  testBase.BaseClass - Total user filter by Name_Contains: mayur:= 5
+16:17:06.224 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_DoesNotContains ***
+16:17:11.845 [main] INFO  testBase.BaseClass - Total user filter by Name_DoesNotContain: mayur:= 22
+16:17:12.417 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsEqual ***
+16:17:18.075 [main] INFO  testBase.BaseClass - Total user filter by Email_IsEqual: mayur@gmail.com:= 1
+16:17:18.687 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsNotEqual ***
+16:17:24.268 [main] INFO  testBase.BaseClass - Total user filter by Email_IsNotEqual: mayur@gmail.com:= 22
+16:17:24.918 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Mobile_StartsWith ***
+16:17:30.590 [main] INFO  testBase.BaseClass - Total user filter by Mobile_StartsWith: 93:= 0
+16:17:31.575 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Mobile_EndsWith ***
+16:17:36.974 [main] INFO  testBase.BaseClass - Total user filter by Mobile_EndsWith: 44:= 2
+16:19:12.727 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+16:19:15.390 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+16:19:16.218 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+16:19:17.621 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+16:19:19.813 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+16:19:20.260 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+16:19:21.751 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+16:19:23.659 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+16:19:25.597 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+16:19:27.587 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+16:19:30.077 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+16:19:33.018 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+16:19:35.301 [main] INFO  testBase.BaseClass - Total user count: 27
+16:19:40.397 [main] INFO  testBase.BaseClass - Total row count: 27
+16:19:40.969 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+16:19:45.727 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_Contains ***
+16:19:52.485 [main] INFO  testBase.BaseClass - Total user filter by Name_Contains: mayur:= 5
+16:19:53.244 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_DoesNotContains ***
+16:19:59.871 [main] INFO  testBase.BaseClass - Total user filter by Name_DoesNotContain: mayur:= 22
+16:20:00.603 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsEqual ***
+16:20:07.291 [main] INFO  testBase.BaseClass - Total user filter by Email_IsEqual: mayur@gmail.com:= 1
+16:20:07.980 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsNotEqual ***
+16:20:14.565 [main] INFO  testBase.BaseClass - Total user filter by Email_IsNotEqual: mayur@gmail.com:= 22
+16:20:15.379 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Mobile_EndsWith ***
+16:20:22.641 [main] INFO  testBase.BaseClass - Total user filter by Mobile_EndsWith: 44:= 2
+16:20:23.292 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Mobile_StartsWith ***
+16:20:30.084 [main] INFO  testBase.BaseClass - Total user filter by Mobile_StartsWith: 93:= 0
+16:35:56.278 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+16:35:58.507 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+16:35:59.020 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+16:36:00.206 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+16:36:02.327 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+16:36:02.605 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+16:36:03.704 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+16:36:05.085 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+16:36:06.774 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+16:36:08.653 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+16:36:10.860 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+16:36:13.356 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+16:36:15.619 [main] INFO  testBase.BaseClass - Total user count: 27
+16:36:20.314 [main] INFO  testBase.BaseClass - Total row count: 27
+16:36:21.124 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+16:36:24.247 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConditionValueInFilter ***
+16:36:27.130 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_Contains ***
+16:36:32.135 [main] INFO  testBase.BaseClass - Total user filter by Name_Contains: mayur:= 5
+16:36:32.702 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_DoesNotContains ***
+16:36:37.870 [main] INFO  testBase.BaseClass - Total user filter by Name_DoesNotContain: mayur:= 22
+16:36:38.440 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsEqual ***
+16:36:43.486 [main] INFO  testBase.BaseClass - Total user filter by Email_IsEqual: mayur@gmail.com:= 1
+16:36:43.958 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsNotEqual ***
+16:36:48.975 [main] INFO  testBase.BaseClass - Total user filter by Email_IsNotEqual: mayur@gmail.com:= 22
+16:36:49.558 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Mobile_EndsWith ***
+16:36:54.747 [main] INFO  testBase.BaseClass - Total user filter by Mobile_EndsWith: 44:= 2
+16:36:55.295 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Mobile_StartsWith ***
+16:37:00.351 [main] INFO  testBase.BaseClass - Total user filter by Mobile_StartsWith: 93:= 0
+16:37:01.237 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+16:37:02.969 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+16:37:05.312 [main] INFO  testBase.BaseClass - Total group count: 14
+16:37:07.640 [main] INFO  testBase.BaseClass - Total row count: 14
+16:37:08.474 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+16:48:15.253 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+16:48:17.564 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+16:48:18.411 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+16:48:19.643 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+16:48:21.852 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+16:48:22.310 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+16:48:23.944 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+16:48:25.726 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+16:48:27.568 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+16:48:29.587 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+16:48:31.827 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+16:48:34.377 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+16:48:49.297 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+16:49:05.904 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+16:49:08.483 [main] INFO  testBase.BaseClass - Total user count: 27
+16:49:13.112 [main] INFO  testBase.BaseClass - Total row count: 27
+16:49:13.816 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+16:49:17.000 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConditionValueInFilter ***
+16:49:21.603 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_Contains ***
+16:49:28.282 [main] INFO  testBase.BaseClass - Total user filter by Name_Contains: mayur:= 5
+16:49:28.946 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_DoesNotContains ***
+16:49:35.733 [main] INFO  testBase.BaseClass - Total user filter by Name_DoesNotContain: mayur:= 22
+16:49:36.321 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsEqual ***
+16:49:43.603 [main] INFO  testBase.BaseClass - Total user filter by Email_IsEqual: mayur@gmail.com:= 1
+16:49:44.310 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsNotEqual ***
+16:49:50.919 [main] INFO  testBase.BaseClass - Total user filter by Email_IsNotEqual: mayur@gmail.com:= 22
+16:49:51.515 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Mobile_EndsWith ***
+16:49:58.266 [main] INFO  testBase.BaseClass - Total user filter by Mobile_EndsWith: 44:= 2
+16:49:59.124 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Mobile_StartsWith ***
+16:50:05.884 [main] INFO  testBase.BaseClass - Total user filter by Mobile_StartsWith: 93:= 0
+16:50:06.811 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+16:50:10.161 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+16:50:12.547 [main] INFO  testBase.BaseClass - Total group count: 14
+16:50:14.853 [main] INFO  testBase.BaseClass - Total row count: 14
+16:50:15.800 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+18:52:56.159 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+18:52:58.475 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+18:52:58.992 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+18:53:00.224 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+18:53:02.325 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+18:53:02.557 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+18:53:03.846 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+18:53:05.232 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+18:53:06.962 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+18:53:08.871 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+18:53:11.100 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+18:53:13.680 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+18:53:28.621 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+18:53:44.806 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+18:53:47.510 [main] INFO  testBase.BaseClass - Total user count: 27
+18:53:52.044 [main] INFO  testBase.BaseClass - Total row count: 27
+18:53:52.623 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+18:53:55.816 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConditionValueInFilter ***
+18:54:00.413 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_Contains ***
+18:54:06.905 [main] INFO  testBase.BaseClass - Total user filter by Name_Contains: mayur:= 5
+18:54:07.637 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_DoesNotContains ***
+18:54:14.364 [main] INFO  testBase.BaseClass - Total user filter by Name_DoesNotContain: mayur:= 22
+18:54:14.956 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsEqual ***
+18:54:21.621 [main] INFO  testBase.BaseClass - Total user filter by Email_IsEqual: mayur@gmail.com:= 1
+18:54:22.214 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsNotEqual ***
+18:54:29.079 [main] INFO  testBase.BaseClass - Total user filter by Email_IsNotEqual: mayur@gmail.com:= 22
+18:54:29.793 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Mobile_EndsWith ***
+18:54:36.518 [main] INFO  testBase.BaseClass - Total user filter by Mobile_EndsWith: 44:= 2
+18:54:37.100 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Mobile_StartsWith ***
+18:54:44.342 [main] INFO  testBase.BaseClass - Total user filter by Mobile_StartsWith: 93:= 0
+18:54:45.511 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+18:54:48.928 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+18:54:51.521 [main] INFO  testBase.BaseClass - Total group count: 14
+18:54:53.801 [main] INFO  testBase.BaseClass - Total row count: 14
+18:54:54.846 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+19:05:09.975 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+19:05:12.234 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+19:05:12.788 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+19:05:14.008 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+19:05:16.120 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+19:05:16.276 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+19:05:17.453 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+19:05:18.957 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+19:05:20.693 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+19:05:22.733 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+19:05:24.985 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+19:05:27.526 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+19:05:42.310 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+19:05:58.521 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+19:06:01.116 [main] INFO  testBase.BaseClass - Total user count: 27
+19:06:05.744 [main] INFO  testBase.BaseClass - Total row count: 27
+19:06:06.458 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+19:06:09.661 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConditionValueInFilter ***
+19:06:14.417 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_Contains ***
+19:06:20.964 [main] INFO  testBase.BaseClass - Total user filter by Name_Contains: mayur:= 5
+19:06:21.661 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_DoesNotContains ***
+19:06:28.188 [main] INFO  testBase.BaseClass - Total user filter by Name_DoesNotContain: mayur:= 22
+19:06:28.894 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsEqual ***
+19:06:35.294 [main] INFO  testBase.BaseClass - Total user filter by Email_IsEqual: mayur@gmail.com:= 1
+19:06:36.018 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsNotEqual ***
+19:06:42.692 [main] INFO  testBase.BaseClass - Total user filter by Email_IsNotEqual: mayur@gmail.com:= 22
+19:06:43.330 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Mobile_EndsWith ***
+19:06:50.008 [main] INFO  testBase.BaseClass - Total user filter by Mobile_EndsWith: 44:= 2
+19:06:50.604 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Mobile_StartsWith ***
+19:06:57.221 [main] INFO  testBase.BaseClass - Total user filter by Mobile_StartsWith: 93:= 0
+19:06:58.124 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+19:07:01.433 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+19:07:03.939 [main] INFO  testBase.BaseClass - Total group count: 14
+19:07:06.267 [main] INFO  testBase.BaseClass - Total row count: 14
+19:07:07.169 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+19:08:25.814 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+19:08:28.173 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+19:08:28.726 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+19:08:29.904 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+19:08:32.067 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+19:08:32.228 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+19:08:33.463 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+19:08:34.868 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+19:08:36.636 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+19:08:38.619 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+19:08:40.940 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+19:08:43.461 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+19:08:58.276 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+19:09:14.379 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+19:09:16.974 [main] INFO  testBase.BaseClass - Total user count: 27
+19:09:21.582 [main] INFO  testBase.BaseClass - Total row count: 27
+19:09:22.312 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+19:09:25.560 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConditionValueInFilter ***
+19:09:30.651 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_Contains ***
+19:09:37.237 [main] INFO  testBase.BaseClass - Total user filter by Name_Contains: mayur:= 5
+19:09:37.922 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_DoesNotContains ***
+19:09:44.430 [main] INFO  testBase.BaseClass - Total user filter by Name_DoesNotContain: mayur:= 22
+19:09:45.165 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsEqual ***
+19:09:51.767 [main] INFO  testBase.BaseClass - Total user filter by Email_IsEqual: mayur@gmail.com:= 1
+19:09:52.458 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsNotEqual ***
+19:09:59.088 [main] INFO  testBase.BaseClass - Total user filter by Email_IsNotEqual: mayur@gmail.com:= 22
+19:09:59.654 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Mobile_EndsWith ***
+19:10:06.365 [main] INFO  testBase.BaseClass - Total user filter by Mobile_EndsWith: 44:= 2
+19:10:07.085 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+19:10:10.456 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+19:10:13.232 [main] INFO  testBase.BaseClass - Total group count: 14
+19:10:15.580 [main] INFO  testBase.BaseClass - Total row count: 14
+19:10:16.335 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***
+19:15:44.996 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+19:15:47.279 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+19:15:47.816 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+19:15:49.155 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+19:15:51.605 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+19:15:51.856 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyPageIsCRM_UsersPage ***
+19:15:53.257 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullUserName ***
+19:15:54.905 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullMobileNumber ***
+19:15:56.707 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullHandle ***
+19:15:58.715 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullEmail ***
+19:16:01.143 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullDepartment ***
+19:16:03.736 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateHandle ***
+19:16:18.524 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNewUserCreationWithDuplicateEmail ***
+19:16:36.086 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+19:16:38.712 [main] INFO  testBase.BaseClass - Total user count: 27
+19:16:43.348 [main] INFO  testBase.BaseClass - Total row count: 27
+19:16:43.936 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByUserName ***
+19:16:47.099 [main] INFO  testBase.BaseClass - *** Verify test case: verifyNullConditionValueInFilter ***
+19:16:50.842 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_Contains ***
+19:16:56.225 [main] INFO  testBase.BaseClass - Total user filter by Name_Contains: mayur:= 5
+19:16:56.955 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Name_DoesNotContains ***
+19:17:02.762 [main] INFO  testBase.BaseClass - Total user filter by Name_DoesNotContain: mayur:= 22
+19:17:03.331 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsEqual ***
+19:17:09.073 [main] INFO  testBase.BaseClass - Total user filter by Email_IsEqual: mayur@gmail.com:= 1
+19:17:09.683 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Email_IsNotEqual ***
+19:17:15.448 [main] INFO  testBase.BaseClass - Total user filter by Email_IsNotEqual: mayur@gmail.com:= 22
+19:17:16.148 [main] INFO  testBase.BaseClass - *** Verify test case: verifyFilterBy_Mobile_EndsWith ***
+19:17:21.832 [main] INFO  testBase.BaseClass - Total user filter by Mobile_EndsWith: 44:= 2
+19:17:22.419 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyNullGroupName ***
+19:17:25.693 [main] INFO  testBase.BaseClass - *** Verify test case: verifyTotalUserCountOnPagination ***
+19:17:28.212 [main] INFO  testBase.BaseClass - Total group count: 14
+19:17:30.501 [main] INFO  testBase.BaseClass - Total row count: 14
+19:17:31.230 [main] INFO  testBase.BaseClass - *** Verify test case: verifySearchByGroupName ***

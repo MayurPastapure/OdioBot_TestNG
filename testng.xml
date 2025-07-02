@@ -16,7 +16,8 @@
 	<!--   <class name="testCases.WorkflowTest"/> 
       <class name="testCases.DepartmentsTest"/> 
       <class name="testCases.AgentsTest"/> -->
-      <class name="testCases.CRMTest"/>
+      <class name="testCases.CRM_UsersTest"/>
+      <class name="testCases.CRM_GroupsTest"/>
     </classes>
   </test>
 

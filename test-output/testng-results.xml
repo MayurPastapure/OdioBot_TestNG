@@ -1,220 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="7" total="23" passed="15" failed="1" skipped="0">
+<testng-results ignored="11" total="35" passed="24" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-01T14:15:13 IST" name="Suite" finished-at="2025-07-01T14:17:14 IST" duration-ms="121191">
+  <suite started-at="2025-07-02T19:15:44 IST" name="Suite" finished-at="2025-07-02T19:17:34 IST" duration-ms="109922">
     <groups>
     </groups>
-    <test started-at="2025-07-01T14:15:13 IST" name="Test" finished-at="2025-07-01T14:17:14 IST" duration-ms="121191">
+    <test started-at="2025-07-02T19:15:44 IST" name="Test" finished-at="2025-07-02T19:17:34 IST" duration-ms="109922">
+      <class name="testCases.CRM_GroupsTest">
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRM_GroupsTest@a38c7fe]" started-at="2025-07-02T19:17:22 IST" name="setupCRMObjects" finished-at="2025-07-02T19:17:22 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMObjects -->
+        <test-method signature="verifyNullGroupName()[pri:1, instance:testCases.CRM_GroupsTest@a38c7fe]" started-at="2025-07-02T19:17:22 IST" name="verifyNullGroupName" finished-at="2025-07-02T19:17:25 IST" duration-ms="3272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullGroupName -->
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRM_GroupsTest@a38c7fe]" started-at="2025-07-02T19:17:25 IST" name="setupCRMObjects" finished-at="2025-07-02T19:17:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMObjects -->
+        <test-method signature="verifyTotalGroupCountOnPagination()[pri:4, instance:testCases.CRM_GroupsTest@a38c7fe]" started-at="2025-07-02T19:17:25 IST" name="verifyTotalGroupCountOnPagination" finished-at="2025-07-02T19:17:31 IST" duration-ms="5524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTotalGroupCountOnPagination -->
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRM_GroupsTest@a38c7fe]" started-at="2025-07-02T19:17:31 IST" name="setupCRMObjects" finished-at="2025-07-02T19:17:31 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMObjects -->
+        <test-method signature="verifySearchByGroupName()[pri:5, instance:testCases.CRM_GroupsTest@a38c7fe]" started-at="2025-07-02T19:17:31 IST" name="verifySearchByGroupName" finished-at="2025-07-02T19:17:34 IST" duration-ms="3585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchByGroupName -->
+      </class> <!-- testCases.CRM_GroupsTest -->
       <class name="testCases.LoginTest">
-        <test-method is-config="true" signature="browserLounching()[pri:0, instance:testCases.LoginTest@273e7444]" started-at="2025-07-01T14:14:48 IST" name="browserLounching" finished-at="2025-07-01T14:15:13 IST" duration-ms="25487" status="PASS">
+        <test-method is-config="true" signature="browserLounching()[pri:0, instance:testCases.LoginTest@1ed6388a]" started-at="2025-07-02T19:15:31 IST" name="browserLounching" finished-at="2025-07-02T19:15:44 IST" duration-ms="13316" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLounching -->
-        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@273e7444]" started-at="2025-07-01T14:15:13 IST" name="setupLoginPageObjects" finished-at="2025-07-01T14:15:13 IST" duration-ms="53" status="PASS">
+        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@1ed6388a]" started-at="2025-07-02T19:15:44 IST" name="setupLoginPageObjects" finished-at="2025-07-02T19:15:44 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLoginPageObjects -->
-        <test-method signature="verifyIncorrectCredLogin()[pri:1, instance:testCases.LoginTest@273e7444]" started-at="2025-07-01T14:15:13 IST" name="verifyIncorrectCredLogin" finished-at="2025-07-01T14:15:16 IST" duration-ms="3282" status="PASS">
+        <test-method signature="verifyIncorrectCredLogin()[pri:1, instance:testCases.LoginTest@1ed6388a]" started-at="2025-07-02T19:15:44 IST" name="verifyIncorrectCredLogin" finished-at="2025-07-02T19:15:47 IST" duration-ms="2291" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyIncorrectCredLogin -->
-        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@273e7444]" started-at="2025-07-01T14:15:16 IST" name="setupLoginPageObjects" finished-at="2025-07-01T14:15:16 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@1ed6388a]" started-at="2025-07-02T19:15:47 IST" name="setupLoginPageObjects" finished-at="2025-07-02T19:15:47 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLoginPageObjects -->
-        <test-method signature="verifyBlankEmailLogin()[pri:2, instance:testCases.LoginTest@273e7444]" started-at="2025-07-01T14:15:16 IST" name="verifyBlankEmailLogin" finished-at="2025-07-01T14:15:17 IST" duration-ms="696" status="PASS">
+        <test-method signature="verifyBlankEmailLogin()[pri:2, instance:testCases.LoginTest@1ed6388a]" started-at="2025-07-02T19:15:47 IST" name="verifyBlankEmailLogin" finished-at="2025-07-02T19:15:47 IST" duration-ms="534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBlankEmailLogin -->
-        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@273e7444]" started-at="2025-07-01T14:15:17 IST" name="setupLoginPageObjects" finished-at="2025-07-01T14:15:17 IST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@1ed6388a]" started-at="2025-07-02T19:15:47 IST" name="setupLoginPageObjects" finished-at="2025-07-02T19:15:47 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLoginPageObjects -->
-        <test-method signature="verifyBlankPasswordLogin()[pri:3, instance:testCases.LoginTest@273e7444]" started-at="2025-07-01T14:15:17 IST" name="verifyBlankPasswordLogin" finished-at="2025-07-01T14:15:19 IST" duration-ms="1653" status="PASS">
+        <test-method signature="verifyBlankPasswordLogin()[pri:3, instance:testCases.LoginTest@1ed6388a]" started-at="2025-07-02T19:15:47 IST" name="verifyBlankPasswordLogin" finished-at="2025-07-02T19:15:49 IST" duration-ms="1336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBlankPasswordLogin -->
-        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@273e7444]" started-at="2025-07-01T14:15:19 IST" name="setupLoginPageObjects" finished-at="2025-07-01T14:15:19 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@1ed6388a]" started-at="2025-07-02T19:15:49 IST" name="setupLoginPageObjects" finished-at="2025-07-02T19:15:49 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLoginPageObjects -->
-        <test-method signature="verifyCorrectCredLogin()[pri:4, instance:testCases.LoginTest@273e7444]" started-at="2025-07-01T14:15:19 IST" name="verifyCorrectCredLogin" finished-at="2025-07-01T14:15:21 IST" duration-ms="2521" status="PASS">
+        <test-method signature="verifyCorrectCredLogin()[pri:4, instance:testCases.LoginTest@1ed6388a]" started-at="2025-07-02T19:15:49 IST" name="verifyCorrectCredLogin" finished-at="2025-07-02T19:15:51 IST" duration-ms="2437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCorrectCredLogin -->
       </class> <!-- testCases.LoginTest -->
       <class name="testCases.HomeTest">
-        <test-method is-config="true" signature="setupHomePageObjects()[pri:0, instance:testCases.HomeTest@3527942a]" started-at="2025-07-01T14:15:21 IST" name="setupHomePageObjects" finished-at="2025-07-01T14:15:21 IST" duration-ms="29" status="PASS">
+        <test-method is-config="true" signature="setupHomePageObjects()[pri:0, instance:testCases.HomeTest@5d534f5d]" started-at="2025-07-02T19:15:51 IST" name="setupHomePageObjects" finished-at="2025-07-02T19:15:51 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupHomePageObjects -->
-        <test-method signature="verifyHomeCardsVisibility()[pri:1, instance:testCases.HomeTest@3527942a]" started-at="2025-07-01T14:15:21 IST" name="verifyHomeCardsVisibility" finished-at="2025-07-01T14:15:22 IST" duration-ms="332" status="PASS">
+        <test-method signature="verifyHomeCardsVisibility()[pri:1, instance:testCases.HomeTest@5d534f5d]" started-at="2025-07-02T19:15:51 IST" name="verifyHomeCardsVisibility" finished-at="2025-07-02T19:15:51 IST" duration-ms="237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomeCardsVisibility -->
       </class> <!-- testCases.HomeTest -->
-      <class name="testCases.CRMTest">
-        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:15:22 IST" name="setupCRMObjects" finished-at="2025-07-01T14:15:22 IST" duration-ms="15" status="PASS">
+      <class name="testCases.CRM_UsersTest">
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:15:51 IST" name="setupCRMObjects" finished-at="2025-07-02T19:15:51 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupCRMObjects -->
-        <test-method signature="verifyPageIsCRM_UsersPage()[pri:1, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:15:22 IST" name="verifyPageIsCRM_UsersPage" finished-at="2025-07-01T14:15:24 IST" duration-ms="2173" status="PASS">
+        <test-method signature="verifyPageIsCRM_UsersPage()[pri:1, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:15:51 IST" name="verifyPageIsCRM_UsersPage" finished-at="2025-07-02T19:15:53 IST" duration-ms="1389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageIsCRM_UsersPage -->
-        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:15:24 IST" name="setupCRMObjects" finished-at="2025-07-01T14:15:24 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:15:53 IST" name="setupCRMObjects" finished-at="2025-07-02T19:15:53 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupCRMObjects -->
-        <test-method signature="verifyNullUserName()[pri:4, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:15:24 IST" name="verifyNullUserName" finished-at="2025-07-01T14:15:33 IST" duration-ms="9547" status="PASS">
+        <test-method signature="verifyNullUserName()[pri:4, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:15:53 IST" name="verifyNullUserName" finished-at="2025-07-02T19:15:54 IST" duration-ms="1640" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNullUserName -->
-        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:15:33 IST" name="setupCRMObjects" finished-at="2025-07-01T14:15:33 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:15:54 IST" name="setupCRMObjects" finished-at="2025-07-02T19:15:54 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupCRMObjects -->
-        <test-method signature="verifyNullMobileNumber()[pri:5, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:15:33 IST" name="verifyNullMobileNumber" finished-at="2025-07-01T14:15:51 IST" duration-ms="17489" status="PASS">
+        <test-method signature="verifyNullMobileNumber()[pri:5, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:15:54 IST" name="verifyNullMobileNumber" finished-at="2025-07-02T19:15:56 IST" duration-ms="1793" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNullMobileNumber -->
-        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:15:51 IST" name="setupCRMObjects" finished-at="2025-07-01T14:15:51 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:15:56 IST" name="setupCRMObjects" finished-at="2025-07-02T19:15:56 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupCRMObjects -->
-        <test-method signature="verifyNullHandle()[pri:6, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:15:51 IST" name="verifyNullHandle" finished-at="2025-07-01T14:15:54 IST" duration-ms="2587" status="PASS">
+        <test-method signature="verifyNullHandle()[pri:6, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:15:56 IST" name="verifyNullHandle" finished-at="2025-07-02T19:15:58 IST" duration-ms="2002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNullHandle -->
-        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:15:54 IST" name="setupCRMObjects" finished-at="2025-07-01T14:15:54 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:15:58 IST" name="setupCRMObjects" finished-at="2025-07-02T19:15:58 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupCRMObjects -->
-        <test-method signature="verifyNullEmail()[pri:7, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:15:54 IST" name="verifyNullEmail" finished-at="2025-07-01T14:15:57 IST" duration-ms="3579" status="PASS">
+        <test-method signature="verifyNullEmail()[pri:7, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:15:58 IST" name="verifyNullEmail" finished-at="2025-07-02T19:16:01 IST" duration-ms="2415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNullEmail -->
-        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:15:57 IST" name="setupCRMObjects" finished-at="2025-07-01T14:15:57 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:16:01 IST" name="setupCRMObjects" finished-at="2025-07-02T19:16:01 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupCRMObjects -->
-        <test-method signature="verifyNullDepartment()[pri:8, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:15:57 IST" name="verifyNullDepartment" finished-at="2025-07-01T14:16:00 IST" duration-ms="3165" status="PASS">
+        <test-method signature="verifyNullDepartment()[pri:8, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:16:01 IST" name="verifyNullDepartment" finished-at="2025-07-02T19:16:03 IST" duration-ms="2586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNullDepartment -->
-        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:16:00 IST" name="setupCRMObjects" finished-at="2025-07-01T14:16:00 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:16:03 IST" name="setupCRMObjects" finished-at="2025-07-02T19:16:03 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupCRMObjects -->
-        <test-method signature="verifyNewUserCreationWithDuplicateHandle()[pri:10, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:16:00 IST" name="verifyNewUserCreationWithDuplicateHandle" finished-at="2025-07-01T14:16:25 IST" duration-ms="24834" status="PASS">
+        <test-method signature="verifyNewUserCreationWithDuplicateHandle()[pri:10, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:16:03 IST" name="verifyNewUserCreationWithDuplicateHandle" finished-at="2025-07-02T19:16:18 IST" duration-ms="14781" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNewUserCreationWithDuplicateHandle -->
-        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:16:25 IST" name="setupCRMObjects" finished-at="2025-07-01T14:16:25 IST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:16:18 IST" name="setupCRMObjects" finished-at="2025-07-02T19:16:18 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupCRMObjects -->
-        <test-method signature="verifyNewUserCreationWithDuplicateEmail()[pri:11, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:16:25 IST" name="verifyNewUserCreationWithDuplicateEmail" finished-at="2025-07-01T14:16:59 IST" duration-ms="33522" status="PASS">
+        <test-method signature="verifyNewUserCreationWithDuplicateEmail()[pri:11, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:16:18 IST" name="verifyNewUserCreationWithDuplicateEmail" finished-at="2025-07-02T19:16:36 IST" duration-ms="17556" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNewUserCreationWithDuplicateEmail -->
-        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:16:59 IST" name="setupCRMObjects" finished-at="2025-07-01T14:16:59 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:16:36 IST" name="setupCRMObjects" finished-at="2025-07-02T19:16:36 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupCRMObjects -->
-        <test-method signature="verifyTotalUserCountOnPagination()[pri:12, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:16:59 IST" name="verifyTotalUserCountOnPagination" finished-at="2025-07-01T14:17:07 IST" duration-ms="7997" status="PASS">
+        <test-method signature="verifyTotalUserCountOnPagination()[pri:12, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:16:36 IST" name="verifyTotalUserCountOnPagination" finished-at="2025-07-02T19:16:43 IST" duration-ms="7840" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTotalUserCountOnPagination -->
-        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:17:07 IST" name="setupCRMObjects" finished-at="2025-07-01T14:17:07 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:16:43 IST" name="setupCRMObjects" finished-at="2025-07-02T19:16:43 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupCRMObjects -->
-        <test-method signature="verifySearchByUserName()[pri:13, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:17:07 IST" name="verifySearchByUserName" finished-at="2025-07-01T14:17:09 IST" duration-ms="2550" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found in the current frame
-  (Session info: chrome=137.0.7151.120)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b13f66e86d0487097cc159fd8b33ddf6, getElementText {id=f.87B7A3860D5E45CD9E8BE724D04DDC26.d.9661D283C408BCC2FE0E664D7B940AFA.e.790}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Mayur\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65190}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65190/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b13f66e86d0487097cc159fd8b33ddf6)] -> xpath: //table[contains(@class,'MuiTable-root')]/tbody/tr[td[not(@colspan)]]]
-Session ID: b13f66e86d0487097cc159fd8b33ddf6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=137.0.7151.120)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b13f66e86d0487097cc159fd8b33ddf6, getElementText {id=f.87B7A3860D5E45CD9E8BE724D04DDC26.d.9661D283C408BCC2FE0E664D7B940AFA.e.790}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Mayur\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65190}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65190/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b13f66e86d0487097cc159fd8b33ddf6)] -> xpath: //table[contains(@class,'MuiTable-root')]/tbody/tr[td[not(@colspan)]]]
-Session ID: b13f66e86d0487097cc159fd8b33ddf6
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
-at pageObjects.CRMPage.searchByName(CRMPage.java:153)
-at testCases.CRMTest.verifySearchByUserName(CRMTest.java:193)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method signature="verifySearchByUserName()[pri:13, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:16:43 IST" name="verifySearchByUserName" finished-at="2025-07-02T19:16:47 IST" duration-ms="3153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchByUserName -->
-        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:17:09 IST" name="setupCRMObjects" finished-at="2025-07-01T14:17:09 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:16:47 IST" name="setupCRMObjects" finished-at="2025-07-02T19:16:47 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupCRMObjects -->
-        <test-method signature="verifyFilterByName()[pri:16, instance:testCases.CRMTest@5a45133e]" started-at="2025-07-01T14:17:09 IST" name="verifyFilterByName" finished-at="2025-07-01T14:17:14 IST" duration-ms="4759" status="PASS">
+        <test-method signature="verifyNullConditionValueInFilter()[pri:16, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:16:47 IST" name="verifyNullConditionValueInFilter" finished-at="2025-07-02T19:16:50 IST" duration-ms="3745" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyFilterByName -->
-      </class> <!-- testCases.CRMTest -->
+        </test-method> <!-- verifyNullConditionValueInFilter -->
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:16:50 IST" name="setupCRMObjects" finished-at="2025-07-02T19:16:50 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMObjects -->
+        <test-method signature="verifyFilterBy_Name_Contains()[pri:17, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:16:50 IST" name="verifyFilterBy_Name_Contains" finished-at="2025-07-02T19:16:56 IST" duration-ms="6105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFilterBy_Name_Contains -->
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:16:56 IST" name="setupCRMObjects" finished-at="2025-07-02T19:16:56 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMObjects -->
+        <test-method signature="verifyFilterBy_Name_DoesNotContains()[pri:18, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:16:56 IST" name="verifyFilterBy_Name_DoesNotContains" finished-at="2025-07-02T19:17:03 IST" duration-ms="6371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFilterBy_Name_DoesNotContains -->
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:17:03 IST" name="setupCRMObjects" finished-at="2025-07-02T19:17:03 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMObjects -->
+        <test-method signature="verifyFilterBy_Email_IsEqual()[pri:19, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:17:03 IST" name="verifyFilterBy_Email_IsEqual" finished-at="2025-07-02T19:17:09 IST" duration-ms="6343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFilterBy_Email_IsEqual -->
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:17:09 IST" name="setupCRMObjects" finished-at="2025-07-02T19:17:09 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMObjects -->
+        <test-method signature="verifyFilterBy_Email_IsNotEqual()[pri:20, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:17:09 IST" name="verifyFilterBy_Email_IsNotEqual" finished-at="2025-07-02T19:17:16 IST" duration-ms="6460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFilterBy_Email_IsNotEqual -->
+        <test-method is-config="true" signature="setupCRMObjects()[pri:0, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:17:16 IST" name="setupCRMObjects" finished-at="2025-07-02T19:17:16 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMObjects -->
+        <test-method signature="verifyFilterBy_Mobile_EndsWith()[pri:21, instance:testCases.CRM_UsersTest@4d5650ae]" started-at="2025-07-02T19:17:16 IST" name="verifyFilterBy_Mobile_EndsWith" finished-at="2025-07-02T19:17:22 IST" duration-ms="6258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFilterBy_Mobile_EndsWith -->
+      </class> <!-- testCases.CRM_UsersTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

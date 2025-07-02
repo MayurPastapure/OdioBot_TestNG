@@ -201,6 +201,7 @@ public class AgentsPage extends BasePage {
 			List<WebElement> rows = wait.until(
 					ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//tbody/tr[td[not(@colspan)]]")));
 
+		
 			totalRows = totalRows + rows.size();
 
 			String classAttr = btnNextPageButton.getAttribute("class");
