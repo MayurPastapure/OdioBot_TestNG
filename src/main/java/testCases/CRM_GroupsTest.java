@@ -1,7 +1,9 @@
 package testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import pageObjects.AgentsPage;
 import pageObjects.CRMPage;
@@ -16,11 +18,20 @@ public class CRM_GroupsTest extends BaseClass {
 	AgentsPage ap;
 
 	@BeforeMethod
-	public void setupCRMObjects() {
+	public void setupCRMGroupsObjects() {
 		crm = new CRMPage(driver);
 		hp = new HomePage(driver);
 		lp = new LoginPage(driver);
 		ap = new AgentsPage(driver);
+	}
+	
+	@Test(priority = 0)
+	public void verifyPageIsCRM_UsersPage() {
+		logger.info("*** Verifying test case: verifyPageIsCRM_UsersPage ***");
+		hp.openMoreOption();
+		crm.openCRMPage();
+		String actTitle = driver.getTitle();
+		Assert.assertEquals(actTitle, p.getProperty("CRMPageTitle"), "CRM_user page title does not match!");
 	}
 
 	@Test(priority = 1)
@@ -30,9 +41,10 @@ public class CRM_GroupsTest extends BaseClass {
 		crm.clickOnAddUsers_AddGroups();
 		crm.clickCreateUser_Group();
 		String actNullMsg = crm.getNullErrorMsgs(p.getProperty("expNullGroupName"));
-		softAssert.assertEquals(actNullMsg, p.getProperty("expNullGroupName"), "Group name error message does not match!");
+		SoftAssert sa = new SoftAssert();
+		sa.assertEquals(actNullMsg, p.getProperty("expNullGroupName"), "Group name error message does not match!");
 		lp.refreshPage();
-		softAssert.assertAll();
+		sa.assertAll();
 	}
 
 	@Test(priority = 2, enabled = false)
@@ -44,9 +56,10 @@ public class CRM_GroupsTest extends BaseClass {
 		crm.setWebsiteName(p.getProperty("websiteName"));
 		crm.clickCreateUser_Group();
 		String actMsg = crm.getToastMessage();
-		softAssert.assertEquals(actMsg, p.getProperty("expgroupCreateSuccessMsg"), "Group creation error message does not match!");
+		SoftAssert sa = new SoftAssert();
+		sa.assertEquals(actMsg, p.getProperty("expgroupCreateSuccessMsg"), "Group creation error message does not match!");
 		lp.refreshPage();
-		softAssert.assertAll();
+		sa.assertAll();
 	}
 
 	@Test(priority = 3, enabled = false) // Incomplete test case ###
@@ -58,9 +71,10 @@ public class CRM_GroupsTest extends BaseClass {
 		crm.setWebsiteName(p.getProperty("websiteName"));
 		crm.clickCreateUser_Group();
 		String actMsg = crm.getToastMessage();
-		softAssert.assertEquals(actMsg, p.getProperty(""), "Duplicate group error message does not match!");
+		SoftAssert sa = new SoftAssert();
+		sa.assertEquals(actMsg, p.getProperty(""), "Duplicate group error message does not match!");
 		lp.refreshPage();
-		softAssert.assertAll();
+		sa.assertAll();
 	}
 
 	@Test(priority = 4)
@@ -71,9 +85,10 @@ public class CRM_GroupsTest extends BaseClass {
 		logger.info("Total group count: " + userCount);
 		int rowCount = ap.getTotalAgentCountFromList();
 		logger.info("Total row count: " + rowCount);
-		softAssert.assertEquals(userCount, rowCount, "Group pagination count is not with group list count");
+		SoftAssert sa = new SoftAssert();
+		sa.assertEquals(userCount, rowCount, "Group pagination count is not with group list count");
 		lp.refreshPage();
-		softAssert.assertAll();
+		sa.assertAll();
 	}
 
 	@Test(priority = 5)
@@ -81,9 +96,10 @@ public class CRM_GroupsTest extends BaseClass {
 		logger.info("*** Verify test case: verifySearchByGroupName ***");
 		crm.openGroupTab();
 		Boolean isAvailable = crm.searchByName(p.getProperty("groupNameSearch"));
-		softAssert.assertTrue(isAvailable, "Group name is not found in search result");
+		SoftAssert sa = new SoftAssert();
+		sa.assertTrue(isAvailable, "Group name is not found in search result");
 		lp.refreshPage();
-		softAssert.assertAll();
+		sa.assertAll();
 	}
 
 }

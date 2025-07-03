@@ -6,22 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.CRM_GroupsTest">
+      <class name="testCases.CRM_SegmentsTest">
         <methods>
-          <include name="verifyNullGroupName"/>
-          <include name="verifyTotalGroupCountOnPagination"/>
+          <include name="setupCRMSegmentsObject"/>
           <include name="browserLounching"/>
-          <include name="setupCRMObjects"/>
-          <include name="verifySearchByGroupName"/>
+          <include name="verifyNewSegmentCreation"/>
         </methods>
-      </class> <!-- testCases.CRM_GroupsTest -->
-      <class name="testCases.CRM_UsersTest">
-        <methods>
-          <include name="setupCRMObjects"/>
-          <include name="browserLounching"/>
-          <include name="verifyFilterBy_Mobile_StartsWith"/>
-        </methods>
-      </class> <!-- testCases.CRM_UsersTest -->
+      </class> <!-- testCases.CRM_SegmentsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

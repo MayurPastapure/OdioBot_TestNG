@@ -3,6 +3,7 @@ package testCases;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import pageObjects.AgentsPage;
 import pageObjects.CRMPage;
@@ -17,7 +18,7 @@ public class CRM_UsersTest extends BaseClass {
 	AgentsPage ap;
 
 	@BeforeMethod
-	public void setupCRMObjects() {
+	public void setupCRMUsersObjects() {
 		crm = new CRMPage(driver);
 		hp = new HomePage(driver);
 		lp = new LoginPage(driver);
@@ -43,8 +44,9 @@ public class CRM_UsersTest extends BaseClass {
 				"Download sample cvs toast message does not match!");
 		Thread.sleep(4000);
 		boolean exist = crm.isFileExist(p.getProperty("csvFileName"));
-		softAssert.assertTrue(exist, "File does not exist");
-		softAssert.assertAll();
+		SoftAssert sa = new SoftAssert();
+		sa.assertTrue(exist, "File does not exist");
+		sa.assertAll();
 	}
 
 	@Test(priority = 3, enabled = false)
@@ -54,8 +56,9 @@ public class CRM_UsersTest extends BaseClass {
 		crm.clickAndUploadBulkUserFile(p.getProperty("uploadFilePath"), p.getProperty("uploadFileName"));
 		String actToastMsg = crm.getToastMessage();
 		logger.info("File upload message: " + actToastMsg);
-		softAssert.assertEquals(actToastMsg, p.getProperty("expFileUploadMsg"), "File upload message does not match!");
-		softAssert.assertAll();
+		SoftAssert sa = new SoftAssert();
+		sa.assertEquals(actToastMsg, p.getProperty("expFileUploadMsg"), "File upload message does not match!");
+		sa.assertAll();
 	}
 
 	@Test(priority = 4)
@@ -64,10 +67,11 @@ public class CRM_UsersTest extends BaseClass {
 		crm.clickOnAddUsers_AddGroups();
 		crm.clickCreateUser_Group();
 		String actNullMsg = crm.getNullErrorMsgs(p.getProperty("expNullUserName"));
-		softAssert.assertEquals(actNullMsg, p.getProperty("expNullUserName"),
+		SoftAssert sa = new SoftAssert();
+		sa.assertEquals(actNullMsg, p.getProperty("expNullUserName"),
 				"Null user name error message does not match!");
 		lp.refreshPage();
-		softAssert.assertAll();
+		sa.assertAll();
 	}
 
 	@Test(priority = 5)
@@ -77,10 +81,11 @@ public class CRM_UsersTest extends BaseClass {
 		crm.setUserName(p.getProperty("userName"));
 		crm.clickCreateUser_Group();
 		String actNullMsg = crm.getNullErrorMsgs(p.getProperty("expNullMobileNumber"));
-		softAssert.assertEquals(actNullMsg, p.getProperty("expNullMobileNumber"),
+		SoftAssert sa = new SoftAssert();
+		sa.assertEquals(actNullMsg, p.getProperty("expNullMobileNumber"),
 				"Null mobile error message does not match!");
 		lp.refreshPage();
-		softAssert.assertAll();
+		sa.assertAll();
 	}
 
 	@Test(priority = 6)
@@ -91,10 +96,11 @@ public class CRM_UsersTest extends BaseClass {
 		crm.setMobileNumber(p.getProperty("mobileNumber"));
 		crm.clickCreateUser_Group();
 		String actNullMsg = crm.getNullErrorMsgs(p.getProperty("expNullHandle"));
-		softAssert.assertEquals(actNullMsg, p.getProperty("expNullHandle"),
+		SoftAssert sa = new SoftAssert();
+		sa.assertEquals(actNullMsg, p.getProperty("expNullHandle"),
 				"Null handle error message does not match!");
 		lp.refreshPage();
-		softAssert.assertAll();
+		sa.assertAll();
 	}
 
 	@Test(priority = 7)
@@ -106,9 +112,10 @@ public class CRM_UsersTest extends BaseClass {
 		crm.setHandle(p.getProperty("handle"));
 		crm.clickCreateUser_Group();
 		String actNullMsg = crm.getNullErrorMsgs(p.getProperty("expNullEmail"));
-		softAssert.assertEquals(actNullMsg, p.getProperty("expNullEmail"), "Null email error message does not match!");
+		SoftAssert sa = new SoftAssert();
+		sa.assertEquals(actNullMsg, p.getProperty("expNullEmail"), "Null email error message does not match!");
 		lp.refreshPage();
-		softAssert.assertAll();
+		sa.assertAll();
 	}
 
 	@Test(priority = 8)
@@ -121,10 +128,11 @@ public class CRM_UsersTest extends BaseClass {
 		crm.setEmail(p.getProperty("email"));
 		crm.clickCreateUser_Group();
 		String actNullMsg = crm.getNullErrorMsgs(p.getProperty("expNullDepartment"));
-		softAssert.assertEquals(actNullMsg, p.getProperty("expNullDepartment"),
+		SoftAssert sa = new SoftAssert();
+		sa.assertEquals(actNullMsg, p.getProperty("expNullDepartment"),
 				"Null department error message does not match!");
 		lp.refreshPage();
-		softAssert.assertAll();
+		sa.assertAll();
 	}
 
 	@Test(priority = 9, enabled = false)
@@ -142,9 +150,10 @@ public class CRM_UsersTest extends BaseClass {
 		crm.setDescription(p.getProperty("description"));
 		crm.clickCreateUser_Group();
 		String actToastMsg = crm.getToastMessage();
-		softAssert.assertEquals(actToastMsg, p.getProperty("expUserCreateSuccessMsg"),
+		SoftAssert sa = new SoftAssert();
+		sa.assertEquals(actToastMsg, p.getProperty("expUserCreateSuccessMsg"),
 				"User creation toast message does not match!");
-		softAssert.assertAll();
+		sa.assertAll();
 	}
 
 	@Test(priority = 10)
@@ -159,10 +168,11 @@ public class CRM_UsersTest extends BaseClass {
 		crm.selectGroup(p.getProperty("group"));
 		crm.clickCreateUser_Group();
 		String actToastMsg = crm.getToastMessage();
-		softAssert.assertEquals(actToastMsg, p.getProperty("expHandleExistMsg"),
+		SoftAssert sa = new SoftAssert();
+		sa.assertEquals(actToastMsg, p.getProperty("expHandleExistMsg"),
 				"Duplicate handle toast message does not match!");
 		lp.refreshPage();
-		softAssert.assertAll();
+		sa.assertAll();
 	}
 
 	@Test(priority = 11)
@@ -177,10 +187,11 @@ public class CRM_UsersTest extends BaseClass {
 		crm.selectGroup(p.getProperty("group"));
 		crm.clickCreateUser_Group();
 		String actToastMsg = crm.getToastMessage();
-		softAssert.assertEquals(actToastMsg, p.getProperty("expEmailExistMsg"),
+		SoftAssert sa = new SoftAssert();
+		sa.assertEquals(actToastMsg, p.getProperty("expEmailExistMsg"),
 				"Duplicate email toast message does not match!");
 		lp.refreshPage();
-		softAssert.assertAll();
+		sa.assertAll();
 	}
 
 	@Test(priority = 12)
@@ -190,9 +201,10 @@ public class CRM_UsersTest extends BaseClass {
 		logger.info("Total user count: " + userCount);
 		int rowCount = ap.getTotalAgentCountFromList();
 		logger.info("Total row count: " + rowCount);
-		softAssert.assertEquals(userCount, rowCount, "User pagination count is not with agent list count");
+		SoftAssert sa = new SoftAssert();
+		sa.assertEquals(userCount, rowCount, "User pagination count is not with agent list count");
 		lp.refreshPage();
-		softAssert.assertAll();
+		sa.assertAll();
 	}
 
 	@Test(priority = 13)
@@ -230,10 +242,11 @@ public class CRM_UsersTest extends BaseClass {
 		crm.selectFilterOption(p.getProperty("filterOption_Name"));
 		crm.clickApplyFiler();
 		String actMsg = crm.getNullErrorMsgs(p.getProperty("expNullConditionValueMsg"));
-		softAssert.assertEquals(actMsg, p.getProperty("expNullConditionValueMsg"),
+		SoftAssert sa = new SoftAssert();
+		sa.assertEquals(actMsg, p.getProperty("expNullConditionValueMsg"),
 				"Null condition value error message does not match!");
 		lp.refreshPage();
-		softAssert.assertAll();
+		sa.assertAll();
 	}
 
 	@Test(priority = 17)
@@ -245,9 +258,10 @@ public class CRM_UsersTest extends BaseClass {
 		crm.clickApplyFiler();
 		int filterCount = ap.getTotalAgentCountFromPagination();
 		logger.info("Total user filter by Name_Contains: " + p.getProperty("conditionValue") + ":= " + filterCount);
-		softAssert.assertTrue(filterCount >= 1, "Data is not available as per filter name contains");
+		SoftAssert sa = new SoftAssert();
+		sa.assertTrue(filterCount >= 1, "Data is not available as per filter name contains");
 		lp.refreshPage();
-		softAssert.assertAll();
+		sa.assertAll();
 	}
 
 	@Test(priority = 18)
@@ -260,9 +274,10 @@ public class CRM_UsersTest extends BaseClass {
 		int filterCount = ap.getTotalAgentCountFromPagination();
 		logger.info(
 				"Total user filter by Name_DoesNotContain: " + p.getProperty("conditionValue") + ":= " + filterCount);
-		softAssert.assertTrue(filterCount >= 1, "Data is not available as per filter name does not contains");
+		SoftAssert sa = new SoftAssert();
+		sa.assertTrue(filterCount >= 1, "Data is not available as per filter name does not contains");
 		lp.refreshPage();
-		softAssert.assertAll();
+		sa.assertAll();
 	}
 
 	@Test(priority = 19)
@@ -274,9 +289,10 @@ public class CRM_UsersTest extends BaseClass {
 		crm.clickApplyFiler();
 		int filterCount = ap.getTotalAgentCountFromPagination();
 		logger.info("Total user filter by Email_IsEqual: " + p.getProperty("condValue_Email") + ":= " + filterCount);
-		softAssert.assertTrue(filterCount >= 1, "Data is not available as per filter email is equals");
+		SoftAssert sa = new SoftAssert();
+		sa.assertTrue(filterCount >= 1, "Data is not available as per filter email is equals");
 		lp.refreshPage();
-		softAssert.assertAll();
+		sa.assertAll();
 	}
 
 	@Test(priority = 20)
@@ -288,9 +304,10 @@ public class CRM_UsersTest extends BaseClass {
 		crm.clickApplyFiler();
 		int filterCount = ap.getTotalAgentCountFromPagination();
 		logger.info("Total user filter by Email_IsNotEqual: " + p.getProperty("condValue_Email") + ":= " + filterCount);
-		softAssert.assertTrue(filterCount >= 1, "Data is not available as per filter email is not equals");
+		SoftAssert sa = new SoftAssert();
+		sa.assertTrue(filterCount >= 1, "Data is not available as per filter email is not equals");
 		lp.refreshPage();
-		softAssert.assertAll();
+		sa.assertAll();
 	}
 
 	@Test(priority = 21)
@@ -307,7 +324,7 @@ public class CRM_UsersTest extends BaseClass {
 		Assert.assertTrue(filterCount >= 1, "Data is not available as per filter mobile number ends with");
 	}
 
-	@Test(priority = 22, enabled = false) // Filter by mobile starts with is not work from BE
+	@Test(priority = 22, enabled = true) // Filter by mobile starts with is not work from BE
 	public void verifyFilterBy_Mobile_StartsWith() throws InterruptedException  {
 		logger.info("*** Verify test case: verifyFilterBy_Mobile_StartsWith ***");
 		crm.selectFilterOption(p.getProperty("filterOption_Mobile"));
@@ -317,9 +334,10 @@ public class CRM_UsersTest extends BaseClass {
 		int filterCount = ap.getTotalAgentCountFromPagination();
 		logger.info("Total user filter by Mobile_StartsWith: " + p.getProperty("condValue_MobileStart") + ":= "
 				+ filterCount);
-		softAssert.assertTrue(filterCount >= 1, "Data is not available as per filter mobile number starts with");
+		SoftAssert sa = new SoftAssert();
+		sa.assertTrue(filterCount >= 1, "Data is not available as per filter mobile number starts with");
 		lp.refreshPage();
-		softAssert.assertAll();
+		sa.assertAll();
 	}
 
 }

@@ -19,7 +19,7 @@ public class CRMPage extends BasePage {
 	WebElement txtCRM;
 
 	@FindBy(xpath = "//button[text()='Add ']")
-	WebElement btnAddUsers_Groups;
+	WebElement btnAddUsers_Groups_Segment;
 
 	@FindBy(xpath = "//input[@name='userName']")
 	WebElement inpUserName;
@@ -110,11 +110,23 @@ public class CRMPage extends BasePage {
 
 	@FindBy(xpath = "//input[@name='websiteName']")
 	WebElement inpWebsite;
+	
+	@FindBy(id="department-select")
+	WebElement drpDepartmentSeg;
+	
+	@FindBy(xpath = "//ul[@aria-labelledby='department-select-label']//li")
+	List<WebElement> drpDepartmentOptionsSeg;
+	
+	@FindBy(id ="outlined-basic")
+	WebElement inpSegmentName;
+	
+	@FindBy(xpath="//button[text()='Apply']")
+	WebElement btnApplySeg;
 
 	public void openCRMPage() {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(txtCRM));
 		element.click();
-		wait.until(ExpectedConditions.visibilityOf(btnAddUsers_Groups));
+		wait.until(ExpectedConditions.visibilityOf(btnAddUsers_Groups_Segment));
 	}
 
 	public void clickUploadCSV_BulkUsers() {
@@ -164,7 +176,7 @@ public class CRMPage extends BasePage {
 	}
 
 	public void clickOnAddUsers_AddGroups() {
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnAddUsers_Groups));
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnAddUsers_Groups_Segment));
 		element.click();
 		wait.until(ExpectedConditions.elementToBeClickable(btnCreateUser_Group));
 	}
@@ -296,5 +308,44 @@ public class CRMPage extends BasePage {
 		element.click();
 		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//tbody/tr[td[not(@colspan)]]")));
 	}
+	
+	public void openSegmentsTab() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(txtSegmentsTab));
+		element.click();
+		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(
+				By.xpath("//table[contains(@class,'MuiTable-root')]/tbody/tr[td[not(@colspan)]]")));
+	}
+	
+	public void clickOnAddSegments() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnAddUsers_Groups_Segment));
+		element.click();
+		wait.until(ExpectedConditions.elementToBeClickable(btnFilter));
+	}
+	
+	public void selectSegmentDepartment(String segmentDepartment) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(drpDepartmentSeg));
+		element.click();
+		List<WebElement> departments = wait.until(ExpectedConditions.visibilityOfAllElements(drpFilterConditionOptions));
+		for(WebElement department : departments) {
+			if(department.getText().trim().equalsIgnoreCase(segmentDepartment)) {
+				department.click();
+				break;
+			}
+		}
+	}
+	
+	public void setSegmentName(String segmentName) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpSegmentName));
+		element.sendKeys(segmentName);
+	}
+	
+	public void clickApplySeg() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnApplySeg));
+		element.click();
+		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(
+				By.xpath("//table[contains(@class,'MuiTable-root')]/tbody/tr[td[not(@colspan)]]")));
+	}
+	
+	
 
 }

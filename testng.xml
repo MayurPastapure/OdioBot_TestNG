@@ -13,11 +13,12 @@
     <classes>
       <class name="testCases.LoginTest"/>
       <class name="testCases.HomeTest"/>
-	<!--   <class name="testCases.WorkflowTest"/> 
+<!--  <class name="testCases.WorkflowTest"/> 
       <class name="testCases.DepartmentsTest"/> 
-      <class name="testCases.AgentsTest"/> -->
-      <class name="testCases.CRM_UsersTest"/>
-      <class name="testCases.CRM_GroupsTest"/>
+      <class name="testCases.AgentsTest"/>   
+      <class name="testCases.CRM_UsersTest"/>  
+      <class name="testCases.CRM_GroupsTest"/>  --> 
+      <class name="testCases.CRM_SegmentsTest"/>
     </classes>
   </test>
 
