@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -110,18 +111,21 @@ public class CRMPage extends BasePage {
 
 	@FindBy(xpath = "//input[@name='websiteName']")
 	WebElement inpWebsite;
-	
-	@FindBy(id="department-select")
+
+	@FindBy(id = "department-select")
 	WebElement drpDepartmentSeg;
-	
+
 	@FindBy(xpath = "//ul[@aria-labelledby='department-select-label']//li")
 	List<WebElement> drpDepartmentOptionsSeg;
-	
-	@FindBy(id ="outlined-basic")
+
+	@FindBy(id = "outlined-basic")
 	WebElement inpSegmentName;
-	
-	@FindBy(xpath="//button[text()='Apply']")
+
+	@FindBy(xpath = "//button[text()='Apply']")
 	WebElement btnApplySeg;
+
+	@FindBy(xpath = "//button[text()='Update']")
+	WebElement btnUpdateSeg;
 
 	public void openCRMPage() {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(txtCRM));
@@ -265,6 +269,12 @@ public class CRMPage extends BasePage {
 
 	public void setGroupName(String groupName) {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpGroupName));
+		element.clear();
+		element.click();
+		if(!element.getAttribute("value").isEmpty()) {
+			element.sendKeys(Keys.CONTROL + "a");
+			element.sendKeys(Keys.DELETE);
+		}
 		element.sendKeys(groupName);
 	}
 
@@ -308,44 +318,62 @@ public class CRMPage extends BasePage {
 		element.click();
 		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//tbody/tr[td[not(@colspan)]]")));
 	}
-	
+
 	public void openSegmentsTab() {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(txtSegmentsTab));
 		element.click();
 		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(
 				By.xpath("//table[contains(@class,'MuiTable-root')]/tbody/tr[td[not(@colspan)]]")));
 	}
-	
+
 	public void clickOnAddSegments() {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnAddUsers_Groups_Segment));
 		element.click();
 		wait.until(ExpectedConditions.elementToBeClickable(btnFilter));
 	}
-	
+
 	public void selectSegmentDepartment(String segmentDepartment) {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(drpDepartmentSeg));
 		element.click();
-		List<WebElement> departments = wait.until(ExpectedConditions.visibilityOfAllElements(drpFilterConditionOptions));
-		for(WebElement department : departments) {
-			if(department.getText().trim().equalsIgnoreCase(segmentDepartment)) {
+		List<WebElement> departments = wait
+				.until(ExpectedConditions.visibilityOfAllElements(drpFilterConditionOptions));
+		for (WebElement department : departments) {
+			if (department.getText().trim().equalsIgnoreCase(segmentDepartment)) {
 				department.click();
 				break;
 			}
 		}
 	}
-	
+
 	public void setSegmentName(String segmentName) {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpSegmentName));
+		element.clear();
+		element.click();
+		if(!element.getAttribute("value").isEmpty()) {
+			element.sendKeys(Keys.CONTROL + "a");
+			element.sendKeys(Keys.DELETE);
+		}
 		element.sendKeys(segmentName);
 	}
-	
+
 	public void clickApplySeg() {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnApplySeg));
 		element.click();
 		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(
 				By.xpath("//table[contains(@class,'MuiTable-root')]/tbody/tr[td[not(@colspan)]]")));
 	}
-	
-	
+
+	public void clickUpdateSeg() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnUpdateSeg));
+		element.click();
+		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(
+				By.xpath("//table[contains(@class,'MuiTable-root')]/tbody/tr[td[not(@colspan)]]")));
+	}
+
+	public void clickActionOfSpecificSegment(String SegmentName) {
+		String dynamicXpath = "(//tr//td[text()='" + SegmentName + "']//parent::tr//button[@type='button'])[2]";
+		WebElement btnAction = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(dynamicXpath)));
+		btnAction.click();
+	}
 
 }

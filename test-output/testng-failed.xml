@@ -6,13 +6,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.CRM_SegmentsTest">
+      <class name="testCases.CRM_GroupsTest">
         <methods>
-          <include name="setupCRMSegmentsObject"/>
+          <include name="verifyDuplicateGroupNameCreation"/>
+          <include name="setupCRMGroupsObjects"/>
           <include name="browserLounching"/>
-          <include name="verifyNewSegmentCreation"/>
+          <include name="verifyEditGroupbyUpdatingName"/>
+          <include name="verifyGroupNameCreationWithValidDate"/>
         </methods>
-      </class> <!-- testCases.CRM_SegmentsTest -->
+      </class> <!-- testCases.CRM_GroupsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

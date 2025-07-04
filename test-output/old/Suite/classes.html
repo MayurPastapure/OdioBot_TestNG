@@ -4,14 +4,22 @@
 <th>Method name</th>
 <th>Groups</th>
 </tr><tr>
-<td>testCases.CRM_SegmentsTest</td>
+<td>testCases.CRM_GroupsTest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@Test</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyNullConditionValueOfFilterInSegment</td>
+<td>verifyFilterBy_CompanyWebsite_IsEquals</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyNullGroupName</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyFilterBy_Name_IsEquals</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -19,7 +27,19 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyNewSegmentCreation</td>
+<td>verifyGroupNameCreationWithValidDate</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyTotalGroupCountOnPagination</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifySearchByGroupName</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyDeleteGroupOfUpdatedName</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
@@ -29,7 +49,7 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>setupCRMSegmentsObject</td>
+<td>setupCRMGroupsObjects</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterMethod</td>
@@ -49,11 +69,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyBlankPasswordLogin</td>
+<td>verifyCorrectCredLogin</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyCorrectCredLogin</td>
+<td>verifyBlankPasswordLogin</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
