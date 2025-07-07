@@ -1,125 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="15" passed="13" failed="0" skipped="0">
+<testng-results ignored="2" total="9" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-04T18:41:10 IST" name="Suite" finished-at="2025-07-04T18:42:11 IST" duration-ms="60299">
+  <suite started-at="2025-07-07T19:15:59 IST" name="Suite" finished-at="2025-07-07T19:16:25 IST" duration-ms="26210">
     <groups>
     </groups>
-    <test started-at="2025-07-04T18:41:10 IST" name="Test" finished-at="2025-07-04T18:42:11 IST" duration-ms="60299">
+    <test started-at="2025-07-07T19:15:59 IST" name="Test" finished-at="2025-07-07T19:16:25 IST" duration-ms="26210">
       <class name="testCases.LoginTest">
-        <test-method is-config="true" signature="browserLounching()[pri:0, instance:testCases.LoginTest@13fd2ccd]" started-at="2025-07-04T18:40:57 IST" name="browserLounching" finished-at="2025-07-04T18:41:10 IST" duration-ms="13531" status="PASS">
+        <test-method is-config="true" signature="browserLounching()[pri:0, instance:testCases.LoginTest@428640fa]" started-at="2025-07-07T19:15:41 IST" name="browserLounching" finished-at="2025-07-07T19:15:59 IST" duration-ms="18210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLounching -->
-        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@13fd2ccd]" started-at="2025-07-04T18:41:10 IST" name="setupLoginPageObjects" finished-at="2025-07-04T18:41:10 IST" duration-ms="31" status="PASS">
+        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@428640fa]" started-at="2025-07-07T19:15:59 IST" name="setupLoginPageObjects" finished-at="2025-07-07T19:15:59 IST" duration-ms="55" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLoginPageObjects -->
-        <test-method signature="verifyIncorrectCredLogin()[pri:1, instance:testCases.LoginTest@13fd2ccd]" started-at="2025-07-04T18:41:10 IST" name="verifyIncorrectCredLogin" finished-at="2025-07-04T18:41:13 IST" duration-ms="2447" status="PASS">
+        <test-method signature="verifyIncorrectCredLogin()[pri:1, instance:testCases.LoginTest@428640fa]" started-at="2025-07-07T19:15:59 IST" name="verifyIncorrectCredLogin" finished-at="2025-07-07T19:16:02 IST" duration-ms="2641" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyIncorrectCredLogin -->
-        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@13fd2ccd]" started-at="2025-07-04T18:41:13 IST" name="setupLoginPageObjects" finished-at="2025-07-04T18:41:13 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@428640fa]" started-at="2025-07-07T19:16:02 IST" name="setupLoginPageObjects" finished-at="2025-07-07T19:16:02 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLoginPageObjects -->
-        <test-method signature="verifyBlankEmailLogin()[pri:2, instance:testCases.LoginTest@13fd2ccd]" started-at="2025-07-04T18:41:13 IST" name="verifyBlankEmailLogin" finished-at="2025-07-04T18:41:13 IST" duration-ms="646" status="PASS">
+        <test-method signature="verifyBlankEmailLogin()[pri:2, instance:testCases.LoginTest@428640fa]" started-at="2025-07-07T19:16:02 IST" name="verifyBlankEmailLogin" finished-at="2025-07-07T19:16:03 IST" duration-ms="1021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBlankEmailLogin -->
-        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@13fd2ccd]" started-at="2025-07-04T18:41:13 IST" name="setupLoginPageObjects" finished-at="2025-07-04T18:41:13 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@428640fa]" started-at="2025-07-07T19:16:03 IST" name="setupLoginPageObjects" finished-at="2025-07-07T19:16:03 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLoginPageObjects -->
-        <test-method signature="verifyBlankPasswordLogin()[pri:3, instance:testCases.LoginTest@13fd2ccd]" started-at="2025-07-04T18:41:13 IST" name="verifyBlankPasswordLogin" finished-at="2025-07-04T18:41:15 IST" duration-ms="1382" status="PASS">
+        <test-method signature="verifyBlankPasswordLogin()[pri:3, instance:testCases.LoginTest@428640fa]" started-at="2025-07-07T19:16:03 IST" name="verifyBlankPasswordLogin" finished-at="2025-07-07T19:16:04 IST" duration-ms="1417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBlankPasswordLogin -->
-        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@13fd2ccd]" started-at="2025-07-04T18:41:15 IST" name="setupLoginPageObjects" finished-at="2025-07-04T18:41:15 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@428640fa]" started-at="2025-07-07T19:16:04 IST" name="setupLoginPageObjects" finished-at="2025-07-07T19:16:04 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLoginPageObjects -->
-        <test-method signature="verifyCorrectCredLogin()[pri:4, instance:testCases.LoginTest@13fd2ccd]" started-at="2025-07-04T18:41:15 IST" name="verifyCorrectCredLogin" finished-at="2025-07-04T18:41:17 IST" duration-ms="2176" status="PASS">
+        <test-method signature="verifyCorrectCredLogin()[pri:4, instance:testCases.LoginTest@428640fa]" started-at="2025-07-07T19:16:04 IST" name="verifyCorrectCredLogin" finished-at="2025-07-07T19:16:07 IST" duration-ms="2503" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCorrectCredLogin -->
       </class> <!-- testCases.LoginTest -->
-      <class name="testCases.CRM_GroupsTest">
-        <test-method is-config="true" signature="setupCRMGroupsObjects()[pri:0, instance:testCases.CRM_GroupsTest@2d52216b]" started-at="2025-07-04T18:41:17 IST" name="setupCRMGroupsObjects" finished-at="2025-07-04T18:41:17 IST" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCRMGroupsObjects -->
-        <test-method signature="verifyPageIsCRM_UsersPage()[pri:0, instance:testCases.CRM_GroupsTest@2d52216b]" started-at="2025-07-04T18:41:17 IST" name="verifyPageIsCRM_UsersPage" finished-at="2025-07-04T18:41:19 IST" duration-ms="1363" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPageIsCRM_UsersPage -->
-        <test-method is-config="true" signature="setupCRMGroupsObjects()[pri:0, instance:testCases.CRM_GroupsTest@2d52216b]" started-at="2025-07-04T18:41:19 IST" name="setupCRMGroupsObjects" finished-at="2025-07-04T18:41:19 IST" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCRMGroupsObjects -->
-        <test-method signature="verifyNullGroupName()[pri:1, instance:testCases.CRM_GroupsTest@2d52216b]" started-at="2025-07-04T18:41:19 IST" name="verifyNullGroupName" finished-at="2025-07-04T18:41:21 IST" duration-ms="1957" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNullGroupName -->
-        <test-method is-config="true" signature="setupCRMGroupsObjects()[pri:0, instance:testCases.CRM_GroupsTest@2d52216b]" started-at="2025-07-04T18:41:21 IST" name="setupCRMGroupsObjects" finished-at="2025-07-04T18:41:21 IST" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCRMGroupsObjects -->
-        <test-method signature="verifyTotalGroupCountOnPagination()[pri:2, instance:testCases.CRM_GroupsTest@2d52216b]" started-at="2025-07-04T18:41:21 IST" name="verifyTotalGroupCountOnPagination" finished-at="2025-07-04T18:41:26 IST" duration-ms="5537" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTotalGroupCountOnPagination -->
-        <test-method is-config="true" signature="setupCRMGroupsObjects()[pri:0, instance:testCases.CRM_GroupsTest@2d52216b]" started-at="2025-07-04T18:41:26 IST" name="setupCRMGroupsObjects" finished-at="2025-07-04T18:41:26 IST" duration-ms="14" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCRMGroupsObjects -->
-        <test-method signature="verifyGroupNameCreationWithValidDate()[pri:3, instance:testCases.CRM_GroupsTest@2d52216b]" started-at="2025-07-04T18:41:26 IST" name="verifyGroupNameCreationWithValidDate" finished-at="2025-07-04T18:41:39 IST" duration-ms="13111" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyGroupNameCreationWithValidDate -->
-        <test-method is-config="true" signature="setupCRMGroupsObjects()[pri:0, instance:testCases.CRM_GroupsTest@2d52216b]" started-at="2025-07-04T18:41:39 IST" name="setupCRMGroupsObjects" finished-at="2025-07-04T18:41:39 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCRMGroupsObjects -->
-        <test-method signature="verifySearchByGroupName()[pri:5, instance:testCases.CRM_GroupsTest@2d52216b]" started-at="2025-07-04T18:41:39 IST" name="verifySearchByGroupName" finished-at="2025-07-04T18:41:43 IST" depends-on-methods="testCases.CRM_GroupsTest.verifyGroupNameCreationWithValidDate" duration-ms="4066" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchByGroupName -->
-        <test-method is-config="true" signature="setupCRMGroupsObjects()[pri:0, instance:testCases.CRM_GroupsTest@2d52216b]" started-at="2025-07-04T18:41:43 IST" name="setupCRMGroupsObjects" finished-at="2025-07-04T18:41:43 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCRMGroupsObjects -->
-        <test-method signature="verifyFilterBy_Name_IsEquals()[pri:6, instance:testCases.CRM_GroupsTest@2d52216b]" started-at="2025-07-04T18:41:43 IST" name="verifyFilterBy_Name_IsEquals" finished-at="2025-07-04T18:41:50 IST" depends-on-methods="testCases.CRM_GroupsTest.verifyGroupNameCreationWithValidDate" duration-ms="6413" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFilterBy_Name_IsEquals -->
-        <test-method is-config="true" signature="setupCRMGroupsObjects()[pri:0, instance:testCases.CRM_GroupsTest@2d52216b]" started-at="2025-07-04T18:41:50 IST" name="setupCRMGroupsObjects" finished-at="2025-07-04T18:41:50 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCRMGroupsObjects -->
-        <test-method signature="verifyFilterBy_CompanyWebsite_IsEquals()[pri:7, instance:testCases.CRM_GroupsTest@2d52216b]" started-at="2025-07-04T18:41:50 IST" name="verifyFilterBy_CompanyWebsite_IsEquals" finished-at="2025-07-04T18:41:56 IST" depends-on-methods="testCases.CRM_GroupsTest.verifyGroupNameCreationWithValidDate" duration-ms="6255" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFilterBy_CompanyWebsite_IsEquals -->
-        <test-method is-config="true" signature="setupCRMGroupsObjects()[pri:0, instance:testCases.CRM_GroupsTest@2d52216b]" started-at="2025-07-04T18:41:56 IST" name="setupCRMGroupsObjects" finished-at="2025-07-04T18:41:56 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupCRMGroupsObjects -->
-        <test-method signature="verifyDeleteGroupOfUpdatedName()[pri:9, instance:testCases.CRM_GroupsTest@2d52216b]" started-at="2025-07-04T18:41:56 IST" name="verifyDeleteGroupOfUpdatedName" finished-at="2025-07-04T18:42:11 IST" depends-on-methods="testCases.CRM_GroupsTest.verifyGroupNameCreationWithValidDate" duration-ms="14476" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDeleteGroupOfUpdatedName -->
-      </class> <!-- testCases.CRM_GroupsTest -->
       <class name="testCases.HomeTest">
-        <test-method is-config="true" signature="setupHomePageObjects()[pri:0, instance:testCases.HomeTest@7db12bb6]" started-at="2025-07-04T18:41:17 IST" name="setupHomePageObjects" finished-at="2025-07-04T18:41:17 IST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="setupHomePageObjects()[pri:0, instance:testCases.HomeTest@b9b00e0]" started-at="2025-07-07T19:16:07 IST" name="setupHomePageObjects" finished-at="2025-07-07T19:16:07 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupHomePageObjects -->
-        <test-method signature="verifyHomeCardsVisibility()[pri:1, instance:testCases.HomeTest@7db12bb6]" started-at="2025-07-04T18:41:17 IST" name="verifyHomeCardsVisibility" finished-at="2025-07-04T18:41:17 IST" duration-ms="248" status="PASS">
+        <test-method signature="verifyHomeCardsVisibility()[pri:1, instance:testCases.HomeTest@b9b00e0]" started-at="2025-07-07T19:16:07 IST" name="verifyHomeCardsVisibility" finished-at="2025-07-07T19:16:07 IST" duration-ms="470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomeCardsVisibility -->
       </class> <!-- testCases.HomeTest -->
+      <class name="testCases.CampaignsTest">
+        <test-method is-config="true" signature="setupCampaignsTestObject()[pri:0, instance:testCases.CampaignsTest@506ae4d4]" started-at="2025-07-07T19:16:07 IST" name="setupCampaignsTestObject" finished-at="2025-07-07T19:16:07 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCampaignsTestObject -->
+        <test-method signature="verifyPageIsCampaignPage()[pri:1, instance:testCases.CampaignsTest@506ae4d4]" started-at="2025-07-07T19:16:07 IST" name="verifyPageIsCampaignPage" finished-at="2025-07-07T19:16:08 IST" duration-ms="930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageIsCampaignPage -->
+        <test-method is-config="true" signature="setupCampaignsTestObject()[pri:0, instance:testCases.CampaignsTest@506ae4d4]" started-at="2025-07-07T19:16:08 IST" name="setupCampaignsTestObject" finished-at="2025-07-07T19:16:08 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCampaignsTestObject -->
+        <test-method signature="verifyNewCampaignCreationWithValidData()[pri:2, instance:testCases.CampaignsTest@506ae4d4]" started-at="2025-07-07T19:16:08 IST" name="verifyNewCampaignCreationWithValidData" finished-at="2025-07-07T19:16:25 IST" duration-ms="16424" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //div//fieldset//span[text()='Groups'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.96, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Mayur\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62332}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62332/devtoo..., se:cdpVersion: 138.0.7204.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 087eabd0d7684c7e7cca4197ceb6340d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div//fieldset//span[text()='Groups'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.96, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Mayur\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62332}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62332/devtoo..., se:cdpVersion: 138.0.7204.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 087eabd0d7684c7e7cca4197ceb6340d
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pageObjects.CampaignsPage.selectRadioButton_GroupsOrSegments(CampaignsPage.java:149)
+at testCases.CampaignsTest.verifyNewCampaignCreationWithValidData(CampaignsTest.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewCampaignCreationWithValidData -->
+      </class> <!-- testCases.CampaignsTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

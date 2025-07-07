@@ -17,8 +17,10 @@
       <class name="testCases.DepartmentsTest"/> 
       <class name="testCases.AgentsTest"/>   
       <class name="testCases.CRM_UsersTest"/>   
-      <class name="testCases.CRM_GroupsTest"/>  -->
-      <class name="testCases.CRM_SegmentsTest"/>  
+      <class name="testCases.CRM_GroupsTest"/>  
+      <class name="testCases.CRM_SegmentsTest"/>  -->
+      <class name="testCases.CampaignsTest"/>
+      
     </classes>
   </test>
 
