@@ -6,13 +6,39 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.CampaignsTest">
+      <class name="testCases.HomeTest">
         <methods>
-          <include name="verifyNewCampaignCreationWithValidData"/>
-          <include name="setupCampaignsTestObject"/>
+          <include name="verifyHomeCardsVisibility"/>
+          <include name="setupHomePageObjects"/>
           <include name="browserLounching"/>
         </methods>
+      </class> <!-- testCases.HomeTest -->
+      <class name="testCases.CampaignsTest">
+        <methods>
+          <include name="verifyNullGroup_Segment"/>
+          <include name="verifyNullStatus"/>
+          <include name="verifyNullDepartment"/>
+          <include name="verifyNullWhatsAppTemplate"/>
+          <include name="verifyNullSchedule"/>
+          <include name="verifyNewCampaignCreationWithValidData"/>
+          <include name="verifyPageIsCampaignPage"/>
+          <include name="verifyDeleteCampaign"/>
+          <include name="verifyNullDescription"/>
+          <include name="setupCampaignsTestObject"/>
+          <include name="verifyTotalCampaignCountOnPagination"/>
+          <include name="browserLounching"/>
+          <include name="verifyNullCampaignName"/>
+          <include name="verifyEditCampaignByUpdatingName"/>
+        </methods>
       </class> <!-- testCases.CampaignsTest -->
+      <class name="testCases.LoginTest">
+        <methods>
+          <include name="setupLoginPageObjects"/>
+          <include name="verifyIncorrectCredLogin"/>
+          <include name="verifyCorrectCredLogin"/>
+          <include name="browserLounching"/>
+        </methods>
+      </class> <!-- testCases.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

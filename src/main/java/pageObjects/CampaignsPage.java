@@ -3,7 +3,6 @@ package pageObjects;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -50,14 +49,26 @@ public class CampaignsPage extends BasePage {
 
 	@FindBy(xpath = "//input[@name='checkedCSV']")
 	WebElement chkUploadCSVFile;
+	
+	@FindBy (xpath = "//span[text()='Groups']//parent::label")
+	WebElement chkGroups;
+	
+	@FindBy (xpath = "//span[text()='Segments']//parent::label")
+	WebElement chkSegments;
+	
+	@FindBy (id = "group-select")
+	WebElement drpGroups;
+	
+	@FindBy (id = "segment-select")
+	WebElement drpSegments;
 
 	@FindBy(xpath = "//ul[@role='listbox']//li")
 	List<WebElement> drpGroupOrSegmentOptions;
 
-	@FindBy(xpath = "//span[text()='Schedule Now']//parent::label//input[@type='radio']")
+	@FindBy(xpath = "//span[text()='Schedule Now']//parent::label")
 	WebElement chkScheduleNow;
 
-	@FindBy(xpath = "//span[text()='Schedule On']//parent::label//input[@type='radio']")
+	@FindBy(xpath = "//span[text()='Schedule On']//parent::label")
 	WebElement chkScheduleOn;
 
 	@FindBy(xpath = "//input[@name='checked']")
@@ -138,25 +149,38 @@ public class CampaignsPage extends BasePage {
 		driver.findElement(By.xpath("//div[@id='menu-department']")).click();
 	}
 
-	public void selectRadioButton_GroupsOrSegments(String GroupsOrSegments) {
-		String dynamicXpath = "//span[text()='" + GroupsOrSegments + "']//parent::label";
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(dynamicXpath)));
-		element.click();
-		String dynamicXpath1 = "//div//fieldset//span[text()='" + GroupsOrSegments + "']";
-		WebElement element1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(dynamicXpath1)));
-		element1.click();
-	}
-
-	public void selectDropdownOptionOfGroupOrSegment(String groupOrSegmentName) {
-		List<WebElement> options = wait.until(ExpectedConditions.visibilityOfAllElements(drpGroupOrSegmentOptions));
-		for (WebElement option : options) {
-			if (option.getText().trim().equalsIgnoreCase(groupOrSegmentName)) {
-				option.click();
+	public void selectGroupRadioBtnAndGroupName(String groupName){
+		WebElement btnRadio = wait.until(ExpectedConditions.elementToBeClickable(chkGroups));
+		btnRadio.click();
+		WebElement drpGrp = wait.until(ExpectedConditions.elementToBeClickable(drpGroups));
+		drpGrp.click();
+		List<WebElement> grps = wait.until(ExpectedConditions.visibilityOfAllElements(drpGroupOrSegmentOptions));
+		for(WebElement grp : grps) {
+			if(grp.getText().trim().equalsIgnoreCase(groupName)) {
+				grp.click();
 				break;
 			}
 		}
-		driver.findElement(By.xpath("//div[@role='presentation']")).click();
+		driver.findElement(By.xpath("//div[@id='menu-group']")).click();
+		
 	}
+
+	public void selectSegmentsRadioBtnAndSegmentName(String segmentName){
+		WebElement btnRadio = wait.until(ExpectedConditions.elementToBeClickable(chkSegments));
+		btnRadio.click();
+		WebElement drpSeg = wait.until(ExpectedConditions.elementToBeClickable(drpSegments));
+		drpSeg.click();
+		List<WebElement> segs = wait.until(ExpectedConditions.visibilityOfAllElements(drpGroupOrSegmentOptions));
+		for(WebElement seg : segs) {
+			if(seg.getText().trim().equalsIgnoreCase(segmentName)) {
+				seg.click();
+				break;
+			}
+		}
+		driver.findElement(By.xpath("//div[@id='menu-segment']")).click();
+		
+	}
+
 
 	public void clickCheckboxScheduleNow() {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(chkScheduleNow));
@@ -175,6 +199,12 @@ public class CampaignsPage extends BasePage {
 	public void clickCreateCampaign() {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnCreateCampaign));
 		element.click();
+	}
+	
+	public void clickActionOfSpecificCampaign(String campaignName) {
+		String dynamicXpath = "(//tr//td[text()='" + campaignName + "']//parent::tr//button[@type='button'])[3]";
+		WebElement btnAction = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(dynamicXpath)));
+		btnAction.click();
 	}
 
 }
