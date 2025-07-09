@@ -8,7 +8,7 @@
     <listener class-name="utilities.TestListener" />
   </listeners>
 
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="test">
 
     <classes>
       <class name="testCases.LoginTest"/>

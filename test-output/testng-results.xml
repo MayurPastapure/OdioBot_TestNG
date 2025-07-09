@@ -2,66 +2,66 @@
 <testng-results ignored="1" total="7" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-09T14:54:17 IST" name="Suite" finished-at="2025-07-09T14:54:33 IST" duration-ms="15628">
+  <suite started-at="2025-07-09T21:55:58 IST" name="Suite" finished-at="2025-07-09T21:56:12 IST" duration-ms="14402">
     <groups>
     </groups>
-    <test started-at="2025-07-09T14:54:17 IST" name="Test" finished-at="2025-07-09T14:54:33 IST" duration-ms="15628">
+    <test started-at="2025-07-09T21:55:58 IST" name="test" finished-at="2025-07-09T21:56:12 IST" duration-ms="14402">
       <class name="testCases.LoginTest">
-        <test-method is-config="true" signature="browserLounching()[pri:0, instance:testCases.LoginTest@55634720]" started-at="2025-07-09T14:53:57 IST" name="browserLounching" finished-at="2025-07-09T14:54:17 IST" duration-ms="19849" status="PASS">
+        <test-method is-config="true" signature="browserLounching()[pri:0, instance:testCases.LoginTest@55634720]" started-at="2025-07-09T21:55:42 IST" name="browserLounching" finished-at="2025-07-09T21:55:58 IST" duration-ms="15187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLounching -->
-        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@55634720]" started-at="2025-07-09T14:54:17 IST" name="setupLoginPageObjects" finished-at="2025-07-09T14:54:17 IST" duration-ms="44" status="PASS">
+        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@55634720]" started-at="2025-07-09T21:55:58 IST" name="setupLoginPageObjects" finished-at="2025-07-09T21:55:58 IST" duration-ms="51" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLoginPageObjects -->
-        <test-method signature="verifyIncorrectCredLogin()[pri:1, instance:testCases.LoginTest@55634720]" started-at="2025-07-09T14:54:17 IST" name="verifyIncorrectCredLogin" finished-at="2025-07-09T14:54:20 IST" duration-ms="2576" status="PASS">
+        <test-method signature="verifyIncorrectCredLogin()[pri:1, instance:testCases.LoginTest@55634720]" started-at="2025-07-09T21:55:58 IST" name="verifyIncorrectCredLogin" finished-at="2025-07-09T21:56:00 IST" duration-ms="2631" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyIncorrectCredLogin -->
-        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@55634720]" started-at="2025-07-09T14:54:20 IST" name="setupLoginPageObjects" finished-at="2025-07-09T14:54:20 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@55634720]" started-at="2025-07-09T21:56:00 IST" name="setupLoginPageObjects" finished-at="2025-07-09T21:56:00 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLoginPageObjects -->
-        <test-method signature="verifyBlankEmailLogin()[pri:2, instance:testCases.LoginTest@55634720]" started-at="2025-07-09T14:54:20 IST" name="verifyBlankEmailLogin" finished-at="2025-07-09T14:54:21 IST" duration-ms="755" status="PASS">
+        <test-method signature="verifyBlankEmailLogin()[pri:2, instance:testCases.LoginTest@55634720]" started-at="2025-07-09T21:56:00 IST" name="verifyBlankEmailLogin" finished-at="2025-07-09T21:56:01 IST" duration-ms="787" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBlankEmailLogin -->
-        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@55634720]" started-at="2025-07-09T14:54:21 IST" name="setupLoginPageObjects" finished-at="2025-07-09T14:54:21 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@55634720]" started-at="2025-07-09T21:56:01 IST" name="setupLoginPageObjects" finished-at="2025-07-09T21:56:01 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLoginPageObjects -->
-        <test-method signature="verifyBlankPasswordLogin()[pri:3, instance:testCases.LoginTest@55634720]" started-at="2025-07-09T14:54:21 IST" name="verifyBlankPasswordLogin" finished-at="2025-07-09T14:54:22 IST" duration-ms="1499" status="PASS">
+        <test-method signature="verifyBlankPasswordLogin()[pri:3, instance:testCases.LoginTest@55634720]" started-at="2025-07-09T21:56:01 IST" name="verifyBlankPasswordLogin" finished-at="2025-07-09T21:56:03 IST" duration-ms="1556" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBlankPasswordLogin -->
-        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@55634720]" started-at="2025-07-09T14:54:22 IST" name="setupLoginPageObjects" finished-at="2025-07-09T14:54:22 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@55634720]" started-at="2025-07-09T21:56:03 IST" name="setupLoginPageObjects" finished-at="2025-07-09T21:56:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLoginPageObjects -->
-        <test-method signature="verifyCorrectCredLogin()[pri:4, instance:testCases.LoginTest@55634720]" started-at="2025-07-09T14:54:22 IST" name="verifyCorrectCredLogin" finished-at="2025-07-09T14:54:25 IST" duration-ms="2492" status="PASS">
+        <test-method signature="verifyCorrectCredLogin()[pri:4, instance:testCases.LoginTest@55634720]" started-at="2025-07-09T21:56:03 IST" name="verifyCorrectCredLogin" finished-at="2025-07-09T21:56:05 IST" duration-ms="2691" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCorrectCredLogin -->
       </class> <!-- testCases.LoginTest -->
       <class name="testCases.HomeTest">
-        <test-method is-config="true" signature="setupHomePageObjects()[pri:0, instance:testCases.HomeTest@6bd61f98]" started-at="2025-07-09T14:54:25 IST" name="setupHomePageObjects" finished-at="2025-07-09T14:54:25 IST" duration-ms="19" status="PASS">
+        <test-method is-config="true" signature="setupHomePageObjects()[pri:0, instance:testCases.HomeTest@6bd61f98]" started-at="2025-07-09T21:56:05 IST" name="setupHomePageObjects" finished-at="2025-07-09T21:56:05 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupHomePageObjects -->
-        <test-method signature="verifyHomeCardsVisibility()[pri:1, instance:testCases.HomeTest@6bd61f98]" started-at="2025-07-09T14:54:25 IST" name="verifyHomeCardsVisibility" finished-at="2025-07-09T14:54:25 IST" duration-ms="282" status="PASS">
+        <test-method signature="verifyHomeCardsVisibility()[pri:1, instance:testCases.HomeTest@6bd61f98]" started-at="2025-07-09T21:56:05 IST" name="verifyHomeCardsVisibility" finished-at="2025-07-09T21:56:06 IST" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomeCardsVisibility -->
-        <test-method is-config="true" signature="setupHomePageObjects()[pri:0, instance:testCases.HomeTest@6bd61f98]" started-at="2025-07-09T14:54:25 IST" name="setupHomePageObjects" finished-at="2025-07-09T14:54:25 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupHomePageObjects()[pri:0, instance:testCases.HomeTest@6bd61f98]" started-at="2025-07-09T21:56:06 IST" name="setupHomePageObjects" finished-at="2025-07-09T21:56:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupHomePageObjects -->
-        <test-method signature="verifyBrokenLinksOfHomePage()[pri:2, instance:testCases.HomeTest@6bd61f98]" started-at="2025-07-09T14:54:25 IST" name="verifyBrokenLinksOfHomePage" finished-at="2025-07-09T14:54:33 IST" duration-ms="7862" status="PASS">
+        <test-method signature="verifyBrokenLinksOfHomePage()[pri:2, instance:testCases.HomeTest@6bd61f98]" started-at="2025-07-09T21:56:06 IST" name="verifyBrokenLinksOfHomePage" finished-at="2025-07-09T21:56:12 IST" duration-ms="6377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBrokenLinksOfHomePage -->
       </class> <!-- testCases.HomeTest -->
-    </test> <!-- Test -->
+    </test> <!-- test -->
   </suite> <!-- Suite -->
 </testng-results>
