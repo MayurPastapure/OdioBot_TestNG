@@ -1,7 +1,10 @@
 package pageObjects;
 
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -37,6 +40,38 @@ public class HomePage extends BasePage {
 			}
 		}
 		return true;
+	}
+
+	public int checkBrokenLinks() {
+		int brokenLinkCount = 0;
+
+		List<WebElement> allLinks = driver.findElements(By.tagName("a"));
+		System.out.println("Total link found on page: " + allLinks.size());
+
+		for (WebElement link : allLinks) {
+			String url = link.getAttribute("href");
+			System.out.println(url);
+			if (url == null || url.isEmpty() || !url.startsWith("https")) {
+				continue;
+			}
+			try {
+				HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
+				connection.setRequestMethod("HEAD");
+				connection.connect();
+				int statusCode = connection.getResponseCode();
+
+				if (statusCode >= 300) {
+					System.out.println("Broken link: " + url + " - Status Code: " + statusCode);
+					brokenLinkCount++;
+				}
+			} catch (Exception e) {
+				System.out.println("Exception for URL: " + url + " - " + e.getMessage());
+				brokenLinkCount++;
+			}
+		}
+		System.out.println("Total broken links: " + brokenLinkCount);
+		return brokenLinkCount;
+
 	}
 
 	public void openMoreOption() {

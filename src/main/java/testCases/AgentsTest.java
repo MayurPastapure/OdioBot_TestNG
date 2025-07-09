@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import pageObjects.AgentsPage;
+import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import testBase.BaseClass;
 
@@ -13,19 +14,28 @@ public class AgentsTest extends BaseClass {
 
 	AgentsPage ap;
 	LoginPage lp;
+	HomePage hp;
 
 	@BeforeMethod
 	public void setupAgentsObjects() {
 		ap = new AgentsPage(driver);
 		lp = new LoginPage(driver);
+		hp = new HomePage(driver);
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 0)
 	public void verifyPageIsAgentsPage() {
 		logger.info("*** Verifying test case: verifyPageIsAgentsPage ***");
 		ap.openAgentsPage();
 		wait.until(ExpectedConditions.titleContains(p.getProperty("AgentsPageTitle")));
 		Assert.assertEquals(driver.getTitle(), p.getProperty("AgentsPageTitle"));
+	}
+	
+	@Test(priority = 1)
+	public void verifyBrokenLinksOfAgentsPage() {
+		logger.info("*** Verifying test case: verifyBrokenLinksOfAgentsPage ***");
+		int BrokenLinkCount = hp.checkBrokenLinks();
+		Assert.assertEquals(BrokenLinkCount, 0, "Broken link is found on Agent page");
 	}
 
 	@Test(priority = 2)
@@ -164,24 +174,24 @@ public class AgentsTest extends BaseClass {
 		softAssert.assertAll();
 	}
 
-	@Test(priority = 12) // Incomplete test case
-	public void verifyEditAgentbyUpdatingName() {
-		logger.info("*** Verify test case: verifyEditAgentbyUpdatingName ***");
-		ap.searchByUserName(p.getProperty("AgentName"));
-		ap.clickActionOfSpecificAgent(p.getProperty("AgentName"));
-		ap.clickEditAction();
-		ap.clickCreateAgentButton();
-		lp.refreshPage();
-	}
+//	@Test(priority = 12) // Incomplete test case
+//	public void verifyEditAgentbyUpdatingName() {
+//		logger.info("*** Verify test case: verifyEditAgentbyUpdatingName ***");
+//		ap.searchByUserName(p.getProperty("AgentName"));
+//		ap.clickActionOfSpecificAgent(p.getProperty("AgentName"));
+//		ap.clickEditAction();
+//		ap.clickCreateAgentButton();
+//		lp.refreshPage();
+//	}
 
-	@Test(priority = 13) // Incomplete test case
-	public void verifyDeleteSpecificAgent() {
-		logger.info("*** Verify test case: verifyDeleteSpecificAgent ***");
-		ap.searchByUserName(p.getProperty("AgentName"));
-		ap.clickActionOfSpecificAgent(p.getProperty("AgentName"));
-		ap.clickDeleteAction();
-		ap.clickNoDeleteOnConfirm();
-		lp.refreshPage();
-	}
+//	@Test(priority = 13) // Incomplete test case
+//	public void verifyDeleteSpecificAgent() {
+//		logger.info("*** Verify test case: verifyDeleteSpecificAgent ***");
+//		ap.searchByUserName(p.getProperty("AgentName"));
+//		ap.clickActionOfSpecificAgent(p.getProperty("AgentName"));
+//		ap.clickDeleteAction();
+//		ap.clickNoDeleteOnConfirm();
+//		lp.refreshPage();
+//	}
 
 }

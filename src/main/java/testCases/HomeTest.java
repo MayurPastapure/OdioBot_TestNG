@@ -23,4 +23,11 @@ public class HomeTest extends BaseClass {
 		Assert.assertTrue(areVisible, "All 3 cards are not visible on the home page.");
 	}
 
+	@Test(priority = 2)
+	public void verifyBrokenLinksOfHomePage() {
+		logger.info("*** Verifying test case: verifyBrokenLinksOfHomePage ***");
+		int BrokenLinkCount = hp.checkBrokenLinks();
+		Assert.assertEquals(BrokenLinkCount, 0, "Broken link is found on Home page");
+	}
+
 }

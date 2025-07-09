@@ -8,6 +8,7 @@ import org.testng.asserts.SoftAssert;
 import pageObjects.AgentsPage;
 import pageObjects.CRMPage;
 import pageObjects.CampaignsPage;
+import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import testBase.BaseClass;
 
@@ -16,6 +17,7 @@ public class CampaignsTest extends BaseClass {
 	AgentsPage ap;
 	CRMPage crm;
 	LoginPage lp;
+	HomePage hp;
 
 	@BeforeMethod
 	public void setupCampaignsTestObject() {
@@ -23,6 +25,7 @@ public class CampaignsTest extends BaseClass {
 		ap = new AgentsPage(driver);
 		crm = new CRMPage(driver);
 		lp = new LoginPage(driver);
+		hp = new HomePage(driver);
 	}
 	
 	@Test (priority = 1)
@@ -211,6 +214,13 @@ public class CampaignsTest extends BaseClass {
 		sa.assertEquals(campaignCount, rowCount, "Campaign pagination count is not match with campaign list count");
 		lp.refreshPage();
 		sa.assertAll();
+	}
+	
+	@Test(priority = 13)
+	public void verifyBrokenLinksOnCampaignPage() {
+		logger.info("*** Verify test case: verifyBrokenLinksOnCampaignPage ***");
+		int BrokenlinkCount = hp.checkBrokenLinks();
+		Assert.assertEquals(BrokenlinkCount, 0, "Broken links found on Campaign page");
 	}
 	
 
