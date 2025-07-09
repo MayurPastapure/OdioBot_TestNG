@@ -8,11 +8,22 @@
     <classes>
       <class name="testCases.HomeTest">
         <methods>
+          <include name="verifyHomeCardsVisibility"/>
           <include name="setupHomePageObjects"/>
           <include name="browserLounching"/>
           <include name="verifyBrokenLinksOfHomePage"/>
         </methods>
       </class> <!-- testCases.HomeTest -->
+      <class name="testCases.LoginTest">
+        <methods>
+          <include name="setupLoginPageObjects"/>
+          <include name="verifyIncorrectCredLogin"/>
+          <include name="verifyCorrectCredLogin"/>
+          <include name="browserLounching"/>
+          <include name="verifyBlankEmailLogin"/>
+          <include name="verifyBlankPasswordLogin"/>
+        </methods>
+      </class> <!-- testCases.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

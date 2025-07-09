@@ -28,7 +28,7 @@ public class BaseClass {
 
 	@BeforeSuite
 	public void browserLounching() throws IOException {
-		FileReader file = new FileReader("./src//main//resources//config.properties");
+		FileReader file = new FileReader("./src//test//resources//config.properties");
 		p = new Properties();
 		p.load(file);
 
