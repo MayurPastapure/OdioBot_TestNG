@@ -4543,3 +4543,9 @@
 22:41:15.398 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
 22:41:17.896 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
 22:41:18.255 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyBrokenLinksOfHomePage ***
+11:26:57.337 [main] INFO  testBase.BaseClass - *** Verifying test case: verityInCorrectCredLogin ***
+11:26:59.637 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankEmailLogin ***
+11:27:00.153 [main] INFO  testBase.BaseClass - *** Verifying test case: verityBlankPasswordLogin ***
+11:27:01.312 [main] INFO  testBase.BaseClass - *** Verifying test case: verityCorrectCredLogin ***
+11:27:03.357 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyHomeCardsVisibility ***
+11:27:03.467 [main] INFO  testBase.BaseClass - *** Verifying test case: verifyBrokenLinksOfHomePage ***
