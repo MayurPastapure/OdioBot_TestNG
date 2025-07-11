@@ -106,6 +106,7 @@ public class WorkflowPage extends BasePage {
 			element.sendKeys(Keys.DELETE);
 		}
 		element.sendKeys(chatbotName);
+		wait.until(driver -> element.getAttribute("value").equals(chatbotName));
 		wait.until(ExpectedConditions.elementToBeClickable(drpDepartmentsEdit));
 	}
 

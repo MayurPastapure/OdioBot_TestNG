@@ -79,3 +79,112 @@
 11-07-2025 16:20:35 [main] INFO  testBase.BaseClass - *** Verifying CRM_SegmentsTest: verifyNewSegmentCreationByNameStartWith ***
 11-07-2025 16:20:53 [main] INFO  testBase.BaseClass - *** Verifying CRM_SegmentsTest: verifyEditSegmentbyUpdatingName ***
 11-07-2025 16:21:10 [main] INFO  testBase.BaseClass - *** Verifying CRM_SegmentsTest: verifyDeleteSegmentOfUpdatedName ***
+11-07-2025 16:45:23 [main] INFO  testBase.BaseClass - *** Verifying LoginTest: verityInCorrectCredLogin ***
+11-07-2025 16:45:26 [main] INFO  testBase.BaseClass - *** Verifying LoginTest: verityBlankEmailLogin ***
+11-07-2025 16:45:27 [main] INFO  testBase.BaseClass - *** Verifying LoginTest: verityBlankPasswordLogin ***
+11-07-2025 16:45:29 [main] INFO  testBase.BaseClass - *** Verifying LoginTest: verityCorrectCredLogin ***
+11-07-2025 16:45:32 [main] INFO  testBase.BaseClass - *** Verifying HomeTest: verifyHomeCardsVisibility ***
+11-07-2025 16:45:32 [main] INFO  testBase.BaseClass - *** Verifying HomeTest: verifyBrokenLinksOfHomePage ***
+11-07-2025 16:45:36 [main] INFO  testBase.BaseClass - *** Verifying WorkflowTest: verifyPageIsMyWorkflowPage ***
+11-07-2025 16:45:53 [main] INFO  testBase.BaseClass - *** Verifying WorkflowTest: NullChatBotName ***
+11-07-2025 16:45:55 [main] INFO  testBase.BaseClass - *** Verifying WorkflowTest: NullDepartmentId ***
+11-07-2025 16:45:57 [main] INFO  testBase.BaseClass - *** Verifying WorkflowTest: NullProductType ***
+11-07-2025 16:46:09 [main] INFO  testBase.BaseClass - *** Verifying WorkflowTest: newWorkflowCreation ***
+11-07-2025 16:46:35 [main] INFO  testBase.BaseClass - *** Verifying WorkflowTest: DuplicateWorkflowCreation ***
+11-07-2025 16:46:59 [main] INFO  testBase.BaseClass - *** Verifying WorkflowTest: ResumeWorkflowWithoutNode ***
+11-07-2025 16:47:12 [main] INFO  testBase.BaseClass - *** Verifying WorkflowTest: EditWorkflowOnlyName ***
+11-07-2025 16:47:26 [main] INFO  testBase.BaseClass - *** Verifying WorkflowTest: DeleteWorkflowByName ***
+11-07-2025 16:47:36 [main] INFO  testBase.BaseClass - *** Verifying DepartmentsTest: verifyPageIsDepartmentsPage ***
+11-07-2025 16:47:36 [main] INFO  testBase.BaseClass - *** Verifying DepartmentsTest: verifyBrokenLinkOfDepartmentsPage ***
+11-07-2025 16:47:48 [main] INFO  testBase.BaseClass - *** Verifying DepartmentsTest: verifyNullDepartmentName ***
+11-07-2025 16:47:48 [main] INFO  testBase.BaseClass - *** Verifying DepartmentsTest: verifyNullDepartmentDescription ***
+11-07-2025 16:47:48 [main] INFO  testBase.BaseClass - *** Verifying DepartmentsTest: verifySearchByDepartmentName ***
+11-07-2025 16:47:48 [main] INFO  testBase.BaseClass - *** Verifying AgentsTest: verifyPageIsAgentsPage ***
+11-07-2025 16:47:48 [main] INFO  testBase.BaseClass - *** Verifying CampaignsTest: verifyPageIsCampaignPage ***
+11-07-2025 16:47:48 [main] INFO  testBase.BaseClass - *** Verifying CRM_CustomersTest: verifyPageIsCRM_UsersPage ***
+11-07-2025 16:47:48 [main] INFO  testBase.BaseClass - *** Verifying CRM_GroupsTest: verifyPageIsCRM_UsersPage ***
+11-07-2025 16:47:48 [main] INFO  testBase.BaseClass - *** Verifying CRM_SegmentsTest: verifyPageIsCRM_UsersPage ***
+11-07-2025 16:51:40 [main] INFO  testBase.BaseClass - *** Verifying LoginTest: verityInCorrectCredLogin ***
+11-07-2025 16:51:43 [main] INFO  testBase.BaseClass - *** Verifying LoginTest: verityBlankEmailLogin ***
+11-07-2025 16:51:44 [main] INFO  testBase.BaseClass - *** Verifying LoginTest: verityBlankPasswordLogin ***
+11-07-2025 16:51:46 [main] INFO  testBase.BaseClass - *** Verifying LoginTest: verityCorrectCredLogin ***
+11-07-2025 16:51:48 [main] INFO  testBase.BaseClass - *** Verifying HomeTest: verifyHomeCardsVisibility ***
+11-07-2025 16:51:48 [main] INFO  testBase.BaseClass - *** Verifying HomeTest: verifyBrokenLinksOfHomePage ***
+11-07-2025 16:51:56 [main] INFO  testBase.BaseClass - *** Verifying WorkflowTest: verifyPageIsMyWorkflowPage ***
+11-07-2025 16:52:54 [main] INFO  testBase.BaseClass - *** Verifying WorkflowTest: NullChatBotName ***
+11-07-2025 16:52:56 [main] INFO  testBase.BaseClass - *** Verifying WorkflowTest: NullDepartmentId ***
+11-07-2025 16:52:58 [main] INFO  testBase.BaseClass - *** Verifying WorkflowTest: NullProductType ***
+11-07-2025 16:53:10 [main] INFO  testBase.BaseClass - *** Verifying WorkflowTest: newWorkflowCreation ***
+11-07-2025 16:53:35 [main] INFO  testBase.BaseClass - *** Verifying WorkflowTest: DuplicateWorkflowCreation ***
+11-07-2025 16:54:11 [main] INFO  testBase.BaseClass - *** Verifying WorkflowTest: ResumeWorkflowWithoutNode ***
+11-07-2025 16:54:23 [main] INFO  testBase.BaseClass - *** Verifying WorkflowTest: EditWorkflowOnlyName ***
+11-07-2025 16:54:37 [main] INFO  testBase.BaseClass - *** Verifying WorkflowTest: DeleteWorkflowByName ***
+11-07-2025 16:54:50 [main] INFO  testBase.BaseClass - *** Verifying DepartmentsTest: verifyPageIsDepartmentsPage ***
+11-07-2025 16:54:51 [main] INFO  testBase.BaseClass - *** Verifying DepartmentsTest: verifyBrokenLinkOfDepartmentsPage ***
+11-07-2025 16:54:57 [main] INFO  testBase.BaseClass - *** Verifying DepartmentsTest: verifyNullDepartmentName ***
+11-07-2025 16:54:59 [main] INFO  testBase.BaseClass - *** Verifying DepartmentsTest: verifyNullDepartmentDescription ***
+11-07-2025 16:55:02 [main] INFO  testBase.BaseClass - *** Verifying DepartmentsTest: verifySearchByDepartmentName ***
+11-07-2025 16:55:03 [main] INFO  testBase.BaseClass - *** Verifying AgentsTest: verifyPageIsAgentsPage ***
+11-07-2025 16:55:04 [main] INFO  testBase.BaseClass - *** Verifying AgentsTest: verifyBrokenLinksOfAgentsPage ***
+11-07-2025 16:55:10 [main] INFO  testBase.BaseClass - *** Verifying AgentsTest: verifyNullAgentName ***
+11-07-2025 16:55:12 [main] INFO  testBase.BaseClass - *** Verifying AgentsTest: verifyNullDepartmentName ***
+11-07-2025 16:55:14 [main] INFO  testBase.BaseClass - *** Verifying AgentsTest: verifyNullAgentEmail ***
+11-07-2025 16:55:16 [main] INFO  testBase.BaseClass - *** Verifying AgentsTest: verifyNullAgentMobileNumber ***
+11-07-2025 16:55:19 [main] INFO  testBase.BaseClass - *** Verifying AgentsTest: verifyNullPassword ***
+11-07-2025 16:55:22 [main] INFO  testBase.BaseClass - *** Verifying AgentsTest: verifyNullConfirmPassword ***
+11-07-2025 16:55:26 [main] INFO  testBase.BaseClass - *** Verifying AgentsTest: verifyNewAgentCreationWithValidData ***
+11-07-2025 16:55:41 [main] INFO  testBase.BaseClass - *** Verifying AgentsTest: verifyTotalAgentCountOnPagination ***
+11-07-2025 16:55:43 [main] INFO  testBase.BaseClass - Total agent count: 12
+11-07-2025 16:55:46 [main] INFO  testBase.BaseClass - Total row count: 12
+11-07-2025 16:55:47 [main] INFO  testBase.BaseClass - *** Verifying CampaignsTest: verifyPageIsCampaignPage ***
+11-07-2025 16:55:47 [main] INFO  testBase.BaseClass - *** Verifying CampaignsTest: verifyNullCampaignName ***
+11-07-2025 16:55:50 [main] INFO  testBase.BaseClass - *** Verifying CampaignsTest: verifyNullDescription ***
+11-07-2025 16:55:52 [main] INFO  testBase.BaseClass - *** Verifying CampaignsTest: verifyNullWhatsAppTemplate ***
+11-07-2025 16:55:55 [main] INFO  testBase.BaseClass - *** Verifying CampaignsTest: verifyNullStatus ***
+11-07-2025 16:55:58 [main] INFO  testBase.BaseClass - *** Verifying CampaignsTest: verifyNullDepartment ***
+11-07-2025 16:56:03 [main] INFO  testBase.BaseClass - *** Verifying CampaignsTest: verifyNullGroup_Segment ***
+11-07-2025 16:56:07 [main] INFO  testBase.BaseClass - *** Verifying CampaignsTest: verifyNullSchedule ***
+11-07-2025 16:56:14 [main] INFO  testBase.BaseClass - *** Verifying CampaignsTest: verifyNewCampaignCreationWithValidData ***
+11-07-2025 16:56:31 [main] INFO  testBase.BaseClass - *** Verifying CampaignsTest: verifyEditCampaignByUpdatingName ***
+11-07-2025 16:56:43 [main] INFO  testBase.BaseClass - *** Verifying CampaignsTest: verifyDeleteCampaign ***
+11-07-2025 16:56:55 [main] INFO  testBase.BaseClass - *** Verifying CampaignsTest: verifyTotalCampaignCountOnPagination ***
+11-07-2025 16:56:57 [main] INFO  testBase.BaseClass - Total campaign count: 8
+11-07-2025 16:56:57 [main] INFO  testBase.BaseClass - Total row count: 8
+11-07-2025 16:56:58 [main] INFO  testBase.BaseClass - *** Verifying CampaignsTest: verifyBrokenLinksOnCampaignPage ***
+11-07-2025 16:57:00 [main] INFO  testBase.BaseClass - *** Verifying CRM_CustomersTest: verifyPageIsCRM_UsersPage ***
+11-07-2025 16:57:02 [main] INFO  testBase.BaseClass - *** Verifying CRM_CustomersTest: verifyBrokenLinksOfCRM_CustomerPage ***
+11-07-2025 16:57:02 [main] INFO  testBase.BaseClass - *** Verifying CRM_CustomersTest: verifyNullCustomerName ***
+11-07-2025 16:57:04 [main] INFO  testBase.BaseClass - *** Verifying CRM_CustomersTest: verifyNullMobileNumber ***
+11-07-2025 16:57:06 [main] INFO  testBase.BaseClass - *** Verifying CRM_CustomersTest: verifyNullHandle ***
+11-07-2025 16:57:08 [main] INFO  testBase.BaseClass - *** Verifying CRM_CustomersTest: verifyNullEmail ***
+11-07-2025 16:57:11 [main] INFO  testBase.BaseClass - *** Verifying CRM_CustomersTest: verifyNullDepartment ***
+11-07-2025 16:57:14 [main] INFO  testBase.BaseClass - *** Verifying CRM_CustomersTest: verifyNewCustomerCreationWithValidData ***
+11-07-2025 16:57:32 [main] INFO  testBase.BaseClass - *** Verifying CRM_CustomersTest: verifyNewCustomerCreationWithDuplicateHandle ***
+11-07-2025 16:57:47 [main] INFO  testBase.BaseClass - *** Verifying CRM_CustomersTest: verifyNewCustomerCreationWithDuplicateEmail ***
+11-07-2025 16:58:03 [main] INFO  testBase.BaseClass - *** Verifying CRM_CustomersTest: verifyTotalCustomerCountOnPagination ***
+11-07-2025 16:58:05 [main] INFO  testBase.BaseClass - Total Customer count: 29
+11-07-2025 16:58:10 [main] INFO  testBase.BaseClass - Total row count: 29
+11-07-2025 16:58:11 [main] INFO  testBase.BaseClass - *** Verifying CRM_CustomersTest: verifySearchByCustomerName ***
+11-07-2025 16:58:14 [main] INFO  testBase.BaseClass - *** Verifying CRM_CustomersTest: verifyNullConditionValueInFilter ***
+11-07-2025 16:58:16 [main] INFO  testBase.BaseClass - *** Verifying CRM_CustomersTest: verifyFilterBy_Name_Contains ***
+11-07-2025 16:58:21 [main] INFO  testBase.BaseClass - Total user filter by Name_Contains: mayur:= 5
+11-07-2025 16:58:21 [main] INFO  testBase.BaseClass - *** Verifying CRM_GroupsTest: verifyPageIsCRM_UsersPage ***
+11-07-2025 16:58:23 [main] INFO  testBase.BaseClass - *** Verifying CRM_GroupsTest: verifyTotalGroupCountOnPagination ***
+11-07-2025 16:58:25 [main] INFO  testBase.BaseClass - Total group count: 17
+11-07-2025 16:58:28 [main] INFO  testBase.BaseClass - Total row count: 17
+11-07-2025 16:58:28 [main] INFO  testBase.BaseClass - *** Verifying CRM_GroupsTest: verifyNullGroupName ***
+11-07-2025 16:58:30 [main] INFO  testBase.BaseClass - *** Verifying CRM_GroupsTest: verifyGroupNameCreationWithValidDate ***
+11-07-2025 16:58:44 [main] INFO  testBase.BaseClass - *** Verifying CRM_GroupsTest: verifySearchByGroupName ***
+11-07-2025 16:58:48 [main] INFO  testBase.BaseClass - *** Verifying CRM_GroupsTest: verifyFilterBy_Name_IsEquals ***
+11-07-2025 16:58:53 [main] INFO  testBase.BaseClass - Total group filter by Name_IsEquals: mayur group:= 1
+11-07-2025 16:58:53 [main] INFO  testBase.BaseClass - *** Verifying CRM_GroupsTest: verifyFilterBy_CompanyWebsite_IsEquals ***
+11-07-2025 16:58:58 [main] INFO  testBase.BaseClass - Total group filter by Website_IsEquals: https://bot.odioiq.com:= 1
+11-07-2025 16:58:59 [main] INFO  testBase.BaseClass - *** Verifying CRM_GroupsTest: verifyDeleteGroupOfUpdatedName ***
+11-07-2025 16:59:12 [main] INFO  testBase.BaseClass - *** Verifying CRM_SegmentsTest: verifyPageIsCRM_UsersPage ***
+11-07-2025 16:59:13 [main] INFO  testBase.BaseClass - *** Verifying CRM_SegmentsTest: verifyTotalSegmentCountOnPagination ***
+11-07-2025 16:59:16 [main] INFO  testBase.BaseClass - Total segment count: 3
+11-07-2025 16:59:16 [main] INFO  testBase.BaseClass - Total row count: 3
+11-07-2025 16:59:16 [main] INFO  testBase.BaseClass - *** Verifying CRM_SegmentsTest: verifyNullConditionValueOfFilterInSegment ***
+11-07-2025 16:59:19 [main] INFO  testBase.BaseClass - *** Verifying CRM_SegmentsTest: verifyNewSegmentCreationByNameStartWith ***
+11-07-2025 16:59:37 [main] INFO  testBase.BaseClass - *** Verifying CRM_SegmentsTest: verifyEditSegmentbyUpdatingName ***
+11-07-2025 16:59:54 [main] INFO  testBase.BaseClass - *** Verifying CRM_SegmentsTest: verifyDeleteSegmentOfUpdatedName ***

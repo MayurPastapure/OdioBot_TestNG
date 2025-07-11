@@ -6,27 +6,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.CRM_CustomersTest">
-        <methods>
-          <include name="verifySearchByCustomerName"/>
-          <include name="verifyNewCustomerCreationWithDuplicateEmail"/>
-          <include name="verifyNewCustomerCreationWithDuplicateHandle"/>
-          <include name="tearDown"/>
-          <include name="setupCRMUsersObjects"/>
-          <include name="verifyPageIsCRM_CustomerPage"/>
-          <include name="verifyNewCustomerCreationWithValidData"/>
-          <include name="browserLounching"/>
-        </methods>
-      </class> <!-- testCases.CRM_CustomersTest -->
-      <class name="testCases.AgentsTest">
+      <class name="testCases.CampaignsTest">
         <methods>
           <include name="tearDown"/>
-          <include name="setupAgentsObjects"/>
+          <include name="verifyPageIsCampaignPage"/>
+          <include name="setupCampaignsTestObject"/>
           <include name="browserLounching"/>
-          <include name="verifyNewAgentCreationWithValidData"/>
-          <include name="verifyPageIsAgentsPage"/>
+          <include name="verifyNullCampaignName"/>
         </methods>
-      </class> <!-- testCases.AgentsTest -->
+      </class> <!-- testCases.CampaignsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

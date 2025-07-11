@@ -105,6 +105,8 @@ public class CampaignsPage extends BasePage {
 			element.sendKeys(Keys.DELETE);
 		}
 		element.sendKeys(campaignName);
+		wait.until(driver -> element.getAttribute("value").equals(campaignName));
+		wait.until(ExpectedConditions.elementToBeClickable(inpDescription));
 	}
 
 	public void setDescription(String description) {

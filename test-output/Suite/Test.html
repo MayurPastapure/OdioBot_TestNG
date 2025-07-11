@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>66/2/3</td>
+<td>Tests passed/Failed/Skipped:</td><td>70/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jul 11 16:14:06 IST 2025</td>
+<td>Started on:</td><td>Fri Jul 11 16:51:40 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>437 seconds (437966 ms)</td>
+<tr><td>Total time:</td><td>507 seconds (507042 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,17 +75,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.CRM_CustomersTest.verifyNewCustomerCreationWithValidData()'><b>verifyNewCustomerCreationWithValidData</b><br>Test class: testCases.CRM_CustomersTest</td>
+<td title='testCases.CampaignsTest.verifyNullCampaignName()'><b>verifyNullCampaignName</b><br>Test class: testCases.CampaignsTest</td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Customer creation toast message does not match! expected [Create success!] but found [User handle already used Failed to add user!]
-	at testCases.CRM_CustomersTest.verifyNewCustomerCreationWithValidData(CRM_CustomersTest.java:161)
+	Campaign name required error message not match! expected [Campaign Name is required] but found [null]
+	at testCases.CampaignsTest.verifyNullCampaignName(CampaignsTest.java:48)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1412764055", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1412764055'><pre>java.lang.AssertionError: The following asserts failed:
-	Customer creation toast message does not match! expected [Create success!] but found [User handle already used Failed to add user!]
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1444280365", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1444280365'><pre>java.lang.AssertionError: The following asserts failed:
+	Campaign name required error message not match! expected [Campaign Name is required] but found [null]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at testCases.CRM_CustomersTest.verifyNewCustomerCreationWithValidData(CRM_CustomersTest.java:161)
+	at testCases.CampaignsTest.verifyNullCampaignName(CampaignsTest.java:48)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -115,51 +115,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>16</td>
-<td>testCases.CRM_CustomersTest@740cae06</td></tr>
-<tr>
-<td title='testCases.AgentsTest.verifyNewAgentCreationWithValidData()'><b>verifyNewAgentCreationWithValidData</b><br>Test class: testCases.AgentsTest</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Error message does not match! expected [Success] but found [Email already used]
-	at testCases.AgentsTest.verifyNewAgentCreationWithValidData(AgentsTest.java:144)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1414097965", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1414097965'><pre>java.lang.AssertionError: The following asserts failed:
-	Error message does not match! expected [Success] but found [Email already used]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at testCases.AgentsTest.verifyNewAgentCreationWithValidData(AgentsTest.java:144)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>14</td>
-<td>testCases.AgentsTest@46cdf8bd</td></tr>
+<td>1</td>
+<td>testCases.CampaignsTest@f0c8a99</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -169,324 +126,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.CRM_CustomersTest.verifyNullCustomerName()'><b>verifyNullCustomerName</b><br>Test class: testCases.CRM_CustomersTest</td>
-<td></td>
-<td>1</td>
-<td>testCases.CRM_CustomersTest@740cae06</td></tr>
-<tr>
-<td title='testCases.CRM_SegmentsTest.verifyDeleteSegmentOfUpdatedName()'><b>verifyDeleteSegmentOfUpdatedName</b><br>Test class: testCases.CRM_SegmentsTest</td>
-<td></td>
-<td>14</td>
-<td>testCases.CRM_SegmentsTest@f78a47e</td></tr>
-<tr>
-<td title='testCases.AgentsTest.verifyNullAgentName()'><b>verifyNullAgentName</b><br>Test class: testCases.AgentsTest</td>
-<td></td>
-<td>1</td>
-<td>testCases.AgentsTest@46cdf8bd</td></tr>
-<tr>
-<td title='testCases.CampaignsTest.verifyNewCampaignCreationWithValidData()'><b>verifyNewCampaignCreationWithValidData</b><br>Test class: testCases.CampaignsTest</td>
-<td></td>
-<td>16</td>
-<td>testCases.CampaignsTest@f0c8a99</td></tr>
-<tr>
-<td title='testCases.CRM_CustomersTest.verifyNullDepartment()'><b>verifyNullDepartment</b><br>Test class: testCases.CRM_CustomersTest</td>
-<td></td>
-<td>3</td>
-<td>testCases.CRM_CustomersTest@740cae06</td></tr>
-<tr>
-<td title='testCases.CRM_CustomersTest.verifyNullEmail()'><b>verifyNullEmail</b><br>Test class: testCases.CRM_CustomersTest</td>
-<td></td>
-<td>2</td>
-<td>testCases.CRM_CustomersTest@740cae06</td></tr>
-<tr>
-<td title='testCases.DepartmentsTest.verifyNullDepartmentName()'><b>verifyNullDepartmentName</b><br>Test class: testCases.DepartmentsTest</td>
-<td></td>
-<td>2</td>
-<td>testCases.DepartmentsTest@2a7f1f10</td></tr>
-<tr>
-<td title='testCases.WorkflowTest.verifyNullProductType()'><b>verifyNullProductType</b><br>Test class: testCases.WorkflowTest</td>
-<td></td>
-<td>11</td>
-<td>testCases.WorkflowTest@298a5e20</td></tr>
-<tr>
-<td title='testCases.CampaignsTest.verifyTotalCampaignCountOnPagination()'><b>verifyTotalCampaignCountOnPagination</b><br>Test class: testCases.CampaignsTest</td>
-<td></td>
-<td>2</td>
-<td>testCases.CampaignsTest@f0c8a99</td></tr>
-<tr>
-<td title='testCases.WorkflowTest.verifyEditWorkflowOnlyName()'><b>verifyEditWorkflowOnlyName</b><br>Test class: testCases.WorkflowTest</td>
-<td></td>
-<td>13</td>
-<td>testCases.WorkflowTest@298a5e20</td></tr>
-<tr>
-<td title='testCases.WorkflowTest.verifyDuplicateWorkflowCreation()'><b>verifyDuplicateWorkflowCreation</b><br>Test class: testCases.WorkflowTest</td>
-<td></td>
-<td>35</td>
-<td>testCases.WorkflowTest@298a5e20</td></tr>
-<tr>
-<td title='testCases.WorkflowTest.verifyNewWorkflowCreation()'><b>verifyNewWorkflowCreation</b><br>Test class: testCases.WorkflowTest</td>
-<td></td>
-<td>35</td>
-<td>testCases.WorkflowTest@298a5e20</td></tr>
-<tr>
-<td title='testCases.AgentsTest.verifyTotalAgentCountOnPagination()'><b>verifyTotalAgentCountOnPagination</b><br>Test class: testCases.AgentsTest</td>
-<td></td>
-<td>5</td>
-<td>testCases.AgentsTest@46cdf8bd</td></tr>
-<tr>
-<td title='testCases.AgentsTest.verifyNullDepartmentName()'><b>verifyNullDepartmentName</b><br>Test class: testCases.AgentsTest</td>
-<td></td>
-<td>2</td>
-<td>testCases.AgentsTest@46cdf8bd</td></tr>
-<tr>
-<td title='testCases.CampaignsTest.verifyNullDepartment()'><b>verifyNullDepartment</b><br>Test class: testCases.CampaignsTest</td>
-<td></td>
-<td>4</td>
-<td>testCases.CampaignsTest@f0c8a99</td></tr>
-<tr>
-<td title='testCases.CRM_GroupsTest.verifyNullGroupName()'><b>verifyNullGroupName</b><br>Test class: testCases.CRM_GroupsTest</td>
-<td></td>
-<td>3</td>
-<td>testCases.CRM_GroupsTest@26d9b808</td></tr>
-<tr>
-<td title='testCases.CRM_GroupsTest.verifyGroupNameCreationWithValidDate()'><b>verifyGroupNameCreationWithValidDate</b><br>Test class: testCases.CRM_GroupsTest</td>
-<td></td>
-<td>15</td>
-<td>testCases.CRM_GroupsTest@26d9b808</td></tr>
-<tr>
-<td title='testCases.CampaignsTest.verifyDeleteCampaign()'><b>verifyDeleteCampaign</b><br>Test class: testCases.CampaignsTest</td>
-<td></td>
-<td>11</td>
-<td>testCases.CampaignsTest@f0c8a99</td></tr>
-<tr>
-<td title='testCases.CRM_GroupsTest.verifyFilterBy_Name_IsEquals()'><b>verifyFilterBy_Name_IsEquals</b><br>Test class: testCases.CRM_GroupsTest</td>
-<td></td>
-<td>6</td>
-<td>testCases.CRM_GroupsTest@26d9b808</td></tr>
-<tr>
-<td title='testCases.WorkflowTest.verifyDeleteWorkflowByName()'><b>verifyDeleteWorkflowByName</b><br>Test class: testCases.WorkflowTest</td>
-<td></td>
-<td>12</td>
-<td>testCases.WorkflowTest@298a5e20</td></tr>
-<tr>
-<td title='testCases.DepartmentsTest.verifyBrokenLinkOfDepartmentsPage()'><b>verifyBrokenLinkOfDepartmentsPage</b><br>Test class: testCases.DepartmentsTest</td>
-<td></td>
-<td>5</td>
-<td>testCases.DepartmentsTest@2a7f1f10</td></tr>
-<tr>
-<td title='testCases.CRM_GroupsTest.verifyTotalGroupCountOnPagination()'><b>verifyTotalGroupCountOnPagination</b><br>Test class: testCases.CRM_GroupsTest</td>
-<td></td>
-<td>5</td>
-<td>testCases.CRM_GroupsTest@26d9b808</td></tr>
-<tr>
 <td title='testCases.WorkflowTest.verifyResumeWorkflowWithoutNode()'><b>verifyResumeWorkflowWithoutNode</b><br>Test class: testCases.WorkflowTest</td>
 <td></td>
 <td>12</td>
 <td>testCases.WorkflowTest@298a5e20</td></tr>
-<tr>
-<td title='testCases.CampaignsTest.verifyEditCampaignByUpdatingName()'><b>verifyEditCampaignByUpdatingName</b><br>Test class: testCases.CampaignsTest</td>
-<td></td>
-<td>12</td>
-<td>testCases.CampaignsTest@f0c8a99</td></tr>
-<tr>
-<td title='testCases.CRM_CustomersTest.verifyPageIsCRM_CustomerPage()'><b>verifyPageIsCRM_CustomerPage</b><br>Test class: testCases.CRM_CustomersTest</td>
-<td></td>
-<td>3</td>
-<td>testCases.CRM_CustomersTest@740cae06</td></tr>
-<tr>
-<td title='testCases.CRM_SegmentsTest.verifyEditSegmentbyUpdatingName()'><b>verifyEditSegmentbyUpdatingName</b><br>Test class: testCases.CRM_SegmentsTest</td>
-<td></td>
-<td>16</td>
-<td>testCases.CRM_SegmentsTest@f78a47e</td></tr>
-<tr>
-<td title='testCases.CRM_GroupsTest.verifyPageIsCRM_UsersPage()'><b>verifyPageIsCRM_UsersPage</b><br>Test class: testCases.CRM_GroupsTest</td>
-<td></td>
-<td>2</td>
-<td>testCases.CRM_GroupsTest@26d9b808</td></tr>
-<tr>
-<td title='testCases.CRM_CustomersTest.verifyNullMobileNumber()'><b>verifyNullMobileNumber</b><br>Test class: testCases.CRM_CustomersTest</td>
-<td></td>
-<td>2</td>
-<td>testCases.CRM_CustomersTest@740cae06</td></tr>
-<tr>
-<td title='testCases.CRM_SegmentsTest.verifyPageIsCRM_UsersPage()'><b>verifyPageIsCRM_UsersPage</b><br>Test class: testCases.CRM_SegmentsTest</td>
-<td></td>
-<td>0</td>
-<td>testCases.CRM_SegmentsTest@f78a47e</td></tr>
-<tr>
-<td title='testCases.DepartmentsTest.verifySearchByDepartmentName()'><b>verifySearchByDepartmentName</b><br>Test class: testCases.DepartmentsTest</td>
-<td></td>
-<td>1</td>
-<td>testCases.DepartmentsTest@2a7f1f10</td></tr>
-<tr>
-<td title='testCases.CampaignsTest.verifyNullDescription()'><b>verifyNullDescription</b><br>Test class: testCases.CampaignsTest</td>
-<td></td>
-<td>2</td>
-<td>testCases.CampaignsTest@f0c8a99</td></tr>
-<tr>
-<td title='testCases.CampaignsTest.verifyPageIsCampaignPage()'><b>verifyPageIsCampaignPage</b><br>Test class: testCases.CampaignsTest</td>
-<td></td>
-<td>0</td>
-<td>testCases.CampaignsTest@f0c8a99</td></tr>
-<tr>
-<td title='testCases.DepartmentsTest.verifyPageIsDepartmentsPage()'><b>verifyPageIsDepartmentsPage</b><br>Test class: testCases.DepartmentsTest</td>
-<td></td>
-<td>0</td>
-<td>testCases.DepartmentsTest@2a7f1f10</td></tr>
-<tr>
-<td title='testCases.LoginTest.verifyCorrectCredLogin()'><b>verifyCorrectCredLogin</b><br>Test class: testCases.LoginTest</td>
-<td></td>
-<td>2</td>
-<td>testCases.LoginTest@55a147cc</td></tr>
-<tr>
-<td title='testCases.CRM_CustomersTest.verifyTotalCustomerCountOnPagination()'><b>verifyTotalCustomerCountOnPagination</b><br>Test class: testCases.CRM_CustomersTest</td>
-<td></td>
-<td>8</td>
-<td>testCases.CRM_CustomersTest@740cae06</td></tr>
-<tr>
-<td title='testCases.HomeTest.verifyBrokenLinksOfHomePage()'><b>verifyBrokenLinksOfHomePage</b><br>Test class: testCases.HomeTest</td>
-<td></td>
-<td>3</td>
-<td>testCases.HomeTest@3e27aa33</td></tr>
-<tr>
-<td title='testCases.WorkflowTest.verifyPageIsMyWorkflowPage()'><b>verifyPageIsMyWorkflowPage</b><br>Test class: testCases.WorkflowTest</td>
-<td></td>
-<td>7</td>
-<td>testCases.WorkflowTest@298a5e20</td></tr>
-<tr>
-<td title='testCases.CampaignsTest.verifyNullWhatsAppTemplate()'><b>verifyNullWhatsAppTemplate</b><br>Test class: testCases.CampaignsTest</td>
-<td></td>
-<td>3</td>
-<td>testCases.CampaignsTest@f0c8a99</td></tr>
-<tr>
-<td title='testCases.CRM_CustomersTest.verifyNullConditionValueInFilter()'><b>verifyNullConditionValueInFilter</b><br>Test class: testCases.CRM_CustomersTest</td>
-<td></td>
-<td>3</td>
-<td>testCases.CRM_CustomersTest@740cae06</td></tr>
-<tr>
-<td title='testCases.CampaignsTest.verifyNullSchedule()'><b>verifyNullSchedule</b><br>Test class: testCases.CampaignsTest</td>
-<td></td>
-<td>6</td>
-<td>testCases.CampaignsTest@f0c8a99</td></tr>
-<tr>
-<td title='testCases.HomeTest.verifyHomeCardsVisibility()'><b>verifyHomeCardsVisibility</b><br>Test class: testCases.HomeTest</td>
-<td></td>
-<td>0</td>
-<td>testCases.HomeTest@3e27aa33</td></tr>
-<tr>
-<td title='testCases.CRM_GroupsTest.verifyFilterBy_CompanyWebsite_IsEquals()'><b>verifyFilterBy_CompanyWebsite_IsEquals</b><br>Test class: testCases.CRM_GroupsTest</td>
-<td></td>
-<td>6</td>
-<td>testCases.CRM_GroupsTest@26d9b808</td></tr>
-<tr>
-<td title='testCases.WorkflowTest.verifyNullDepartmentId()'><b>verifyNullDepartmentId</b><br>Test class: testCases.WorkflowTest</td>
-<td></td>
-<td>1</td>
-<td>testCases.WorkflowTest@298a5e20</td></tr>
-<tr>
-<td title='testCases.CRM_GroupsTest.verifyDeleteGroupOfUpdatedName()'><b>verifyDeleteGroupOfUpdatedName</b><br>Test class: testCases.CRM_GroupsTest</td>
-<td></td>
-<td>14</td>
-<td>testCases.CRM_GroupsTest@26d9b808</td></tr>
-<tr>
-<td title='testCases.CRM_SegmentsTest.verifyNullConditionValueOfFilterInSegment()'><b>verifyNullConditionValueOfFilterInSegment</b><br>Test class: testCases.CRM_SegmentsTest</td>
-<td></td>
-<td>4</td>
-<td>testCases.CRM_SegmentsTest@f78a47e</td></tr>
-<tr>
-<td title='testCases.AgentsTest.verifyNullAgentMobileNumber()'><b>verifyNullAgentMobileNumber</b><br>Test class: testCases.AgentsTest</td>
-<td></td>
-<td>2</td>
-<td>testCases.AgentsTest@46cdf8bd</td></tr>
-<tr>
-<td title='testCases.CampaignsTest.verifyBrokenLinksOnCampaignPage()'><b>verifyBrokenLinksOnCampaignPage</b><br>Test class: testCases.CampaignsTest</td>
-<td></td>
-<td>1</td>
-<td>testCases.CampaignsTest@f0c8a99</td></tr>
-<tr>
-<td title='testCases.AgentsTest.verifyNullAgentEmail()'><b>verifyNullAgentEmail</b><br>Test class: testCases.AgentsTest</td>
-<td></td>
-<td>2</td>
-<td>testCases.AgentsTest@46cdf8bd</td></tr>
-<tr>
-<td title='testCases.CRM_CustomersTest.verifyNullHandle()'><b>verifyNullHandle</b><br>Test class: testCases.CRM_CustomersTest</td>
-<td></td>
-<td>2</td>
-<td>testCases.CRM_CustomersTest@740cae06</td></tr>
-<tr>
-<td title='testCases.DepartmentsTest.verifyNullDepartmentDescription()'><b>verifyNullDepartmentDescription</b><br>Test class: testCases.DepartmentsTest</td>
-<td></td>
-<td>3</td>
-<td>testCases.DepartmentsTest@2a7f1f10</td></tr>
-<tr>
-<td title='testCases.AgentsTest.verifyPageIsAgentsPage()'><b>verifyPageIsAgentsPage</b><br>Test class: testCases.AgentsTest</td>
-<td></td>
-<td>0</td>
-<td>testCases.AgentsTest@46cdf8bd</td></tr>
-<tr>
-<td title='testCases.AgentsTest.verifyBrokenLinksOfAgentsPage()'><b>verifyBrokenLinksOfAgentsPage</b><br>Test class: testCases.AgentsTest</td>
-<td></td>
-<td>4</td>
-<td>testCases.AgentsTest@46cdf8bd</td></tr>
 <tr>
 <td title='testCases.LoginTest.verifyBlankPasswordLogin()'><b>verifyBlankPasswordLogin</b><br>Test class: testCases.LoginTest</td>
 <td></td>
 <td>1</td>
 <td>testCases.LoginTest@55a147cc</td></tr>
 <tr>
-<td title='testCases.CampaignsTest.verifyNullStatus()'><b>verifyNullStatus</b><br>Test class: testCases.CampaignsTest</td>
-<td></td>
-<td>3</td>
-<td>testCases.CampaignsTest@f0c8a99</td></tr>
-<tr>
-<td title='testCases.LoginTest.verifyBlankEmailLogin()'><b>verifyBlankEmailLogin</b><br>Test class: testCases.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>testCases.LoginTest@55a147cc</td></tr>
-<tr>
-<td title='testCases.AgentsTest.verifyNullConfirmPassword()'><b>verifyNullConfirmPassword</b><br>Test class: testCases.AgentsTest</td>
-<td></td>
-<td>3</td>
-<td>testCases.AgentsTest@46cdf8bd</td></tr>
-<tr>
-<td title='testCases.CRM_SegmentsTest.verifyTotalSegmentCountOnPagination()'><b>verifyTotalSegmentCountOnPagination</b><br>Test class: testCases.CRM_SegmentsTest</td>
-<td></td>
-<td>3</td>
-<td>testCases.CRM_SegmentsTest@f78a47e</td></tr>
-<tr>
-<td title='testCases.AgentsTest.verifyNullPassword()'><b>verifyNullPassword</b><br>Test class: testCases.AgentsTest</td>
-<td></td>
-<td>3</td>
-<td>testCases.AgentsTest@46cdf8bd</td></tr>
-<tr>
-<td title='testCases.CampaignsTest.verifyNullCampaignName()'><b>verifyNullCampaignName</b><br>Test class: testCases.CampaignsTest</td>
-<td></td>
-<td>1</td>
-<td>testCases.CampaignsTest@f0c8a99</td></tr>
-<tr>
-<td title='testCases.WorkflowTest.verifyNullChatBotName()'><b>verifyNullChatBotName</b><br>Test class: testCases.WorkflowTest</td>
-<td></td>
-<td>1</td>
-<td>testCases.WorkflowTest@298a5e20</td></tr>
-<tr>
-<td title='testCases.LoginTest.verifyIncorrectCredLogin()'><b>verifyIncorrectCredLogin</b><br>Test class: testCases.LoginTest</td>
+<td title='testCases.CRM_CustomersTest.verifyNullHandle()'><b>verifyNullHandle</b><br>Test class: testCases.CRM_CustomersTest</td>
 <td></td>
 <td>2</td>
-<td>testCases.LoginTest@55a147cc</td></tr>
-<tr>
-<td title='testCases.CampaignsTest.verifyNullGroup_Segment()'><b>verifyNullGroup_Segment</b><br>Test class: testCases.CampaignsTest</td>
-<td></td>
-<td>4</td>
-<td>testCases.CampaignsTest@f0c8a99</td></tr>
-<tr>
-<td title='testCases.CRM_CustomersTest.verifyBrokenLinksOfCRM_CustomerPage()'><b>verifyBrokenLinksOfCRM_CustomerPage</b><br>Test class: testCases.CRM_CustomersTest</td>
-<td></td>
-<td>0</td>
-<td>testCases.CRM_CustomersTest@740cae06</td></tr>
-<tr>
-<td title='testCases.CRM_CustomersTest.verifyFilterBy_Name_Contains()'><b>verifyFilterBy_Name_Contains</b><br>Test class: testCases.CRM_CustomersTest</td>
-<td></td>
-<td>6</td>
 <td>testCases.CRM_CustomersTest@740cae06</td></tr>
 <tr>
 <td title='testCases.CRM_GroupsTest.verifySearchByGroupName()'><b>verifySearchByGroupName</b><br>Test class: testCases.CRM_GroupsTest</td>
@@ -498,98 +150,331 @@ function toggleAllBoxes() {
 <td></td>
 <td>17</td>
 <td>testCases.CRM_SegmentsTest@f78a47e</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<tr>
+<td title='testCases.AgentsTest.verifyPageIsAgentsPage()'><b>verifyPageIsAgentsPage</b><br>Test class: testCases.AgentsTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.AgentsTest@46cdf8bd</td></tr>
+<tr>
+<td title='testCases.AgentsTest.verifyNullConfirmPassword()'><b>verifyNullConfirmPassword</b><br>Test class: testCases.AgentsTest</td>
+<td></td>
+<td>3</td>
+<td>testCases.AgentsTest@46cdf8bd</td></tr>
+<tr>
+<td title='testCases.CampaignsTest.verifyNullStatus()'><b>verifyNullStatus</b><br>Test class: testCases.CampaignsTest</td>
+<td></td>
+<td>3</td>
+<td>testCases.CampaignsTest@f0c8a99</td></tr>
 <tr>
 <td title='testCases.CRM_CustomersTest.verifyNewCustomerCreationWithDuplicateEmail()'><b>verifyNewCustomerCreationWithDuplicateEmail</b><br>Test class: testCases.CRM_CustomersTest</td>
-<td><div><pre>java.lang.Throwable: Method CRM_CustomersTest.verifyNewCustomerCreationWithDuplicateEmail()[pri:11, instance:testCases.CRM_CustomersTest@740cae06] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace698229852", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace698229852'><pre>java.lang.Throwable: Method CRM_CustomersTest.verifyNewCustomerCreationWithDuplicateEmail()[pri:11, instance:testCases.CRM_CustomersTest@740cae06] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>testCases.CRM_CustomersTest@740cae06</td></tr>
-<tr>
-<td title='testCases.CRM_CustomersTest.verifyNewCustomerCreationWithDuplicateHandle()'><b>verifyNewCustomerCreationWithDuplicateHandle</b><br>Test class: testCases.CRM_CustomersTest</td>
-<td><div><pre>java.lang.Throwable: Method CRM_CustomersTest.verifyNewCustomerCreationWithDuplicateHandle()[pri:10, instance:testCases.CRM_CustomersTest@740cae06] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1416807034", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1416807034'><pre>java.lang.Throwable: Method CRM_CustomersTest.verifyNewCustomerCreationWithDuplicateHandle()[pri:10, instance:testCases.CRM_CustomersTest@740cae06] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
+<td></td>
+<td>15</td>
 <td>testCases.CRM_CustomersTest@740cae06</td></tr>
 <tr>
 <td title='testCases.CRM_CustomersTest.verifySearchByCustomerName()'><b>verifySearchByCustomerName</b><br>Test class: testCases.CRM_CustomersTest</td>
-<td><div><pre>java.lang.Throwable: Method CRM_CustomersTest.verifySearchByCustomerName()[pri:13, instance:testCases.CRM_CustomersTest@740cae06] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1673026967", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1673026967'><pre>java.lang.Throwable: Method CRM_CustomersTest.verifySearchByCustomerName()[pri:13, instance:testCases.CRM_CustomersTest@740cae06] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
+<td></td>
+<td>3</td>
+<td>testCases.CRM_CustomersTest@740cae06</td></tr>
+<tr>
+<td title='testCases.LoginTest.verifyBlankEmailLogin()'><b>verifyBlankEmailLogin</b><br>Test class: testCases.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.LoginTest@55a147cc</td></tr>
+<tr>
+<td title='testCases.DepartmentsTest.verifySearchByDepartmentName()'><b>verifySearchByDepartmentName</b><br>Test class: testCases.DepartmentsTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.DepartmentsTest@2a7f1f10</td></tr>
+<tr>
+<td title='testCases.CampaignsTest.verifyNewCampaignCreationWithValidData()'><b>verifyNewCampaignCreationWithValidData</b><br>Test class: testCases.CampaignsTest</td>
+<td></td>
+<td>16</td>
+<td>testCases.CampaignsTest@f0c8a99</td></tr>
+<tr>
+<td title='testCases.CRM_GroupsTest.verifyTotalGroupCountOnPagination()'><b>verifyTotalGroupCountOnPagination</b><br>Test class: testCases.CRM_GroupsTest</td>
+<td></td>
+<td>5</td>
+<td>testCases.CRM_GroupsTest@26d9b808</td></tr>
+<tr>
+<td title='testCases.CRM_CustomersTest.verifyBrokenLinksOfCRM_CustomerPage()'><b>verifyBrokenLinksOfCRM_CustomerPage</b><br>Test class: testCases.CRM_CustomersTest</td>
+<td></td>
 <td>0</td>
 <td>testCases.CRM_CustomersTest@740cae06</td></tr>
+<tr>
+<td title='testCases.CRM_SegmentsTest.verifyNullConditionValueOfFilterInSegment()'><b>verifyNullConditionValueOfFilterInSegment</b><br>Test class: testCases.CRM_SegmentsTest</td>
+<td></td>
+<td>3</td>
+<td>testCases.CRM_SegmentsTest@f78a47e</td></tr>
+<tr>
+<td title='testCases.CampaignsTest.verifyNullGroup_Segment()'><b>verifyNullGroup_Segment</b><br>Test class: testCases.CampaignsTest</td>
+<td></td>
+<td>4</td>
+<td>testCases.CampaignsTest@f0c8a99</td></tr>
+<tr>
+<td title='testCases.AgentsTest.verifyNullPassword()'><b>verifyNullPassword</b><br>Test class: testCases.AgentsTest</td>
+<td></td>
+<td>3</td>
+<td>testCases.AgentsTest@46cdf8bd</td></tr>
+<tr>
+<td title='testCases.AgentsTest.verifyNullAgentName()'><b>verifyNullAgentName</b><br>Test class: testCases.AgentsTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.AgentsTest@46cdf8bd</td></tr>
+<tr>
+<td title='testCases.HomeTest.verifyHomeCardsVisibility()'><b>verifyHomeCardsVisibility</b><br>Test class: testCases.HomeTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.HomeTest@3e27aa33</td></tr>
+<tr>
+<td title='testCases.AgentsTest.verifyNullDepartmentName()'><b>verifyNullDepartmentName</b><br>Test class: testCases.AgentsTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.AgentsTest@46cdf8bd</td></tr>
+<tr>
+<td title='testCases.AgentsTest.verifyNullAgentMobileNumber()'><b>verifyNullAgentMobileNumber</b><br>Test class: testCases.AgentsTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.AgentsTest@46cdf8bd</td></tr>
+<tr>
+<td title='testCases.HomeTest.verifyBrokenLinksOfHomePage()'><b>verifyBrokenLinksOfHomePage</b><br>Test class: testCases.HomeTest</td>
+<td></td>
+<td>7</td>
+<td>testCases.HomeTest@3e27aa33</td></tr>
+<tr>
+<td title='testCases.CRM_GroupsTest.verifyNullGroupName()'><b>verifyNullGroupName</b><br>Test class: testCases.CRM_GroupsTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.CRM_GroupsTest@26d9b808</td></tr>
+<tr>
+<td title='testCases.CRM_GroupsTest.verifyGroupNameCreationWithValidDate()'><b>verifyGroupNameCreationWithValidDate</b><br>Test class: testCases.CRM_GroupsTest</td>
+<td></td>
+<td>14</td>
+<td>testCases.CRM_GroupsTest@26d9b808</td></tr>
+<tr>
+<td title='testCases.CampaignsTest.verifyPageIsCampaignPage()'><b>verifyPageIsCampaignPage</b><br>Test class: testCases.CampaignsTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CampaignsTest@f0c8a99</td></tr>
+<tr>
+<td title='testCases.WorkflowTest.verifyNullChatBotName()'><b>verifyNullChatBotName</b><br>Test class: testCases.WorkflowTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.WorkflowTest@298a5e20</td></tr>
+<tr>
+<td title='testCases.CampaignsTest.verifyDeleteCampaign()'><b>verifyDeleteCampaign</b><br>Test class: testCases.CampaignsTest</td>
+<td></td>
+<td>11</td>
+<td>testCases.CampaignsTest@f0c8a99</td></tr>
+<tr>
+<td title='testCases.CRM_CustomersTest.verifyNullDepartment()'><b>verifyNullDepartment</b><br>Test class: testCases.CRM_CustomersTest</td>
+<td></td>
+<td>3</td>
+<td>testCases.CRM_CustomersTest@740cae06</td></tr>
+<tr>
+<td title='testCases.CRM_CustomersTest.verifyNewCustomerCreationWithValidData()'><b>verifyNewCustomerCreationWithValidData</b><br>Test class: testCases.CRM_CustomersTest</td>
+<td></td>
+<td>17</td>
+<td>testCases.CRM_CustomersTest@740cae06</td></tr>
+<tr>
+<td title='testCases.CRM_SegmentsTest.verifyDeleteSegmentOfUpdatedName()'><b>verifyDeleteSegmentOfUpdatedName</b><br>Test class: testCases.CRM_SegmentsTest</td>
+<td></td>
+<td>13</td>
+<td>testCases.CRM_SegmentsTest@f78a47e</td></tr>
+<tr>
+<td title='testCases.CRM_SegmentsTest.verifyPageIsCRM_UsersPage()'><b>verifyPageIsCRM_UsersPage</b><br>Test class: testCases.CRM_SegmentsTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CRM_SegmentsTest@f78a47e</td></tr>
+<tr>
+<td title='testCases.WorkflowTest.verifyDuplicateWorkflowCreation()'><b>verifyDuplicateWorkflowCreation</b><br>Test class: testCases.WorkflowTest</td>
+<td></td>
+<td>35</td>
+<td>testCases.WorkflowTest@298a5e20</td></tr>
+<tr>
+<td title='testCases.AgentsTest.verifyTotalAgentCountOnPagination()'><b>verifyTotalAgentCountOnPagination</b><br>Test class: testCases.AgentsTest</td>
+<td></td>
+<td>5</td>
+<td>testCases.AgentsTest@46cdf8bd</td></tr>
+<tr>
+<td title='testCases.LoginTest.verifyIncorrectCredLogin()'><b>verifyIncorrectCredLogin</b><br>Test class: testCases.LoginTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.LoginTest@55a147cc</td></tr>
+<tr>
+<td title='testCases.CampaignsTest.verifyTotalCampaignCountOnPagination()'><b>verifyTotalCampaignCountOnPagination</b><br>Test class: testCases.CampaignsTest</td>
+<td></td>
+<td>3</td>
+<td>testCases.CampaignsTest@f0c8a99</td></tr>
+<tr>
+<td title='testCases.CRM_GroupsTest.verifyPageIsCRM_UsersPage()'><b>verifyPageIsCRM_UsersPage</b><br>Test class: testCases.CRM_GroupsTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.CRM_GroupsTest@26d9b808</td></tr>
+<tr>
+<td title='testCases.CRM_CustomersTest.verifyNullMobileNumber()'><b>verifyNullMobileNumber</b><br>Test class: testCases.CRM_CustomersTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.CRM_CustomersTest@740cae06</td></tr>
+<tr>
+<td title='testCases.CRM_SegmentsTest.verifyEditSegmentbyUpdatingName()'><b>verifyEditSegmentbyUpdatingName</b><br>Test class: testCases.CRM_SegmentsTest</td>
+<td></td>
+<td>16</td>
+<td>testCases.CRM_SegmentsTest@f78a47e</td></tr>
+<tr>
+<td title='testCases.WorkflowTest.verifyPageIsMyWorkflowPage()'><b>verifyPageIsMyWorkflowPage</b><br>Test class: testCases.WorkflowTest</td>
+<td></td>
+<td>58</td>
+<td>testCases.WorkflowTest@298a5e20</td></tr>
+<tr>
+<td title='testCases.AgentsTest.verifyNewAgentCreationWithValidData()'><b>verifyNewAgentCreationWithValidData</b><br>Test class: testCases.AgentsTest</td>
+<td></td>
+<td>15</td>
+<td>testCases.AgentsTest@46cdf8bd</td></tr>
+<tr>
+<td title='testCases.CampaignsTest.verifyNullSchedule()'><b>verifyNullSchedule</b><br>Test class: testCases.CampaignsTest</td>
+<td></td>
+<td>6</td>
+<td>testCases.CampaignsTest@f0c8a99</td></tr>
+<tr>
+<td title='testCases.CRM_GroupsTest.verifyFilterBy_Name_IsEquals()'><b>verifyFilterBy_Name_IsEquals</b><br>Test class: testCases.CRM_GroupsTest</td>
+<td></td>
+<td>5</td>
+<td>testCases.CRM_GroupsTest@26d9b808</td></tr>
+<tr>
+<td title='testCases.LoginTest.verifyCorrectCredLogin()'><b>verifyCorrectCredLogin</b><br>Test class: testCases.LoginTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.LoginTest@55a147cc</td></tr>
+<tr>
+<td title='testCases.CRM_GroupsTest.verifyDeleteGroupOfUpdatedName()'><b>verifyDeleteGroupOfUpdatedName</b><br>Test class: testCases.CRM_GroupsTest</td>
+<td></td>
+<td>13</td>
+<td>testCases.CRM_GroupsTest@26d9b808</td></tr>
+<tr>
+<td title='testCases.WorkflowTest.verifyEditWorkflowOnlyName()'><b>verifyEditWorkflowOnlyName</b><br>Test class: testCases.WorkflowTest</td>
+<td></td>
+<td>13</td>
+<td>testCases.WorkflowTest@298a5e20</td></tr>
+<tr>
+<td title='testCases.CampaignsTest.verifyEditCampaignByUpdatingName()'><b>verifyEditCampaignByUpdatingName</b><br>Test class: testCases.CampaignsTest</td>
+<td></td>
+<td>12</td>
+<td>testCases.CampaignsTest@f0c8a99</td></tr>
+<tr>
+<td title='testCases.CRM_CustomersTest.verifyNullCustomerName()'><b>verifyNullCustomerName</b><br>Test class: testCases.CRM_CustomersTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.CRM_CustomersTest@740cae06</td></tr>
+<tr>
+<td title='testCases.CRM_CustomersTest.verifyNewCustomerCreationWithDuplicateHandle()'><b>verifyNewCustomerCreationWithDuplicateHandle</b><br>Test class: testCases.CRM_CustomersTest</td>
+<td></td>
+<td>15</td>
+<td>testCases.CRM_CustomersTest@740cae06</td></tr>
+<tr>
+<td title='testCases.AgentsTest.verifyNullAgentEmail()'><b>verifyNullAgentEmail</b><br>Test class: testCases.AgentsTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.AgentsTest@46cdf8bd</td></tr>
+<tr>
+<td title='testCases.DepartmentsTest.verifyNullDepartmentName()'><b>verifyNullDepartmentName</b><br>Test class: testCases.DepartmentsTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.DepartmentsTest@2a7f1f10</td></tr>
+<tr>
+<td title='testCases.CRM_CustomersTest.verifyFilterBy_Name_Contains()'><b>verifyFilterBy_Name_Contains</b><br>Test class: testCases.CRM_CustomersTest</td>
+<td></td>
+<td>5</td>
+<td>testCases.CRM_CustomersTest@740cae06</td></tr>
+<tr>
+<td title='testCases.WorkflowTest.verifyDeleteWorkflowByName()'><b>verifyDeleteWorkflowByName</b><br>Test class: testCases.WorkflowTest</td>
+<td></td>
+<td>13</td>
+<td>testCases.WorkflowTest@298a5e20</td></tr>
+<tr>
+<td title='testCases.CRM_CustomersTest.verifyTotalCustomerCountOnPagination()'><b>verifyTotalCustomerCountOnPagination</b><br>Test class: testCases.CRM_CustomersTest</td>
+<td></td>
+<td>7</td>
+<td>testCases.CRM_CustomersTest@740cae06</td></tr>
+<tr>
+<td title='testCases.DepartmentsTest.verifyBrokenLinkOfDepartmentsPage()'><b>verifyBrokenLinkOfDepartmentsPage</b><br>Test class: testCases.DepartmentsTest</td>
+<td></td>
+<td>6</td>
+<td>testCases.DepartmentsTest@2a7f1f10</td></tr>
+<tr>
+<td title='testCases.CRM_CustomersTest.verifyNullConditionValueInFilter()'><b>verifyNullConditionValueInFilter</b><br>Test class: testCases.CRM_CustomersTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.CRM_CustomersTest@740cae06</td></tr>
+<tr>
+<td title='testCases.WorkflowTest.verifyNullDepartmentId()'><b>verifyNullDepartmentId</b><br>Test class: testCases.WorkflowTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.WorkflowTest@298a5e20</td></tr>
+<tr>
+<td title='testCases.DepartmentsTest.verifyNullDepartmentDescription()'><b>verifyNullDepartmentDescription</b><br>Test class: testCases.DepartmentsTest</td>
+<td></td>
+<td>3</td>
+<td>testCases.DepartmentsTest@2a7f1f10</td></tr>
+<tr>
+<td title='testCases.CRM_SegmentsTest.verifyTotalSegmentCountOnPagination()'><b>verifyTotalSegmentCountOnPagination</b><br>Test class: testCases.CRM_SegmentsTest</td>
+<td></td>
+<td>3</td>
+<td>testCases.CRM_SegmentsTest@f78a47e</td></tr>
+<tr>
+<td title='testCases.CampaignsTest.verifyNullWhatsAppTemplate()'><b>verifyNullWhatsAppTemplate</b><br>Test class: testCases.CampaignsTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.CampaignsTest@f0c8a99</td></tr>
+<tr>
+<td title='testCases.AgentsTest.verifyBrokenLinksOfAgentsPage()'><b>verifyBrokenLinksOfAgentsPage</b><br>Test class: testCases.AgentsTest</td>
+<td></td>
+<td>5</td>
+<td>testCases.AgentsTest@46cdf8bd</td></tr>
+<tr>
+<td title='testCases.CRM_CustomersTest.verifyPageIsCRM_CustomerPage()'><b>verifyPageIsCRM_CustomerPage</b><br>Test class: testCases.CRM_CustomersTest</td>
+<td></td>
+<td>1</td>
+<td>testCases.CRM_CustomersTest@740cae06</td></tr>
+<tr>
+<td title='testCases.WorkflowTest.verifyNullProductType()'><b>verifyNullProductType</b><br>Test class: testCases.WorkflowTest</td>
+<td></td>
+<td>12</td>
+<td>testCases.WorkflowTest@298a5e20</td></tr>
+<tr>
+<td title='testCases.WorkflowTest.verifyNewWorkflowCreation()'><b>verifyNewWorkflowCreation</b><br>Test class: testCases.WorkflowTest</td>
+<td></td>
+<td>25</td>
+<td>testCases.WorkflowTest@298a5e20</td></tr>
+<tr>
+<td title='testCases.CampaignsTest.verifyBrokenLinksOnCampaignPage()'><b>verifyBrokenLinksOnCampaignPage</b><br>Test class: testCases.CampaignsTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.CampaignsTest@f0c8a99</td></tr>
+<tr>
+<td title='testCases.DepartmentsTest.verifyPageIsDepartmentsPage()'><b>verifyPageIsDepartmentsPage</b><br>Test class: testCases.DepartmentsTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.DepartmentsTest@2a7f1f10</td></tr>
+<tr>
+<td title='testCases.CampaignsTest.verifyNullDescription()'><b>verifyNullDescription</b><br>Test class: testCases.CampaignsTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.CampaignsTest@f0c8a99</td></tr>
+<tr>
+<td title='testCases.CRM_CustomersTest.verifyNullEmail()'><b>verifyNullEmail</b><br>Test class: testCases.CRM_CustomersTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.CRM_CustomersTest@740cae06</td></tr>
+<tr>
+<td title='testCases.CampaignsTest.verifyNullDepartment()'><b>verifyNullDepartment</b><br>Test class: testCases.CampaignsTest</td>
+<td></td>
+<td>4</td>
+<td>testCases.CampaignsTest@f0c8a99</td></tr>
+<tr>
+<td title='testCases.CRM_GroupsTest.verifyFilterBy_CompanyWebsite_IsEquals()'><b>verifyFilterBy_CompanyWebsite_IsEquals</b><br>Test class: testCases.CRM_GroupsTest</td>
+<td></td>
+<td>5</td>
+<td>testCases.CRM_GroupsTest@26d9b808</td></tr>
 </table><p>
 </body>
 </html>
