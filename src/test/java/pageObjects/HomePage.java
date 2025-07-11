@@ -50,7 +50,7 @@ public class HomePage extends BasePage {
 
 		for (WebElement link : allLinks) {
 			String url = link.getAttribute("href");
-			System.out.println(url);
+			//System.out.println("Present URL : " + url);
 			if (url == null || url.isEmpty() || !url.startsWith("https")) {
 				continue;
 			}

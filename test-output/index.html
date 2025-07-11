@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,50 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">71 methods, 2 failed,  3 skipped,  66 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.AgentsTest" class="method navigator-link" hash-for-method="verifyNewAgentCreationWithValidData">verifyNewAgentCreationWithValidData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_CustomersTest" class="method navigator-link" hash-for-method="verifyNewCustomerCreationWithValidData">verifyNewCustomerCreationWithValidData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_CustomersTest" class="method navigator-link" hash-for-method="verifyNewCustomerCreationWithDuplicateEmail">verifyNewCustomerCreationWithDuplicateEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_CustomersTest" class="method navigator-link" hash-for-method="verifyNewCustomerCreationWithDuplicateHandle">verifyNewCustomerCreationWithDuplicateHandle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_CustomersTest" class="method navigator-link" hash-for-method="verifySearchByCustomerName">verifySearchByCustomerName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,12 +157,92 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.DepartmentsTest" class="method navigator-link" hash-for-method="verifyBrokenLinkOfDepartmentsPage">verifyBrokenLinkOfDepartmentsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.AgentsTest" class="method navigator-link" hash-for-method="verifyBrokenLinksOfAgentsPage">verifyBrokenLinksOfAgentsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_CustomersTest" class="method navigator-link" hash-for-method="verifyBrokenLinksOfCRM_CustomerPage">verifyBrokenLinksOfCRM_CustomerPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.HomeTest" class="method navigator-link" hash-for-method="verifyBrokenLinksOfHomePage">verifyBrokenLinksOfHomePage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CampaignsTest" class="method navigator-link" hash-for-method="verifyBrokenLinksOnCampaignPage">verifyBrokenLinksOnCampaignPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.LoginTest" class="method navigator-link" hash-for-method="verifyCorrectCredLogin">verifyCorrectCredLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CampaignsTest" class="method navigator-link" hash-for-method="verifyDeleteCampaign">verifyDeleteCampaign</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_GroupsTest" class="method navigator-link" hash-for-method="verifyDeleteGroupOfUpdatedName">verifyDeleteGroupOfUpdatedName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_SegmentsTest" class="method navigator-link" hash-for-method="verifyDeleteSegmentOfUpdatedName">verifyDeleteSegmentOfUpdatedName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.WorkflowTest" class="method navigator-link" hash-for-method="verifyDeleteWorkflowByName">verifyDeleteWorkflowByName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.WorkflowTest" class="method navigator-link" hash-for-method="verifyDuplicateWorkflowCreation">verifyDuplicateWorkflowCreation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CampaignsTest" class="method navigator-link" hash-for-method="verifyEditCampaignByUpdatingName">verifyEditCampaignByUpdatingName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_SegmentsTest" class="method navigator-link" hash-for-method="verifyEditSegmentbyUpdatingName">verifyEditSegmentbyUpdatingName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.WorkflowTest" class="method navigator-link" hash-for-method="verifyEditWorkflowOnlyName">verifyEditWorkflowOnlyName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_GroupsTest" class="method navigator-link" hash-for-method="verifyFilterBy_CompanyWebsite_IsEquals">verifyFilterBy_CompanyWebsite_IsEquals</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_CustomersTest" class="method navigator-link" hash-for-method="verifyFilterBy_Name_Contains">verifyFilterBy_Name_Contains</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_GroupsTest" class="method navigator-link" hash-for-method="verifyFilterBy_Name_IsEquals">verifyFilterBy_Name_IsEquals</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_GroupsTest" class="method navigator-link" hash-for-method="verifyGroupNameCreationWithValidDate">verifyGroupNameCreationWithValidDate</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -130,6 +253,226 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.LoginTest" class="method navigator-link" hash-for-method="verifyIncorrectCredLogin">verifyIncorrectCredLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CampaignsTest" class="method navigator-link" hash-for-method="verifyNewCampaignCreationWithValidData">verifyNewCampaignCreationWithValidData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_SegmentsTest" class="method navigator-link" hash-for-method="verifyNewSegmentCreationByNameStartWith">verifyNewSegmentCreationByNameStartWith</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.WorkflowTest" class="method navigator-link" hash-for-method="verifyNewWorkflowCreation">verifyNewWorkflowCreation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.AgentsTest" class="method navigator-link" hash-for-method="verifyNullAgentEmail">verifyNullAgentEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.AgentsTest" class="method navigator-link" hash-for-method="verifyNullAgentMobileNumber">verifyNullAgentMobileNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.AgentsTest" class="method navigator-link" hash-for-method="verifyNullAgentName">verifyNullAgentName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CampaignsTest" class="method navigator-link" hash-for-method="verifyNullCampaignName">verifyNullCampaignName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.WorkflowTest" class="method navigator-link" hash-for-method="verifyNullChatBotName">verifyNullChatBotName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_CustomersTest" class="method navigator-link" hash-for-method="verifyNullConditionValueInFilter">verifyNullConditionValueInFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_SegmentsTest" class="method navigator-link" hash-for-method="verifyNullConditionValueOfFilterInSegment">verifyNullConditionValueOfFilterInSegment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.AgentsTest" class="method navigator-link" hash-for-method="verifyNullConfirmPassword">verifyNullConfirmPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_CustomersTest" class="method navigator-link" hash-for-method="verifyNullCustomerName">verifyNullCustomerName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_CustomersTest" class="method navigator-link" hash-for-method="verifyNullDepartment">verifyNullDepartment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CampaignsTest" class="method navigator-link" hash-for-method="verifyNullDepartment">verifyNullDepartment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.DepartmentsTest" class="method navigator-link" hash-for-method="verifyNullDepartmentDescription">verifyNullDepartmentDescription</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.WorkflowTest" class="method navigator-link" hash-for-method="verifyNullDepartmentId">verifyNullDepartmentId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.DepartmentsTest" class="method navigator-link" hash-for-method="verifyNullDepartmentName">verifyNullDepartmentName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.AgentsTest" class="method navigator-link" hash-for-method="verifyNullDepartmentName">verifyNullDepartmentName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CampaignsTest" class="method navigator-link" hash-for-method="verifyNullDescription">verifyNullDescription</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_CustomersTest" class="method navigator-link" hash-for-method="verifyNullEmail">verifyNullEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_GroupsTest" class="method navigator-link" hash-for-method="verifyNullGroupName">verifyNullGroupName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CampaignsTest" class="method navigator-link" hash-for-method="verifyNullGroup_Segment">verifyNullGroup_Segment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_CustomersTest" class="method navigator-link" hash-for-method="verifyNullHandle">verifyNullHandle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_CustomersTest" class="method navigator-link" hash-for-method="verifyNullMobileNumber">verifyNullMobileNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.AgentsTest" class="method navigator-link" hash-for-method="verifyNullPassword">verifyNullPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.WorkflowTest" class="method navigator-link" hash-for-method="verifyNullProductType">verifyNullProductType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CampaignsTest" class="method navigator-link" hash-for-method="verifyNullSchedule">verifyNullSchedule</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CampaignsTest" class="method navigator-link" hash-for-method="verifyNullStatus">verifyNullStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CampaignsTest" class="method navigator-link" hash-for-method="verifyNullWhatsAppTemplate">verifyNullWhatsAppTemplate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.AgentsTest" class="method navigator-link" hash-for-method="verifyPageIsAgentsPage">verifyPageIsAgentsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_CustomersTest" class="method navigator-link" hash-for-method="verifyPageIsCRM_CustomerPage">verifyPageIsCRM_CustomerPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_GroupsTest" class="method navigator-link" hash-for-method="verifyPageIsCRM_UsersPage">verifyPageIsCRM_UsersPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_SegmentsTest" class="method navigator-link" hash-for-method="verifyPageIsCRM_UsersPage">verifyPageIsCRM_UsersPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CampaignsTest" class="method navigator-link" hash-for-method="verifyPageIsCampaignPage">verifyPageIsCampaignPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.DepartmentsTest" class="method navigator-link" hash-for-method="verifyPageIsDepartmentsPage">verifyPageIsDepartmentsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.WorkflowTest" class="method navigator-link" hash-for-method="verifyPageIsMyWorkflowPage">verifyPageIsMyWorkflowPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.WorkflowTest" class="method navigator-link" hash-for-method="verifyResumeWorkflowWithoutNode">verifyResumeWorkflowWithoutNode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.DepartmentsTest" class="method navigator-link" hash-for-method="verifySearchByDepartmentName">verifySearchByDepartmentName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_GroupsTest" class="method navigator-link" hash-for-method="verifySearchByGroupName">verifySearchByGroupName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.AgentsTest" class="method navigator-link" hash-for-method="verifyTotalAgentCountOnPagination">verifyTotalAgentCountOnPagination</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CampaignsTest" class="method navigator-link" hash-for-method="verifyTotalCampaignCountOnPagination">verifyTotalCampaignCountOnPagination</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_CustomersTest" class="method navigator-link" hash-for-method="verifyTotalCustomerCountOnPagination">verifyTotalCustomerCountOnPagination</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_GroupsTest" class="method navigator-link" hash-for-method="verifyTotalGroupCountOnPagination">verifyTotalGroupCountOnPagination</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CRM_SegmentsTest" class="method navigator-link" hash-for-method="verifyTotalSegmentCountOnPagination">verifyTotalSegmentCountOnPagination</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -144,6 +487,430 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.AgentsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewAgentCreationWithValidData">
+                  </a> <!-- verifyNewAgentCreationWithValidData -->
+                  <span class="method-name">verifyNewAgentCreationWithValidData</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Error message does not match! expected [Success] but found [Email already used]
+	at testCases.AgentsTest.verifyNewAgentCreationWithValidData(AgentsTest.java:144)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.CRM_CustomersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewCustomerCreationWithValidData">
+                  </a> <!-- verifyNewCustomerCreationWithValidData -->
+                  <span class="method-name">verifyNewCustomerCreationWithValidData</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Customer creation toast message does not match! expected [Create success!] but found [User handle already used Failed to add user!]
+	at testCases.CRM_CustomersTest.verifyNewCustomerCreationWithValidData(CRM_CustomersTest.java:161)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testCases.CRM_CustomersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewCustomerCreationWithDuplicateEmail">
+                  </a> <!-- verifyNewCustomerCreationWithDuplicateEmail -->
+                  <span class="method-name">verifyNewCustomerCreationWithDuplicateEmail</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CRM_CustomersTest.verifyNewCustomerCreationWithDuplicateEmail()[pri:11, instance:testCases.CRM_CustomersTest@740cae06] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewCustomerCreationWithDuplicateHandle">
+                  </a> <!-- verifyNewCustomerCreationWithDuplicateHandle -->
+                  <span class="method-name">verifyNewCustomerCreationWithDuplicateHandle</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CRM_CustomersTest.verifyNewCustomerCreationWithDuplicateHandle()[pri:10, instance:testCases.CRM_CustomersTest@740cae06] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchByCustomerName">
+                  </a> <!-- verifySearchByCustomerName -->
+                  <span class="method-name">verifySearchByCustomerName</span>
+                  <div class="stack-trace">java.lang.Throwable: Method CRM_CustomersTest.verifySearchByCustomerName()[pri:13, instance:testCases.CRM_CustomersTest@740cae06] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.CampaignsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBrokenLinksOnCampaignPage">
+                  </a> <!-- verifyBrokenLinksOnCampaignPage -->
+                  <span class="method-name">verifyBrokenLinksOnCampaignPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDeleteCampaign">
+                  </a> <!-- verifyDeleteCampaign -->
+                  <span class="method-name">verifyDeleteCampaign</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEditCampaignByUpdatingName">
+                  </a> <!-- verifyEditCampaignByUpdatingName -->
+                  <span class="method-name">verifyEditCampaignByUpdatingName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewCampaignCreationWithValidData">
+                  </a> <!-- verifyNewCampaignCreationWithValidData -->
+                  <span class="method-name">verifyNewCampaignCreationWithValidData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullCampaignName">
+                  </a> <!-- verifyNullCampaignName -->
+                  <span class="method-name">verifyNullCampaignName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullDepartment">
+                  </a> <!-- verifyNullDepartment -->
+                  <span class="method-name">verifyNullDepartment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullDescription">
+                  </a> <!-- verifyNullDescription -->
+                  <span class="method-name">verifyNullDescription</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullGroup_Segment">
+                  </a> <!-- verifyNullGroup_Segment -->
+                  <span class="method-name">verifyNullGroup_Segment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullSchedule">
+                  </a> <!-- verifyNullSchedule -->
+                  <span class="method-name">verifyNullSchedule</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullStatus">
+                  </a> <!-- verifyNullStatus -->
+                  <span class="method-name">verifyNullStatus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullWhatsAppTemplate">
+                  </a> <!-- verifyNullWhatsAppTemplate -->
+                  <span class="method-name">verifyNullWhatsAppTemplate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPageIsCampaignPage">
+                  </a> <!-- verifyPageIsCampaignPage -->
+                  <span class="method-name">verifyPageIsCampaignPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTotalCampaignCountOnPagination">
+                  </a> <!-- verifyTotalCampaignCountOnPagination -->
+                  <span class="method-name">verifyTotalCampaignCountOnPagination</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.AgentsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBrokenLinksOfAgentsPage">
+                  </a> <!-- verifyBrokenLinksOfAgentsPage -->
+                  <span class="method-name">verifyBrokenLinksOfAgentsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullAgentEmail">
+                  </a> <!-- verifyNullAgentEmail -->
+                  <span class="method-name">verifyNullAgentEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullAgentMobileNumber">
+                  </a> <!-- verifyNullAgentMobileNumber -->
+                  <span class="method-name">verifyNullAgentMobileNumber</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullAgentName">
+                  </a> <!-- verifyNullAgentName -->
+                  <span class="method-name">verifyNullAgentName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullConfirmPassword">
+                  </a> <!-- verifyNullConfirmPassword -->
+                  <span class="method-name">verifyNullConfirmPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullDepartmentName">
+                  </a> <!-- verifyNullDepartmentName -->
+                  <span class="method-name">verifyNullDepartmentName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullPassword">
+                  </a> <!-- verifyNullPassword -->
+                  <span class="method-name">verifyNullPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPageIsAgentsPage">
+                  </a> <!-- verifyPageIsAgentsPage -->
+                  <span class="method-name">verifyPageIsAgentsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTotalAgentCountOnPagination">
+                  </a> <!-- verifyTotalAgentCountOnPagination -->
+                  <span class="method-name">verifyTotalAgentCountOnPagination</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.CRM_SegmentsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDeleteSegmentOfUpdatedName">
+                  </a> <!-- verifyDeleteSegmentOfUpdatedName -->
+                  <span class="method-name">verifyDeleteSegmentOfUpdatedName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEditSegmentbyUpdatingName">
+                  </a> <!-- verifyEditSegmentbyUpdatingName -->
+                  <span class="method-name">verifyEditSegmentbyUpdatingName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewSegmentCreationByNameStartWith">
+                  </a> <!-- verifyNewSegmentCreationByNameStartWith -->
+                  <span class="method-name">verifyNewSegmentCreationByNameStartWith</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullConditionValueOfFilterInSegment">
+                  </a> <!-- verifyNullConditionValueOfFilterInSegment -->
+                  <span class="method-name">verifyNullConditionValueOfFilterInSegment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPageIsCRM_UsersPage">
+                  </a> <!-- verifyPageIsCRM_UsersPage -->
+                  <span class="method-name">verifyPageIsCRM_UsersPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTotalSegmentCountOnPagination">
+                  </a> <!-- verifyTotalSegmentCountOnPagination -->
+                  <span class="method-name">verifyTotalSegmentCountOnPagination</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.CRM_CustomersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBrokenLinksOfCRM_CustomerPage">
+                  </a> <!-- verifyBrokenLinksOfCRM_CustomerPage -->
+                  <span class="method-name">verifyBrokenLinksOfCRM_CustomerPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFilterBy_Name_Contains">
+                  </a> <!-- verifyFilterBy_Name_Contains -->
+                  <span class="method-name">verifyFilterBy_Name_Contains</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullConditionValueInFilter">
+                  </a> <!-- verifyNullConditionValueInFilter -->
+                  <span class="method-name">verifyNullConditionValueInFilter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullCustomerName">
+                  </a> <!-- verifyNullCustomerName -->
+                  <span class="method-name">verifyNullCustomerName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullDepartment">
+                  </a> <!-- verifyNullDepartment -->
+                  <span class="method-name">verifyNullDepartment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullEmail">
+                  </a> <!-- verifyNullEmail -->
+                  <span class="method-name">verifyNullEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullHandle">
+                  </a> <!-- verifyNullHandle -->
+                  <span class="method-name">verifyNullHandle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullMobileNumber">
+                  </a> <!-- verifyNullMobileNumber -->
+                  <span class="method-name">verifyNullMobileNumber</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPageIsCRM_CustomerPage">
+                  </a> <!-- verifyPageIsCRM_CustomerPage -->
+                  <span class="method-name">verifyPageIsCRM_CustomerPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTotalCustomerCountOnPagination">
+                  </a> <!-- verifyTotalCustomerCountOnPagination -->
+                  <span class="method-name">verifyTotalCustomerCountOnPagination</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.DepartmentsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBrokenLinkOfDepartmentsPage">
+                  </a> <!-- verifyBrokenLinkOfDepartmentsPage -->
+                  <span class="method-name">verifyBrokenLinkOfDepartmentsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullDepartmentDescription">
+                  </a> <!-- verifyNullDepartmentDescription -->
+                  <span class="method-name">verifyNullDepartmentDescription</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullDepartmentName">
+                  </a> <!-- verifyNullDepartmentName -->
+                  <span class="method-name">verifyNullDepartmentName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPageIsDepartmentsPage">
+                  </a> <!-- verifyPageIsDepartmentsPage -->
+                  <span class="method-name">verifyPageIsDepartmentsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchByDepartmentName">
+                  </a> <!-- verifySearchByDepartmentName -->
+                  <span class="method-name">verifySearchByDepartmentName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -162,6 +929,77 @@
                   <a name="verifyHomeCardsVisibility">
                   </a> <!-- verifyHomeCardsVisibility -->
                   <span class="method-name">verifyHomeCardsVisibility</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.WorkflowTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDeleteWorkflowByName">
+                  </a> <!-- verifyDeleteWorkflowByName -->
+                  <span class="method-name">verifyDeleteWorkflowByName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDuplicateWorkflowCreation">
+                  </a> <!-- verifyDuplicateWorkflowCreation -->
+                  <span class="method-name">verifyDuplicateWorkflowCreation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEditWorkflowOnlyName">
+                  </a> <!-- verifyEditWorkflowOnlyName -->
+                  <span class="method-name">verifyEditWorkflowOnlyName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewWorkflowCreation">
+                  </a> <!-- verifyNewWorkflowCreation -->
+                  <span class="method-name">verifyNewWorkflowCreation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullChatBotName">
+                  </a> <!-- verifyNullChatBotName -->
+                  <span class="method-name">verifyNullChatBotName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullDepartmentId">
+                  </a> <!-- verifyNullDepartmentId -->
+                  <span class="method-name">verifyNullDepartmentId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullProductType">
+                  </a> <!-- verifyNullProductType -->
+                  <span class="method-name">verifyNullProductType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPageIsMyWorkflowPage">
+                  </a> <!-- verifyPageIsMyWorkflowPage -->
+                  <span class="method-name">verifyPageIsMyWorkflowPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResumeWorkflowWithoutNode">
+                  </a> <!-- verifyResumeWorkflowWithoutNode -->
+                  <span class="method-name">verifyResumeWorkflowWithoutNode</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -202,6 +1040,70 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.CRM_GroupsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDeleteGroupOfUpdatedName">
+                  </a> <!-- verifyDeleteGroupOfUpdatedName -->
+                  <span class="method-name">verifyDeleteGroupOfUpdatedName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFilterBy_CompanyWebsite_IsEquals">
+                  </a> <!-- verifyFilterBy_CompanyWebsite_IsEquals -->
+                  <span class="method-name">verifyFilterBy_CompanyWebsite_IsEquals</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFilterBy_Name_IsEquals">
+                  </a> <!-- verifyFilterBy_Name_IsEquals -->
+                  <span class="method-name">verifyFilterBy_Name_IsEquals</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGroupNameCreationWithValidDate">
+                  </a> <!-- verifyGroupNameCreationWithValidDate -->
+                  <span class="method-name">verifyGroupNameCreationWithValidDate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNullGroupName">
+                  </a> <!-- verifyNullGroupName -->
+                  <span class="method-name">verifyNullGroupName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPageIsCRM_UsersPage">
+                  </a> <!-- verifyPageIsCRM_UsersPage -->
+                  <span class="method-name">verifyPageIsCRM_UsersPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchByGroupName">
+                  </a> <!-- verifySearchByGroupName -->
+                  <span class="method-name">verifySearchByGroupName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTotalGroupCountOnPagination">
+                  </a> <!-- verifyTotalGroupCountOnPagination -->
+                  <span class="method-name">verifyTotalGroupCountOnPagination</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -219,6 +1121,13 @@
     &lt;classes&gt;
       &lt;class name=&quot;testCases.LoginTest&quot;/&gt;
       &lt;class name=&quot;testCases.HomeTest&quot;/&gt;
+      &lt;class name=&quot;testCases.WorkflowTest&quot;/&gt;
+      &lt;class name=&quot;testCases.DepartmentsTest&quot;/&gt;
+      &lt;class name=&quot;testCases.AgentsTest&quot;/&gt;
+      &lt;class name=&quot;testCases.CampaignsTest&quot;/&gt;
+      &lt;class name=&quot;testCases.CRM_CustomersTest&quot;/&gt;
+      &lt;class name=&quot;testCases.CRM_GroupsTest&quot;/&gt;
+      &lt;class name=&quot;testCases.CRM_SegmentsTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -232,7 +1141,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (9 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -258,36 +1167,296 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(71);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyBrokenLinksOfHomePage')
-data.setCell(0, 2, 'testCases.HomeTest')
-data.setCell(0, 3, 3397);
+data.setCell(0, 1, 'verifyNewWorkflowCreation')
+data.setCell(0, 2, 'testCases.WorkflowTest')
+data.setCell(0, 3, 35677);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyIncorrectCredLogin')
-data.setCell(1, 2, 'testCases.LoginTest')
-data.setCell(1, 3, 2305);
+data.setCell(1, 1, 'verifyDuplicateWorkflowCreation')
+data.setCell(1, 2, 'testCases.WorkflowTest')
+data.setCell(1, 3, 35553);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyCorrectCredLogin')
-data.setCell(2, 2, 'testCases.LoginTest')
-data.setCell(2, 3, 2035);
+data.setCell(2, 1, 'verifyNewSegmentCreationByNameStartWith')
+data.setCell(2, 2, 'testCases.CRM_SegmentsTest')
+data.setCell(2, 3, 17545);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyBlankPasswordLogin')
-data.setCell(3, 2, 'testCases.LoginTest')
-data.setCell(3, 3, 1156);
+data.setCell(3, 1, 'verifyNewCampaignCreationWithValidData')
+data.setCell(3, 2, 'testCases.CampaignsTest')
+data.setCell(3, 3, 16663);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyBlankEmailLogin')
-data.setCell(4, 2, 'testCases.LoginTest')
-data.setCell(4, 3, 517);
+data.setCell(4, 1, 'verifyEditSegmentbyUpdatingName')
+data.setCell(4, 2, 'testCases.CRM_SegmentsTest')
+data.setCell(4, 3, 16655);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyHomeCardsVisibility')
-data.setCell(5, 2, 'testCases.HomeTest')
-data.setCell(5, 3, 109);
+data.setCell(5, 1, 'verifyNewCustomerCreationWithValidData')
+data.setCell(5, 2, 'testCases.CRM_CustomersTest')
+data.setCell(5, 3, 16526);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyGroupNameCreationWithValidDate')
+data.setCell(6, 2, 'testCases.CRM_GroupsTest')
+data.setCell(6, 3, 15180);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyNewAgentCreationWithValidData')
+data.setCell(7, 2, 'testCases.AgentsTest')
+data.setCell(7, 3, 14979);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyDeleteGroupOfUpdatedName')
+data.setCell(8, 2, 'testCases.CRM_GroupsTest')
+data.setCell(8, 3, 14383);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyDeleteSegmentOfUpdatedName')
+data.setCell(9, 2, 'testCases.CRM_SegmentsTest')
+data.setCell(9, 3, 14343);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyEditWorkflowOnlyName')
+data.setCell(10, 2, 'testCases.WorkflowTest')
+data.setCell(10, 3, 13710);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyDeleteWorkflowByName')
+data.setCell(11, 2, 'testCases.WorkflowTest')
+data.setCell(11, 3, 12924);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyEditCampaignByUpdatingName')
+data.setCell(12, 2, 'testCases.CampaignsTest')
+data.setCell(12, 3, 12847);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyResumeWorkflowWithoutNode')
+data.setCell(13, 2, 'testCases.WorkflowTest')
+data.setCell(13, 3, 12624);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyDeleteCampaign')
+data.setCell(14, 2, 'testCases.CampaignsTest')
+data.setCell(14, 3, 11970);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyNullProductType')
+data.setCell(15, 2, 'testCases.WorkflowTest')
+data.setCell(15, 3, 11748);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyTotalCustomerCountOnPagination')
+data.setCell(16, 2, 'testCases.CRM_CustomersTest')
+data.setCell(16, 3, 8168);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyPageIsMyWorkflowPage')
+data.setCell(17, 2, 'testCases.WorkflowTest')
+data.setCell(17, 3, 7352);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyFilterBy_Name_IsEquals')
+data.setCell(18, 2, 'testCases.CRM_GroupsTest')
+data.setCell(18, 3, 6703);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyFilterBy_CompanyWebsite_IsEquals')
+data.setCell(19, 2, 'testCases.CRM_GroupsTest')
+data.setCell(19, 3, 6684);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyNullSchedule')
+data.setCell(20, 2, 'testCases.CampaignsTest')
+data.setCell(20, 3, 6651);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyFilterBy_Name_Contains')
+data.setCell(21, 2, 'testCases.CRM_CustomersTest')
+data.setCell(21, 3, 6412);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyTotalGroupCountOnPagination')
+data.setCell(22, 2, 'testCases.CRM_GroupsTest')
+data.setCell(22, 3, 5940);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyBrokenLinkOfDepartmentsPage')
+data.setCell(23, 2, 'testCases.DepartmentsTest')
+data.setCell(23, 3, 5334);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyTotalAgentCountOnPagination')
+data.setCell(24, 2, 'testCases.AgentsTest')
+data.setCell(24, 3, 5292);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifyBrokenLinksOfAgentsPage')
+data.setCell(25, 2, 'testCases.AgentsTest')
+data.setCell(25, 3, 4878);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyNullGroup_Segment')
+data.setCell(26, 2, 'testCases.CampaignsTest')
+data.setCell(26, 3, 4816);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'verifyNullConditionValueOfFilterInSegment')
+data.setCell(27, 2, 'testCases.CRM_SegmentsTest')
+data.setCell(27, 3, 4118);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'verifyNullDepartment')
+data.setCell(28, 2, 'testCases.CampaignsTest')
+data.setCell(28, 3, 4059);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'verifyPageIsCRM_CustomerPage')
+data.setCell(29, 2, 'testCases.CRM_CustomersTest')
+data.setCell(29, 3, 3907);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'verifyNullConditionValueInFilter')
+data.setCell(30, 2, 'testCases.CRM_CustomersTest')
+data.setCell(30, 3, 3879);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'verifyNullConfirmPassword')
+data.setCell(31, 2, 'testCases.AgentsTest')
+data.setCell(31, 3, 3848);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'verifySearchByGroupName')
+data.setCell(32, 2, 'testCases.CRM_GroupsTest')
+data.setCell(32, 3, 3603);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'verifyNullWhatsAppTemplate')
+data.setCell(33, 2, 'testCases.CampaignsTest')
+data.setCell(33, 3, 3501);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'verifyNullStatus')
+data.setCell(34, 2, 'testCases.CampaignsTest')
+data.setCell(34, 3, 3462);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'verifyTotalSegmentCountOnPagination')
+data.setCell(35, 2, 'testCases.CRM_SegmentsTest')
+data.setCell(35, 3, 3354);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'verifyNullPassword')
+data.setCell(36, 2, 'testCases.AgentsTest')
+data.setCell(36, 3, 3284);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'verifyNullGroupName')
+data.setCell(37, 2, 'testCases.CRM_GroupsTest')
+data.setCell(37, 3, 3248);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'verifyNullDepartment')
+data.setCell(38, 2, 'testCases.CRM_CustomersTest')
+data.setCell(38, 3, 3194);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'verifyBrokenLinksOfHomePage')
+data.setCell(39, 2, 'testCases.HomeTest')
+data.setCell(39, 3, 3187);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'verifyNullDepartmentDescription')
+data.setCell(40, 2, 'testCases.DepartmentsTest')
+data.setCell(40, 3, 3113);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'verifyNullAgentMobileNumber')
+data.setCell(41, 2, 'testCases.AgentsTest')
+data.setCell(41, 3, 2995);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'verifyTotalCampaignCountOnPagination')
+data.setCell(42, 2, 'testCases.CampaignsTest')
+data.setCell(42, 3, 2949);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'verifyNullEmail')
+data.setCell(43, 2, 'testCases.CRM_CustomersTest')
+data.setCell(43, 3, 2728);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'verifyNullAgentEmail')
+data.setCell(44, 2, 'testCases.AgentsTest')
+data.setCell(44, 3, 2580);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'verifyIncorrectCredLogin')
+data.setCell(45, 2, 'testCases.LoginTest')
+data.setCell(45, 3, 2388);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'verifyPageIsCRM_UsersPage')
+data.setCell(46, 2, 'testCases.CRM_GroupsTest')
+data.setCell(46, 3, 2333);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'verifyNullHandle')
+data.setCell(47, 2, 'testCases.CRM_CustomersTest')
+data.setCell(47, 3, 2307);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'verifyNullDescription')
+data.setCell(48, 2, 'testCases.CampaignsTest')
+data.setCell(48, 3, 2282);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'verifyNullDepartmentName')
+data.setCell(49, 2, 'testCases.DepartmentsTest')
+data.setCell(49, 3, 2183);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'verifyCorrectCredLogin')
+data.setCell(50, 2, 'testCases.LoginTest')
+data.setCell(50, 3, 2163);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'verifyNullMobileNumber')
+data.setCell(51, 2, 'testCases.CRM_CustomersTest')
+data.setCell(51, 3, 2021);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'verifyNullDepartmentName')
+data.setCell(52, 2, 'testCases.AgentsTest')
+data.setCell(52, 3, 2004);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'verifyNullAgentName')
+data.setCell(53, 2, 'testCases.AgentsTest')
+data.setCell(53, 3, 1971);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'verifyNullCampaignName')
+data.setCell(54, 2, 'testCases.CampaignsTest')
+data.setCell(54, 3, 1710);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'verifyBrokenLinksOnCampaignPage')
+data.setCell(55, 2, 'testCases.CampaignsTest')
+data.setCell(55, 3, 1623);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'verifyNullDepartmentId')
+data.setCell(56, 2, 'testCases.WorkflowTest')
+data.setCell(56, 3, 1450);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'verifyNullCustomerName')
+data.setCell(57, 2, 'testCases.CRM_CustomersTest')
+data.setCell(57, 3, 1436);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'verifyBlankPasswordLogin')
+data.setCell(58, 2, 'testCases.LoginTest')
+data.setCell(58, 3, 1361);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'verifyNullChatBotName')
+data.setCell(59, 2, 'testCases.WorkflowTest')
+data.setCell(59, 3, 1261);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'verifySearchByDepartmentName')
+data.setCell(60, 2, 'testCases.DepartmentsTest')
+data.setCell(60, 3, 1215);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'verifyPageIsCampaignPage')
+data.setCell(61, 2, 'testCases.CampaignsTest')
+data.setCell(61, 3, 879);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'verifyPageIsCRM_UsersPage')
+data.setCell(62, 2, 'testCases.CRM_SegmentsTest')
+data.setCell(62, 3, 847);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'verifyBrokenLinksOfCRM_CustomerPage')
+data.setCell(63, 2, 'testCases.CRM_CustomersTest')
+data.setCell(63, 3, 769);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'verifyPageIsAgentsPage')
+data.setCell(64, 2, 'testCases.AgentsTest')
+data.setCell(64, 3, 639);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'verifyBlankEmailLogin')
+data.setCell(65, 2, 'testCases.LoginTest')
+data.setCell(65, 3, 609);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'verifyPageIsDepartmentsPage')
+data.setCell(66, 2, 'testCases.DepartmentsTest')
+data.setCell(66, 3, 393);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'verifyHomeCardsVisibility')
+data.setCell(67, 2, 'testCases.HomeTest')
+data.setCell(67, 3, 162);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'verifyNewCustomerCreationWithDuplicateEmail')
+data.setCell(68, 2, 'testCases.CRM_CustomersTest')
+data.setCell(68, 3, 0);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'verifyNewCustomerCreationWithDuplicateHandle')
+data.setCell(69, 2, 'testCases.CRM_CustomersTest')
+data.setCell(69, 3, 0);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'verifySearchByCustomerName')
+data.setCell(70, 2, 'testCases.CRM_CustomersTest')
+data.setCell(70, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 7 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -302,12 +1471,77 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">16 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.CampaignsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">browserLounching</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.CRM_SegmentsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">browserLounching</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.CRM_CustomersTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">browserLounching</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.AgentsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">browserLounching</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.DepartmentsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">browserLounching</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.WorkflowTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">browserLounching</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">testCases.HomeTest</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">browserLounching</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.CRM_GroupsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
                 <span class="ignored-method-name">browserLounching</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -327,55 +1561,595 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setupLoginPageObjects</span>
-                <span class="method-start">13306 ms</span>
+                <span class="method-start">11679 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyIncorrectCredLogin</span>
-                <span class="method-start">13330 ms</span>
+                <span class="method-start">11706 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupLoginPageObjects</span>
-                <span class="method-start">15639 ms</span>
+                <span class="method-start">14098 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyBlankEmailLogin</span>
-                <span class="method-start">15640 ms</span>
+                <span class="method-start">14104 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupLoginPageObjects</span>
-                <span class="method-start">16158 ms</span>
+                <span class="method-start">14715 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyBlankPasswordLogin</span>
-                <span class="method-start">16160 ms</span>
+                <span class="method-start">14716 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCorrectCredLogin</span>
+                <span class="method-start">16084 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupLoginPageObjects</span>
-                <span class="method-start">17318 ms</span>
+                <span class="method-start">16084 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyCorrectCredLogin</span>
-                <span class="method-start">17319 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.HomeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setupHomePageObjects</span>
-                <span class="method-start">19356 ms</span>
+                <span class="method-start">18249 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyHomeCardsVisibility</span>
-                <span class="method-start">19363 ms</span>
+                <span class="method-start">18257 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupHomePageObjects</span>
-                <span class="method-start">19473 ms</span>
+                <span class="method-start">18422 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyBrokenLinksOfHomePage</span>
-                <span class="method-start">19474 ms</span>
+                <span class="method-start">18423 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.WorkflowTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupWorkflowObjects</span>
+                <span class="method-start">21613 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPageIsMyWorkflowPage</span>
+                <span class="method-start">21618 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupWorkflowObjects</span>
+                <span class="method-start">28971 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullChatBotName</span>
+                <span class="method-start">28973 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupWorkflowObjects</span>
+                <span class="method-start">30238 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullDepartmentId</span>
+                <span class="method-start">30240 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupWorkflowObjects</span>
+                <span class="method-start">31697 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullProductType</span>
+                <span class="method-start">31700 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupWorkflowObjects</span>
+                <span class="method-start">43451 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNewWorkflowCreation</span>
+                <span class="method-start">43460 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupWorkflowObjects</span>
+                <span class="method-start">79139 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDuplicateWorkflowCreation</span>
+                <span class="method-start">79141 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupWorkflowObjects</span>
+                <span class="method-start">114698 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyResumeWorkflowWithoutNode</span>
+                <span class="method-start">114699 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupWorkflowObjects</span>
+                <span class="method-start">127327 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEditWorkflowOnlyName</span>
+                <span class="method-start">127332 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupWorkflowObjects</span>
+                <span class="method-start">141048 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDeleteWorkflowByName</span>
+                <span class="method-start">141051 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.DepartmentsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDepartmentsObjectd</span>
+                <span class="method-start">153979 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPageIsDepartmentsPage</span>
+                <span class="method-start">153987 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDepartmentsObjectd</span>
+                <span class="method-start">154382 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyBrokenLinkOfDepartmentsPage</span>
+                <span class="method-start">154388 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDepartmentsObjectd</span>
+                <span class="method-start">159727 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullDepartmentName</span>
+                <span class="method-start">159732 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDepartmentsObjectd</span>
+                <span class="method-start">161927 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullDepartmentDescription</span>
+                <span class="method-start">161928 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDepartmentsObjectd</span>
+                <span class="method-start">165044 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchByDepartmentName</span>
+                <span class="method-start">165045 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.AgentsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupAgentsObjects</span>
+                <span class="method-start">166263 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPageIsAgentsPage</span>
+                <span class="method-start">166271 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupAgentsObjects</span>
+                <span class="method-start">166926 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyBrokenLinksOfAgentsPage</span>
+                <span class="method-start">166928 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupAgentsObjects</span>
+                <span class="method-start">171809 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullAgentName</span>
+                <span class="method-start">171811 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupAgentsObjects</span>
+                <span class="method-start">173784 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullDepartmentName</span>
+                <span class="method-start">173786 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupAgentsObjects</span>
+                <span class="method-start">175801 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullAgentEmail</span>
+                <span class="method-start">175805 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupAgentsObjects</span>
+                <span class="method-start">178391 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullAgentMobileNumber</span>
+                <span class="method-start">178397 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupAgentsObjects</span>
+                <span class="method-start">181407 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullPassword</span>
+                <span class="method-start">181408 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupAgentsObjects</span>
+                <span class="method-start">184695 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullConfirmPassword</span>
+                <span class="method-start">184697 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupAgentsObjects</span>
+                <span class="method-start">188548 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyNewAgentCreationWithValidData</span>
+                <span class="method-start">188552 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupAgentsObjects</span>
+                <span class="method-start">204082 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTotalAgentCountOnPagination</span>
+                <span class="method-start">204083 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.CampaignsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCampaignsTestObject</span>
+                <span class="method-start">209385 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPageIsCampaignPage</span>
+                <span class="method-start">209403 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCampaignsTestObject</span>
+                <span class="method-start">210287 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullCampaignName</span>
+                <span class="method-start">210295 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCampaignsTestObject</span>
+                <span class="method-start">212010 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullDescription</span>
+                <span class="method-start">212013 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCampaignsTestObject</span>
+                <span class="method-start">214297 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullWhatsAppTemplate</span>
+                <span class="method-start">214305 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCampaignsTestObject</span>
+                <span class="method-start">217812 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullStatus</span>
+                <span class="method-start">217816 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCampaignsTestObject</span>
+                <span class="method-start">221280 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullDepartment</span>
+                <span class="method-start">221284 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCampaignsTestObject</span>
+                <span class="method-start">225346 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullGroup_Segment</span>
+                <span class="method-start">225351 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCampaignsTestObject</span>
+                <span class="method-start">230169 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullSchedule</span>
+                <span class="method-start">230175 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCampaignsTestObject</span>
+                <span class="method-start">236832 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNewCampaignCreationWithValidData</span>
+                <span class="method-start">236837 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCampaignsTestObject</span>
+                <span class="method-start">253504 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEditCampaignByUpdatingName</span>
+                <span class="method-start">253510 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCampaignsTestObject</span>
+                <span class="method-start">266361 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDeleteCampaign</span>
+                <span class="method-start">266364 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCampaignsTestObject</span>
+                <span class="method-start">278339 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTotalCampaignCountOnPagination</span>
+                <span class="method-start">278346 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCampaignsTestObject</span>
+                <span class="method-start">281302 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyBrokenLinksOnCampaignPage</span>
+                <span class="method-start">281305 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.CRM_CustomersTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMUsersObjects</span>
+                <span class="method-start">282933 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPageIsCRM_CustomerPage</span>
+                <span class="method-start">282938 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMUsersObjects</span>
+                <span class="method-start">286847 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyBrokenLinksOfCRM_CustomerPage</span>
+                <span class="method-start">286849 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMUsersObjects</span>
+                <span class="method-start">287625 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullCustomerName</span>
+                <span class="method-start">287627 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMUsersObjects</span>
+                <span class="method-start">289067 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullMobileNumber</span>
+                <span class="method-start">289068 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMUsersObjects</span>
+                <span class="method-start">291092 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullHandle</span>
+                <span class="method-start">291095 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMUsersObjects</span>
+                <span class="method-start">293406 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullEmail</span>
+                <span class="method-start">293410 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMUsersObjects</span>
+                <span class="method-start">296139 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullDepartment</span>
+                <span class="method-start">296141 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMUsersObjects</span>
+                <span class="method-start">299337 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyNewCustomerCreationWithValidData</span>
+                <span class="method-start">299340 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyNewCustomerCreationWithDuplicateHandle</span>
+                <span class="method-start">316089 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyNewCustomerCreationWithDuplicateEmail</span>
+                <span class="method-start">316094 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMUsersObjects</span>
+                <span class="method-start">316102 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTotalCustomerCountOnPagination</span>
+                <span class="method-start">316104 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySearchByCustomerName</span>
+                <span class="method-start">324276 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMUsersObjects</span>
+                <span class="method-start">324278 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullConditionValueInFilter</span>
+                <span class="method-start">324281 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMUsersObjects</span>
+                <span class="method-start">328165 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyFilterBy_Name_Contains</span>
+                <span class="method-start">328170 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.CRM_GroupsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMGroupsObjects</span>
+                <span class="method-start">334585 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPageIsCRM_UsersPage</span>
+                <span class="method-start">334587 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMGroupsObjects</span>
+                <span class="method-start">336922 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTotalGroupCountOnPagination</span>
+                <span class="method-start">336925 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMGroupsObjects</span>
+                <span class="method-start">342866 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullGroupName</span>
+                <span class="method-start">342867 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMGroupsObjects</span>
+                <span class="method-start">346116 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyGroupNameCreationWithValidDate</span>
+                <span class="method-start">346117 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMGroupsObjects</span>
+                <span class="method-start">361301 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchByGroupName</span>
+                <span class="method-start">361302 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMGroupsObjects</span>
+                <span class="method-start">364908 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyFilterBy_Name_IsEquals</span>
+                <span class="method-start">364909 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMGroupsObjects</span>
+                <span class="method-start">371613 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyFilterBy_CompanyWebsite_IsEquals</span>
+                <span class="method-start">371614 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMGroupsObjects</span>
+                <span class="method-start">378304 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDeleteGroupOfUpdatedName</span>
+                <span class="method-start">378306 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.CRM_SegmentsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMSegmentsObject</span>
+                <span class="method-start">392693 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPageIsCRM_UsersPage</span>
+                <span class="method-start">392697 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMSegmentsObject</span>
+                <span class="method-start">393546 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTotalSegmentCountOnPagination</span>
+                <span class="method-start">393548 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMSegmentsObject</span>
+                <span class="method-start">396905 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNullConditionValueOfFilterInSegment</span>
+                <span class="method-start">396906 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMSegmentsObject</span>
+                <span class="method-start">401025 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNewSegmentCreationByNameStartWith</span>
+                <span class="method-start">401026 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMSegmentsObject</span>
+                <span class="method-start">418573 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEditSegmentbyUpdatingName</span>
+                <span class="method-start">418575 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupCRMSegmentsObject</span>
+                <span class="method-start">435235 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDeleteSegmentOfUpdatedName</span>
+                <span class="method-start">435239 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">449689 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -24,7 +24,7 @@ public class AgentsPage extends BasePage {
 	@FindBy(xpath = "//*[@name='agentName']")
 	WebElement inpAgnetName;
 
-	@FindBy(xpath = "//div[@role='combobox' and contains(@class, 'MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-184p1yy')]")
+	@FindBy(xpath = "//label[text()='Department']//parent::div")
 	WebElement drpDepartment;
 
 	@FindBy(xpath = "//ul[@role='listbox']//li")
@@ -69,7 +69,7 @@ public class AgentsPage extends BasePage {
 	@FindBy(xpath = "//*[@role='alert']")
 	WebElement tostAlertMsg;
 
-	@FindBy(xpath = "//p[@class='MuiTablePagination-displayedRows css-1qbj7le']")
+	@FindBy(xpath = "//p[contains(@class , 'MuiTablePagination-displayedRows')]")
 	WebElement txtAgentCountOnPagi;
 
 	@FindBy(xpath = "//button[@title='Go to next page']")
@@ -178,7 +178,6 @@ public class AgentsPage extends BasePage {
 			if (row.getText().toLowerCase().contains(SearchableUserName.toLowerCase())) {
 				return true;
 			}
-
 		}
 		return false;
 	}
@@ -201,7 +200,6 @@ public class AgentsPage extends BasePage {
 			List<WebElement> rows = wait.until(
 					ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//tbody/tr[td[not(@colspan)]]")));
 
-		
 			totalRows = totalRows + rows.size();
 
 			String classAttr = btnNextPageButton.getAttribute("class");

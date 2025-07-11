@@ -30,15 +30,15 @@ public class CampaignsTest extends BaseClass {
 	
 	@Test (priority = 1)
 	public void verifyPageIsCampaignPage() {
-		logger.info("*** Verifying test case: verifyPageIsCampaignPage ***");
+		logger.info("*** Verifying CampaignsTest: verifyPageIsCampaignPage ***");
 		campaign.openCampaignsPage();
 		String actTitle = driver.getTitle();
 		Assert.assertEquals(actTitle, p.getProperty("CampaignPageTitle"), "Campaign page title does not match!");
 		}
 	
-	@Test (priority = 2)
+	@Test (priority = 2, dependsOnMethods = {"verifyPageIsCampaignPage"})
 	public void verifyNullCampaignName() {
-		logger.info("*** Verifying test case: verifyNullCampaignName ***");
+		logger.info("*** Verifying CampaignsTest: verifyNullCampaignName ***");
 		campaign.openNewCampaignPopup();
 		campaign.clickCreateCampaign();
 		String actMsg = crm.getNullErrorMsgs(p.getProperty("expNullCampaignNameMsg"));
@@ -48,9 +48,9 @@ public class CampaignsTest extends BaseClass {
 		sa.assertAll();
 	}
 	
-	@Test (priority = 3)
+	@Test (priority = 3, dependsOnMethods = {"verifyPageIsCampaignPage"})
 	public void verifyNullDescription() {
-		logger.info("*** Verifying test case: verifyNullDescription ***");
+		logger.info("*** Verifying CampaignsTest: verifyNullDescription ***");
 		campaign.openNewCampaignPopup();
 		campaign.setCampaignName(p.getProperty("campaignName"));
 		campaign.clickCreateCampaign();
@@ -61,9 +61,9 @@ public class CampaignsTest extends BaseClass {
 		sa.assertAll();
 	}
 	
-	@Test (priority = 4)
+	@Test (priority = 4, dependsOnMethods = {"verifyPageIsCampaignPage"})
 	public void verifyNullWhatsAppTemplate() {
-		logger.info("*** Verifying test case: verifyNullWhatsAppTemplate ***");
+		logger.info("*** Verifying CampaignsTest: verifyNullWhatsAppTemplate ***");
 		campaign.openNewCampaignPopup();
 		campaign.setCampaignName(p.getProperty("campaignName"));
 		campaign.setDescription(p.getProperty("description"));
@@ -75,9 +75,9 @@ public class CampaignsTest extends BaseClass {
 		sa.assertAll();
 	}
 	
-	@Test (priority = 5)
+	@Test (priority = 5, dependsOnMethods = {"verifyPageIsCampaignPage"})
 	public void verifyNullStatus() {
-		logger.info("*** Verifying test case: verifyNullStatus ***");
+		logger.info("*** Verifying CampaignsTest: verifyNullStatus ***");
 		campaign.openNewCampaignPopup();
 		campaign.setCampaignName(p.getProperty("campaignName"));
 		campaign.setDescription(p.getProperty("description"));
@@ -90,9 +90,9 @@ public class CampaignsTest extends BaseClass {
 		sa.assertAll();
 	}
 	
-	@Test (priority = 6)
+	@Test (priority = 6, dependsOnMethods = {"verifyPageIsCampaignPage"})
 	public void verifyNullDepartment() {
-		logger.info("*** Verifying test case: verifyNullDepartment ***");
+		logger.info("*** Verifying CampaignsTest: verifyNullDepartment ***");
 		campaign.openNewCampaignPopup();
 		campaign.setCampaignName(p.getProperty("campaignName"));
 		campaign.setDescription(p.getProperty("description"));
@@ -106,9 +106,9 @@ public class CampaignsTest extends BaseClass {
 		sa.assertAll();
 	}
 	
-	@Test (priority = 7)
+	@Test (priority = 7, dependsOnMethods = {"verifyPageIsCampaignPage"})
 	public void verifyNullGroup_Segment() {
-		logger.info("*** Verifying test case: verifyNullGroup_Segment ***");
+		logger.info("*** Verifying CampaignsTest: verifyNullGroup_Segment ***");
 		campaign.openNewCampaignPopup();
 		campaign.setCampaignName(p.getProperty("campaignName"));
 		campaign.setDescription(p.getProperty("description"));
@@ -123,9 +123,9 @@ public class CampaignsTest extends BaseClass {
 		sa.assertAll();
 	}
 	
-	@Test (priority = 8)
+	@Test (priority = 8, dependsOnMethods = {"verifyPageIsCampaignPage"})
 	public void verifyNullSchedule() {
-		logger.info("*** Verifying test case: verifyNullSchedule ***");
+		logger.info("*** Verifying CampaignsTest: verifyNullSchedule ***");
 		campaign.openNewCampaignPopup();
 		campaign.setCampaignName(p.getProperty("campaignName"));
 		campaign.setDescription(p.getProperty("description"));
@@ -141,9 +141,9 @@ public class CampaignsTest extends BaseClass {
 		sa.assertAll();
 	}
 	
-	@Test (priority = 9)
+	@Test (priority = 9, dependsOnMethods = {"verifyPageIsCampaignPage"})
 	public void verifyNewCampaignCreationWithValidData() {
-		logger.info("*** Verifying test case: verifyNewCampaignCreationWithValidData ***");
+		logger.info("*** Verifying CampaignsTest: verifyNewCampaignCreationWithValidData ***");
 		campaign.openNewCampaignPopup();
 		campaign.setCampaignName(p.getProperty("campaignName"));
 		campaign.setDescription(p.getProperty("description"));
@@ -161,7 +161,7 @@ public class CampaignsTest extends BaseClass {
 	
 //	@Test (priority = , dependsOnMethods = {"verifyNewCampaignCreationWithValidData"}) //# Duplicate campaign message is not shown on UI
 //	public void verifyDuplicateCampaignCreationWithSameName() {
-//		logger.info("*** Verifying test case: verifyDuplicateCampaignCreationWithSameName ***");
+//		logger.info("*** Verifying CampaignsTest: verifyDuplicateCampaignCreationWithSameName ***");
 //		campaign.openNewCampaignPopup();
 //		campaign.setCampaignName(p.getProperty("campaignName"));
 //		campaign.setDescription(p.getProperty("description"));
@@ -179,7 +179,7 @@ public class CampaignsTest extends BaseClass {
 	
 	@Test (priority = 10, dependsOnMethods= {"verifyNewCampaignCreationWithValidData"})
 	public void verifyEditCampaignByUpdatingName() {
-		logger.info("*** Verifying test case: verifyEditCampaignByUpdatingName ***");
+		logger.info("*** Verifying CampaignsTest: verifyEditCampaignByUpdatingName ***");
 		campaign.clickActionOfSpecificCampaign(p.getProperty("campaignName"));
 		ap.clickEditAction();
 		campaign.setCampaignName(p.getProperty("campaignNameUpdate"));
@@ -193,7 +193,7 @@ public class CampaignsTest extends BaseClass {
 	
 	@Test (priority = 11, dependsOnMethods = {"verifyEditCampaignByUpdatingName"})
 	public void verifyDeleteCampaign() {
-		logger.info("*** Verifying test case: verifyDeleteCampaign ***");
+		logger.info("*** Verifying CampaignsTest: verifyDeleteCampaign ***");
 		campaign.clickActionOfSpecificCampaign(p.getProperty("campaignNameUpdate"));
 		ap.clickDeleteAction();
 		ap.clickYesDeleteOnConfirm();
@@ -203,9 +203,9 @@ public class CampaignsTest extends BaseClass {
 		sa.assertAll();
 	}
 	
-	@Test(priority = 12)
+	@Test(priority = 12, dependsOnMethods = {"verifyPageIsCampaignPage"})
 	public void verifyTotalCampaignCountOnPagination() throws InterruptedException {
-		logger.info("*** Verify test case: verifyTotalCampaignCountOnPagination ***");
+		logger.info("*** Verifying CampaignsTest: verifyTotalCampaignCountOnPagination ***");
 		int campaignCount = ap.getTotalAgentCountFromPagination();
 		logger.info("Total campaign count: " + campaignCount);
 		int rowCount = ap.getTotalAgentCountFromList();
@@ -216,9 +216,9 @@ public class CampaignsTest extends BaseClass {
 		sa.assertAll();
 	}
 	
-	@Test(priority = 13)
+	@Test(priority = 13, dependsOnMethods = {"verifyPageIsCampaignPage"})
 	public void verifyBrokenLinksOnCampaignPage() {
-		logger.info("*** Verify test case: verifyBrokenLinksOnCampaignPage ***");
+		logger.info("*** Verifying CampaignsTest: verifyBrokenLinksOnCampaignPage ***");
 		int BrokenlinkCount = hp.checkBrokenLinks();
 		Assert.assertEquals(BrokenlinkCount, 0, "Broken links found on Campaign page");
 	}

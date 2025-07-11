@@ -18,14 +18,14 @@ public class HomeTest extends BaseClass {
 
 	@Test(priority = 1)
 	public void verifyHomeCardsVisibility() {
-		logger.info("*** Verifying test case: verifyHomeCardsVisibility ***");
+		logger.info("*** Verifying HomeTest: verifyHomeCardsVisibility ***");
 		boolean areVisible = hp.areAllCardsVisible();
 		Assert.assertTrue(areVisible, "All 3 cards are not visible on the home page.");
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, dependsOnMethods = {"verifyHomeCardsVisibility"})
 	public void verifyBrokenLinksOfHomePage() {
-		logger.info("*** Verifying test case: verifyBrokenLinksOfHomePage ***");
+		logger.info("*** Verifying HomeTest: verifyBrokenLinksOfHomePage ***");
 		int BrokenLinkCount = hp.checkBrokenLinks();
 		Assert.assertEquals(BrokenLinkCount, 0, "Broken link is found on Home page");
 	}

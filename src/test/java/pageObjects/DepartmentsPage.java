@@ -39,6 +39,7 @@ public class DepartmentsPage extends BasePage {
 	WebElement inpSearchDept;
 
 	public void openDepartmentsPage() {
+		driver.switchTo().defaultContent();
 		txtDepartments.click();
 		wait.until(ExpectedConditions.visibilityOf(btnNewDepartment));
 	}

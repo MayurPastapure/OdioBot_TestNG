@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Suite" >
-  
-  <!-- Global listeners for all tests -->
-  <listeners>
-    <listener class-name="utilities.TestListener" />
-  </listeners>
+<suite name="Suite">
 
-  <test thread-count="5" name="Test">
+	<!-- Global listeners for all tests -->
+	<listeners>
+		<listener class-name="utilities.TestListener" />
+	</listeners>
 
-    <classes>
-      <class name="testCases.LoginTest"/>
-      <class name="testCases.HomeTest"/>
-<!--  <class name="testCases.WorkflowTest"/> 
-      <class name="testCases.DepartmentsTest"/> 
-      <class name="testCases.AgentsTest"/>   
-      <class name="testCases.CRM_UsersTest"/>   
-      <class name="testCases.CRM_GroupsTest"/>  
-      <class name="testCases.CRM_SegmentsTest"/>  
-      <class name="testCases.CampaignsTest"/> -->
-      
-    </classes>
-  </test>
+	<test thread-count="5" name="Test">
+
+		<classes>
+			<class name="testCases.LoginTest" />
+			<class name="testCases.HomeTest" />
+			<class name="testCases.WorkflowTest" />
+			<class name="testCases.DepartmentsTest" />
+			<class name="testCases.AgentsTest" />
+			<class name="testCases.CampaignsTest" />
+			<class name="testCases.CRM_CustomersTest" />
+			<class name="testCases.CRM_GroupsTest" />
+			<class name="testCases.CRM_SegmentsTest" />
+			
+
+		</classes>
+	</test>
 
 </suite>

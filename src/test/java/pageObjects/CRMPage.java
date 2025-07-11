@@ -23,16 +23,16 @@ public class CRMPage extends BasePage {
 	WebElement btnAddUsers_Groups_Segment;
 
 	@FindBy(xpath = "//input[@name='userName']")
-	WebElement inpUserName;
+	WebElement inpCustomerName;
 
 	@FindBy(xpath = "//input[@name='userMobile']")
-	WebElement inpUserMobile;
+	WebElement inpCustomerMobile;
 
 	@FindBy(xpath = "//input[@name='userHandle']")
-	WebElement inpUserHandle;
+	WebElement inpCustomerHandle;
 
 	@FindBy(xpath = "//input[@name='userEmail']")
-	WebElement inpUserEmail;
+	WebElement inpCustomerEmail;
 
 	@FindBy(xpath = "(//*[@id= 'demo-simple-select'])[1]")
 	WebElement drpSelectDepartment;
@@ -47,7 +47,7 @@ public class CRMPage extends BasePage {
 	List<WebElement> drpSelectGroupOptions;
 
 	@FindBy(xpath = "//button[@type='submit']")
-	WebElement btnCreateUser_Group;
+	WebElement btnCreateCustomer_Group;
 
 	@FindBy(xpath = "//button[text()='+ Add Info']")
 	WebElement btnAddInfo;
@@ -97,8 +97,8 @@ public class CRMPage extends BasePage {
 	@FindBy(xpath = "//p[contains(@class, 'MuiFormHelperText-root')]")
 	List<WebElement> nullMessages;
 
-	@FindBy(xpath = "//button[text()='users']")
-	WebElement txtUsersTab;
+	@FindBy(xpath = "//button[text()='customers']")
+	WebElement txtCustomersTab;
 
 	@FindBy(xpath = "//button[text()='groups']")
 	WebElement txtGroupsTab;
@@ -179,29 +179,29 @@ public class CRMPage extends BasePage {
 		return text;
 	}
 
-	public void clickOnAddUsers_AddGroups() {
+	public void clickOnAddCustomer_AddGroups() {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnAddUsers_Groups_Segment));
 		element.click();
-		wait.until(ExpectedConditions.elementToBeClickable(btnCreateUser_Group));
+		wait.until(ExpectedConditions.elementToBeClickable(btnCreateCustomer_Group));
 	}
 
-	public void setUserName(String userName) {
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpUserName));
-		element.sendKeys(userName);
+	public void setCustomerName(String customerName) {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpCustomerName));
+		element.sendKeys(customerName);
 	}
 
 	public void setMobileNumber(String mobileNumber) {
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpUserMobile));
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpCustomerMobile));
 		element.sendKeys(mobileNumber);
 	}
 
 	public void setHandle(String handle) {
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpUserHandle));
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpCustomerHandle));
 		element.sendKeys(handle);
 	}
 
 	public void setEmail(String email) {
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpUserEmail));
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpCustomerEmail));
 		element.sendKeys(email);
 	}
 
@@ -246,8 +246,8 @@ public class CRMPage extends BasePage {
 		element.sendKeys(description);
 	}
 
-	public void clickCreateUser_Group() {
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnCreateUser_Group));
+	public void clickCreateCustomer_Group() {
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(btnCreateCustomer_Group));
 		element.click();
 	}
 

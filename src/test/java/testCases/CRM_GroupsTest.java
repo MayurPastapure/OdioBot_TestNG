@@ -27,63 +27,63 @@ public class CRM_GroupsTest extends BaseClass {
 	
 	@Test(priority = 0)
 	public void verifyPageIsCRM_UsersPage() {
-		logger.info("*** Verifying test case: verifyPageIsCRM_UsersPage ***");
+		logger.info("*** Verifying CRM_GroupsTest: verifyPageIsCRM_UsersPage ***");
 		hp.openMoreOption();
 		crm.openCRMPage();
 		String actTitle = driver.getTitle();
 		Assert.assertEquals(actTitle, p.getProperty("CRMPageTitle"), "CRM_user page title does not match!");
 	}
-
-	@Test(priority = 1)
-	public void verifyNullGroupName() {
-		logger.info("*** Verifying test case: verifyNullGroupName ***");
+	
+	@Test(priority = 1, dependsOnMethods = {"verifyPageIsCRM_UsersPage"})
+	public void verifyTotalGroupCountOnPagination() throws InterruptedException {
+		logger.info("*** Verifying CRM_GroupsTest: verifyTotalGroupCountOnPagination ***");
 		crm.openGroupTab();
-		crm.clickOnAddUsers_AddGroups();
-		crm.clickCreateUser_Group();
+		int groupCount = ap.getTotalAgentCountFromPagination();
+		logger.info("Total group count: " + groupCount);
+		int rowCount = ap.getTotalAgentCountFromList();
+		logger.info("Total row count: " + rowCount);
+		SoftAssert sa = new SoftAssert();
+		sa.assertEquals(groupCount, rowCount, "Group pagination count is not match with group list count");
+		lp.refreshPage();
+		sa.assertAll();
+	}
+
+	@Test(priority = 2, dependsOnMethods = {"verifyPageIsCRM_UsersPage"})
+	public void verifyNullGroupName() {
+		logger.info("*** Verifying CRM_GroupsTest: verifyNullGroupName ***");
+		crm.openGroupTab();
+		crm.clickOnAddCustomer_AddGroups();
+		crm.clickCreateCustomer_Group();
 		String actNullMsg = crm.getNullErrorMsgs(p.getProperty("expNullGroupName"));
 		SoftAssert sa = new SoftAssert();
 		sa.assertEquals(actNullMsg, p.getProperty("expNullGroupName"), "Group name error message does not match!");
 		lp.refreshPage();
 		sa.assertAll();
 	}
-	
-	@Test(priority = 2)
-	public void verifyTotalGroupCountOnPagination() throws InterruptedException {
-		logger.info("*** Verify test case: verifyTotalUserCountOnPagination ***");
-		crm.openGroupTab();
-		int userCount = ap.getTotalAgentCountFromPagination();
-		logger.info("Total group count: " + userCount);
-		int rowCount = ap.getTotalAgentCountFromList();
-		logger.info("Total row count: " + rowCount);
-		SoftAssert sa = new SoftAssert();
-		sa.assertEquals(userCount, rowCount, "Group pagination count is not with group list count");
-		lp.refreshPage();
-		sa.assertAll();
-	}
 
-	@Test(priority = 3)
+	@Test(priority = 3, dependsOnMethods = {"verifyPageIsCRM_UsersPage"})
 	public void verifyGroupNameCreationWithValidDate() {
-		logger.info("*** Verifying test case: verifyGroupNameCreationWithValidDate ***");
+		logger.info("*** Verifying CRM_GroupsTest: verifyGroupNameCreationWithValidDate ***");
 		crm.openGroupTab();
-		crm.clickOnAddUsers_AddGroups();
-		crm.setGroupName(p.getProperty("groupName"));
+		crm.clickOnAddCustomer_AddGroups();
+		crm.setGroupName(p.getProperty("GroupName"));
 		crm.setWebsiteName(p.getProperty("websiteName"));
-		crm.clickCreateUser_Group();
+		crm.clickCreateCustomer_Group();
 		String actMsg = crm.getToastMessage();
 		SoftAssert sa = new SoftAssert();
-		sa.assertEquals(actMsg, p.getProperty("expgroupCreateSuccessMsg"), "Group creation error message does not match!");
+		sa.assertEquals(actMsg, p.getProperty("expGroupCreateSuccessMsg"), "Group creation error message does not match!");
 		lp.refreshPage();
 		sa.assertAll();
 	}
 
 //	@Test(priority = 4, dependsOnMethods = {"verifyGroupNameCreationWithValidDate"}) // Error message is not received on UI (FE issue)
 //	public void verifyDuplicateGroupNameCreation() {
-//		logger.info("*** Verifying test case: verifyDuplicateGroupNameCreation ***");
+//		logger.info("*** Verifying CRM_GroupsTest: verifyDuplicateGroupNameCreation ***");
 //		crm.openGroupTab();
-//		crm.clickOnAddUsers_AddGroups();
-//		crm.setGroupName(p.getProperty("groupName"));
+//		crm.clickOnAddCustomer_AddGroups();
+//		crm.setGroupName(p.getProperty("GroupName"));
 //		crm.setWebsiteName(p.getProperty("websiteName"));
-//		crm.clickCreateUser_Group();
+//		crm.clickCreateCustomer_Group();
 //		String actMsg = crm.getToastMessage();
 //		SoftAssert sa = new SoftAssert();
 //		sa.assertEquals(actMsg, p.getProperty("expDuplicateGroupNameMsg"), "Duplicate group error message does not match!");
@@ -94,10 +94,9 @@ public class CRM_GroupsTest extends BaseClass {
 
 	@Test(priority = 5, dependsOnMethods = {"verifyGroupNameCreationWithValidDate"})
 	public void verifySearchByGroupName() throws InterruptedException {
-		logger.info("*** Verify test case: verifySearchByGroupName ***");
-		lp.refreshPage();
+		logger.info("*** Verifying CRM_GroupsTest: verifySearchByGroupName ***");
 		crm.openGroupTab();
-		Boolean isAvailable = crm.searchByName(p.getProperty("groupName"));
+		Boolean isAvailable = crm.searchByName(p.getProperty("GroupName"));
 		SoftAssert sa = new SoftAssert();
 		sa.assertTrue(isAvailable, "Group name is not found in search result");
 		lp.refreshPage();
@@ -106,11 +105,11 @@ public class CRM_GroupsTest extends BaseClass {
 	
 	@Test(priority = 6, dependsOnMethods = {"verifyGroupNameCreationWithValidDate"})
 	public void verifyFilterBy_Name_IsEquals() throws InterruptedException {
-		logger.info("*** Verify test case: verifyFilterBy_Name_IsEquals ***");
+		logger.info("*** Verifying CRM_GroupsTest: verifyFilterBy_Name_IsEquals ***");
 		crm.openGroupTab();
 		crm.selectFilterOption(p.getProperty("filterOption_Name"));
 		crm.selectFilterCondition(p.getProperty("condition_IsEquals"));
-		crm.setConditionValue(p.getProperty("groupName"));
+		crm.setConditionValue(p.getProperty("GroupName"));
 		crm.clickApplyFiler();
 		int filterCount = ap.getTotalAgentCountFromPagination();
 		logger.info("Total group filter by Name_IsEquals: " + p.getProperty("groupName") + ":= " + filterCount);
@@ -122,7 +121,7 @@ public class CRM_GroupsTest extends BaseClass {
 	
 	@Test(priority = 7, dependsOnMethods = {"verifyGroupNameCreationWithValidDate"})
 	public void verifyFilterBy_CompanyWebsite_IsEquals() throws InterruptedException {
-		logger.info("*** Verify test case: verifyFilterBy_CompanyWebsite_IsEquals ***");
+		logger.info("*** Verifying CRM_GroupsTest: verifyFilterBy_CompanyWebsite_IsEquals ***");
 		crm.openGroupTab();
 		crm.selectFilterOption(p.getProperty("filterOption_CompanyWebsite"));
 		crm.selectFilterCondition(p.getProperty("condition_IsEquals"));
@@ -138,7 +137,7 @@ public class CRM_GroupsTest extends BaseClass {
 	
 //	@Test(priority = 8, dependsOnMethods = {"verifyGroupNameCreationWithValidDate"}) // BE API gives 500 error while update (BE issue)
 //	public void verifyEditGroupbyUpdatingName() {
-//		logger.info("*** Verify test case: verifyEditGroupbyUpdatingName ***");
+//		logger.info("*** Verifying CRM_GroupsTest: verifyEditGroupbyUpdatingName ***");
 //		crm.openGroupTab();
 //		ap.clickActionOfSpecificAgent(p.getProperty("groupName"));
 //		ap.clickEditAction();
@@ -154,10 +153,10 @@ public class CRM_GroupsTest extends BaseClass {
 	
 	@Test(priority = 9, dependsOnMethods = { "verifyGroupNameCreationWithValidDate" })
 	public void verifyDeleteGroupOfUpdatedName() {
-		logger.info("*** Verify test case: verifyDeleteGroupOfUpdatedName ***");
+		logger.info("*** Verifying CRM_GroupsTest: verifyDeleteGroupOfUpdatedName ***");
 		lp.refreshPage();
 		crm.openGroupTab();
-		ap.clickActionOfSpecificAgent(p.getProperty("groupName"));
+		ap.clickActionOfSpecificAgent(p.getProperty("GroupName"));
 		ap.clickDeleteAction();
 		ap.clickYesDeleteOnConfirm();
 		String actMsg = crm.getToastMessage();

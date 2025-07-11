@@ -1,5 +1,8 @@
 package pageObjects;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -34,6 +37,9 @@ public class WorkflowPage extends BasePage {
 
 	@FindBy(xpath = "(//*[@formcontrolname='organization_department_id'])[1]")
 	WebElement drpDepartments;
+	
+	@FindBy(xpath = "(//*[@formcontrolname='organization_department_id'])[2]")
+	WebElement drpDepartmentsEdit;
 
 	@FindBy(xpath = "(//*[@formcontrolname='product_id'])[1]")
 	WebElement drpProductType;
@@ -46,6 +52,9 @@ public class WorkflowPage extends BasePage {
 
 	@FindBy(xpath = "(//*[@id='submit'])[1]")
 	WebElement btnSubmit;
+
+	@FindBy(xpath = "//button[text()='Cancel']")
+	WebElement btnCancelEntryNodePopup;
 
 	@FindBy(xpath = "(//*[@id='submit'])[2]")
 	WebElement btnSubmitEdit;
@@ -71,9 +80,8 @@ public class WorkflowPage extends BasePage {
 	@FindBy(xpath = "//button[text()='Yes']")
 	WebElement btnYesDeleteConfirm;
 
-	public void openMyWorkflowPage() throws InterruptedException {
-		//odioIcon.click();
-		Thread.sleep(5000);
+	public void openMyWorkflowPage() {
+		// odioIcon.click();
 		txtWorkflow.click();
 		driver.switchTo().frame(0);
 		wait.until(ExpectedConditions.visibilityOf(txtWorkflowTitle));
@@ -91,13 +99,14 @@ public class WorkflowPage extends BasePage {
 
 	public void setChatbotNameEdit(String chatbotName) {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(inpChatbotNameEdit));
-		element.click();
 		element.clear();
+		element.click();
 		if (!element.getAttribute("value").isEmpty()) {
 			element.sendKeys(Keys.CONTROL + "a");
 			element.sendKeys(Keys.DELETE);
 		}
 		element.sendKeys(chatbotName);
+		wait.until(ExpectedConditions.elementToBeClickable(drpDepartmentsEdit));
 	}
 
 	public void selectDepartment(String Departments) {
@@ -112,16 +121,26 @@ public class WorkflowPage extends BasePage {
 		sel.selectByVisibleText(ProductType);
 	}
 
-	public void setStartAt(String StartAt) {
-		wait.until(ExpectedConditions.visibilityOf(calStartAt)).sendKeys(StartAt);
+	public void setStartAt() {
+		Calendar calendar = Calendar.getInstance();
+		calendar.add(Calendar.DATE, 1); // Add 1 day for tomorrow
+		String date = new SimpleDateFormat("MM/dd/yyyy,hh:mm a").format(calendar.getTime());
+		wait.until(ExpectedConditions.visibilityOf(calStartAt)).sendKeys(date);
 	}
 
-	public void setEndAt(String EndAt) {
-		wait.until(ExpectedConditions.visibilityOf(calEndAt)).sendKeys(EndAt);
+	public void setEndAt() {
+		Calendar calendar = Calendar.getInstance();
+		calendar.add(Calendar.DATE, 2);
+		String date = new SimpleDateFormat("MM/dd/yyyy,hh:mm a").format(calendar.getTime());
+		wait.until(ExpectedConditions.visibilityOf(calEndAt)).sendKeys(date);
 	}
 
 	public void clickSubmit() {
 		wait.until(ExpectedConditions.elementToBeClickable(btnSubmit)).click();
+	}
+
+	public void clickCancelEntryNodePopup() {
+		wait.until(ExpectedConditions.elementToBeClickable(btnCancelEntryNodePopup)).click();
 	}
 
 	public void clickSubmitEdit() {
@@ -129,7 +148,11 @@ public class WorkflowPage extends BasePage {
 	}
 
 	public String getWorkflowToastMessage() {
-		return (wait.until(ExpectedConditions.visibilityOf(msgToastWorkflowCreate)).getText());
+		WebElement toast = wait.until(ExpectedConditions.visibilityOf(msgToastWorkflowCreate));
+		String message = toast.getText();
+		wait.until(ExpectedConditions
+				.invisibilityOfElementLocated(By.xpath("//*[@class='toast-message ng-star-inserted']")));
+		return message;
 	}
 
 	public String getChatbotErrorMsg() {

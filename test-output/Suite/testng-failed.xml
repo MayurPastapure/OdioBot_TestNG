@@ -6,24 +6,27 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.HomeTest">
+      <class name="testCases.CRM_CustomersTest">
         <methods>
-          <include name="verifyHomeCardsVisibility"/>
-          <include name="setupHomePageObjects"/>
+          <include name="verifySearchByCustomerName"/>
+          <include name="verifyNewCustomerCreationWithDuplicateEmail"/>
+          <include name="verifyNewCustomerCreationWithDuplicateHandle"/>
+          <include name="tearDown"/>
+          <include name="setupCRMUsersObjects"/>
+          <include name="verifyPageIsCRM_CustomerPage"/>
+          <include name="verifyNewCustomerCreationWithValidData"/>
           <include name="browserLounching"/>
-          <include name="verifyBrokenLinksOfHomePage"/>
         </methods>
-      </class> <!-- testCases.HomeTest -->
-      <class name="testCases.LoginTest">
+      </class> <!-- testCases.CRM_CustomersTest -->
+      <class name="testCases.AgentsTest">
         <methods>
-          <include name="setupLoginPageObjects"/>
-          <include name="verifyIncorrectCredLogin"/>
-          <include name="verifyCorrectCredLogin"/>
+          <include name="tearDown"/>
+          <include name="setupAgentsObjects"/>
           <include name="browserLounching"/>
-          <include name="verifyBlankEmailLogin"/>
-          <include name="verifyBlankPasswordLogin"/>
+          <include name="verifyNewAgentCreationWithValidData"/>
+          <include name="verifyPageIsAgentsPage"/>
         </methods>
-      </class> <!-- testCases.LoginTest -->
+      </class> <!-- testCases.AgentsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -27,16 +27,30 @@ public class CRM_SegmentsTest extends BaseClass {
 
 	@Test(priority = 0)
 	public void verifyPageIsCRM_UsersPage() {
-		logger.info("*** Verifying test case: verifyPageIsCRM_UsersPage ***");
+		logger.info("*** Verifying CRM_SegmentsTest: verifyPageIsCRM_UsersPage ***");
 		hp.openMoreOption();
 		crm.openCRMPage();
 		String actTitle = driver.getTitle();
 		Assert.assertEquals(actTitle, p.getProperty("CRMPageTitle"), "CRM_user page title does not match!");
 	}
-
-	@Test(priority = 1)
+	
+	@Test(priority = 1, dependsOnMethods = {"verifyPageIsCRM_UsersPage"})
+	public void verifyTotalSegmentCountOnPagination() throws InterruptedException {
+		logger.info("*** Verifying CRM_SegmentsTest: verifyTotalSegmentCountOnPagination ***");
+		crm.openSegmentsTab();
+		int segmentCount = ap.getTotalAgentCountFromPagination();
+		logger.info("Total segment count: " + segmentCount);
+		int rowCount = ap.getTotalAgentCountFromList();
+		logger.info("Total row count: " + rowCount);
+		SoftAssert sa = new SoftAssert();
+		sa.assertEquals(segmentCount, rowCount, "Segment pagination count is not match with segment list count");
+		lp.refreshPage();
+		sa.assertAll();
+	}
+	
+	@Test(priority = 2, dependsOnMethods = {"verifyPageIsCRM_UsersPage"})
 	public void verifyNullConditionValueOfFilterInSegment() {
-		logger.info("*** Verify test case: verifyNullConditionValueOfFilterInSegment ***");
+		logger.info("*** Verifying CRM_SegmentsTest: verifyNullConditionValueOfFilterInSegment ***");
 		crm.openSegmentsTab();
 		crm.clickOnAddSegments();
 		crm.selectFilterOption(p.getProperty("filterOption_Name"));
@@ -48,24 +62,10 @@ public class CRM_SegmentsTest extends BaseClass {
 		lp.refreshPage();
 		sa.assertAll();
 	}
-	
-	@Test(priority = 2)
-	public void verifyTotalSegmentCountOnPagination() throws InterruptedException {
-		logger.info("*** Verify test case: verifyTotalSegmentCountOnPagination ***");
-		crm.openSegmentsTab();
-		int userCount = ap.getTotalAgentCountFromPagination();
-		logger.info("Total segment count: " + userCount);
-		int rowCount = ap.getTotalAgentCountFromList();
-		logger.info("Total row count: " + rowCount);
-		SoftAssert sa = new SoftAssert();
-		sa.assertEquals(userCount, rowCount, "Segment pagination count is not match with segment list count");
-		lp.refreshPage();
-		sa.assertAll();
-	}
 
-	@Test(priority = 3)
+	@Test(priority = 3, dependsOnMethods = {"verifyPageIsCRM_UsersPage"})
 	public void verifyNewSegmentCreationByNameStartWith() {
-		logger.info("*** Verify test case: verifyNewSegmentCreationByNameStartWith ***");
+		logger.info("*** Verifying CRM_SegmentsTest: verifyNewSegmentCreationByNameStartWith ***");
 		crm.openSegmentsTab();
 		crm.clickOnAddSegments();
 		crm.selectFilterOption(p.getProperty("filterOption_Name"));
@@ -85,7 +85,7 @@ public class CRM_SegmentsTest extends BaseClass {
 
 	@Test(priority = 4, dependsOnMethods = { "verifyNewSegmentCreationByNameStartWith" })
 	public void verifyEditSegmentbyUpdatingName() {
-		logger.info("*** Verify test case: verifyEditSegmentbyUpdatingName ***");
+		logger.info("*** Verifying CRM_SegmentsTest: verifyEditSegmentbyUpdatingName ***");
 		crm.openSegmentsTab();
 		crm.clickActionOfSpecificSegment(p.getProperty("segmentName"));
 		ap.clickEditAction();
@@ -102,7 +102,7 @@ public class CRM_SegmentsTest extends BaseClass {
 
 	@Test(priority = 5, dependsOnMethods = { "verifyEditSegmentbyUpdatingName" })
 	public void verifyDeleteSegmentOfUpdatedName() {
-		logger.info("*** Verify test case: verifyDeleteSegmentOfUpdatedName ***");
+		logger.info("*** Verifying CRM_SegmentsTest: verifyDeleteSegmentOfUpdatedName ***");
 		crm.openSegmentsTab();
 		crm.clickActionOfSpecificSegment(p.getProperty("segmentUpdateName"));
 		ap.clickDeleteAction();

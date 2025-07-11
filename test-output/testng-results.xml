@@ -1,67 +1,761 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="7" passed="6" failed="0" skipped="0">
+<testng-results ignored="16" total="87" passed="66" failed="2" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-10T11:26:57 IST" name="Suite" finished-at="2025-07-10T11:27:06 IST" duration-ms="9610">
+  <suite started-at="2025-07-11T16:14:06 IST" name="Suite" finished-at="2025-07-11T16:21:24 IST" duration-ms="437966">
     <groups>
     </groups>
-    <test started-at="2025-07-10T11:26:57 IST" name="Test" finished-at="2025-07-10T11:27:06 IST" duration-ms="9610">
+    <test started-at="2025-07-11T16:14:06 IST" name="Test" finished-at="2025-07-11T16:21:24 IST" duration-ms="437966">
+      <class name="testCases.DepartmentsTest">
+        <test-method is-config="true" signature="setupDepartmentsObjectd()[pri:0, instance:testCases.DepartmentsTest@2a7f1f10]" started-at="2025-07-11T16:16:28 IST" name="setupDepartmentsObjectd" finished-at="2025-07-11T16:16:28 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDepartmentsObjectd -->
+        <test-method signature="verifyPageIsDepartmentsPage()[pri:0, instance:testCases.DepartmentsTest@2a7f1f10]" started-at="2025-07-11T16:16:28 IST" name="verifyPageIsDepartmentsPage" finished-at="2025-07-11T16:16:29 IST" duration-ms="393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageIsDepartmentsPage -->
+        <test-method is-config="true" signature="setupDepartmentsObjectd()[pri:0, instance:testCases.DepartmentsTest@2a7f1f10]" started-at="2025-07-11T16:16:29 IST" name="setupDepartmentsObjectd" finished-at="2025-07-11T16:16:29 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDepartmentsObjectd -->
+        <test-method signature="verifyBrokenLinkOfDepartmentsPage()[pri:1, instance:testCases.DepartmentsTest@2a7f1f10]" started-at="2025-07-11T16:16:29 IST" name="verifyBrokenLinkOfDepartmentsPage" finished-at="2025-07-11T16:16:34 IST" depends-on-methods="testCases.DepartmentsTest.verifyPageIsDepartmentsPage" duration-ms="5334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrokenLinkOfDepartmentsPage -->
+        <test-method is-config="true" signature="setupDepartmentsObjectd()[pri:0, instance:testCases.DepartmentsTest@2a7f1f10]" started-at="2025-07-11T16:16:34 IST" name="setupDepartmentsObjectd" finished-at="2025-07-11T16:16:34 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDepartmentsObjectd -->
+        <test-method signature="verifyNullDepartmentName()[pri:2, instance:testCases.DepartmentsTest@2a7f1f10]" started-at="2025-07-11T16:16:34 IST" name="verifyNullDepartmentName" finished-at="2025-07-11T16:16:36 IST" depends-on-methods="testCases.DepartmentsTest.verifyPageIsDepartmentsPage" duration-ms="2183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullDepartmentName -->
+        <test-method is-config="true" signature="setupDepartmentsObjectd()[pri:0, instance:testCases.DepartmentsTest@2a7f1f10]" started-at="2025-07-11T16:16:36 IST" name="setupDepartmentsObjectd" finished-at="2025-07-11T16:16:36 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDepartmentsObjectd -->
+        <test-method signature="verifyNullDepartmentDescription()[pri:3, instance:testCases.DepartmentsTest@2a7f1f10]" started-at="2025-07-11T16:16:36 IST" name="verifyNullDepartmentDescription" finished-at="2025-07-11T16:16:39 IST" depends-on-methods="testCases.DepartmentsTest.verifyPageIsDepartmentsPage" duration-ms="3113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullDepartmentDescription -->
+        <test-method is-config="true" signature="setupDepartmentsObjectd()[pri:0, instance:testCases.DepartmentsTest@2a7f1f10]" started-at="2025-07-11T16:16:39 IST" name="setupDepartmentsObjectd" finished-at="2025-07-11T16:16:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDepartmentsObjectd -->
+        <test-method signature="verifySearchByDepartmentName()[pri:4, instance:testCases.DepartmentsTest@2a7f1f10]" started-at="2025-07-11T16:16:39 IST" name="verifySearchByDepartmentName" finished-at="2025-07-11T16:16:41 IST" depends-on-methods="testCases.DepartmentsTest.verifyPageIsDepartmentsPage" duration-ms="1215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchByDepartmentName -->
+      </class> <!-- testCases.DepartmentsTest -->
+      <class name="testCases.CRM_CustomersTest">
+        <test-method is-config="true" signature="setupCRMUsersObjects()[pri:0, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:18:37 IST" name="setupCRMUsersObjects" finished-at="2025-07-11T16:18:37 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMUsersObjects -->
+        <test-method signature="verifyPageIsCRM_CustomerPage()[pri:0, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:18:37 IST" name="verifyPageIsCRM_CustomerPage" finished-at="2025-07-11T16:18:41 IST" duration-ms="3907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageIsCRM_CustomerPage -->
+        <test-method is-config="true" signature="setupCRMUsersObjects()[pri:0, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:18:41 IST" name="setupCRMUsersObjects" finished-at="2025-07-11T16:18:41 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMUsersObjects -->
+        <test-method signature="verifyBrokenLinksOfCRM_CustomerPage()[pri:1, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:18:41 IST" name="verifyBrokenLinksOfCRM_CustomerPage" finished-at="2025-07-11T16:18:42 IST" depends-on-methods="testCases.CRM_CustomersTest.verifyPageIsCRM_CustomerPage" duration-ms="769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrokenLinksOfCRM_CustomerPage -->
+        <test-method is-config="true" signature="setupCRMUsersObjects()[pri:0, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:18:42 IST" name="setupCRMUsersObjects" finished-at="2025-07-11T16:18:42 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMUsersObjects -->
+        <test-method signature="verifyNullCustomerName()[pri:4, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:18:42 IST" name="verifyNullCustomerName" finished-at="2025-07-11T16:18:43 IST" depends-on-methods="testCases.CRM_CustomersTest.verifyPageIsCRM_CustomerPage" duration-ms="1436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullCustomerName -->
+        <test-method is-config="true" signature="setupCRMUsersObjects()[pri:0, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:18:43 IST" name="setupCRMUsersObjects" finished-at="2025-07-11T16:18:43 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMUsersObjects -->
+        <test-method signature="verifyNullMobileNumber()[pri:5, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:18:43 IST" name="verifyNullMobileNumber" finished-at="2025-07-11T16:18:45 IST" depends-on-methods="testCases.CRM_CustomersTest.verifyPageIsCRM_CustomerPage" duration-ms="2021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullMobileNumber -->
+        <test-method is-config="true" signature="setupCRMUsersObjects()[pri:0, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:18:45 IST" name="setupCRMUsersObjects" finished-at="2025-07-11T16:18:45 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMUsersObjects -->
+        <test-method signature="verifyNullHandle()[pri:6, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:18:45 IST" name="verifyNullHandle" finished-at="2025-07-11T16:18:48 IST" depends-on-methods="testCases.CRM_CustomersTest.verifyPageIsCRM_CustomerPage" duration-ms="2307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullHandle -->
+        <test-method is-config="true" signature="setupCRMUsersObjects()[pri:0, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:18:48 IST" name="setupCRMUsersObjects" finished-at="2025-07-11T16:18:48 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMUsersObjects -->
+        <test-method signature="verifyNullEmail()[pri:7, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:18:48 IST" name="verifyNullEmail" finished-at="2025-07-11T16:18:50 IST" depends-on-methods="testCases.CRM_CustomersTest.verifyPageIsCRM_CustomerPage" duration-ms="2728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullEmail -->
+        <test-method is-config="true" signature="setupCRMUsersObjects()[pri:0, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:18:51 IST" name="setupCRMUsersObjects" finished-at="2025-07-11T16:18:51 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMUsersObjects -->
+        <test-method signature="verifyNullDepartment()[pri:8, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:18:51 IST" name="verifyNullDepartment" finished-at="2025-07-11T16:18:54 IST" depends-on-methods="testCases.CRM_CustomersTest.verifyPageIsCRM_CustomerPage" duration-ms="3194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullDepartment -->
+        <test-method is-config="true" signature="setupCRMUsersObjects()[pri:0, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:18:54 IST" name="setupCRMUsersObjects" finished-at="2025-07-11T16:18:54 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMUsersObjects -->
+        <test-method signature="verifyNewCustomerCreationWithValidData()[pri:9, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:18:54 IST" name="verifyNewCustomerCreationWithValidData" finished-at="2025-07-11T16:19:10 IST" depends-on-methods="testCases.CRM_CustomersTest.verifyPageIsCRM_CustomerPage" duration-ms="16526" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Customer creation toast message does not match! expected [Create success!] but found [User handle already used Failed to add user!]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Customer creation toast message does not match! expected [Create success!] but found [User handle already used Failed to add user!]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at testCases.CRM_CustomersTest.verifyNewCustomerCreationWithValidData(CRM_CustomersTest.java:161)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewCustomerCreationWithValidData -->
+        <test-method signature="verifyNewCustomerCreationWithDuplicateHandle()[pri:10, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:19:10 IST" name="verifyNewCustomerCreationWithDuplicateHandle" finished-at="2025-07-11T16:19:10 IST" depends-on-methods="testCases.CRM_CustomersTest.verifyNewCustomerCreationWithValidData" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CRM_CustomersTest.verifyNewCustomerCreationWithDuplicateHandle()[pri:10, instance:testCases.CRM_CustomersTest@740cae06] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CRM_CustomersTest.verifyNewCustomerCreationWithDuplicateHandle()[pri:10, instance:testCases.CRM_CustomersTest@740cae06] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewCustomerCreationWithDuplicateHandle -->
+        <test-method signature="verifyNewCustomerCreationWithDuplicateEmail()[pri:11, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:19:10 IST" name="verifyNewCustomerCreationWithDuplicateEmail" finished-at="2025-07-11T16:19:10 IST" depends-on-methods="testCases.CRM_CustomersTest.verifyNewCustomerCreationWithValidData" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CRM_CustomersTest.verifyNewCustomerCreationWithDuplicateEmail()[pri:11, instance:testCases.CRM_CustomersTest@740cae06] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CRM_CustomersTest.verifyNewCustomerCreationWithDuplicateEmail()[pri:11, instance:testCases.CRM_CustomersTest@740cae06] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewCustomerCreationWithDuplicateEmail -->
+        <test-method is-config="true" signature="setupCRMUsersObjects()[pri:0, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:19:10 IST" name="setupCRMUsersObjects" finished-at="2025-07-11T16:19:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMUsersObjects -->
+        <test-method signature="verifyTotalCustomerCountOnPagination()[pri:12, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:19:10 IST" name="verifyTotalCustomerCountOnPagination" finished-at="2025-07-11T16:19:19 IST" depends-on-methods="testCases.CRM_CustomersTest.verifyPageIsCRM_CustomerPage" duration-ms="8168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTotalCustomerCountOnPagination -->
+        <test-method signature="verifySearchByCustomerName()[pri:13, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:19:19 IST" name="verifySearchByCustomerName" finished-at="2025-07-11T16:19:19 IST" depends-on-methods="testCases.CRM_CustomersTest.verifyNewCustomerCreationWithValidData" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CRM_CustomersTest.verifySearchByCustomerName()[pri:13, instance:testCases.CRM_CustomersTest@740cae06] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CRM_CustomersTest.verifySearchByCustomerName()[pri:13, instance:testCases.CRM_CustomersTest@740cae06] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchByCustomerName -->
+        <test-method is-config="true" signature="setupCRMUsersObjects()[pri:0, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:19:19 IST" name="setupCRMUsersObjects" finished-at="2025-07-11T16:19:19 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMUsersObjects -->
+        <test-method signature="verifyNullConditionValueInFilter()[pri:16, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:19:19 IST" name="verifyNullConditionValueInFilter" finished-at="2025-07-11T16:19:23 IST" depends-on-methods="testCases.CRM_CustomersTest.verifyPageIsCRM_CustomerPage" duration-ms="3879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullConditionValueInFilter -->
+        <test-method is-config="true" signature="setupCRMUsersObjects()[pri:0, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:19:23 IST" name="setupCRMUsersObjects" finished-at="2025-07-11T16:19:23 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMUsersObjects -->
+        <test-method signature="verifyFilterBy_Name_Contains()[pri:17, instance:testCases.CRM_CustomersTest@740cae06]" started-at="2025-07-11T16:19:23 IST" name="verifyFilterBy_Name_Contains" finished-at="2025-07-11T16:19:29 IST" depends-on-methods="testCases.CRM_CustomersTest.verifyPageIsCRM_CustomerPage" duration-ms="6412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFilterBy_Name_Contains -->
+      </class> <!-- testCases.CRM_CustomersTest -->
+      <class name="testCases.CRM_SegmentsTest">
+        <test-method is-config="true" signature="setupCRMSegmentsObject()[pri:0, instance:testCases.CRM_SegmentsTest@f78a47e]" started-at="2025-07-11T16:20:27 IST" name="setupCRMSegmentsObject" finished-at="2025-07-11T16:20:27 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMSegmentsObject -->
+        <test-method signature="verifyPageIsCRM_UsersPage()[pri:0, instance:testCases.CRM_SegmentsTest@f78a47e]" started-at="2025-07-11T16:20:27 IST" name="verifyPageIsCRM_UsersPage" finished-at="2025-07-11T16:20:28 IST" duration-ms="847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageIsCRM_UsersPage -->
+        <test-method is-config="true" signature="setupCRMSegmentsObject()[pri:0, instance:testCases.CRM_SegmentsTest@f78a47e]" started-at="2025-07-11T16:20:28 IST" name="setupCRMSegmentsObject" finished-at="2025-07-11T16:20:28 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMSegmentsObject -->
+        <test-method signature="verifyTotalSegmentCountOnPagination()[pri:1, instance:testCases.CRM_SegmentsTest@f78a47e]" started-at="2025-07-11T16:20:28 IST" name="verifyTotalSegmentCountOnPagination" finished-at="2025-07-11T16:20:31 IST" depends-on-methods="testCases.CRM_SegmentsTest.verifyPageIsCRM_UsersPage" duration-ms="3354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTotalSegmentCountOnPagination -->
+        <test-method is-config="true" signature="setupCRMSegmentsObject()[pri:0, instance:testCases.CRM_SegmentsTest@f78a47e]" started-at="2025-07-11T16:20:31 IST" name="setupCRMSegmentsObject" finished-at="2025-07-11T16:20:31 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMSegmentsObject -->
+        <test-method signature="verifyNullConditionValueOfFilterInSegment()[pri:2, instance:testCases.CRM_SegmentsTest@f78a47e]" started-at="2025-07-11T16:20:31 IST" name="verifyNullConditionValueOfFilterInSegment" finished-at="2025-07-11T16:20:35 IST" depends-on-methods="testCases.CRM_SegmentsTest.verifyPageIsCRM_UsersPage" duration-ms="4118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullConditionValueOfFilterInSegment -->
+        <test-method is-config="true" signature="setupCRMSegmentsObject()[pri:0, instance:testCases.CRM_SegmentsTest@f78a47e]" started-at="2025-07-11T16:20:35 IST" name="setupCRMSegmentsObject" finished-at="2025-07-11T16:20:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMSegmentsObject -->
+        <test-method signature="verifyNewSegmentCreationByNameStartWith()[pri:3, instance:testCases.CRM_SegmentsTest@f78a47e]" started-at="2025-07-11T16:20:35 IST" name="verifyNewSegmentCreationByNameStartWith" finished-at="2025-07-11T16:20:53 IST" depends-on-methods="testCases.CRM_SegmentsTest.verifyPageIsCRM_UsersPage" duration-ms="17545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewSegmentCreationByNameStartWith -->
+        <test-method is-config="true" signature="setupCRMSegmentsObject()[pri:0, instance:testCases.CRM_SegmentsTest@f78a47e]" started-at="2025-07-11T16:20:53 IST" name="setupCRMSegmentsObject" finished-at="2025-07-11T16:20:53 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMSegmentsObject -->
+        <test-method signature="verifyEditSegmentbyUpdatingName()[pri:4, instance:testCases.CRM_SegmentsTest@f78a47e]" started-at="2025-07-11T16:20:53 IST" name="verifyEditSegmentbyUpdatingName" finished-at="2025-07-11T16:21:10 IST" depends-on-methods="testCases.CRM_SegmentsTest.verifyNewSegmentCreationByNameStartWith" duration-ms="16655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditSegmentbyUpdatingName -->
+        <test-method is-config="true" signature="setupCRMSegmentsObject()[pri:0, instance:testCases.CRM_SegmentsTest@f78a47e]" started-at="2025-07-11T16:21:10 IST" name="setupCRMSegmentsObject" finished-at="2025-07-11T16:21:10 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMSegmentsObject -->
+        <test-method signature="verifyDeleteSegmentOfUpdatedName()[pri:5, instance:testCases.CRM_SegmentsTest@f78a47e]" started-at="2025-07-11T16:21:10 IST" name="verifyDeleteSegmentOfUpdatedName" finished-at="2025-07-11T16:21:24 IST" depends-on-methods="testCases.CRM_SegmentsTest.verifyEditSegmentbyUpdatingName" duration-ms="14343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteSegmentOfUpdatedName -->
+      </class> <!-- testCases.CRM_SegmentsTest -->
+      <class name="testCases.AgentsTest">
+        <test-method is-config="true" signature="setupAgentsObjects()[pri:0, instance:testCases.AgentsTest@46cdf8bd]" started-at="2025-07-11T16:16:41 IST" name="setupAgentsObjects" finished-at="2025-07-11T16:16:41 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAgentsObjects -->
+        <test-method signature="verifyPageIsAgentsPage()[pri:0, instance:testCases.AgentsTest@46cdf8bd]" started-at="2025-07-11T16:16:41 IST" name="verifyPageIsAgentsPage" finished-at="2025-07-11T16:16:41 IST" duration-ms="639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageIsAgentsPage -->
+        <test-method is-config="true" signature="setupAgentsObjects()[pri:0, instance:testCases.AgentsTest@46cdf8bd]" started-at="2025-07-11T16:16:41 IST" name="setupAgentsObjects" finished-at="2025-07-11T16:16:41 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAgentsObjects -->
+        <test-method signature="verifyBrokenLinksOfAgentsPage()[pri:1, instance:testCases.AgentsTest@46cdf8bd]" started-at="2025-07-11T16:16:41 IST" name="verifyBrokenLinksOfAgentsPage" finished-at="2025-07-11T16:16:46 IST" depends-on-methods="testCases.AgentsTest.verifyPageIsAgentsPage" duration-ms="4878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrokenLinksOfAgentsPage -->
+        <test-method is-config="true" signature="setupAgentsObjects()[pri:0, instance:testCases.AgentsTest@46cdf8bd]" started-at="2025-07-11T16:16:46 IST" name="setupAgentsObjects" finished-at="2025-07-11T16:16:46 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAgentsObjects -->
+        <test-method signature="verifyNullAgentName()[pri:2, instance:testCases.AgentsTest@46cdf8bd]" started-at="2025-07-11T16:16:46 IST" name="verifyNullAgentName" finished-at="2025-07-11T16:16:48 IST" depends-on-methods="testCases.AgentsTest.verifyPageIsAgentsPage" duration-ms="1971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullAgentName -->
+        <test-method is-config="true" signature="setupAgentsObjects()[pri:0, instance:testCases.AgentsTest@46cdf8bd]" started-at="2025-07-11T16:16:48 IST" name="setupAgentsObjects" finished-at="2025-07-11T16:16:48 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAgentsObjects -->
+        <test-method signature="verifyNullDepartmentName()[pri:3, instance:testCases.AgentsTest@46cdf8bd]" started-at="2025-07-11T16:16:48 IST" name="verifyNullDepartmentName" finished-at="2025-07-11T16:16:50 IST" depends-on-methods="testCases.AgentsTest.verifyPageIsAgentsPage" duration-ms="2004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullDepartmentName -->
+        <test-method is-config="true" signature="setupAgentsObjects()[pri:0, instance:testCases.AgentsTest@46cdf8bd]" started-at="2025-07-11T16:16:50 IST" name="setupAgentsObjects" finished-at="2025-07-11T16:16:50 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAgentsObjects -->
+        <test-method signature="verifyNullAgentEmail()[pri:4, instance:testCases.AgentsTest@46cdf8bd]" started-at="2025-07-11T16:16:50 IST" name="verifyNullAgentEmail" finished-at="2025-07-11T16:16:53 IST" depends-on-methods="testCases.AgentsTest.verifyPageIsAgentsPage" duration-ms="2580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullAgentEmail -->
+        <test-method is-config="true" signature="setupAgentsObjects()[pri:0, instance:testCases.AgentsTest@46cdf8bd]" started-at="2025-07-11T16:16:53 IST" name="setupAgentsObjects" finished-at="2025-07-11T16:16:53 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAgentsObjects -->
+        <test-method signature="verifyNullAgentMobileNumber()[pri:5, instance:testCases.AgentsTest@46cdf8bd]" started-at="2025-07-11T16:16:53 IST" name="verifyNullAgentMobileNumber" finished-at="2025-07-11T16:16:56 IST" depends-on-methods="testCases.AgentsTest.verifyPageIsAgentsPage" duration-ms="2995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullAgentMobileNumber -->
+        <test-method is-config="true" signature="setupAgentsObjects()[pri:0, instance:testCases.AgentsTest@46cdf8bd]" started-at="2025-07-11T16:16:56 IST" name="setupAgentsObjects" finished-at="2025-07-11T16:16:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAgentsObjects -->
+        <test-method signature="verifyNullPassword()[pri:6, instance:testCases.AgentsTest@46cdf8bd]" started-at="2025-07-11T16:16:56 IST" name="verifyNullPassword" finished-at="2025-07-11T16:16:59 IST" depends-on-methods="testCases.AgentsTest.verifyPageIsAgentsPage" duration-ms="3284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullPassword -->
+        <test-method is-config="true" signature="setupAgentsObjects()[pri:0, instance:testCases.AgentsTest@46cdf8bd]" started-at="2025-07-11T16:16:59 IST" name="setupAgentsObjects" finished-at="2025-07-11T16:16:59 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAgentsObjects -->
+        <test-method signature="verifyNullConfirmPassword()[pri:7, instance:testCases.AgentsTest@46cdf8bd]" started-at="2025-07-11T16:16:59 IST" name="verifyNullConfirmPassword" finished-at="2025-07-11T16:17:03 IST" depends-on-methods="testCases.AgentsTest.verifyPageIsAgentsPage" duration-ms="3848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullConfirmPassword -->
+        <test-method is-config="true" signature="setupAgentsObjects()[pri:0, instance:testCases.AgentsTest@46cdf8bd]" started-at="2025-07-11T16:17:03 IST" name="setupAgentsObjects" finished-at="2025-07-11T16:17:03 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAgentsObjects -->
+        <test-method signature="verifyNewAgentCreationWithValidData()[pri:8, instance:testCases.AgentsTest@46cdf8bd]" started-at="2025-07-11T16:17:03 IST" name="verifyNewAgentCreationWithValidData" finished-at="2025-07-11T16:17:18 IST" depends-on-methods="testCases.AgentsTest.verifyPageIsAgentsPage" duration-ms="14979" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Error message does not match! expected [Success] but found [Email already used]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Error message does not match! expected [Success] but found [Email already used]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at testCases.AgentsTest.verifyNewAgentCreationWithValidData(AgentsTest.java:144)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewAgentCreationWithValidData -->
+        <test-method is-config="true" signature="setupAgentsObjects()[pri:0, instance:testCases.AgentsTest@46cdf8bd]" started-at="2025-07-11T16:17:18 IST" name="setupAgentsObjects" finished-at="2025-07-11T16:17:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAgentsObjects -->
+        <test-method signature="verifyTotalAgentCountOnPagination()[pri:11, instance:testCases.AgentsTest@46cdf8bd]" started-at="2025-07-11T16:17:18 IST" name="verifyTotalAgentCountOnPagination" finished-at="2025-07-11T16:17:24 IST" depends-on-methods="testCases.AgentsTest.verifyPageIsAgentsPage" duration-ms="5292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTotalAgentCountOnPagination -->
+      </class> <!-- testCases.AgentsTest -->
       <class name="testCases.LoginTest">
-        <test-method is-config="true" signature="browserLounching()[pri:0, instance:testCases.LoginTest@55634720]" started-at="2025-07-10T11:26:43 IST" name="browserLounching" finished-at="2025-07-10T11:26:57 IST" duration-ms="13264" status="PASS">
+        <test-method is-config="true" signature="browserLounching()[pri:0, instance:testCases.LoginTest@55a147cc]" started-at="2025-07-11T16:13:54 IST" name="browserLounching" finished-at="2025-07-11T16:14:06 IST" duration-ms="11616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLounching -->
-        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@55634720]" started-at="2025-07-10T11:26:57 IST" name="setupLoginPageObjects" finished-at="2025-07-10T11:26:57 IST" duration-ms="24" status="PASS">
+        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@55a147cc]" started-at="2025-07-11T16:14:06 IST" name="setupLoginPageObjects" finished-at="2025-07-11T16:14:06 IST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLoginPageObjects -->
-        <test-method signature="verifyIncorrectCredLogin()[pri:1, instance:testCases.LoginTest@55634720]" started-at="2025-07-10T11:26:57 IST" name="verifyIncorrectCredLogin" finished-at="2025-07-10T11:26:59 IST" duration-ms="2305" status="PASS">
+        <test-method signature="verifyIncorrectCredLogin()[pri:1, instance:testCases.LoginTest@55a147cc]" started-at="2025-07-11T16:14:06 IST" name="verifyIncorrectCredLogin" finished-at="2025-07-11T16:14:08 IST" duration-ms="2388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyIncorrectCredLogin -->
-        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@55634720]" started-at="2025-07-10T11:26:59 IST" name="setupLoginPageObjects" finished-at="2025-07-10T11:26:59 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@55a147cc]" started-at="2025-07-11T16:14:08 IST" name="setupLoginPageObjects" finished-at="2025-07-11T16:14:08 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLoginPageObjects -->
-        <test-method signature="verifyBlankEmailLogin()[pri:2, instance:testCases.LoginTest@55634720]" started-at="2025-07-10T11:26:59 IST" name="verifyBlankEmailLogin" finished-at="2025-07-10T11:27:00 IST" duration-ms="517" status="PASS">
+        <test-method signature="verifyBlankEmailLogin()[pri:2, instance:testCases.LoginTest@55a147cc]" started-at="2025-07-11T16:14:08 IST" name="verifyBlankEmailLogin" finished-at="2025-07-11T16:14:09 IST" duration-ms="609" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBlankEmailLogin -->
-        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@55634720]" started-at="2025-07-10T11:27:00 IST" name="setupLoginPageObjects" finished-at="2025-07-10T11:27:00 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@55a147cc]" started-at="2025-07-11T16:14:09 IST" name="setupLoginPageObjects" finished-at="2025-07-11T16:14:09 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLoginPageObjects -->
-        <test-method signature="verifyBlankPasswordLogin()[pri:3, instance:testCases.LoginTest@55634720]" started-at="2025-07-10T11:27:00 IST" name="verifyBlankPasswordLogin" finished-at="2025-07-10T11:27:01 IST" duration-ms="1156" status="PASS">
+        <test-method signature="verifyBlankPasswordLogin()[pri:3, instance:testCases.LoginTest@55a147cc]" started-at="2025-07-11T16:14:09 IST" name="verifyBlankPasswordLogin" finished-at="2025-07-11T16:14:10 IST" duration-ms="1361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBlankPasswordLogin -->
-        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@55634720]" started-at="2025-07-10T11:27:01 IST" name="setupLoginPageObjects" finished-at="2025-07-10T11:27:01 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupLoginPageObjects -->
-        <test-method signature="verifyCorrectCredLogin()[pri:4, instance:testCases.LoginTest@55634720]" started-at="2025-07-10T11:27:01 IST" name="verifyCorrectCredLogin" finished-at="2025-07-10T11:27:03 IST" duration-ms="2035" status="PASS">
+        <test-method signature="verifyCorrectCredLogin()[pri:4, instance:testCases.LoginTest@55a147cc]" started-at="2025-07-11T16:14:10 IST" name="verifyCorrectCredLogin" finished-at="2025-07-11T16:14:13 IST" duration-ms="2163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCorrectCredLogin -->
+        <test-method is-config="true" signature="setupLoginPageObjects()[pri:0, instance:testCases.LoginTest@55a147cc]" started-at="2025-07-11T16:14:10 IST" name="setupLoginPageObjects" finished-at="2025-07-11T16:14:10 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupLoginPageObjects -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTest@55a147cc]" started-at="2025-07-11T16:21:24 IST" name="tearDown" finished-at="2025-07-11T16:21:24 IST" duration-ms="419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- testCases.LoginTest -->
+      <class name="testCases.CRM_GroupsTest">
+        <test-method is-config="true" signature="setupCRMGroupsObjects()[pri:0, instance:testCases.CRM_GroupsTest@26d9b808]" started-at="2025-07-11T16:19:29 IST" name="setupCRMGroupsObjects" finished-at="2025-07-11T16:19:29 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMGroupsObjects -->
+        <test-method signature="verifyPageIsCRM_UsersPage()[pri:0, instance:testCases.CRM_GroupsTest@26d9b808]" started-at="2025-07-11T16:19:29 IST" name="verifyPageIsCRM_UsersPage" finished-at="2025-07-11T16:19:31 IST" duration-ms="2333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageIsCRM_UsersPage -->
+        <test-method is-config="true" signature="setupCRMGroupsObjects()[pri:0, instance:testCases.CRM_GroupsTest@26d9b808]" started-at="2025-07-11T16:19:31 IST" name="setupCRMGroupsObjects" finished-at="2025-07-11T16:19:31 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMGroupsObjects -->
+        <test-method signature="verifyTotalGroupCountOnPagination()[pri:1, instance:testCases.CRM_GroupsTest@26d9b808]" started-at="2025-07-11T16:19:31 IST" name="verifyTotalGroupCountOnPagination" finished-at="2025-07-11T16:19:37 IST" depends-on-methods="testCases.CRM_GroupsTest.verifyPageIsCRM_UsersPage" duration-ms="5940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTotalGroupCountOnPagination -->
+        <test-method is-config="true" signature="setupCRMGroupsObjects()[pri:0, instance:testCases.CRM_GroupsTest@26d9b808]" started-at="2025-07-11T16:19:37 IST" name="setupCRMGroupsObjects" finished-at="2025-07-11T16:19:37 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMGroupsObjects -->
+        <test-method signature="verifyNullGroupName()[pri:2, instance:testCases.CRM_GroupsTest@26d9b808]" started-at="2025-07-11T16:19:37 IST" name="verifyNullGroupName" finished-at="2025-07-11T16:19:40 IST" depends-on-methods="testCases.CRM_GroupsTest.verifyPageIsCRM_UsersPage" duration-ms="3248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullGroupName -->
+        <test-method is-config="true" signature="setupCRMGroupsObjects()[pri:0, instance:testCases.CRM_GroupsTest@26d9b808]" started-at="2025-07-11T16:19:40 IST" name="setupCRMGroupsObjects" finished-at="2025-07-11T16:19:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMGroupsObjects -->
+        <test-method signature="verifyGroupNameCreationWithValidDate()[pri:3, instance:testCases.CRM_GroupsTest@26d9b808]" started-at="2025-07-11T16:19:40 IST" name="verifyGroupNameCreationWithValidDate" finished-at="2025-07-11T16:19:56 IST" depends-on-methods="testCases.CRM_GroupsTest.verifyPageIsCRM_UsersPage" duration-ms="15180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGroupNameCreationWithValidDate -->
+        <test-method is-config="true" signature="setupCRMGroupsObjects()[pri:0, instance:testCases.CRM_GroupsTest@26d9b808]" started-at="2025-07-11T16:19:56 IST" name="setupCRMGroupsObjects" finished-at="2025-07-11T16:19:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMGroupsObjects -->
+        <test-method signature="verifySearchByGroupName()[pri:5, instance:testCases.CRM_GroupsTest@26d9b808]" started-at="2025-07-11T16:19:56 IST" name="verifySearchByGroupName" finished-at="2025-07-11T16:19:59 IST" depends-on-methods="testCases.CRM_GroupsTest.verifyGroupNameCreationWithValidDate" duration-ms="3603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchByGroupName -->
+        <test-method is-config="true" signature="setupCRMGroupsObjects()[pri:0, instance:testCases.CRM_GroupsTest@26d9b808]" started-at="2025-07-11T16:19:59 IST" name="setupCRMGroupsObjects" finished-at="2025-07-11T16:19:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMGroupsObjects -->
+        <test-method signature="verifyFilterBy_Name_IsEquals()[pri:6, instance:testCases.CRM_GroupsTest@26d9b808]" started-at="2025-07-11T16:19:59 IST" name="verifyFilterBy_Name_IsEquals" finished-at="2025-07-11T16:20:06 IST" depends-on-methods="testCases.CRM_GroupsTest.verifyGroupNameCreationWithValidDate" duration-ms="6703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFilterBy_Name_IsEquals -->
+        <test-method is-config="true" signature="setupCRMGroupsObjects()[pri:0, instance:testCases.CRM_GroupsTest@26d9b808]" started-at="2025-07-11T16:20:06 IST" name="setupCRMGroupsObjects" finished-at="2025-07-11T16:20:06 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMGroupsObjects -->
+        <test-method signature="verifyFilterBy_CompanyWebsite_IsEquals()[pri:7, instance:testCases.CRM_GroupsTest@26d9b808]" started-at="2025-07-11T16:20:06 IST" name="verifyFilterBy_CompanyWebsite_IsEquals" finished-at="2025-07-11T16:20:13 IST" depends-on-methods="testCases.CRM_GroupsTest.verifyGroupNameCreationWithValidDate" duration-ms="6684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFilterBy_CompanyWebsite_IsEquals -->
+        <test-method is-config="true" signature="setupCRMGroupsObjects()[pri:0, instance:testCases.CRM_GroupsTest@26d9b808]" started-at="2025-07-11T16:20:13 IST" name="setupCRMGroupsObjects" finished-at="2025-07-11T16:20:13 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCRMGroupsObjects -->
+        <test-method signature="verifyDeleteGroupOfUpdatedName()[pri:9, instance:testCases.CRM_GroupsTest@26d9b808]" started-at="2025-07-11T16:20:13 IST" name="verifyDeleteGroupOfUpdatedName" finished-at="2025-07-11T16:20:27 IST" depends-on-methods="testCases.CRM_GroupsTest.verifyGroupNameCreationWithValidDate" duration-ms="14383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteGroupOfUpdatedName -->
+      </class> <!-- testCases.CRM_GroupsTest -->
+      <class name="testCases.WorkflowTest">
+        <test-method is-config="true" signature="setupWorkflowObjects()[pri:0, instance:testCases.WorkflowTest@298a5e20]" started-at="2025-07-11T16:14:16 IST" name="setupWorkflowObjects" finished-at="2025-07-11T16:14:16 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupWorkflowObjects -->
+        <test-method signature="verifyPageIsMyWorkflowPage()[pri:1, instance:testCases.WorkflowTest@298a5e20]" started-at="2025-07-11T16:14:16 IST" name="verifyPageIsMyWorkflowPage" finished-at="2025-07-11T16:14:23 IST" duration-ms="7352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageIsMyWorkflowPage -->
+        <test-method is-config="true" signature="setupWorkflowObjects()[pri:0, instance:testCases.WorkflowTest@298a5e20]" started-at="2025-07-11T16:14:23 IST" name="setupWorkflowObjects" finished-at="2025-07-11T16:14:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupWorkflowObjects -->
+        <test-method signature="verifyNullChatBotName()[pri:2, instance:testCases.WorkflowTest@298a5e20]" started-at="2025-07-11T16:14:23 IST" name="verifyNullChatBotName" finished-at="2025-07-11T16:14:25 IST" depends-on-methods="testCases.WorkflowTest.verifyPageIsMyWorkflowPage" duration-ms="1261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullChatBotName -->
+        <test-method is-config="true" signature="setupWorkflowObjects()[pri:0, instance:testCases.WorkflowTest@298a5e20]" started-at="2025-07-11T16:14:25 IST" name="setupWorkflowObjects" finished-at="2025-07-11T16:14:25 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupWorkflowObjects -->
+        <test-method signature="verifyNullDepartmentId()[pri:3, instance:testCases.WorkflowTest@298a5e20]" started-at="2025-07-11T16:14:25 IST" name="verifyNullDepartmentId" finished-at="2025-07-11T16:14:26 IST" depends-on-methods="testCases.WorkflowTest.verifyPageIsMyWorkflowPage" duration-ms="1450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullDepartmentId -->
+        <test-method is-config="true" signature="setupWorkflowObjects()[pri:0, instance:testCases.WorkflowTest@298a5e20]" started-at="2025-07-11T16:14:26 IST" name="setupWorkflowObjects" finished-at="2025-07-11T16:14:26 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupWorkflowObjects -->
+        <test-method signature="verifyNullProductType()[pri:4, instance:testCases.WorkflowTest@298a5e20]" started-at="2025-07-11T16:14:26 IST" name="verifyNullProductType" finished-at="2025-07-11T16:14:38 IST" depends-on-methods="testCases.WorkflowTest.verifyPageIsMyWorkflowPage" duration-ms="11748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullProductType -->
+        <test-method is-config="true" signature="setupWorkflowObjects()[pri:0, instance:testCases.WorkflowTest@298a5e20]" started-at="2025-07-11T16:14:38 IST" name="setupWorkflowObjects" finished-at="2025-07-11T16:14:38 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupWorkflowObjects -->
+        <test-method signature="verifyNewWorkflowCreation()[pri:5, instance:testCases.WorkflowTest@298a5e20]" started-at="2025-07-11T16:14:38 IST" name="verifyNewWorkflowCreation" finished-at="2025-07-11T16:15:13 IST" depends-on-methods="testCases.WorkflowTest.verifyPageIsMyWorkflowPage" duration-ms="35677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewWorkflowCreation -->
+        <test-method is-config="true" signature="setupWorkflowObjects()[pri:0, instance:testCases.WorkflowTest@298a5e20]" started-at="2025-07-11T16:15:14 IST" name="setupWorkflowObjects" finished-at="2025-07-11T16:15:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupWorkflowObjects -->
+        <test-method signature="verifyDuplicateWorkflowCreation()[pri:6, instance:testCases.WorkflowTest@298a5e20]" started-at="2025-07-11T16:15:14 IST" name="verifyDuplicateWorkflowCreation" finished-at="2025-07-11T16:15:49 IST" depends-on-methods="testCases.WorkflowTest.verifyNewWorkflowCreation" duration-ms="35553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDuplicateWorkflowCreation -->
+        <test-method is-config="true" signature="setupWorkflowObjects()[pri:0, instance:testCases.WorkflowTest@298a5e20]" started-at="2025-07-11T16:15:49 IST" name="setupWorkflowObjects" finished-at="2025-07-11T16:15:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupWorkflowObjects -->
+        <test-method signature="verifyResumeWorkflowWithoutNode()[pri:7, instance:testCases.WorkflowTest@298a5e20]" started-at="2025-07-11T16:15:49 IST" name="verifyResumeWorkflowWithoutNode" finished-at="2025-07-11T16:16:02 IST" depends-on-methods="testCases.WorkflowTest.verifyNewWorkflowCreation" duration-ms="12624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResumeWorkflowWithoutNode -->
+        <test-method is-config="true" signature="setupWorkflowObjects()[pri:0, instance:testCases.WorkflowTest@298a5e20]" started-at="2025-07-11T16:16:02 IST" name="setupWorkflowObjects" finished-at="2025-07-11T16:16:02 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupWorkflowObjects -->
+        <test-method signature="verifyEditWorkflowOnlyName()[pri:8, instance:testCases.WorkflowTest@298a5e20]" started-at="2025-07-11T16:16:02 IST" name="verifyEditWorkflowOnlyName" finished-at="2025-07-11T16:16:15 IST" depends-on-methods="testCases.WorkflowTest.verifyNewWorkflowCreation" duration-ms="13710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditWorkflowOnlyName -->
+        <test-method is-config="true" signature="setupWorkflowObjects()[pri:0, instance:testCases.WorkflowTest@298a5e20]" started-at="2025-07-11T16:16:15 IST" name="setupWorkflowObjects" finished-at="2025-07-11T16:16:15 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupWorkflowObjects -->
+        <test-method signature="verifyDeleteWorkflowByName()[pri:9, instance:testCases.WorkflowTest@298a5e20]" started-at="2025-07-11T16:16:15 IST" name="verifyDeleteWorkflowByName" finished-at="2025-07-11T16:16:28 IST" depends-on-methods="testCases.WorkflowTest.verifyEditWorkflowOnlyName" duration-ms="12924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteWorkflowByName -->
+      </class> <!-- testCases.WorkflowTest -->
       <class name="testCases.HomeTest">
-        <test-method is-config="true" signature="setupHomePageObjects()[pri:0, instance:testCases.HomeTest@6bd61f98]" started-at="2025-07-10T11:27:03 IST" name="setupHomePageObjects" finished-at="2025-07-10T11:27:03 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="setupHomePageObjects()[pri:0, instance:testCases.HomeTest@3e27aa33]" started-at="2025-07-11T16:14:13 IST" name="setupHomePageObjects" finished-at="2025-07-11T16:14:13 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupHomePageObjects -->
-        <test-method signature="verifyHomeCardsVisibility()[pri:1, instance:testCases.HomeTest@6bd61f98]" started-at="2025-07-10T11:27:03 IST" name="verifyHomeCardsVisibility" finished-at="2025-07-10T11:27:03 IST" duration-ms="109" status="PASS">
+        <test-method signature="verifyHomeCardsVisibility()[pri:1, instance:testCases.HomeTest@3e27aa33]" started-at="2025-07-11T16:14:13 IST" name="verifyHomeCardsVisibility" finished-at="2025-07-11T16:14:13 IST" duration-ms="162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomeCardsVisibility -->
-        <test-method is-config="true" signature="setupHomePageObjects()[pri:0, instance:testCases.HomeTest@6bd61f98]" started-at="2025-07-10T11:27:03 IST" name="setupHomePageObjects" finished-at="2025-07-10T11:27:03 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupHomePageObjects()[pri:0, instance:testCases.HomeTest@3e27aa33]" started-at="2025-07-11T16:14:13 IST" name="setupHomePageObjects" finished-at="2025-07-11T16:14:13 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupHomePageObjects -->
-        <test-method signature="verifyBrokenLinksOfHomePage()[pri:2, instance:testCases.HomeTest@6bd61f98]" started-at="2025-07-10T11:27:03 IST" name="verifyBrokenLinksOfHomePage" finished-at="2025-07-10T11:27:06 IST" duration-ms="3397" status="PASS">
+        <test-method signature="verifyBrokenLinksOfHomePage()[pri:2, instance:testCases.HomeTest@3e27aa33]" started-at="2025-07-11T16:14:13 IST" name="verifyBrokenLinksOfHomePage" finished-at="2025-07-11T16:14:16 IST" depends-on-methods="testCases.HomeTest.verifyHomeCardsVisibility" duration-ms="3187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBrokenLinksOfHomePage -->
       </class> <!-- testCases.HomeTest -->
+      <class name="testCases.CampaignsTest">
+        <test-method is-config="true" signature="setupCampaignsTestObject()[pri:0, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:17:24 IST" name="setupCampaignsTestObject" finished-at="2025-07-11T16:17:24 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCampaignsTestObject -->
+        <test-method signature="verifyPageIsCampaignPage()[pri:1, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:17:24 IST" name="verifyPageIsCampaignPage" finished-at="2025-07-11T16:17:25 IST" duration-ms="879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageIsCampaignPage -->
+        <test-method is-config="true" signature="setupCampaignsTestObject()[pri:0, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:17:25 IST" name="setupCampaignsTestObject" finished-at="2025-07-11T16:17:25 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCampaignsTestObject -->
+        <test-method signature="verifyNullCampaignName()[pri:2, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:17:25 IST" name="verifyNullCampaignName" finished-at="2025-07-11T16:17:26 IST" depends-on-methods="testCases.CampaignsTest.verifyPageIsCampaignPage" duration-ms="1710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullCampaignName -->
+        <test-method is-config="true" signature="setupCampaignsTestObject()[pri:0, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:17:26 IST" name="setupCampaignsTestObject" finished-at="2025-07-11T16:17:26 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCampaignsTestObject -->
+        <test-method signature="verifyNullDescription()[pri:3, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:17:26 IST" name="verifyNullDescription" finished-at="2025-07-11T16:17:29 IST" depends-on-methods="testCases.CampaignsTest.verifyPageIsCampaignPage" duration-ms="2282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullDescription -->
+        <test-method is-config="true" signature="setupCampaignsTestObject()[pri:0, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:17:29 IST" name="setupCampaignsTestObject" finished-at="2025-07-11T16:17:29 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCampaignsTestObject -->
+        <test-method signature="verifyNullWhatsAppTemplate()[pri:4, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:17:29 IST" name="verifyNullWhatsAppTemplate" finished-at="2025-07-11T16:17:32 IST" depends-on-methods="testCases.CampaignsTest.verifyPageIsCampaignPage" duration-ms="3501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullWhatsAppTemplate -->
+        <test-method is-config="true" signature="setupCampaignsTestObject()[pri:0, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:17:32 IST" name="setupCampaignsTestObject" finished-at="2025-07-11T16:17:32 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCampaignsTestObject -->
+        <test-method signature="verifyNullStatus()[pri:5, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:17:32 IST" name="verifyNullStatus" finished-at="2025-07-11T16:17:36 IST" depends-on-methods="testCases.CampaignsTest.verifyPageIsCampaignPage" duration-ms="3462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullStatus -->
+        <test-method is-config="true" signature="setupCampaignsTestObject()[pri:0, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:17:36 IST" name="setupCampaignsTestObject" finished-at="2025-07-11T16:17:36 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCampaignsTestObject -->
+        <test-method signature="verifyNullDepartment()[pri:6, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:17:36 IST" name="verifyNullDepartment" finished-at="2025-07-11T16:17:40 IST" depends-on-methods="testCases.CampaignsTest.verifyPageIsCampaignPage" duration-ms="4059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullDepartment -->
+        <test-method is-config="true" signature="setupCampaignsTestObject()[pri:0, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:17:40 IST" name="setupCampaignsTestObject" finished-at="2025-07-11T16:17:40 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCampaignsTestObject -->
+        <test-method signature="verifyNullGroup_Segment()[pri:7, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:17:40 IST" name="verifyNullGroup_Segment" finished-at="2025-07-11T16:17:45 IST" depends-on-methods="testCases.CampaignsTest.verifyPageIsCampaignPage" duration-ms="4816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullGroup_Segment -->
+        <test-method is-config="true" signature="setupCampaignsTestObject()[pri:0, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:17:45 IST" name="setupCampaignsTestObject" finished-at="2025-07-11T16:17:45 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCampaignsTestObject -->
+        <test-method signature="verifyNullSchedule()[pri:8, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:17:45 IST" name="verifyNullSchedule" finished-at="2025-07-11T16:17:51 IST" depends-on-methods="testCases.CampaignsTest.verifyPageIsCampaignPage" duration-ms="6651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNullSchedule -->
+        <test-method is-config="true" signature="setupCampaignsTestObject()[pri:0, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:17:51 IST" name="setupCampaignsTestObject" finished-at="2025-07-11T16:17:51 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCampaignsTestObject -->
+        <test-method signature="verifyNewCampaignCreationWithValidData()[pri:9, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:17:51 IST" name="verifyNewCampaignCreationWithValidData" finished-at="2025-07-11T16:18:08 IST" depends-on-methods="testCases.CampaignsTest.verifyPageIsCampaignPage" duration-ms="16663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewCampaignCreationWithValidData -->
+        <test-method is-config="true" signature="setupCampaignsTestObject()[pri:0, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:18:08 IST" name="setupCampaignsTestObject" finished-at="2025-07-11T16:18:08 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCampaignsTestObject -->
+        <test-method signature="verifyEditCampaignByUpdatingName()[pri:10, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:18:08 IST" name="verifyEditCampaignByUpdatingName" finished-at="2025-07-11T16:18:21 IST" depends-on-methods="testCases.CampaignsTest.verifyNewCampaignCreationWithValidData" duration-ms="12847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditCampaignByUpdatingName -->
+        <test-method is-config="true" signature="setupCampaignsTestObject()[pri:0, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:18:21 IST" name="setupCampaignsTestObject" finished-at="2025-07-11T16:18:21 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCampaignsTestObject -->
+        <test-method signature="verifyDeleteCampaign()[pri:11, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:18:21 IST" name="verifyDeleteCampaign" finished-at="2025-07-11T16:18:33 IST" depends-on-methods="testCases.CampaignsTest.verifyEditCampaignByUpdatingName" duration-ms="11970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteCampaign -->
+        <test-method is-config="true" signature="setupCampaignsTestObject()[pri:0, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:18:33 IST" name="setupCampaignsTestObject" finished-at="2025-07-11T16:18:33 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCampaignsTestObject -->
+        <test-method signature="verifyTotalCampaignCountOnPagination()[pri:12, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:18:33 IST" name="verifyTotalCampaignCountOnPagination" finished-at="2025-07-11T16:18:36 IST" depends-on-methods="testCases.CampaignsTest.verifyPageIsCampaignPage" duration-ms="2949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTotalCampaignCountOnPagination -->
+        <test-method is-config="true" signature="setupCampaignsTestObject()[pri:0, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:18:36 IST" name="setupCampaignsTestObject" finished-at="2025-07-11T16:18:36 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCampaignsTestObject -->
+        <test-method signature="verifyBrokenLinksOnCampaignPage()[pri:13, instance:testCases.CampaignsTest@f0c8a99]" started-at="2025-07-11T16:18:36 IST" name="verifyBrokenLinksOnCampaignPage" finished-at="2025-07-11T16:18:37 IST" depends-on-methods="testCases.CampaignsTest.verifyPageIsCampaignPage" duration-ms="1623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrokenLinksOnCampaignPage -->
+      </class> <!-- testCases.CampaignsTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
